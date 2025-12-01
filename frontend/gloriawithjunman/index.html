@@ -21,8 +21,8 @@
         <span class="brand">Gloria &amp; Junman</span>
       </div>
       <div class="nav-right">
-        <!-- 这里的链接：之后你可以改成实际的 RSVP 页面，比如 rsvp.html -->
-        <a href="/gloriawithjunman/rsvp.html" class="btn btn-rsvp">
+        <!-- 现在改成锚点，滚动到下方 RSVP 区块 -->
+        <a href="#rsvp" class="btn btn-rsvp">
           RSVP
         </a>
       </div>
@@ -53,7 +53,7 @@
             September 20–22, 2025<br />
             Canggu · Bali, Indonesia
           </p>
-          <a href="/gloriawithjunman/rsvp.html" class="btn btn-rsvp hero-cta">
+          <a href="#rsvp" class="btn btn-rsvp hero-cta">
             RSVP Online
           </a>
         </div>
@@ -161,11 +161,112 @@
         </div>
       </div>
     </section>
+
+    <!-- RSVP 内嵌表单 -->
+    <section id="rsvp" class="section section-sand">
+      <div class="section-inner">
+        <h2>RSVP</h2>
+        <p class="section-lead">
+          Please let us know if you’ll be joining us in Bali. We’re so excited
+          to celebrate with you.
+        </p>
+
+        <form id="rsvp-form" class="rsvp-form">
+          <div class="form-row">
+            <label for="rsvp-name">Name<span class="required">*</span></label>
+            <input id="rsvp-name" name="name" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label>Will you attend?<span class="required">*</span></label>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="attending" value="Yes" required />
+                <span>Yes, I’ll be there</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="attending" value="No" />
+                <span>Sorry, can’t make it</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="rsvp-message">Message (optional)</label>
+            <textarea
+              id="rsvp-message"
+              name="message"
+              rows="3"
+              placeholder="Dietary needs, plus one name, or anything you’d like to tell us."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-rsvp rsvp-submit">
+            Send RSVP
+          </button>
+
+          <p id="rsvp-status" class="rsvp-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <p>Gloria &amp; Junman · Bali · 2025 · Lunavoe</p>
   </footer>
+
+  <!-- 简单的前端提交逻辑 -->
+  <script>
+    const RSVP_API_URL = "https://lunavoe.com/gloriawithjunman/rsvp";
+
+    const rsvpForm = document.getElementById("rsvp-form");
+    const rsvpStatus = document.getElementById("rsvp-status");
+
+    rsvpForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      rsvpStatus.textContent = "Sending your RSVP...";
+      rsvpStatus.className = "rsvp-status rsvp-status--info";
+
+      const formData = new FormData(rsvpForm);
+      const name = formData.get("name")?.toString().trim();
+      const attending = formData.get("attending")?.toString() || "";
+      const message = formData.get("message")?.toString().trim() || "";
+
+      if (!name || !attending) {
+        rsvpStatus.textContent = "Please fill in your name and whether you will attend.";
+        rsvpStatus.className = "rsvp-status rsvp-status--error";
+        return;
+      }
+
+      try {
+        const response = await fetch(RSVP_API_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ name, attending, message }),
+        });
+
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+
+        const data = await response.json();
+        if (data.status === "success") {
+          rsvpStatus.textContent = "Thank you! We’ve received your RSVP 🥂";
+          rsvpStatus.className = "rsvp-status rsvp-status--success";
+          rsvpForm.reset();
+        } else {
+          throw new Error("Unexpected response");
+        }
+      } catch (error) {
+        rsvpStatus.textContent =
+          "Sorry, something went wrong. Please try again later or contact us directly.";
+        rsvpStatus.className = "rsvp-status rsvp-status--error";
+      }
+    });
+  </script>
 </body>
 </html>
+
 
