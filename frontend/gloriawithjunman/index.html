@@ -11,27 +11,25 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- 给 CSS 加版本号，每次大改就改一下后面的数字 -->
-  <link rel="stylesheet" href="style.css?v=20251201" />
+  <link rel="stylesheet" href="style.css?v=20251202" />
 </head>
 <body>
   <!-- 顶部导航 -->
   <header class="site-header">
     <div class="nav-inner">
       <div class="nav-left">
-        <a href="#home" class="nav-link active">Home</a>
-        <a href="#schedule" class="nav-link">Schedule</a>
-        <a href="#travel" class="nav-link">Travel</a>
-        <a href="#attire" class="nav-link">What to Wear</a>
-        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#home" class="nav-link active" data-i18n="nav_home">Home</a>
+        <a href="#schedule" class="nav-link" data-i18n="nav_schedule">Schedule</a>
+        <a href="#travel" class="nav-link" data-i18n="nav_travel">Travel</a>
+        <a href="#attire" class="nav-link" data-i18n="nav_attire">What to Wear</a>
+        <a href="#faq" class="nav-link" data-i18n="nav_faq">FAQ</a>
       </div>
       <div class="nav-center">
         <span class="brand">Gloria &amp; Junman</span>
       </div>
       <div class="nav-right">
-        <!-- 现在改成锚点，滚动到下方 RSVP 区块 -->
-        <a href="#rsvp" class="btn btn-rsvp">
-          RSVP
-        </a>
+        <button id="lang-switch" class="lang-btn">中文</button>
+        <a href="#rsvp" class="btn btn-rsvp" data-i18n="nav_rsvp">RSVP</a>
       </div>
     </div>
   </header>
@@ -46,21 +44,21 @@
         </div>
 
         <div class="hero-text">
-          <p class="eyebrow">Bali Wedding Weekend</p>
+          <p class="eyebrow" data-i18n="hero_eyebrow">Bali Wedding Weekend</p>
           <h1 class="hero-names">
             Gloria Zhang<br />
             <span class="amp">&amp;</span><br />
             Junman Chen
           </h1>
-          <p class="hero-subtitle">
+          <p class="hero-subtitle" data-i18n="hero_subtitle">
             Please join us for a sunset-filled weekend celebrating our wedding
             on the island of Bali.
           </p>
-          <p class="hero-details">
+          <p class="hero-details" data-i18n="hero_details">
             September 20–22, 2025<br />
             Canggu · Bali, Indonesia
           </p>
-          <a href="#rsvp" class="btn btn-rsvp hero-cta">
+          <a href="#rsvp" class="btn btn-rsvp hero-cta" data-i18n="hero_cta">
             RSVP Online
           </a>
         </div>
@@ -77,23 +75,29 @@
     <!-- 日程 -->
     <section id="schedule" class="section section-sand">
       <div class="section-inner">
-        <h2>Weekend Schedule</h2>
-        <p class="section-lead">
+        <h2 data-i18n="schedule_title">Weekend Schedule</h2>
+        <p class="section-lead" data-i18n="schedule_lead">
           A relaxed Bali weekend so you can enjoy the ocean breeze, good food,
           and time together.
         </p>
         <div class="cards">
           <article class="card">
-            <h3>Friday · Welcome</h3>
-            <p>Check-in, poolside welcome drinks and casual dinner.</p>
+            <h3 data-i18n="schedule_fri_title">Friday · Welcome</h3>
+            <p data-i18n="schedule_fri_body">
+              Check-in, poolside welcome drinks and casual dinner.
+            </p>
           </article>
           <article class="card">
-            <h3>Saturday · Ceremony</h3>
-            <p>Sunset ceremony, cocktail hour and dinner under the stars.</p>
+            <h3 data-i18n="schedule_sat_title">Saturday · Ceremony</h3>
+            <p data-i18n="schedule_sat_body">
+              Sunset ceremony, cocktail hour and dinner under the stars.
+            </p>
           </article>
           <article class="card">
-            <h3>Sunday · Farewell</h3>
-            <p>Relaxed brunch before everyone heads home.</p>
+            <h3 data-i18n="schedule_sun_title">Sunday · Farewell</h3>
+            <p data-i18n="schedule_sun_body">
+              Relaxed brunch before everyone heads home.
+            </p>
           </article>
         </div>
       </div>
@@ -103,14 +107,14 @@
     <section id="travel" class="section section-cream">
       <div class="section-inner split">
         <div>
-          <h2>Travel &amp; Stay</h2>
-          <p class="section-lead">
+          <h2 data-i18n="travel_title">Travel &amp; Stay</h2>
+          <p class="section-lead" data-i18n="travel_lead">
             We’ll share our favorite areas to stay and how to get to the venue
             from the airport.
           </p>
         </div>
         <div class="section-box">
-          <p>
+          <p data-i18n="travel_body">
             ✈️ Closest airport: <strong>Ngurah Rai International Airport (DPS)</strong><br />
             🚕 Transport: taxi, Grab, or private driver<br />
             🏝 Suggested areas: Canggu, Seminyak, or nearby villas
@@ -123,17 +127,17 @@
     <section id="attire" class="section section-sand">
       <div class="section-inner split">
         <div>
-          <h2>What to Wear</h2>
-          <p class="section-lead">
+          <h2 data-i18n="attire_title">What to Wear</h2>
+          <p class="section-lead" data-i18n="attire_lead">
             Think “sunset cocktail” — light, breezy, and elegant. We’ll be
             outdoors on grass and stone paths.
           </p>
         </div>
         <div class="section-box">
           <ul class="bullets">
-            <li>Light fabrics for warm, humid weather</li>
-            <li>Block heels or sandals (no thin stilettos on grass)</li>
-            <li>Warm tones, soft greens, or neutrals fit the Bali palette</li>
+            <li data-i18n="attire_item1">Light fabrics for warm, humid weather</li>
+            <li data-i18n="attire_item2">Block heels or sandals (no thin stilettos on grass)</li>
+            <li data-i18n="attire_item3">Warm tones, soft greens, or neutrals fit the Bali palette</li>
           </ul>
         </div>
       </div>
@@ -142,25 +146,25 @@
     <!-- FAQ -->
     <section id="faq" class="section section-cream">
       <div class="section-inner">
-        <h2>FAQ</h2>
+        <h2 data-i18n="faq_title">FAQ</h2>
         <div class="faq-list">
           <article class="faq-item">
-            <h3>Can I bring a plus one?</h3>
-            <p>
+            <h3 data-i18n="faq_q1">Can I bring a plus one?</h3>
+            <p data-i18n="faq_a1">
               We’ll note this on your invitation. If you’re unsure,
               please reach out and ask.
             </p>
           </article>
           <article class="faq-item">
-            <h3>Are kids welcome?</h3>
-            <p>
+            <h3 data-i18n="faq_q2">Are kids welcome?</h3>
+            <p data-i18n="faq_a2">
               We love your little ones, but this will be an adults-only
               celebration so everyone can fully relax.
             </p>
           </article>
           <article class="faq-item">
-            <h3>What about gifts?</h3>
-            <p>
+            <h3 data-i18n="faq_q3">What about gifts?</h3>
+            <p data-i18n="faq_a3">
               Your presence in Bali is the greatest gift. Please don’t feel
               obligated to bring anything else.
             </p>
@@ -172,43 +176,50 @@
     <!-- RSVP 内嵌表单 -->
     <section id="rsvp" class="section section-sand">
       <div class="section-inner">
-        <h2>RSVP</h2>
-        <p class="section-lead">
+        <h2 data-i18n="rsvp_title">RSVP</h2>
+        <p class="section-lead" data-i18n="rsvp_lead">
           Please let us know if you’ll be joining us in Bali. We’re so excited
           to celebrate with you.
         </p>
 
         <form id="rsvp-form" class="rsvp-form">
           <div class="form-row">
-            <label for="rsvp-name">Name<span class="required">*</span></label>
+            <label for="rsvp-name" data-i18n="rsvp_name">
+              Name<span class="required">*</span>
+            </label>
             <input id="rsvp-name" name="name" type="text" required />
           </div>
 
           <div class="form-row">
-            <label>Will you attend?<span class="required">*</span></label>
+            <label data-i18n="rsvp_attend">
+              Will you attend?<span class="required">*</span>
+            </label>
             <div class="radio-group">
               <label class="radio-option">
                 <input type="radio" name="attending" value="Yes" required />
-                <span>Yes, I’ll be there</span>
+                <span data-i18n="rsvp_attend_yes">Yes, I’ll be there</span>
               </label>
               <label class="radio-option">
                 <input type="radio" name="attending" value="No" />
-                <span>Sorry, can’t make it</span>
+                <span data-i18n="rsvp_attend_no">Sorry, can’t make it</span>
               </label>
             </div>
           </div>
 
           <div class="form-row">
-            <label for="rsvp-message">Message (optional)</label>
+            <label for="rsvp-message" data-i18n="rsvp_message_label">
+              Message (optional)
+            </label>
             <textarea
               id="rsvp-message"
               name="message"
               rows="3"
+              data-i18n-placeholder="rsvp_message_placeholder"
               placeholder="Dietary needs, plus one name, or anything you’d like to tell us."
             ></textarea>
           </div>
 
-          <button type="submit" class="btn btn-rsvp rsvp-submit">
+          <button type="submit" class="btn btn-rsvp rsvp-submit" data-i18n="rsvp_submit">
             Send RSVP
           </button>
 
@@ -219,19 +230,210 @@
   </main>
 
   <footer class="site-footer">
-    <p>Gloria &amp; Junman · Bali · 2025 · Lunavoe</p>
+    <p data-i18n="footer_text">Gloria &amp; Junman · Bali · 2025 · Lunavoe</p>
   </footer>
 
-  <!-- 简单的前端提交逻辑 -->
+  <!-- 双语 + RSVP 提交逻辑 -->
   <script>
     const RSVP_API_URL = "https://www.lunavoe.com/gloriawithjunman/rsvp";
 
+    // 中英对照字典
+    const i18n = {
+      en: {
+        nav_home: "Home",
+        nav_schedule: "Schedule",
+        nav_travel: "Travel",
+        nav_attire: "What to Wear",
+        nav_faq: "FAQ",
+        nav_rsvp: "RSVP",
+
+        hero_eyebrow: "Bali Wedding Weekend",
+        hero_subtitle:
+          "Please join us for a sunset-filled weekend celebrating our wedding on the island of Bali.",
+        hero_details: "September 20–22, 2025<br />Canggu · Bali, Indonesia",
+        hero_cta: "RSVP Online",
+
+        schedule_title: "Weekend Schedule",
+        schedule_lead:
+          "A relaxed Bali weekend so you can enjoy the ocean breeze, good food, and time together.",
+        schedule_fri_title: "Friday · Welcome",
+        schedule_fri_body:
+          "Check-in, poolside welcome drinks and casual dinner.",
+        schedule_sat_title: "Saturday · Ceremony",
+        schedule_sat_body:
+          "Sunset ceremony, cocktail hour and dinner under the stars.",
+        schedule_sun_title: "Sunday · Farewell",
+        schedule_sun_body:
+          "Relaxed brunch before everyone heads home.",
+
+        travel_title: "Travel &amp; Stay",
+        travel_lead:
+          "We’ll share our favorite areas to stay and how to get to the venue from the airport.",
+        travel_body:
+          "✈️ Closest airport: <strong>Ngurah Rai International Airport (DPS)</strong><br />🚕 Transport: taxi, Grab, or private driver<br />🏝 Suggested areas: Canggu, Seminyak, or nearby villas",
+
+        attire_title: "What to Wear",
+        attire_lead:
+          "Think “sunset cocktail” — light, breezy, and elegant. We’ll be outdoors on grass and stone paths.",
+        attire_item1: "Light fabrics for warm, humid weather",
+        attire_item2: "Block heels or sandals (no thin stilettos on grass)",
+        attire_item3:
+          "Warm tones, soft greens, or neutrals fit the Bali palette",
+
+        faq_title: "FAQ",
+        faq_q1: "Can I bring a plus one?",
+        faq_a1:
+          "We’ll note this on your invitation. If you’re unsure, please reach out and ask.",
+        faq_q2: "Are kids welcome?",
+        faq_a2:
+          "We love your little ones, but this will be an adults-only celebration so everyone can fully relax.",
+        faq_q3: "What about gifts?",
+        faq_a3:
+          "Your presence in Bali is the greatest gift. Please don’t feel obligated to bring anything else.",
+
+        rsvp_title: "RSVP",
+        rsvp_lead:
+          "Please let us know if you’ll be joining us in Bali. We’re so excited to celebrate with you.",
+        rsvp_name: "Name<span class=\"required\">*</span>",
+        rsvp_attend: "Will you attend?<span class=\"required\">*</span>",
+        rsvp_attend_yes: "Yes, I’ll be there",
+        rsvp_attend_no: "Sorry, can’t make it",
+        rsvp_message_label: "Message (optional)",
+        rsvp_message_placeholder:
+          "Dietary needs, plus one name, or anything you’d like to tell us.",
+        rsvp_submit: "Send RSVP",
+
+        rsvp_status_sending: "Sending your RSVP...",
+        rsvp_status_missing:
+          "Please fill in your name and whether you will attend.",
+        rsvp_status_success: "Thank you! We’ve received your RSVP 🥂",
+        rsvp_status_error:
+          "Sorry, something went wrong. Please try again later or contact us directly.",
+
+        footer_text: "Gloria &amp; Junman · Bali · 2025 · Lunavoe",
+      },
+
+      zh: {
+        nav_home: "首页",
+        nav_schedule: "行程安排",
+        nav_travel: "交通与住宿",
+        nav_attire: "着装建议",
+        nav_faq: "常见问题",
+        nav_rsvp: "出席回覆",
+
+        hero_eyebrow: "巴厘岛婚礼周末",
+        hero_subtitle:
+          "诚挚邀请你来到巴厘岛，与我们一起在日落与海风中见证这一天。",
+        hero_details: "2025 年 9 月 20–22 日<br />印度尼西亚 · 巴厘岛 · 长谷",
+        hero_cta: "在线填写出席回覆",
+
+        schedule_title: "周末行程",
+        schedule_lead:
+          "轻松惬意的巴厘岛周末，一起感受海风、美食与相聚的时光。",
+        schedule_fri_title: "周五 · 抵达与欢迎",
+        schedule_fri_body: "入住、泳池边欢迎饮品和简单晚餐。",
+        schedule_sat_title: "周六 · 仪式与晚宴",
+        schedule_sat_body: "日落婚礼仪式、鸡尾酒时段与星空下的晚宴。",
+        schedule_sun_title: "周日 · 告别早午餐",
+        schedule_sun_body: "轻松早午餐后，与大家道别。",
+
+        travel_title: "交通与住宿",
+        travel_lead:
+          "我们会整理推荐住宿区域，以及从机场前往婚礼场地的方式。",
+        travel_body:
+          "✈️ 最近机场：<strong>伍拉·赖国际机场（DPS）</strong><br />🚕 交通方式：出租车、网约车或包车司机<br />🏝 推荐区域：长谷（Canggu）、水明漾（Seminyak）等附近别墅",
+
+        attire_title: "着装建议",
+        attire_lead:
+          "整体风格为「日落鸡尾酒会」：轻盈、优雅，也适合户外草地与石板路。",
+        attire_item1: "建议轻薄面料，适应热带湿热气候",
+        attire_item2: "粗跟鞋、坡跟或凉鞋（不建议细高跟走草地）",
+        attire_item3: "暖色调、莫兰迪绿或大地色都非常适合巴厘岛",
+
+        faq_title: "常见问题",
+        faq_q1: "可以带同伴（Plus One）吗？",
+        faq_a1:
+          "邀请函上会注明是否包含同伴，如有不确定，欢迎直接询问我们。",
+        faq_q2: "可以带小朋友吗？",
+        faq_a2:
+          "我们非常喜欢小朋友，不过本次婚礼将以成人宾客为主，希望大家都能轻松享受这个周末。",
+        faq_q3: "需要准备礼物吗？",
+        faq_a3:
+          "能千里来到巴厘岛与我们相聚，就是最好的礼物了，请不要有任何负担。",
+
+        rsvp_title: "出席回覆（RSVP）",
+        rsvp_lead: "请告诉我们你是否会来到巴厘岛参加婚礼，我们非常期待与你相聚。",
+        rsvp_name: "姓名<span class=\"required\">*</span>",
+        rsvp_attend: "是否出席？<span class=\"required\">*</span>",
+        rsvp_attend_yes: "会出席",
+        rsvp_attend_no: "不克前来",
+        rsvp_message_label: "留言（可选）",
+        rsvp_message_placeholder:
+          "如有饮食禁忌、是否携伴出席、或想对我们说的话，都可以写在这里。",
+        rsvp_submit: "提交",
+
+        rsvp_status_sending: "正在发送出席回覆……",
+        rsvp_status_missing: "请填写姓名，并选择是否出席。",
+        rsvp_status_success: "谢谢！我们已经收到你的出席回覆 🥂",
+        rsvp_status_error:
+          "抱歉，提交出错了，请稍后重试，或直接联系我们。",
+
+        footer_text: "Gloria &amp; Junman · 巴厘岛 · 2025 · Lunavoe",
+      },
+    };
+
+    // 当前语言：从 localStorage 读取，没有则默认英文
+    let currentLang = localStorage.getItem("lang") || "en";
+
+    function applyLanguage(lang) {
+      // 设置 html lang 属性
+      document.documentElement.lang = lang === "en" ? "en" : "zh-Hans";
+
+      // 替换所有有 data-i18n 的文本（用 innerHTML 支持 <br> 和 <span>）
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const key = el.getAttribute("data-i18n");
+        const value = i18n[lang][key];
+        if (value !== undefined) {
+          el.innerHTML = value;
+        }
+      });
+
+      // 替换 placeholder
+      document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+        const key = el.getAttribute("data-i18n-placeholder");
+        const value = i18n[lang][key];
+        if (value !== undefined) {
+          el.setAttribute("placeholder", value);
+        }
+      });
+
+      // 更新右上角按钮文案（显示“切换到另一种语言”）
+      const btn = document.getElementById("lang-switch");
+      if (btn) {
+        btn.textContent = lang === "en" ? "中文" : "EN";
+      }
+    }
+
+    // 绑定语言切换按钮
+    const langSwitchBtn = document.getElementById("lang-switch");
+    if (langSwitchBtn) {
+      langSwitchBtn.addEventListener("click", () => {
+        currentLang = currentLang === "en" ? "zh" : "en";
+        localStorage.setItem("lang", currentLang);
+        applyLanguage(currentLang);
+      });
+    }
+
+    // 首次加载时应用语言
+    applyLanguage(currentLang);
+
+    // RSVP 提交逻辑
     const rsvpForm = document.getElementById("rsvp-form");
     const rsvpStatus = document.getElementById("rsvp-status");
 
     rsvpForm.addEventListener("submit", async (event) => {
       event.preventDefault();
-      rsvpStatus.textContent = "Sending your RSVP...";
+      rsvpStatus.textContent = i18n[currentLang].rsvp_status_sending;
       rsvpStatus.className = "rsvp-status rsvp-status--info";
 
       const formData = new FormData(rsvpForm);
@@ -240,7 +442,7 @@
       const message = formData.get("message")?.toString().trim() || "";
 
       if (!name || !attending) {
-        rsvpStatus.textContent = "Please fill in your name and whether you will attend.";
+        rsvpStatus.textContent = i18n[currentLang].rsvp_status_missing;
         rsvpStatus.className = "rsvp-status rsvp-status--error";
         return;
       }
@@ -260,20 +462,20 @@
 
         const data = await response.json();
         if (data.status === "success") {
-          rsvpStatus.textContent = "Thank you! We’ve received your RSVP 🥂";
+          rsvpStatus.textContent = i18n[currentLang].rsvp_status_success;
           rsvpStatus.className = "rsvp-status rsvp-status--success";
           rsvpForm.reset();
         } else {
           throw new Error("Unexpected response");
         }
       } catch (error) {
-        rsvpStatus.textContent =
-          "Sorry, something went wrong. Please try again later or contact us directly.";
+        rsvpStatus.textContent = i18n[currentLang].rsvp_status_error;
         rsvpStatus.className = "rsvp-status rsvp-status--error";
       }
     });
   </script>
 </body>
 </html>
+
 
 
