@@ -2,25 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Gloria & Junman — Wedding Weekend</title>
+  <title>Gloria & Junman — Bali Wedding Weekend</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- 顶部导航 -->
   <header class="site-header">
     <div class="nav-inner">
-      <nav class="nav-left">
+      <div class="nav-left">
         <a href="#home" class="nav-link active">Home</a>
         <a href="#schedule" class="nav-link">Schedule</a>
         <a href="#travel" class="nav-link">Travel</a>
         <a href="#attire" class="nav-link">What to Wear</a>
         <a href="#faq" class="nav-link">FAQ</a>
-      </nav>
+      </div>
       <div class="nav-center">
         <span class="brand">Gloria &amp; Junman</span>
       </div>
       <div class="nav-right">
-        <!-- 这里的链接你可以改成自己的 RSVP 页面地址 -->
+        <!-- 这里的链接：之后你可以改成实际的 RSVP 页面，比如 rsvp.html -->
         <a href="/gloriawithjunman/rsvp.html" class="btn btn-rsvp">
           RSVP
         </a>
@@ -28,28 +29,29 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <main id="home" class="page">
+  <main id="home">
+    <!-- Hero：巴厘岛日落风格 -->
     <section class="hero">
       <div class="hero-inner">
         <div class="hero-photo">
-          <!-- 把下面 src 换成你们的合照路径 -->
-          <img src="images/placeholder.jpg" alt="Gloria and Junman" />
+          <!-- 换成你们的合照路径，如 images/bali-us.jpg -->
+          <img src="images/placeholder.jpg" alt="Gloria and Junman in Bali" />
         </div>
+
         <div class="hero-text">
-          <p class="eyebrow">We’re getting married</p>
+          <p class="eyebrow">Bali Wedding Weekend</p>
           <h1 class="hero-names">
             Gloria Zhang<br />
             <span class="amp">&amp;</span><br />
             Junman Chen
           </h1>
           <p class="hero-subtitle">
-            Please join us for a wedding weekend full of love, laughter,
-            and good food.
+            Please join us for a sunset-filled weekend celebrating our wedding
+            on the island of Bali.
           </p>
           <p class="hero-details">
             September 20–22, 2025<br />
-            Somewhere Beautiful · Singapore
+            Canggu · Bali, Indonesia
           </p>
           <a href="/gloriawithjunman/rsvp.html" class="btn btn-rsvp hero-cta">
             RSVP Online
@@ -57,76 +59,80 @@
         </div>
       </div>
 
-      <!-- 波浪过渡 -->
+      <!-- 波浪过渡到浅色区域 -->
       <div class="hero-wave" aria-hidden="true">
         <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
-          <path d="M0,80 C200,140 440,140 720,80 C1000,20 1240,20 1440,80 L1440,180 L0,180 Z"></path>
+          <path d="M0,80 C240,140 480,140 720,90 C960,40 1200,40 1440,90 L1440,180 L0,180 Z"></path>
         </svg>
       </div>
     </section>
 
-    <!-- 下方浅色信息块，只给结构，你可以慢慢填 -->
-    <section id="schedule" class="section section-light">
+    <!-- 日程 -->
+    <section id="schedule" class="section section-sand">
       <div class="section-inner">
         <h2>Weekend Schedule</h2>
         <p class="section-lead">
-          A relaxed wedding weekend so you can enjoy time with us and with friends.
+          A relaxed Bali weekend so you can enjoy the ocean breeze, good food,
+          and time together.
         </p>
         <div class="cards">
           <article class="card">
-            <h3>Friday</h3>
-            <p>Welcome drinks &amp; casual dinner as guests arrive.</p>
+            <h3>Friday · Welcome</h3>
+            <p>Check-in, poolside welcome drinks and casual dinner.</p>
           </article>
           <article class="card">
-            <h3>Saturday</h3>
-            <p>Ceremony, cocktail hour, dinner and dancing under the stars.</p>
+            <h3>Saturday · Ceremony</h3>
+            <p>Sunset ceremony, cocktail hour and dinner under the stars.</p>
           </article>
           <article class="card">
-            <h3>Sunday</h3>
-            <p>Farewell brunch before everyone heads home.</p>
+            <h3>Sunday · Farewell</h3>
+            <p>Relaxed brunch before everyone heads home.</p>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- Travel -->
     <section id="travel" class="section section-cream">
       <div class="section-inner split">
         <div>
           <h2>Travel &amp; Stay</h2>
           <p class="section-lead">
-            We’ll share hotel suggestions and how to get to the venue from
-            the airport or the city.
+            We’ll share our favorite areas to stay and how to get to the venue
+            from the airport.
           </p>
         </div>
         <div class="section-box">
           <p>
-            ✈️ Closest airport: <strong>Changi Airport (SIN)</strong><br />
-            🚕 Transport: taxi / Grab / shuttle<br />
-            🏨 Hotels: we’ll list a few options with different budgets.
+            ✈️ Closest airport: <strong>Ngurah Rai International Airport (DPS)</strong><br />
+            🚕 Transport: taxi, Grab, or private driver<br />
+            🏝 Suggested areas: Canggu, Seminyak, or nearby villas
           </p>
         </div>
       </div>
     </section>
 
-    <section id="attire" class="section section-light">
+    <!-- 着装建议 -->
+    <section id="attire" class="section section-sand">
       <div class="section-inner split">
         <div>
           <h2>What to Wear</h2>
           <p class="section-lead">
-            Think “elegant but comfortable”. We’ll likely walk on grass
-            or outdoor paths.
+            Think “sunset cocktail” — light, breezy, and elegant. We’ll be
+            outdoors on grass and stone paths.
           </p>
         </div>
         <div class="section-box">
           <ul class="bullets">
-            <li>Light fabrics for warm weather</li>
-            <li>Block heels or flats for lawn / garden</li>
-            <li>Bring a light layer for the evening breeze</li>
+            <li>Light fabrics for warm, humid weather</li>
+            <li>Block heels or sandals (no thin stilettos on grass)</li>
+            <li>Warm tones, soft greens, or neutrals fit the Bali palette</li>
           </ul>
         </div>
       </div>
     </section>
 
+    <!-- FAQ -->
     <section id="faq" class="section section-cream">
       <div class="section-inner">
         <h2>FAQ</h2>
@@ -134,15 +140,22 @@
           <article class="faq-item">
             <h3>Can I bring a plus one?</h3>
             <p>
-              We’ll indicate on your invitation whether a plus one is included.
-              Feel free to message us if you’re unsure.
+              We’ll note this on your invitation. If you’re unsure,
+              please reach out and ask.
             </p>
           </article>
           <article class="faq-item">
             <h3>Are kids welcome?</h3>
             <p>
-              We love your little ones, but this will be an adults-only weekend
-              so everyone can relax.
+              We love your little ones, but this will be an adults-only
+              celebration so everyone can fully relax.
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3>What about gifts?</h3>
+            <p>
+              Your presence in Bali is the greatest gift. Please don’t feel
+              obligated to bring anything else.
             </p>
           </article>
         </div>
@@ -151,7 +164,8 @@
   </main>
 
   <footer class="site-footer">
-    <p>Made with love · Lunavoe · Gloria &amp; Junman</p>
+    <p>Gloria &amp; Junman · Bali · 2025 · Lunavoe</p>
   </footer>
 </body>
 </html>
+
