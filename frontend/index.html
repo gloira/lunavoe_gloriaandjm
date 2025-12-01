@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Lunavoe Wedding RSVP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>欢迎参加 Lunavoe 的婚礼 🥰</h1>
+  <form id="rsvp-form">
+    <label>姓名：<input type="text" name="name" required></label><br>
+    <label>是否参加：
+      <select name="attending" required>
+        <option value="">请选择</option>
+        <option value="会参加">会参加</option>
+        <option value="不能参加">不能参加</option>
+      </select>
+    </label><br>
+    <label>留言：<textarea name="message"></textarea></label><br>
+    <button type="submit">提交 RSVP</button>
+  </form>
+
+  <p id="success-msg" style="display:none;color:green;">感谢您的回复 🥰</p>
+
+  <script src="script.js"></script>
+</body>
+</html>

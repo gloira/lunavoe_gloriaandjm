@@ -1,0 +1,6 @@
+body { font-family: sans-serif; max-width: 600px; margin: 50px auto; }
+h1 { text-align: center; color: #a83279; }
+form { display: flex; flex-direction: column; gap: 10px; }
+input, select, textarea { width: 100%; padding: 5px; }
+button { padding: 10px; background-color: #a83279; color: white; border: none; cursor: pointer; }
+button:hover { background-color: #d14a9b; }
