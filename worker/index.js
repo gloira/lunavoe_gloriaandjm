@@ -22,7 +22,7 @@ export default {
       message: data.message || "",
     };
 
-    await env.RSVP_DATA.put(id, JSON.stringify(rsvp));
+    await env.RSVP_GLORIAJM.put(id, JSON.stringify(rsvp));
 
     return new Response(JSON.stringify({ status: "success", id }), {
       headers: { "Content-Type": "application/json" },

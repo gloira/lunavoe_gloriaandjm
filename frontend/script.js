@@ -1,4 +1,4 @@
-const API_URL = "https://你的-worker-subdomain.workers.dev/";
+const API_URL = "https://lunagloriaandjm.gloriayyz197.workers.dev/";
 
 const form = document.getElementById("rsvp-form");
 const successMsg = document.getElementById("success-msg");
