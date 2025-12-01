@@ -1,0 +1,11 @@
+name = "lunavoe-rsvp"
+main = "worker/index.js" 
+
+account_id = "3425091c525451d5d48186fef3a7e483"
+workers_dev = true
+
+compatibility_date = "2025-12-01"
+
+[[kv_namespaces]]
+binding = "RSVP_GLORIAJM"
+id = "2db44c4c8aaa4923b0890f4cc092119c"
