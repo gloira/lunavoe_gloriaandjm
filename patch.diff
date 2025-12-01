@@ -1,0 +1,12 @@
+*** Begin Patch
+*** Update File: frontend/gloriawithjunman/rsvp.html
+@@
+-          <button type="submit">Submit RSVP</button>
++          <button type="submit" class="has-spinner">
++            <span class="spinner" aria-hidden="true"></span>
++            <span class="btn-label">Submit RSVP</span>
++          </button>
+           <p id="success-msg" class="success" style="display:none;">Thank you! Your RSVP has been received.</p>
+         </form>
+       </section>
+*** End Patch

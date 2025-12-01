@@ -1,26 +1,60 @@
 ﻿<!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Lunavoe Wedding RSVP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gloria & Junman | RSVP</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>欢迎参加 Lunavoe 的婚礼 🥰</h1>
-  <form id="rsvp-form">
-    <label>姓名：<input type="text" name="name" required></label><br>
-    <label>是否参加：
-      <select name="attending" required>
-        <option value="">请选择</option>
-        <option value="会参加">会参加</option>
-        <option value="不能参加">不能参加</option>
-      </select>
-    </label><br>
-    <label>留言 (optional)：<textarea name="message"></textarea></label><br>
-    <button type="submit">提交 RSVP</button>
-  </form>
+  <div class="page">
+    <aside class="sidebar">
+      <div class="brand">Gloria & Junman</div>
+      <nav>
+        <a href="/gloriawithjunman">Home</a>
+        <a href="/gloriawithjunman/gallery">Gallery</a>
+        <a href="/gloriawithjunman/menu">Menu</a>
+        <a class="active" href="/gloriawithjunman/rsvp">RSVP</a>
+      </nav>
+    </aside>
 
-  <p id="success-msg" style="display:none;color:green;">感谢您的回复 🥰</p>
+    <main class="content">
+      <section class="hero">
+        <p class="eyebrow">RSVP</p>
+        <h1>Join our celebration</h1>
+        <p class="lede">Kindly share your attendance and wishes so we can prepare a beautiful day together.</p>
+      </section>
+
+      <section class="card">
+        <form id="rsvp-form" class="form">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" required placeholder="Your full name" />
+          </div>
+
+          <div class="field">
+            <label for="attending">Attendance</label>
+            <select id="attending" name="attending" required>
+              <option value="">Select an option</option>
+              <option value="Yes">Attending</option>
+              <option value="No">Unable to attend</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Message (optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Share a note or dietary needs"></textarea>
+          </div>
+
+          <button type="submit" class="has-spinner">
+            <span class="spinner" aria-hidden="true"></span>
+            <span class="btn-label">Submit RSVP</span>
+          </button>
+          <p id="success-msg" class="success" style="display:none;">Thank you! Your RSVP has been received.</p>
+        </form>
+      </section>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
