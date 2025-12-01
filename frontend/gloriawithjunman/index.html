@@ -1,119 +1,157 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gloria & Junman | Home</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Gloria & Junman — Wedding Weekend</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page">
-    <aside class="sidebar">
-      <div class="brand">Gloria & Junman</div>
-      <nav>
-        <a class="active" href="/gloriawithjunman">Home</a>
-        <a href="/gloriawithjunman/gallery">Gallery</a>
-        <a href="/gloriawithjunman/menu">Menu</a>
-        <a href="/gloriawithjunman/rsvp">RSVP</a>
+  <header class="site-header">
+    <div class="nav-inner">
+      <nav class="nav-left">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#schedule" class="nav-link">Schedule</a>
+        <a href="#travel" class="nav-link">Travel</a>
+        <a href="#attire" class="nav-link">What to Wear</a>
+        <a href="#faq" class="nav-link">FAQ</a>
       </nav>
-    </aside>
+      <div class="nav-center">
+        <span class="brand">Gloria &amp; Junman</span>
+      </div>
+      <div class="nav-right">
+        <!-- 这里的链接你可以改成自己的 RSVP 页面地址 -->
+        <a href="/gloriawithjunman/rsvp.html" class="btn btn-rsvp">
+          RSVP
+        </a>
+      </div>
+    </div>
+  </header>
 
-    <main class="content">
-      <section class="hero hero-split">
-        <div class="hero-copy">
-          <p class="eyebrow">Gloria & Junman</p>
-          <h1>We are getting married</h1>
-          <p class="lede">Save the date and celebrate our forever. We cannot wait to share this day with you.</p>
-          <div class="cta-group">
-            <a class="btn" href="/gloriawithjunman/rsvp">RSVP</a>
-            <a class="btn ghost" href="/gloriawithjunman/gallery">View gallery</a>
-          </div>
+  <!-- Hero -->
+  <main id="home" class="page">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-photo">
+          <!-- 把下面 src 换成你们的合照路径 -->
+          <img src="images/hero-placeholder.jpg" alt="Gloria and Junman" />
         </div>
-        <div class="image-stack">
-          <div class="image-card tall" style="background-image:url('https://images.unsplash.com/photo-1520854221050-0f4caff449fb?auto=format&fit=crop&w=900&q=80');"></div>
-          <div class="image-card" style="background-image:url('https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=900&q=80');"></div>
+        <div class="hero-text">
+          <p class="eyebrow">We’re getting married</p>
+          <h1 class="hero-names">
+            Gloria Zhang<br />
+            <span class="amp">&amp;</span><br />
+            Junman Chen
+          </h1>
+          <p class="hero-subtitle">
+            Please join us for a wedding weekend full of love, laughter,
+            and good food.
+          </p>
+          <p class="hero-details">
+            September 20–22, 2025<br />
+            Somewhere Beautiful · Singapore
+          </p>
+          <a href="/gloriawithjunman/rsvp.html" class="btn btn-rsvp hero-cta">
+            RSVP Online
+          </a>
         </div>
-      </section>
+      </div>
 
-      <section class="card highlight">
-        <div class="pill">Wedding day</div>
-        <h2>Saturday, 28 March 2025</h2>
-        <p class="muted">Ceremony begins at 5:30 PM • Reception to follow</p>
-        <div class="detail-grid">
-          <div>
-            <p class="label">Venue</p>
-            <p class="strong">Lunavoe Garden Terrace</p>
-            <p class="muted">123 Blossom Lane, Cityville</p>
-          </div>
-          <div>
-            <p class="label">Dress code</p>
-            <p class="strong">Soft formal</p>
-            <p class="muted">Light pinks, lavenders, creams</p>
-          </div>
-          <div>
-            <p class="label">Gifts</p>
-            <p class="strong">Your presence is the gift</p>
-            <p class="muted">No boxed gifts please</p>
-          </div>
-        </div>
-      </section>
+      <!-- 波浪过渡 -->
+      <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
+          <path d="M0,80 C200,140 440,140 720,80 C1000,20 1240,20 1440,80 L1440,180 L0,180 Z"></path>
+        </svg>
+      </div>
+    </section>
 
-      <section class="card">
-        <div class="pill">Timeline</div>
-        <div class="timeline">
-          <div class="time-slot">
-            <p class="time">5:00 PM</p>
-            <p class="strong">Guest arrival & welcome drinks</p>
-          </div>
-          <div class="time-slot">
-            <p class="time">5:30 PM</p>
-            <p class="strong">Garden ceremony</p>
-          </div>
-          <div class="time-slot">
-            <p class="time">6:30 PM</p>
-            <p class="strong">Cocktail hour & photos</p>
-          </div>
-          <div class="time-slot">
-            <p class="time">7:30 PM</p>
-            <p class="strong">Dinner & speeches</p>
-          </div>
-          <div class="time-slot">
-            <p class="time">9:00 PM</p>
-            <p class="strong">First dance & celebration</p>
-          </div>
+    <!-- 下方浅色信息块，只给结构，你可以慢慢填 -->
+    <section id="schedule" class="section section-light">
+      <div class="section-inner">
+        <h2>Weekend Schedule</h2>
+        <p class="section-lead">
+          A relaxed wedding weekend so you can enjoy time with us and with friends.
+        </p>
+        <div class="cards">
+          <article class="card">
+            <h3>Friday</h3>
+            <p>Welcome drinks &amp; casual dinner as guests arrive.</p>
+          </article>
+          <article class="card">
+            <h3>Saturday</h3>
+            <p>Ceremony, cocktail hour, dinner and dancing under the stars.</p>
+          </article>
+          <article class="card">
+            <h3>Sunday</h3>
+            <p>Farewell brunch before everyone heads home.</p>
+          </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="card soft insta-strip">
-        <p class="section-title">Instagram</p>
-        <div class="thumb-row">
-          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=400&q=80');"></div>
-          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=400&q=80');"></div>
-          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=400&q=80');"></div>
-          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=400&q=80');"></div>
-          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80');"></div>
-          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80');"></div>
+    <section id="travel" class="section section-cream">
+      <div class="section-inner split">
+        <div>
+          <h2>Travel &amp; Stay</h2>
+          <p class="section-lead">
+            We’ll share hotel suggestions and how to get to the venue from
+            the airport or the city.
+          </p>
         </div>
-      </section>
+        <div class="section-box">
+          <p>
+            ✈️ Closest airport: <strong>Changi Airport (SIN)</strong><br />
+            🚕 Transport: taxi / Grab / shuttle<br />
+            🏨 Hotels: we’ll list a few options with different budgets.
+          </p>
+        </div>
+      </div>
+    </section>
 
-      <section class="card soft">
-        <h3>Travel & stay</h3>
-        <div class="detail-grid">
-          <div>
-            <p class="label">Getting there</p>
-            <p class="muted">Parking is available on-site. Ride share drop-off at the main gate.</p>
-          </div>
-          <div>
-            <p class="label">Stay nearby</p>
-            <p class="muted">We love: Moonlit Suites (5 min), Lavender Inn (8 min), Riverside Hotel (12 min).</p>
-          </div>
-          <div>
-            <p class="label">Questions?</p>
-            <p class="muted">Message us anytime and we will help you plan your visit.</p>
-          </div>
+    <section id="attire" class="section section-light">
+      <div class="section-inner split">
+        <div>
+          <h2>What to Wear</h2>
+          <p class="section-lead">
+            Think “elegant but comfortable”. We’ll likely walk on grass
+            or outdoor paths.
+          </p>
         </div>
-      </section>
-    </main>
-  </div>
+        <div class="section-box">
+          <ul class="bullets">
+            <li>Light fabrics for warm weather</li>
+            <li>Block heels or flats for lawn / garden</li>
+            <li>Bring a light layer for the evening breeze</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section section-cream">
+      <div class="section-inner">
+        <h2>FAQ</h2>
+        <div class="faq-list">
+          <article class="faq-item">
+            <h3>Can I bring a plus one?</h3>
+            <p>
+              We’ll indicate on your invitation whether a plus one is included.
+              Feel free to message us if you’re unsure.
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3>Are kids welcome?</h3>
+            <p>
+              We love your little ones, but this will be an adults-only weekend
+              so everyone can relax.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with love · Lunavoe · Gloria &amp; Junman</p>
+  </footer>
 </body>
 </html>
