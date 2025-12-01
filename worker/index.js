@@ -6,7 +6,6 @@ const corsHeaders = {
 
 export default {
   async fetch(request, env) {
-    // 处理预检请求（OPTIONS），否则浏览器会 CORS 报错
     if (request.method === "OPTIONS") {
       return new Response(null, { status: 204, headers: corsHeaders });
     }
@@ -39,8 +38,19 @@ export default {
       message: data.message || "",
     };
 
-    // ⚠️ 这里用的是 Cloudflare 显示给你的绑定名：RSVP_GLORIAJM
+    // 保存到 KV（备份）
     await env.RSVP_GLORIAJM.put(id, JSON.stringify(rsvp));
+
+    // ⭐⭐⭐ forward 到 Google Sheet（你必须在这里加）
+    try {
+      await fetch("https://script.google.com/macros/s/AKfycbw8NFgJ73QhrCIw_cXpomOilWyHDfiviEplncMj1RxJBIwZWr9E6xL16ti4q5H3aE19/exec", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(rsvp)
+      });
+    } catch (err) {
+      console.error("Failed to forward to Google Sheets:", err);
+    }
 
     return new Response(JSON.stringify({ status: "success", id }), {
       headers: {
@@ -50,3 +60,4 @@ export default {
     });
   },
 };
+
