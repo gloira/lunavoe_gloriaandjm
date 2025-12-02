@@ -2,139 +2,151 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>RSVP · Gloria &amp; Junman</title>
+  <title>Gloria &amp; Junman — RSVP</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/gloriawithjunman/style.css?v=2025120501" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css?v=20251203" />
 </head>
-<body class="page">
-
-<header class="site-header striped-bg">
-  <div class="header-inner">
-    <div class="header-left">
-      <div class="logo-mark">GJ</div>
-      <div class="brand-text">Gloria &amp; Junman · Bali 2026</div>
-    </div>
-    <nav class="nav-main desktop-nav">
-      <a href="/gloriawithjunman/" data-i18n="nav_home">Home</a>
-      <a href="/gloriawithjunman/schedule/" data-i18n="nav_schedule">Schedule</a>
-      <a href="/gloriawithjunman/venue/" data-i18n="nav_venue">Venue</a>
-      <a href="/gloriawithjunman/travel/" data-i18n="nav_travel">Travel Guide</a>
-      <a href="/gloriawithjunman/gallery/" data-i18n="nav_gallery">Gallery</a>
-      <a href="/gloriawithjunman/rsvp/" data-i18n="nav_rsvp">RSVP</a>
-    </nav>
-    <div class="header-right">
-      <button id="lang-switch" class="lang-btn">中文</button>
-      <a href="/gloriawithjunman/rsvp/" class="btn-ghost" data-i18n="nav_rsvp">RSVP</a>
-      <button class="hamburger-btn" id="hamburger-btn" aria-label="Menu">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-      </button>
-    </div>
-  </div>
-  <nav class="mobile-menu" id="mobile-menu">
-    <a href="/gloriawithjunman/" data-i18n="nav_home">Home</a>
-    <a href="/gloriawithjunman/schedule/" data-i18n="nav_schedule">Schedule</a>
-    <a href="/gloriawithjunman/venue/" data-i18n="nav_venue">Venue</a>
-    <a href="/gloriawithjunman/travel/" data-i18n="nav_travel">Travel Guide</a>
-    <a href="/gloriawithjunman/gallery/" data-i18n="nav_gallery">Gallery</a>
-    <a href="/gloriawithjunman/rsvp/" data-i18n="nav_rsvp">RSVP</a>
-  </nav>
-</header>
-
-
-<main>
-  <section class="page-hero striped-bg">
-    <div class="page-hero-inner">
-      <div class="hero-icon">
-        <svg viewBox="0 0 64 64">
-          <g fill="none" stroke="#5a6753" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="22" cy="24" r="9"/>
-            <circle cx="42" cy="24" r="9"/>
-            <path d="M18 40c2.5-2.5 5.8-4 9.4-4 3.6 0 6.9 1.5 9.6 4"/>
-          </g>
-        </svg>
-      </div>
-      <h1 class="hero-heading" data-i18n="rsvp_title">RSVP</h1>
-      <p class="hero-subtitle" data-i18n="rsvp_subtitle">
-        This page is for invited guests only. Please enter the access code to continue.
-      </p>
-    </div>
-  </section>
-
-  <div class="wave wave--bottom">
-    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-      <path fill="#f7f3ec" d="M0,64 C240,16 480,16 720,64 C960,112 1200,112 1440,64 L1440,120 L0,120 Z"></path>
-    </svg>
-  </div>
-
-  <section class="page-content">
-    <div class="rsvp-gate-card">
-      <div class="form-row">
-        <label for="rsvp-passcode" data-i18n="rsvp_gate_label">
-          Wedding Access Code<span class="required">*</span>
-        </label>
-        <input id="rsvp-passcode" type="password" autocomplete="off" />
-      </div>
-      <button type="button" class="btn-primary" id="rsvp-unlock-btn" data-i18n="rsvp_gate_button">
-        Unlock RSVP Form
-      </button>
-      <p id="rsvp-gate-status" class="rsvp-status" aria-live="polite"></p>
-    </div>
-
-    <div class="rsvp-form-section hidden" id="rsvp-form-section">
-      <form id="rsvp-form" class="rsvp-form-card">
-        <div class="form-row">
-          <label for="rsvp-name" data-i18n="rsvp_name">
-            Name<span class="required">*</span>
-          </label>
-          <input id="rsvp-name" name="name" type="text" required />
+<body >
+<div class="page">
+  <header class="site-header">
+    <div class="site-header-bar" data-i18n-topbar>Gloria &amp; Junman · Uluwatu, Bali · September 11–13, 2026</div>
+    <div class="site-header-main">
+      <div class="nav-shell">
+        <a href="/gloriawithjunman/" class="brand-mark">
+          <span class="brand-mark-main">Gloria &amp; Junman</span>
+          <span class="brand-mark-sub">Uluwatu · Bali</span>
+        </a>
+        <nav class="nav-links">
+          <a href="/gloriawithjunman/" data-nav-link class="nav-link" data-i18n="nav_home">Home</a>
+          <a href="/gloriawithjunman/schedule/" data-nav-link class="nav-link" data-i18n="nav_schedule">Schedule</a>
+          <a href="/gloriawithjunman/venue/" data-nav-link class="nav-link" data-i18n="nav_venue">Venue &amp; Stay</a>
+          <a href="/gloriawithjunman/travel/" data-nav-link class="nav-link" data-i18n="nav_travel">Travel Guide</a>
+          <a href="/gloriawithjunman/gallery/" data-nav-link class="nav-link" data-i18n="nav_gallery">Gallery</a>
+        </nav>
+        <div class="nav-right">
+          <button class="lang-toggle" type="button" data-lang-toggle>中文</button>
+          <a href="/gloriawithjunman/rsvp/" class="btn btn-ghost" data-i18n="nav_rsvp">RSVP</a>
+          <button class="hamburger" type="button" aria-label="Menu" data-hamburger>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
         </div>
+      </div>
+    </div>
+    <div class="mobile-nav-panel" data-mobile-panel>
+      <div class="mobile-nav-inner">
+        <a href="/gloriawithjunman/" class="mobile-nav-link" data-i18n="nav_home">Home</a>
+        <a href="/gloriawithjunman/schedule/" class="mobile-nav-link" data-i18n="nav_schedule">Schedule</a>
+        <a href="/gloriawithjunman/venue/" class="mobile-nav-link" data-i18n="nav_venue">Venue &amp; Stay</a>
+        <a href="/gloriawithjunman/travel/" class="mobile-nav-link" data-i18n="nav_travel">Travel Guide</a>
+        <a href="/gloriawithjunman/gallery/" class="mobile-nav-link" data-i18n="nav_gallery">Gallery</a>
+        <a href="/gloriawithjunman/rsvp/" class="mobile-nav-link" data-i18n="nav_rsvp">RSVP</a>
+        <div class="mobile-nav-meta">
+          <span class="mobile-nav-link muted" data-i18n-topbar>Gloria &amp; Junman · Uluwatu, Bali · September 11–13, 2026</span>
+          <button class="lang-toggle" type="button" data-lang-toggle>中文</button>
+        </div>
+      </div>
+    </div>
+  </header>
 
-        <div class="form-row">
-          <label data-i18n="rsvp_attend">
-            Will you attend?<span class="required">*</span>
-          </label>
-          <div class="radio-group">
-            <label>
-              <input type="radio" name="attending" value="Yes" required />
-              <span data-i18n="rsvp_attend_yes">Yes, I’ll be there</span>
+  <main class="page-main">
+
+  <section class="section striped-bg wave-bottom">
+    <div class="section-inner rsvp-shell">
+      <div class="section-heading">
+        <div class="section-eyebrow" data-i18n="rsvp_title">RSVP</div>
+        <p class="section-lead" data-i18n="rsvp_intro">
+          Because space at the venue is limited, please help us by responding as accurately as you
+          can. You’ll be able to update us later if plans change.
+        </p>
+      </div>
+
+      <div class="rsvp-panel">
+        <form id="rsvp-password-form">
+          <div class="rsvp-step-label" data-i18n="rsvp_step1">Step 1 · Guest access</div>
+          <div class="form-row">
+            <label for="rsvp-password" data-i18n="rsvp_password_label">
+              Wedding password<span class="required">*</span>
             </label>
-            <label>
-              <input type="radio" name="attending" value="No" />
-              <span data-i18n="rsvp_attend_no">Sorry, can’t make it</span>
-            </label>
+            <input
+              id="rsvp-password"
+              name="password"
+              type="password"
+              class="input-text"
+              autocomplete="off"
+            />
+            <p class="muted" data-i18n="rsvp_password_hint">
+              You’ll find this on your invitation. Please keep it within close friends & family only.
+            </p>
           </div>
-        </div>
+          <button type="submit" class="btn" data-i18n="rsvp_btn_unlock">
+            Unlock RSVP form
+          </button>
+          <p id="rsvp-password-status" class="rsvp-status" aria-live="polite"></p>
+        </form>
 
-        <div class="form-row">
-          <label for="rsvp-message" data-i18n="rsvp_message_label">
-            Message (optional)
-          </label>
-          <textarea
-            id="rsvp-message"
-            name="message"
-            rows="3"
-            data-i18n-placeholder="rsvp_message_placeholder"
-            placeholder="Dietary needs, plus one name, or anything you’d like to tell us."
-          ></textarea>
-        </div>
+        <form id="rsvp-main-form">
+          <div class="rsvp-step-label" data-i18n="rsvp_step2">Step 2 · Your details</div>
 
-        <button type="submit" class="btn-primary" data-i18n="rsvp_submit">
-          Send RSVP
-        </button>
+          <div class="form-row">
+            <label for="rsvp-name" data-i18n="rsvp_name_label">
+              Full name<span class="required">*</span>
+            </label>
+            <input id="rsvp-name" name="name" type="text" class="input-text" />
+          </div>
 
-        <p id="rsvp-status" class="rsvp-status" aria-live="polite"></p>
-      </form>
+          <div class="form-row">
+            <label data-i18n="rsvp_attend_label">
+              Will you attend?<span class="required">*</span>
+            </label>
+            <div class="radio-group">
+              <label class="radio-pill">
+                <input type="radio" name="attending" value="Yes" />
+                <span data-i18n="rsvp_attend_yes">Yes, I’ll be there</span>
+              </label>
+              <label class="radio-pill">
+                <input type="radio" name="attending" value="No" />
+                <span data-i18n="rsvp_attend_no">Sadly I can’t make it</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="rsvp-message" data-i18n="rsvp_message_label">
+              Message (optional)
+            </label>
+            <textarea
+              id="rsvp-message"
+              name="message"
+              class="textarea"
+              data-i18n-placeholder="rsvp_message_placeholder"
+              placeholder="Dietary needs, plus one name, or anything you’d like us to know."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn" data-i18n="rsvp_btn_submit">
+            Send RSVP
+          </button>
+          <p id="rsvp-status" class="rsvp-status" aria-live="polite"></p>
+        </form>
+      </div>
     </div>
   </section>
-</main>
 
+  </main>
 
-<footer class="site-footer">
-  <p data-i18n="footer_text">Gloria &amp; Junman · Bali · 2026 · Lunavoe</p>
-</footer>
-<script src="/gloriawithjunman/scripts.js?v=2025120501"></script>
-
+  <footer class="page-footer">
+    <p data-i18n="footer_text">Gloria &amp; Junman · Bali · 2026 · Lunavoe</p>
+  </footer>
+</div>
+<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/common.js"></script>
 </body>
 </html>
