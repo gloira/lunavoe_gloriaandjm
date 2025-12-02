@@ -5,102 +5,80 @@ const i18n = {
   en: {
     nav_home: "Home",
     nav_schedule: "Schedule",
-    nav_venue: "Venue &amp; Stay",
-    nav_travel: "Travel &amp; Ideas",
+    nav_venue: "Venue",
+    nav_travel: "Travel Guide",
     nav_gallery: "Gallery",
     nav_rsvp: "RSVP",
 
     footer_text: "Gloria &amp; Junman · Bali · 2026 · Lunavoe",
 
-    hero_eyebrow: "Bali Wedding Weekend",
-    hero_subtitle: "Sunset, ocean breeze, and a weekend with loved ones.",
-    hero_details: "September 11–13, 2026<br />Uluwatu · Bali, Indonesia",
-    hero_cta: "RSVP Online",
-
-    home_intro_title: "Welcome to Bali",
-    home_intro_text:
-      "We’re so grateful you’re considering joining us in Uluwatu. This site has all the details for the weekend — schedule, venue, travel ideas, and RSVP.",
+    home_overlay_title: "We’re Getting Married",
+    home_date_place: "September 11 – 13, 2026 · Uluwatu · Bali, Indonesia",
+    home_intro_kicker: "A long-weekend escape with sunset, ocean breeze, and our favorite people.",
+    home_intro_body:
+      "We are so excited to celebrate our wedding with you in Bali. This site has everything you need for the weekend — schedule, venue details, travel tips, and a place to RSVP.",
 
     schedule_title: "Weekend Schedule",
-    schedule_lead:
-      "A relaxed Bali weekend so you can enjoy the ocean breeze, good food, and time together.",
-    schedule_fri_title: "Friday · Arrival & Free Day",
-    schedule_fri_body:
-      "Guests check in to their hotels or villas and enjoy a free day to explore Uluwatu — cafes, beaches, or a sunset drink if you’d like.",
-    schedule_sat_title: "Saturday · Wedding Day",
-    schedule_sat_item1: "<strong>3:30 PM</strong> · Arrival & guest check-in at the venue",
-    schedule_sat_item2: "<strong>4:00 PM</strong> · Wedding ceremony",
-    schedule_sat_item3: "<strong>~5:00 PM</strong> · Cocktail hour after the ceremony",
-    schedule_sat_item4: "<strong>7:00 PM</strong> · Dinner",
-    schedule_sat_item5: "<strong>10:00 PM</strong> · After party",
-    schedule_sat_item6: "<strong>1:00 AM</strong> · End of the evening",
-    schedule_sun_title: "Sunday · Free Day",
-    schedule_sun_body:
-      "No official events are planned. Feel free to relax, prepare for your flight home, or continue your Bali adventure.",
+    schedule_subtitle: "A relaxed Bali weekend with plenty of time to enjoy the island.",
+    schedule_fri_date: "Friday · Arrival",
+    schedule_fri_label: "Check‑in & Free Day",
+    schedule_fri_body1:
+      "Guests check into the villa or nearby hotels, settle in, and enjoy Bali at your own pace.",
+    schedule_fri_body2:
+      "Explore Uluwatu’s cafes, beaches, and sunset spots — we’ll share our favorite places in the Travel Guide.",
+    schedule_sat_date: "Saturday · Wedding Day",
+    schedule_sat_label: "Stone Villas Uluwatu",
+    schedule_sat_1: "3:30 PM Guest arrival & check‑in at the venue",
+    schedule_sat_2: "4:00 PM Wedding ceremony",
+    schedule_sat_3: "5:00 PM Cocktail hour & photos",
+    schedule_sat_4: "7:00 PM Dinner reception under the stars",
+    schedule_sat_5: "10:00 PM After party",
+    schedule_sat_6: "1:00 AM End of celebrations",
+    schedule_sun_date: "Sunday · Slow Morning",
+    schedule_sun_label: "Free Day & Departures",
+    schedule_sun_body1:
+      "Sleep in, enjoy a relaxed brunch, or head to the beach one last time before flights.",
+    schedule_sun_body2:
+      "Whether you’re flying home or continuing your Bali adventure, we’re so grateful you came.",
 
-    venue_title: "Venue &amp; Stay",
-    venue_lead:
-      "Our celebration will take place at a private villa in Uluwatu. Some guests will stay at the venue, others at nearby hotels and villas in the area.",
-    venue_on_title: "Stone Villas Uluwatu",
-    venue_on_body:
-      "Our wedding will be held at Stone Villas Uluwatu in Uluwatu, Bali, Indonesia. A portion of guests will be staying directly at the villa. If you’ve been assigned a room here, we’ll share detailed information such as room allocation and check-in time in our guest group chat closer to the date.",
-    venue_on_note:
-      "Accommodation details and room arrangements at the villa will be confirmed in the group chat once plans are finalized.",
-    venue_off_title: "Nearby Hotels &amp; Villas",
-    venue_off_body:
-      "For guests staying off-site, we’ll share recommended hotels and villas in Uluwatu and surrounding areas like Jimbaran, Seminyak, and Canggu. We’ll coordinate suggestions in the group chat so you can stay close to friends and family.",
+    venue_title: "Venue & Stay",
+    venue_subtitle: "Stone Villas Uluwatu · A clifftop villa overlooking the Indian Ocean.",
+    venue_block1_title: "Wedding Venue",
+    venue_block1_body:
+      "Stone Villas Uluwatu is a private clifftop villa in Uluwatu, with views of the ocean, tropical gardens, and a lawn where our ceremony and dinner will take place.\n\nThe exact address and arrival details will be shared in our guest group closer to the date, along with transportation arrangements for those not staying on site.",
+    venue_block2_title: "Where to Stay",
+    venue_block2_body:
+      "Some guests will stay inside the main villa complex, and others will stay at nearby hotels or villas in Uluwatu. We’ll coordinate rooms and share confirmed options in our guest chat group once bookings are finalized.\n\nIf you’re planning to extend your stay or book your own place, we recommend staying within the Uluwatu area so it’s easy to get to the venue.",
 
-    travel_title: "Travel &amp; Ideas",
-    travel_lead:
-      "Since you’re coming all the way to Bali, we’d love for you to turn the wedding into a little holiday. Here are some ideas for before and after the big day.",
-    travel_uluwatu_title: "Around Uluwatu (Friday & Wedding Morning)",
+    travel_title: "Travel Guide",
+    travel_subtitle: "Ideas for slow mornings, sunset spots, and post‑wedding adventures.",
+    travel_uluwatu_title: "Around Uluwatu · Before the Wedding",
     travel_uluwatu_intro:
-      "On Friday and during free time before the wedding, you might like to explore Uluwatu’s beaches, cafes, and sunset spots.",
-    travel_uluwatu_spot1_title: "Beach Clubs & Sunsets",
-    travel_uluwatu_spot1_body:
-      "Enjoy dramatic clifftop views and sunsets at beach clubs and bars along the Uluwatu coastline.",
-    travel_uluwatu_spot2_title: "Cafes & Brunch",
-    travel_uluwatu_spot2_body:
-      "Uluwatu has plenty of relaxed cafes for coffee, brunch, and light lunches with ocean or jungle views.",
-    travel_uluwatu_spot3_title: "Beaches & Temples",
-    travel_uluwatu_spot3_body:
-      "Explore Uluwatu’s beaches and the clifftop temple for stunning ocean views, especially at sunset.",
-
-    travel_after_title: "After the Wedding",
-    travel_after_lead:
-      "If you’d like to stay longer in Bali, here are a few areas and ideas to help you plan.",
-    travel_sem_title: "Seminyak",
-    travel_sem_body:
-      "Great for shopping, restaurants, and stylish bars — perfect if you enjoy a more urban, walkable area with plenty of dining options.",
-    travel_canggu_title: "Canggu",
-    travel_canggu_body:
-      "Trendy cafes, beach clubs, and surf breaks. A good choice if you like a laid-back yet lively vibe with lots of brunch spots.",
-    travel_jimbaran_title: "Jimbaran",
-    travel_jimbaran_body:
-      "Relax by the beach and enjoy seafood dinners on the sand at sunset.",
-    travel_ubud_title: "Ubud",
-    travel_ubud_body:
-      "Rice terraces, temples, spas, and a quieter, more nature-focused side of Bali — ideal for a slower pace after the wedding.",
+      "Friday and the wedding morning are free time — here are some ideas if you’d like to explore nearby:",
+    travel_uluwatu_1: "Cafes with views in Uluwatu for brunch and coffee.",
+    travel_uluwatu_2: "Beach clubs and sunset bars along the cliff for golden hour.",
+    travel_uluwatu_3: "Relaxed beaches where you can swim, read, or just do nothing.",
+    travel_after_title: "After the Wedding · Keep Exploring",
+    travel_after_intro:
+      "If you’re staying longer in Bali, some popular areas to spend a few more days:",
+    travel_after_1: "Seminyak & Canggu – cafes, shopping, and sunsets.",
+    travel_after_2: "Jimbaran – seafood by the beach and calm evenings.",
+    travel_after_3: "Ubud – rice terraces, temples, and spa days.",
 
     gallery_title: "Gallery",
-    gallery_lead:
-      "Here we’ll share some of our favorite photos — from engagement shoots to the wedding itself.",
-    gallery_note:
-      "After the wedding, we’ll also add a way for you to upload and download photos from the celebration.",
+    gallery_subtitle: "Engagement photos now, wedding memories later.",
+    gallery_slot1: "Portrait placeholder",
+    gallery_slot2: "Beach placeholder",
+    gallery_slot3: "Candid placeholder",
+    gallery_slot4: "Film still placeholder",
+    gallery_slot5: "Villa placeholder",
+    gallery_slot6: "To be filled after the wedding",
 
     rsvp_title: "RSVP",
-    rsvp_lead:
-      "This RSVP page is for invited guests. Please enter the wedding access code to continue.",
-    rsvp_gate_title: "Wedding Access Code",
-    rsvp_gate_lead:
-      "Please enter the wedding password from your invitation to unlock the RSVP form.",
-    rsvp_pass_label: "Wedding code<span class=\"required\">*</span>",
-    rsvp_pass_placeholder: "Enter the wedding password",
-    rsvp_gate_button: "Unlock RSVP",
-    rsvp_gate_error_wrong: "The wedding code is incorrect.",
-    rsvp_gate_error_empty: "Please enter the wedding code.",
-    rsvp_form_title: "Your Details",
-
+    rsvp_subtitle:
+      "This page is for invited guests only. Please enter the access code to continue.",
+    rsvp_gate_label: "Wedding Access Code<span class=\"required\">*</span>",
+    rsvp_gate_button: "Unlock RSVP Form",
     rsvp_name: "Name<span class=\"required\">*</span>",
     rsvp_attend: "Will you attend?<span class=\"required\">*</span>",
     rsvp_attend_yes: "Yes, I’ll be there",
@@ -110,264 +88,221 @@ const i18n = {
       "Dietary needs, plus one name, or anything you’d like to tell us.",
     rsvp_submit: "Send RSVP",
 
+    rsvp_gate_missing: "Please enter the access code.",
+    rsvp_gate_wrong: "The access code does not match our records. Please check your invitation.",
     rsvp_status_sending: "Sending your RSVP...",
-    rsvp_status_missing:
-      "Please fill in your name and whether you will attend.",
+    rsvp_status_missing: "Please fill in your name and whether you will attend.",
     rsvp_status_success: "Thank you! We’ve received your RSVP 🥂",
     rsvp_status_error:
       "Sorry, something went wrong. Please try again later or contact us directly.",
-    rsvp_status_wrongcode: "The wedding code is incorrect.",
   },
 
   zh: {
     nav_home: "首页",
     nav_schedule: "行程安排",
     nav_venue: "场地与住宿",
-    nav_travel: "旅行建议",
-    nav_gallery: "相册",
+    nav_travel: "出行与游玩",
+    nav_gallery: "照片集",
     nav_rsvp: "出席回覆",
 
     footer_text: "Gloria &amp; Junman · 巴厘岛 · 2026 · Lunavoe",
 
-    hero_eyebrow: "巴厘岛婚礼周末",
-    hero_subtitle: "日落、海风，与重要的人一起度过的小小周末。",
-    hero_details: "2026 年 9 月 11–13 日<br />印度尼西亚 · 巴厘岛 · 乌鲁瓦图",
-    hero_cta: "在线填写出席回覆",
-
-    home_intro_title: "欢迎来到巴厘岛",
-    home_intro_text:
-      "谢谢你愿意远道而来与我们相聚。这个网站会汇总婚礼周末的所有信息：行程安排、场地与住宿、旅行建议以及出席回覆。",
+    home_overlay_title: "We’re Getting Married",
+    home_date_place: "2026 年 9 月 11–13 日 · 印度尼西亚 · 巴厘岛 · 乌鲁瓦图",
+    home_intro_kicker: "和最重要的人一起，在日落与海风中度过一个小小假期。",
+    home_intro_body:
+      "非常期待你来到巴厘岛参加我们的婚礼。这个网站汇总了周末行程、婚礼场地、交通与住宿建议，以及 RSVP 出席回覆。",
 
     schedule_title: "周末行程",
-    schedule_lead:
-      "轻松惬意的巴厘岛周末，一起感受海风、美食与相聚的时光。",
-    schedule_fri_title: "周五 · 抵达与自由活动",
-    schedule_fri_body:
-      "宾客自行入住预订好的酒店或别墅，白天可自由安排行程：探店、海滩或看一场日落。我们不会安排正式活动。",
-    schedule_sat_title: "周六 · 婚礼当天",
-    schedule_sat_item1: "<strong>下午 3:30</strong> · 宾客抵达并签到入场",
-    schedule_sat_item2: "<strong>下午 4:00</strong> · 婚礼仪式",
-    schedule_sat_item3: "<strong>约下午 5:00</strong> · 仪式结束后鸡尾酒时光",
-    schedule_sat_item4: "<strong>晚上 7:00</strong> · 正式晚宴",
-    schedule_sat_item5: "<strong>晚上 10:00</strong> · After Party",
-    schedule_sat_item6: "<strong>凌晨 1:00</strong> · 当天活动结束",
-    schedule_sun_title: "周日 · 自由活动",
-    schedule_sun_body:
-      "周日没有正式安排，可以睡个懒觉、去做 SPA、逛逛周边，也可以开启接下来的巴厘岛旅程或准备返程。",
+    schedule_subtitle: "轻松惬意的巴厘岛周末，留出足够的时间给海风与度假。",
+    schedule_fri_date: "周五 · 抵达",
+    schedule_fri_label: "入住与自由活动",
+    schedule_fri_body1:
+      "宾客在别墅或附近酒店办理入住，调整时差，慢慢进入度假状态。",
+    schedule_fri_body2:
+      "可以按自己的节奏逛咖啡馆、去海边散步或看日落，推荐地点会写在「出行与游玩」页面。",
+
+    schedule_sat_date: "周六 · 婚礼当天",
+    schedule_sat_label: "Stone Villas Uluwatu",
+    schedule_sat_1: "15:30 宾客到场 & 签到",
+    schedule_sat_2: "16:00 婚礼仪式",
+    schedule_sat_3: "17:00 鸡尾酒与合影",
+    schedule_sat_4: "19:00 星空晚宴",
+    schedule_sat_5: "22:00 After Party",
+    schedule_sat_6: "凌晨 1:00 活动结束",
+
+    schedule_sun_date: "周日 · 慢悠悠的早晨",
+    schedule_sun_label: "自由活动 & 返程",
+    schedule_sun_body1:
+      "睡到自然醒，吃个早午餐，或者再去海边走走，然后根据各自行程安排返程或继续旅行。",
+    schedule_sun_body2:
+      "无论你是回家还是继续在巴厘岛度假，我们都非常感激你抽空来参加这场婚礼。",
 
     venue_title: "场地与住宿",
-    venue_lead:
-      "婚礼将在乌鲁瓦图的一座私人别墅举行。部分宾客会入住场地内，其余宾客则会住在附近的酒店或民宿。",
-    venue_on_title: "Stone Villas Uluwatu",
-    venue_on_body:
-      "我们的婚礼将在位于乌鲁瓦图的 Stone Villas Uluwatu 举行。部分房间将留给家人和亲密好友入住。如果你会住在场地内，我们会在宾客群里统一告知房型、入住时间等详细信息。",
-    venue_on_note:
-      "关于场地内具体房间安排与住宿细节，会在出行前通过宾客群统一确认和通知。",
-    venue_off_title: "附近酒店与民宿",
-    venue_off_body:
-      "对于住在场地外的宾客，我们会在宾客群中推荐乌鲁瓦图及周边（例如金巴兰、水明漾、苍古）合适的酒店和民宿，方便大家和亲友住得相对近一些。",
+    venue_subtitle: "Stone Villas Uluwatu · 悬崖上的私人别墅。",
+    venue_block1_title: "婚礼场地",
+    venue_block1_body:
+      "Stone Villas Uluwatu 是位于乌鲁瓦图的一座私人悬崖别墅，可以眺望印度洋，并拥有花园草坪作为仪式与晚宴区域。\n\n具体地址与到场方式会在婚礼临近时，在宾客群里统一发送，并根据住在不同地点的宾客安排接送或交通指引。",
+    venue_block2_title: "住宿安排",
+    venue_block2_body:
+      "部分宾客会住在别墅内，其余宾客会安排在乌鲁瓦图附近的酒店或独立别墅。具体房间分配和推荐酒店，会在确定后在群里统一沟通。\n\n如果你计划自己延长行程或另外订房，建议尽量住在乌鲁瓦图区域，方便往返婚礼场地。",
 
-    travel_title: "旅行建议",
-    travel_lead:
-      "既然都来到巴厘岛，很适合顺便安排一个小假期。这里是一些在乌鲁瓦图附近以及婚礼之后的行程灵感，可根据自己的时间自由组合。",
-    travel_uluwatu_title: "乌鲁瓦图周边（周五 & 婚礼当天白天）",
-    travel_uluwatu_intro:
-      "周五和婚礼当天白天都比较自由，可以在乌鲁瓦图附近逛一逛、喝杯咖啡、去海边晒太阳或看一场日落。",
-    travel_uluwatu_spot1_title: "看海与日落的酒吧 / Beach Club",
-    travel_uluwatu_spot1_body:
-      "乌鲁瓦图有许多临海的悬崖酒吧和 Beach Club，非常适合看日落、喝一杯，感受悬崖海景。",
-    travel_uluwatu_spot2_title: "咖啡馆与早午餐",
-    travel_uluwatu_spot2_body:
-      "这里有很多氛围很好的咖啡馆和早午餐餐厅，可以慢慢吃一顿早餐或午餐，稍微适应一下海岛节奏。",
-    travel_uluwatu_spot3_title: "海滩与乌鲁瓦图寺",
-    travel_uluwatu_spot3_body:
-      "如果喜欢探索，可以去附近的海滩走走，或者去乌鲁瓦图寺看看悬崖与海景，傍晚时分风景尤其漂亮。",
+    travel_title: "出行与游玩",
+    travel_subtitle: "给你一些周末自由时间和婚礼后续行程的灵感。",
+    travel_uluwatu_title: "乌鲁瓦图周边 · 婚礼前一天",
+    travel_uluwatu_intro: "周五和婚礼当天白天都是自由活动时间，可以考虑：",
+    travel_uluwatu_1: "在乌鲁瓦图找一间景观咖啡馆吃早午餐、喝咖啡。",
+    travel_uluwatu_2: "去看海景的日落酒吧或 beach club，感受悬崖海景。",
+    travel_uluwatu_3: "挑一个喜欢的海滩发呆、游泳或者只是晒太阳。",
 
-    travel_after_title: "婚礼之后去哪玩？",
-    travel_after_lead:
-      "如果你打算在婚礼结束后继续待在巴厘岛，这里有几个不同风格的区域可以选择：",
-    travel_sem_title: "水明漾（Seminyak）",
-    travel_sem_body:
-      "适合喜欢餐厅、酒吧和购物的宾客。这里有许多精致餐厅和小店，街区也比较热闹，适合住在市区感觉的人。",
-    travel_canggu_title: "苍古（Canggu）",
-    travel_canggu_body:
-      "网红咖啡馆、早午餐餐厅和海滩俱乐部的集中地，氛围年轻、适合喜欢冲浪、拍照和打卡咖啡馆的朋友。",
-    travel_jimbaran_title: "金巴兰（Jimbaran）",
-    travel_jimbaran_body:
-      "以日落海景和沙滩海鲜闻名，可以在海边的桌子上看着日落吃烤海鲜，节奏相对轻松。",
-    travel_ubud_title: "乌布（Ubud）",
-    travel_ubud_body:
-      "梯田、森林、寺庙和 SPA 集中区域，更安静、偏自然风光，适合想慢下来放松几天的行程。",
+    travel_after_title: "婚礼之后 · 继续度假",
+    travel_after_intro: "如果你打算多待几天，以下区域都很适合安排后续行程：",
+    travel_after_1: "水明漾 & 苍古：咖啡馆、餐厅、小店与日落海滩。",
+    travel_after_2: "金巴兰：沙滩海鲜大排档，氛围悠闲安静。",
+    travel_after_3: "乌布：稻田梯田、寺庙与 SPA，一点点山间小镇的感觉。",
 
-    gallery_title: "相册",
-    gallery_lead:
-      "这里会放一些我们的婚纱照、日常合照，以及婚礼当天的照片。",
-    gallery_note:
-      "婚礼结束后，我们也会开放上传与下载入口，方便大家分享与保存照片。",
+    gallery_title: "照片集",
+    gallery_subtitle: "婚纱照与婚礼照片，之后会陆续更新。",
+    gallery_slot1: "人像占位图",
+    gallery_slot2: "海边占位图",
+    gallery_slot3: "抓拍占位图",
+    gallery_slot4: "胶片感占位图",
+    gallery_slot5: "别墅占位图",
+    gallery_slot6: "婚礼结束后会更新",
 
     rsvp_title: "出席回覆（RSVP）",
-    rsvp_lead:
-      "此页面仅供受邀宾客使用。请先输入邀请函上的婚礼密码，然后再填写你的出席信息。",
-    rsvp_gate_title: "婚礼密码",
-    rsvp_gate_lead:
-      "请输入邀请函上的婚礼密码，以解锁 RSVP 表单。",
-    rsvp_pass_label: "婚礼密码<span class=\"required\">*</span>",
-    rsvp_pass_placeholder: "请输入邀请函上的婚礼密码",
+    rsvp_subtitle: "此页面仅供受邀宾客使用，请先输入婚礼密码后再填写表单。",
+    rsvp_gate_label: "婚礼密码<span class=\"required\">*</span>",
     rsvp_gate_button: "解锁 RSVP 表单",
-    rsvp_gate_error_wrong: "婚礼密码不正确，请确认后再试。",
-    rsvp_gate_error_empty: "请输入婚礼密码。",
-
-    rsvp_form_title: "出席信息",
     rsvp_name: "姓名<span class=\"required\">*</span>",
     rsvp_attend: "是否出席？<span class=\"required\">*</span>",
     rsvp_attend_yes: "会出席",
-    rsvp_attend_no: "不克前来",
+    rsvp_attend_no: "无法出席",
     rsvp_message_label: "留言（可选）",
     rsvp_message_placeholder:
-      "如有饮食禁忌、是否携伴出席、或想对我们说的话，都可以写在这里。",
+      "如有饮食禁忌、是否携伴出席，或者想对我们说的话，都可以写在这里。",
     rsvp_submit: "提交",
 
+    rsvp_gate_missing: "请输入婚礼密码。",
+    rsvp_gate_wrong: "婚礼密码不正确，请对照请柬再次确认。",
     rsvp_status_sending: "正在发送出席回覆……",
     rsvp_status_missing: "请填写姓名，并选择是否出席。",
     rsvp_status_success: "谢谢！我们已经收到你的出席回覆 🥂",
-    rsvp_status_error:
-      "抱歉，提交出错了，请稍后重试，或直接联系我们。",
-    rsvp_status_wrongcode: "婚礼密码不正确，请确认后再试。",
+    rsvp_status_error: "抱歉，提交出错了，请稍后重试，或直接联系我们。",
   },
 };
 
-let currentLang = localStorage.getItem("lang") || "en";
+let currentLang = localStorage.getItem("gj_lang") || "en";
 
 function applyLanguage(lang) {
+  const dict = i18n[lang] || i18n.en;
   document.documentElement.lang = lang === "en" ? "en" : "zh-Hans";
 
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
-    const value = i18n[lang][key];
-    if (value !== undefined) {
-      el.innerHTML = value;
+    const val = dict[key];
+    if (typeof val === "string") {
+      el.innerHTML = val;
     }
   });
 
   document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
     const key = el.getAttribute("data-i18n-placeholder");
-    const value = i18n[lang][key];
-    if (value !== undefined) {
-      el.setAttribute("placeholder", value);
+    const val = dict[key];
+    if (typeof val === "string") {
+      el.setAttribute("placeholder", val);
     }
   });
 
-  const btn = document.getElementById("lang-switch");
-  if (btn) {
-    btn.textContent = lang === "en" ? "中文" : "EN";
+  const langBtn = document.getElementById("lang-switch");
+  if (langBtn) {
+    langBtn.textContent = lang === "en" ? "中文" : "EN";
   }
 }
 
-applyLanguage(currentLang);
-
-const langSwitchBtn = document.getElementById("lang-switch");
-if (langSwitchBtn) {
-  langSwitchBtn.addEventListener("click", () => {
-    currentLang = currentLang === "en" ? "zh" : "en";
-    localStorage.setItem("lang", currentLang);
-    applyLanguage(currentLang);
-  });
+function initLanguage() {
+  const btn = document.getElementById("lang-switch");
+  if (btn) {
+    btn.addEventListener("click", () => {
+      currentLang = currentLang === "en" ? "zh" : "en";
+      localStorage.setItem("gj_lang", currentLang);
+      applyLanguage(currentLang);
+    });
+  }
+  applyLanguage(currentLang);
 }
 
-const headerEl = document.getElementById("site-header");
-if (headerEl) {
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 40) {
-      headerEl.classList.add("scrolled");
-    } else {
-      headerEl.classList.remove("scrolled");
+function initNav() {
+  const hamburgerBtn = document.getElementById("hamburger-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  if (hamburgerBtn && mobileMenu) {
+    hamburgerBtn.addEventListener("click", () => {
+      hamburgerBtn.classList.toggle("is-open");
+      mobileMenu.classList.toggle("show");
+    });
+
+    mobileMenu.querySelectorAll("a").forEach((a) =>
+      a.addEventListener("click", () => {
+        hamburgerBtn.classList.remove("is-open");
+        mobileMenu.classList.remove("show");
+      })
+    );
+  }
+
+  const path = window.location.pathname;
+  const links = document.querySelectorAll(".nav-main a");
+  links.forEach((link) => {
+    if (link.getAttribute("href") === "" || !link.getAttribute("href")) return;
+    if (path === "/gloriawithjunman/" && link.getAttribute("href") === "/gloriawithjunman/") {
+      link.classList.add("is-current");
+    } else if (path.startsWith(link.getAttribute("href")) && link.getAttribute("href") !== "/gloriawithjunman/") {
+      link.classList.add("is-current");
     }
   });
 }
 
-const hamburgerBtn = document.getElementById("hamburger-btn");
-const mobileMenu = document.getElementById("mobile-menu");
+function initRsvp() {
+  const gateInput = document.getElementById("rsvp-passcode");
+  const gateBtn = document.getElementById("rsvp-unlock-btn");
+  const gateStatus = document.getElementById("rsvp-gate-status");
+  const formSection = document.getElementById("rsvp-form-section");
+  const rsvpForm = document.getElementById("rsvp-form");
+  const rsvpStatus = document.getElementById("rsvp-status");
 
-if (hamburgerBtn && mobileMenu) {
-  hamburgerBtn.addEventListener("click", () => {
-    hamburgerBtn.classList.toggle("is-open");
-    mobileMenu.classList.toggle("show");
-  });
+  if (!gateInput || !gateBtn || !formSection || !rsvpForm) return;
 
-  mobileMenu.querySelectorAll("a").forEach((a) =>
-    a.addEventListener("click", () => {
-      hamburgerBtn.classList.remove("is-open");
-      mobileMenu.classList.remove("show");
-    })
-  );
-}
-
-let unlockedPasscode = null;
-
-const gateForm = document.getElementById("rsvp-gate-form");
-const gateStatus = document.getElementById("rsvp-gate-status");
-const rsvpSection = document.getElementById("rsvp-form-section");
-
-if (gateForm) {
-  gateForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const t = i18n[currentLang];
-    const passInput = document.getElementById("rsvp-passcode-gate");
-    const value = passInput.value.trim();
-
+  gateBtn.addEventListener("click", () => {
+    const value = gateInput.value.trim();
     if (!value) {
-      gateStatus.textContent = t.rsvp_gate_error_empty;
+      gateStatus.textContent = i18n[currentLang].rsvp_gate_missing;
       gateStatus.className = "rsvp-status rsvp-status--error";
       return;
     }
-
     if (value !== RSVP_PASSCODE) {
-      gateStatus.textContent = t.rsvp_gate_error_wrong;
+      gateStatus.textContent = i18n[currentLang].rsvp_gate_wrong;
       gateStatus.className = "rsvp-status rsvp-status--error";
       return;
     }
-
-    unlockedPasscode = value;
     gateStatus.textContent = "";
     gateStatus.className = "rsvp-status";
-    if (rsvpSection) {
-      rsvpSection.classList.remove("hidden");
-      rsvpSection.scrollIntoView({ behavior: "smooth" });
-    }
+    formSection.classList.remove("hidden");
+    formSection.scrollIntoView({ behavior: "smooth", block: "start" });
   });
-}
 
-const rsvpForm = document.getElementById("rsvp-form");
-const rsvpStatus = document.getElementById("rsvp-status");
-
-if (rsvpForm) {
   rsvpForm.addEventListener("submit", async (event) => {
     event.preventDefault();
-    const t = i18n[currentLang];
-
-    if (!unlockedPasscode) {
-      if (gateStatus) {
-        gateStatus.textContent = t.rsvp_status_wrongcode;
-        gateStatus.className = "rsvp-status rsvp-status--error";
-      }
-      return;
-    }
-
-    if (rsvpStatus) {
-      rsvpStatus.textContent = t.rsvp_status_sending;
-      rsvpStatus.className = "rsvp-status rsvp-status--info";
-    }
+    rsvpStatus.textContent = i18n[currentLang].rsvp_status_sending;
+    rsvpStatus.className = "rsvp-status rsvp-status--info";
 
     const formData = new FormData(rsvpForm);
-    const name = formData.get("name")?.toString().trim();
-    const attending = formData.get("attending")?.toString() || "";
-    const message = formData.get("message")?.toString().trim() || "";
+    const name = (formData.get("name") || "").toString().trim();
+    const attending = (formData.get("attending") || "").toString();
+    const message = (formData.get("message") || "").toString().trim();
 
     if (!name || !attending) {
-      if (rsvpStatus) {
-        rsvpStatus.textContent = t.rsvp_status_missing;
-        rsvpStatus.className = "rsvp-status rsvp-status--error";
-      }
+      rsvpStatus.textContent = i18n[currentLang].rsvp_status_missing;
+      rsvpStatus.className = "rsvp-status rsvp-status--error";
       return;
     }
 
@@ -379,7 +314,7 @@ if (rsvpForm) {
           name,
           attending,
           message,
-          passcode: unlockedPasscode,
+          passcode: RSVP_PASSCODE,
         }),
       });
 
@@ -389,24 +324,24 @@ if (rsvpForm) {
 
       const data = await response.json();
       if (data.status === "success") {
-        if (rsvpStatus) {
-          rsvpStatus.textContent = t.rsvp_status_success;
-          rsvpStatus.className = "rsvp-status rsvp-status--success";
-        }
+        rsvpStatus.textContent = i18n[currentLang].rsvp_status_success;
+        rsvpStatus.className = "rsvp-status rsvp-status--success";
         rsvpForm.reset();
       } else if (data.status === "invalid_password") {
-        if (rsvpStatus) {
-          rsvpStatus.textContent = t.rsvp_status_wrongcode;
-          rsvpStatus.className = "rsvp-status rsvp-status--error";
-        }
+        rsvpStatus.textContent = i18n[currentLang].rsvp_gate_wrong;
+        rsvpStatus.className = "rsvp-status rsvp-status--error";
       } else {
         throw new Error("Unexpected response");
       }
     } catch (err) {
-      if (rsvpStatus) {
-        rsvpStatus.textContent = t.rsvp_status_error;
-        rsvpStatus.className = "rsvp-status rsvp-status--error";
-      }
+      rsvpStatus.textContent = i18n[currentLang].rsvp_status_error;
+      rsvpStatus.className = "rsvp-status rsvp-status--error";
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  initLanguage();
+  initNav();
+  initRsvp();
+});
