@@ -34,15 +34,23 @@ body {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 40;
   backdrop-filter: blur(12px);
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
   background: linear-gradient(
     to bottom,
-    rgba(14, 21, 19, 0.95),
-    rgba(14, 21, 19, 0.85),
+    rgba(14, 21, 19, 0.9),
+    rgba(14, 21, 19, 0.75),
     transparent
   );
 }
+
+/* 滚动后变成实心色 + 阴影 */
+.site-header.scrolled {
+  background: rgba(20, 30, 27, 0.97);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+}
+
 
 .nav-inner {
   max-width: 1120px;
@@ -519,3 +527,157 @@ body {
 .lang-btn:hover {
   color: var(--text-main);
 }
+
+/* 桌面 / 手机显示控制 */
+.desktop-only { display: flex; }
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+/* 汉堡按钮 */
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  padding: 0;
+  width: 30px;
+  height: 26px;
+  cursor: pointer;
+  position: relative;
+}
+
+.hamburger-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  border-radius: 999px;
+  background-color: var(--text-main);
+  transition: transform 0.2s ease, opacity 0.2s ease, top 0.2s ease;
+}
+
+.hamburger-line:nth-child(1) {
+  top: 4px;
+}
+.hamburger-line:nth-child(2) {
+  top: 12px;
+}
+.hamburger-line:nth-child(3) {
+  top: 20px;
+}
+
+/* 变成 X 的状态 */
+.hamburger-btn.is-open .hamburger-line:nth-child(1) {
+  top: 12px;
+  transform: rotate(45deg);
+}
+.hamburger-btn.is-open .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-btn.is-open .hamburger-line:nth-child(3) {
+  top: 12px;
+  transform: rotate(-45deg);
+}
+
+/* 小屏显示汉堡按钮 */
+@media (max-width: 768px) {
+  .hamburger-btn {
+    display: block;
+  }
+}
+
+/* 手机菜单 */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #fffdf9;
+  padding: 0.75rem 1.4rem 1.1rem;
+  border-bottom: 1px solid #e4d9c9;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+}
+
+.mobile-menu a {
+  font-size: 0.96rem;
+  padding: 0.5rem 0;
+  color: #4a3d35;
+  text-decoration: none;
+}
+
+.mobile-menu a + a {
+  border-top: 1px solid #efe1d2;
+}
+
+.mobile-menu .mobile-rsvp {
+  margin-top: 0.8rem;
+  border-radius: 999px;
+  justify-content: center;
+}
+
+/* 展开状态 */
+.mobile-menu.show {
+  display: flex;
+}
+
+/* 只在小屏显示 mobile-menu */
+@media (min-width: 769px) {
+  .mobile-menu {
+    display: none !important;
+  }
+}
+
+/* 底部浮动导航（仅手机） */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 45;
+  max-width: 480px;
+  width: 100%;
+  padding: 0.35rem 0.8rem 0.55rem;
+  background: rgba(20, 30, 27, 0.94);
+  backdrop-filter: blur(14px);
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.35);
+  border-radius: 16px 16px 0 0;
+}
+
+.bottom-nav a {
+  flex: 1;
+  text-align: center;
+  font-size: 0.78rem;
+  text-decoration: none;
+  color: var(--text-muted);
+  padding: 0.25rem 0.2rem 0.1rem;
+}
+
+.bottom-nav a span {
+  display: block;
+}
+
+.bottom-nav a.bottom-nav-rsvp {
+  color: #fef3ea;
+  font-weight: 600;
+}
+
+/* 小屏才显示底部导航 */
+@media (max-width: 768px) {
+  .bottom-nav {
+    display: flex;
+  }
+
+  body {
+    padding-bottom: 60px; /* 预留给底部导航的空间 */
+  }
+}
+
+/* 底部导航选中状态（简单粗暴：滚动逻辑可选做，这里先简单样式） */
+.bottom-nav a.active {
+  color: #ffe0c1;
+}
+
