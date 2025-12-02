@@ -10,7 +10,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css?v=20251203" />
+  <script>
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "assets/css/style.css?v=" + Date.now();
+    document.head.appendChild(link);
+  </script>
 </head>
 <body >
 <div class="page">
