@@ -1,14 +1,30 @@
+﻿/* =========================================
+   Fonts & Base Palette – French Vintage
+   ========================================= */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap");
+
 :root {
-  --bg-body: #fffaf4;
-  --bg-sand: #f7efe3;
-  --bg-cream: #fdf9f3;
-  --text-main: #3c3027;
-  --text-muted: #8a7a6a;
-  --accent-coral: #f2a38a;
-  --accent-gold: #e1b671;
-  --border-soft: #e6d7c4;
-  --radius-card: 18px;
+  --bg-page: #f7f1e8;        /* 整体背景：奶油米色 */
+  --bg-sand: #f3ebdf;        /* 浅沙色 section */
+  --bg-cream: #fbf7f1;       /* 更轻的米白 */
+  --bg-card: #fdfaf6;
+
+  --ink-main: #3f3934;       /* 正文深咖 */
+  --ink-muted: #8c7b6a;      /* 次要说明 */
+  --ink-soft: #b3a393;       /* 更浅提示文字 */
+
+  --accent-olive: #5b6450;   /* 法式橄榄绿 */
+  --accent-terracotta: #c98265; /* 温柔陶土橘 */
+  --accent-gold: #d2b37a;
+
+  --border-soft: #e0d1c1;
+  --border-strong: #c8b7a3;
+
+  --radius-card: 20px;
+  --shadow-soft: 0 14px 30px rgba(34, 25, 15, 0.08);
 }
+
+/* Reset & Base */
 
 *,
 *::before,
@@ -16,42 +32,55 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
-  background-color: var(--bg-body);
-  color: var(--text-main);
+  padding: 0;
 }
 
-/* Header & Nav */
+body {
+  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--ink-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Links */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =========================================
+   Header & Navigation
+   ========================================= */
 
 .site-header {
   position: sticky;
   top: 0;
   z-index: 40;
-  backdrop-filter: blur(12px);
-  background: linear-gradient(
-    to bottom,
-    rgba(20, 30, 27, 0.92),
-    rgba(20, 30, 27, 0.78),
-    transparent
-  );
+  backdrop-filter: blur(16px);
+  background: rgba(30, 33, 29, 0.82);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   transition: background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .site-header.scrolled {
-  background: rgba(20, 30, 27, 0.97);
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+  background: rgba(24, 26, 23, 0.96);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
 }
 
 .nav-inner {
-  max-width: 1080px;
+  max-width: 1120px;
   margin: 0 auto;
-  padding: 0.7rem 1.5rem;
+  padding: 0.55rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
+/* 左侧导航 */
 
 .nav-left {
   display: flex;
@@ -59,52 +88,68 @@ body {
 }
 
 .nav-link {
-  font-size: 0.86rem;
+  font-size: 0.78rem;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: rgba(255, 245, 233, 0.8);
-  text-decoration: none;
+  letter-spacing: 0.16em;
+  color: rgba(250, 243, 232, 0.7);
+  position: relative;
+  padding-bottom: 0.25rem;
 }
 
 .nav-link:hover {
-  color: #fff;
+  color: #ffffff;
 }
 
 .nav-link.active {
-  color: #ffe0c1;
+  color: #fff7e4;
 }
 
-.nav-center .brand {
-  font-family: "Georgia", "Times New Roman", serif;
-  font-size: 1.1rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #fff3dd;
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.05rem;
+  width: 18px;
+  height: 1px;
+  background-color: var(--accent-terracotta);
 }
+
+/* 中间品牌 */
+
+.nav-center .brand {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #fff6e3;
+}
+
+/* 右侧：语言 + 汉堡按钮 */
 
 .nav-right {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 
-/* Language button */
 .lang-btn {
   background: transparent;
-  border: none;
-  color: rgba(255, 245, 233, 0.85);
-  font-size: 0.82rem;
-  cursor: pointer;
-  margin-right: 0.6rem;
-  padding: 0.2rem 0.4rem;
-  letter-spacing: 0.14em;
+  border: 1px solid rgba(255, 244, 230, 0.45);
+  color: rgba(255, 244, 230, 0.9);
+  font-size: 0.75rem;
+  padding: 0.18rem 0.6rem;
+  border-radius: 999px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .lang-btn:hover {
-  color: #fff;
+  background-color: rgba(255, 248, 238, 0.12);
 }
 
-/* Hamburger */
+/* 汉堡菜单按钮 */
 
 .hamburger-btn {
   display: none;
@@ -112,7 +157,7 @@ body {
   border: none;
   padding: 0;
   width: 30px;
-  height: 26px;
+  height: 24px;
   cursor: pointer;
   position: relative;
 }
@@ -123,7 +168,7 @@ body {
   right: 0;
   height: 2px;
   border-radius: 999px;
-  background-color: #fff4e4;
+  background-color: #fff5e6;
   transition: transform 0.2s ease, opacity 0.2s ease, top 0.2s ease;
 }
 
@@ -131,39 +176,44 @@ body {
   top: 4px;
 }
 .hamburger-line:nth-child(2) {
-  top: 12px;
+  top: 11px;
 }
 .hamburger-line:nth-child(3) {
-  top: 20px;
+  top: 18px;
 }
 
 .hamburger-btn.is-open .hamburger-line:nth-child(1) {
-  top: 12px;
+  top: 11px;
   transform: rotate(45deg);
 }
+
 .hamburger-btn.is-open .hamburger-line:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger-btn.is-open .hamburger-line:nth-child(3) {
-  top: 12px;
+  top: 11px;
   transform: rotate(-45deg);
 }
 
-/* Mobile menu */
+/* 手机端菜单 */
+
 .mobile-menu {
   display: none;
   flex-direction: column;
-  background-color: #fffdf9;
-  padding: 0.75rem 1.4rem 1.1rem;
-  border-bottom: 1px solid var(--border-soft);
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.06);
+  background-color: #fffdf7;
+  padding: 0.75rem 1.5rem 1.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.mobile-menu.show {
+  display: flex;
 }
 
 .mobile-menu a {
   font-size: 0.9rem;
-  padding: 0.4rem 0;
-  color: var(--text-main);
-  text-decoration: none;
+  padding: 0.45rem 0;
+  color: var(--ink-main);
 }
 
 .mobile-menu a + a {
@@ -171,84 +221,102 @@ body {
 }
 
 .mobile-menu .mobile-rsvp {
-  margin-top: 0.7rem;
-  border-radius: 999px;
-  text-align: center;
+  margin-top: 0.8rem;
 }
 
-/* hero */
+/* =========================================
+   Hero (Home)
+   ========================================= */
 
 .hero {
-  background: radial-gradient(circle at top left, #fbe6da 0, #fdf7f0 32%, #fffaf4 80%);
-  padding-bottom: 3rem;
+  background: radial-gradient(circle at top left, #f8eade 0, #f7f1e8 38%, #f5eee4 80%);
+  padding-bottom: 2.5rem;
 }
 
 .hero-inner {
-  max-width: 1080px;
+  max-width: 1120px;
   margin: 0 auto;
-  padding: 3rem 1.5rem 2rem;
+  padding: 3.1rem 1.5rem 2.2rem;
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
-  gap: 2.5rem;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1.05fr);
+  gap: 2.8rem;
   align-items: center;
 }
 
+/* 照片 */
+
 .hero-photo img {
   width: 100%;
-  border-radius: 24px;
+  border-radius: 26px;
   display: block;
   object-fit: cover;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 22px 55px rgba(75, 54, 35, 0.3);
 }
+
+/* 文本 */
 
 .hero-text .eyebrow {
   font-size: 0.8rem;
-  letter-spacing: 0.24em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--ink-soft);
   margin: 0 0 0.8rem;
 }
 
 .hero-names {
-  font-family: "Georgia", "Times New Roman", serif;
-  font-weight: 400;
-  font-size: 2.6rem;
-  line-height: 1.15;
-  margin: 0 0 1.2rem;
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 1.1;
+  margin: 0 0 1.4rem;
+  color: var(--ink-main);
 }
 
 .hero-names .amp {
-  font-size: 2rem;
-  color: var(--accent-coral);
+  font-size: 2.3rem;
+  color: var(--accent-terracotta);
 }
 
 .hero-subtitle {
   font-size: 1rem;
-  color: var(--text-muted);
-  margin: 0 0 0.8rem;
+  color: var(--ink-muted);
+  margin: 0 0 0.9rem;
 }
 
 .hero-details {
-  font-size: 0.95rem;
-  letter-spacing: 0.15em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(210, 179, 122, 0.55);
+  background-color: rgba(255, 252, 241, 0.9);
+  font-size: 0.78rem;
+  letter-spacing: 0.17em;
   text-transform: uppercase;
-  color: var(--accent-gold);
-  margin: 0 0 1.2rem;
+  color: var(--accent-olive);
+  margin: 0 0 1.4rem;
 }
+
+/* Hero CTA */
 
 .hero-cta {
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
 }
 
-/* Wave */
+/* 波浪过渡 */
+
 .hero-wave svg {
   display: block;
   width: 100%;
-  height: 120px;
+  height: 110px;
   fill: var(--bg-sand);
 }
 
-/* Sections */
+/* =========================================
+   Sections & Layout
+   ========================================= */
 
 .section {
   padding: 3rem 0;
@@ -269,26 +337,63 @@ body {
 }
 
 .section-lead {
-  font-size: 1rem;
-  color: var(--text-muted);
+  font-size: 0.98rem;
+  color: var(--ink-muted);
   max-width: 640px;
 }
 
-/* Layout helpers */
+/* 标题统一 serif 风格 */
+
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-weight: 500;
+  color: var(--ink-main);
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.1rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* 页面 hero */
+
+.page-hero {
+  border-bottom: 1px solid rgba(200, 183, 163, 0.5);
+}
+
+/* split 布局 */
 
 .split {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-  gap: 2rem;
+  gap: 2.1rem;
   align-items: flex-start;
 }
 
+/* 盒子卡片 */
+
 .section-box {
-  background-color: #fff;
+  background-color: var(--bg-card);
   border-radius: var(--radius-card);
   border: 1px solid var(--border-soft);
   padding: 1.2rem 1.4rem;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.03);
+  box-shadow: var(--shadow-soft);
 }
 
 /* Cards */
@@ -301,11 +406,31 @@ body {
 }
 
 .card {
-  background-color: #fff;
+  background-color: var(--bg-card);
   border-radius: var(--radius-card);
   border: 1px solid var(--border-soft);
-  padding: 1.2rem 1.4rem;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.03);
+  padding: 1.2rem 1.4rem 1.3rem;
+  box-shadow: var(--shadow-soft);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.55), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
 }
 
 /* Timeline */
@@ -322,6 +447,7 @@ body {
 
 .timeline-list li {
   margin-bottom: 0.4rem;
+  font-size: 0.92rem;
 }
 
 /* Gallery */
@@ -335,10 +461,9 @@ body {
 .gallery-item {
   border-radius: 18px;
   overflow: hidden;
-  background-color: #f3e5d6;
-  height: 180px;
+  background-color: #efe1d3;
+  height: 190px;
   display: flex;
-  align-items: stretch;
 }
 
 .gallery-placeholder {
@@ -346,31 +471,41 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-muted);
+  color: var(--ink-soft);
   font-size: 0.9rem;
 }
 
-/* Buttons */
+/* =========================================
+   Buttons
+   ========================================= */
 
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.55rem 1.3rem;
-  font-size: 0.9rem;
+  padding: 0.55rem 1.4rem;
+  font-size: 0.86rem;
   border-radius: 999px;
   border: 1px solid transparent;
   cursor: pointer;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .btn-rsvp {
-  background: linear-gradient(135deg, var(--accent-coral), #f6be9f);
+  background: linear-gradient(135deg, var(--accent-terracotta), #e6a98b);
   color: #fff;
   border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 28px rgba(201, 130, 101, 0.5);
 }
 
-/* Forms */
+.btn-rsvp:hover {
+  filter: brightness(1.03);
+}
+
+/* =========================================
+   Forms & RSVP
+   ========================================= */
 
 .form-row {
   margin-bottom: 1rem;
@@ -379,11 +514,11 @@ body {
 .form-row label {
   display: block;
   font-size: 0.9rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.35rem;
 }
 
 .required {
-  color: var(--accent-coral);
+  color: var(--accent-terracotta);
   margin-left: 0.15rem;
 }
 
@@ -391,33 +526,45 @@ input[type="text"],
 input[type="password"],
 textarea {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
   border: 1px solid var(--border-soft);
-  padding: 0.55rem 0.7rem;
+  padding: 0.55rem 0.75rem;
   font-size: 0.9rem;
   font-family: inherit;
+  background-color: #fffdf9;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 0 1px rgba(210, 179, 122, 0.35);
 }
 
 textarea {
   resize: vertical;
+  min-height: 70px;
 }
 
 .radio-group {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+  font-size: 0.9rem;
 }
 
-/* RSVP */
+/* RSVP Gate Card */
 
 .rsvp-gate-card {
-  max-width: 480px;
-  margin: 0 auto 2rem;
-  padding: 1.6rem 1.5rem;
-  background-color: #fff;
-  border-radius: 20px;
-  border: 1px solid var(--border-soft);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.05);
+  max-width: 520px;
+  margin: 0 auto 2.1rem;
+  padding: 1.7rem 1.6rem 1.6rem;
+  background-color: var(--bg-card);
+  border-radius: 22px;
+  border: 1px solid var(--border-strong);
+  box-shadow: var(--shadow-soft);
+  position: relative;
 }
 
 .rsvp-form-section.hidden {
@@ -430,15 +577,15 @@ textarea {
 }
 
 .rsvp-status--info {
-  color: var(--text-muted);
+  color: var(--ink-soft);
 }
 
 .rsvp-status--success {
-  color: #2c7a4b;
+  color: #2f7c4b;
 }
 
 .rsvp-status--error {
-  color: #b02323;
+  color: #b1302b;
 }
 
 /* Footer */
@@ -447,28 +594,49 @@ textarea {
   padding: 1.4rem 1.5rem 1.8rem;
   text-align: center;
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: var(--ink-soft);
 }
 
-/* Responsive */
+/* =========================================
+   Responsive
+   ========================================= */
 
 .desktop-only {
   display: flex;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .nav-left.desktop-only {
     display: none;
   }
+
   .hamburger-btn {
     display: block;
   }
-  .mobile-menu.show {
-    display: flex;
-  }
+
   .hero-inner {
     grid-template-columns: minmax(0, 1fr);
+    padding-top: 2.3rem;
   }
+
+  .hero-photo {
+    order: 1;
+  }
+
+  .hero-text {
+    order: 2;
+  }
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding: 2.4rem 0;
+  }
+
+  .hero-names {
+    font-size: 2.4rem;
+  }
+
   .split {
     grid-template-columns: minmax(0, 1fr);
   }
