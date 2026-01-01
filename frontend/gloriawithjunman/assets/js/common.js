@@ -69,6 +69,7 @@
   function setupNav() {
     const hamburger = document.querySelector("[data-hamburger]");
     const mobilePanel = document.querySelector("[data-mobile-panel]");
+    const mobileClose = document.querySelector("[data-mobile-close]");
 
     if (hamburger && mobilePanel) {
       hamburger.addEventListener("click", () => {
@@ -82,6 +83,13 @@
           mobilePanel.classList.remove("show");
         });
       });
+
+      if (mobileClose) {
+        mobileClose.addEventListener("click", () => {
+          hamburger.classList.remove("is-open");
+          mobilePanel.classList.remove("show");
+        });
+      }
     }
 
     const currentPath = window.location.pathname;

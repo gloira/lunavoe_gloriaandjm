@@ -498,6 +498,31 @@ p:last-child {
   visibility: visible;
 }
 
+.mobile-nav-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: var(--blush-light);
+  border: 1px solid var(--blush-deep);
+  border-radius: 50%;
+  color: var(--charcoal);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.mobile-nav-close:hover {
+  background: var(--blush);
+}
+
 .mobile-nav-inner {
   display: flex;
   flex-direction: column;
