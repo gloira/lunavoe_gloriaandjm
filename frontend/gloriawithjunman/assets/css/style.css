@@ -1,52 +1,57 @@
 /* =====================================================
-   Gloria & Junman Wedding - Romantic Redesign
-   A clean, sleek, romantic design with elegant animations
+   Gloria & Junman Wedding - Retro French Seaside
+   A sun-faded, coastal palette with Parisian flair
    ===================================================== */
 
 /* -----------------------------------------------------
-   CSS Custom Properties - Romantic Color Palette
+   CSS Custom Properties - Retro French Palette
    ----------------------------------------------------- */
 :root {
-  /* Primary Colors - Warm & Romantic */
-  --blush: #f5e6e0;
-  --blush-light: #faf5f3;
-  --blush-deep: #e8cfc6;
-  --champagne: #d4a574;
-  --champagne-light: #e8c9a8;
-  --champagne-gold: #c9a962;
-  --rose-gold: #b76e79;
-  --rose-soft: #d4a5a5;
+  /* Primary Colors - Retro French Seaside */
+  --blush: #f4e2d4;
+  --blush-light: #f9f3ea;
+  --blush-deep: #e2c6ab;
+  --champagne: #c28b5b;
+  --champagne-light: #d9b189;
+  --champagne-gold: #b8804b;
+  --rose-gold: #c46e5a;
+  --rose-soft: #d8a596;
   
   /* Neutrals */
-  --cream: #fdfcfa;
-  --cream-warm: #f9f6f2;
-  --ivory: #fffef9;
-  --charcoal: #2c2c2c;
-  --charcoal-soft: #4a4a4a;
-  --charcoal-muted: #6b6b6b;
+  --cream: #fbf4e6;
+  --cream-warm: #f3e9d9;
+  --ivory: #fffaf1;
+  --charcoal: #1e2b39;
+  --charcoal-soft: #34475c;
+  --charcoal-muted: #6c7a89;
   
   /* Accents */
-  --sage: #8fa084;
-  --sage-soft: #b4c4a9;
-  --dusty-rose: #c9a9a9;
-  --terracotta: #c4846c;
+  --sage: #7ba7a0;
+  --sage-soft: #a7c5be;
+  --dusty-rose: #cfa08f;
+  --terracotta: #b06a4b;
   
   /* Functional */
   --error: #c44536;
   --success: #5a8f6a;
   
   /* Shadows & Effects */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.12);
-  --shadow-glow: 0 0 40px rgba(212, 165, 116, 0.15);
-  --shadow-card: 0 10px 40px rgba(183, 110, 121, 0.08);
+  --shadow-sm: 0 2px 8px rgba(30, 43, 57, 0.06);
+  --shadow-md: 0 8px 30px rgba(30, 43, 57, 0.1);
+  --shadow-lg: 0 20px 60px rgba(30, 43, 57, 0.14);
+  --shadow-glow: 0 0 40px rgba(194, 139, 91, 0.18);
+  --shadow-card: 0 10px 40px rgba(196, 110, 90, 0.1);
 
   /* Glass Effect */
   --glass-bg: rgba(255, 255, 255, 0.7);
   --glass-border: rgba(255, 255, 255, 0.4);
   --glass-blur: blur(20px);
   
+  /* Typography */
+  --font-body: "Gilda Display", "Times New Roman", serif;
+  --font-display: "Marcellus", "Times New Roman", serif;
+  --font-script: "Parisienne", "Times New Roman", cursive;
+
   /* Transitions */
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-out-soft: cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -69,10 +74,13 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-family: var(--font-body);
   font-weight: 400;
   color: var(--charcoal);
-  background: var(--cream);
+  background:
+    radial-gradient(900px 500px at 80% -10%, rgba(123, 167, 160, 0.18), transparent 60%),
+    radial-gradient(700px 380px at 0% 100%, rgba(196, 110, 90, 0.14), transparent 60%),
+    linear-gradient(180deg, var(--cream) 0%, #f4eadc 55%, var(--cream) 100%);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -101,6 +109,7 @@ img {
    Typography
    ----------------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
   font-weight: 500;
   line-height: 1.2;
 }
@@ -310,13 +319,14 @@ p:last-child {
 }
 
 .brand-logo-script {
-  font-family: 'Great Vibes', cursive;
+  font-family: var(--font-script);
   font-size: 2.6rem;
   line-height: 1;
   color: var(--charcoal);
 }
 
 .brand-logo-names {
+  font-family: var(--font-display);
   font-size: 0.65rem;
   letter-spacing: 0.4em;
   text-transform: uppercase;
@@ -602,7 +612,7 @@ p:last-child {
 }
 
 .mobile-nav-link {
-  font-family: 'Great Vibes', cursive;
+  font-family: var(--font-display);
   font-size: 2rem;
   color: var(--charcoal);
   text-decoration: none;
@@ -625,7 +635,7 @@ p:last-child {
 }
 
 .mobile-nav-meta .mobile-nav-link {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: var(--font-display);
   font-size: 0.8rem;
   letter-spacing: 0.1em;
 }
@@ -638,7 +648,7 @@ p:last-child {
   display: flex;
   align-items: center;
   position: relative;
-  background: linear-gradient(180deg, var(--blush-light) 0%, var(--cream) 100%);
+  background: linear-gradient(180deg, rgba(123, 167, 160, 0.18) 0%, var(--blush-light) 45%, var(--cream) 100%);
   overflow: hidden;
   padding-top: 100px;
 }
@@ -651,7 +661,7 @@ p:last-child {
   right: -20%;
   width: 80%;
   height: 150%;
-  background: radial-gradient(ellipse, var(--blush) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(167, 197, 190, 0.6) 0%, transparent 70%);
   opacity: 0.5;
   pointer-events: none;
 }
@@ -663,7 +673,7 @@ p:last-child {
   left: 0;
   right: 0;
   height: 200px;
-  background: linear-gradient(to top, var(--cream) 0%, transparent 100%);
+  background: linear-gradient(to top, var(--cream) 0%, rgba(123, 167, 160, 0.12) 100%);
   pointer-events: none;
 }
 
@@ -689,7 +699,7 @@ p:last-child {
   content: '';
   position: absolute;
   inset: -20px;
-  background: linear-gradient(135deg, var(--champagne-light) 0%, var(--blush) 50%, var(--rose-soft) 100%);
+  background: linear-gradient(135deg, var(--sage-soft) 0%, var(--blush) 45%, var(--rose-soft) 100%);
   border-radius: 300px 300px 30px 30px;
   opacity: 0.3;
   filter: blur(40px);
@@ -769,7 +779,7 @@ p:last-child {
 }
 
 .hero-names {
-  font-family: 'Great Vibes', cursive;
+  font-family: var(--font-script);
   font-size: 4rem;
   line-height: 1.1;
   color: var(--charcoal);
@@ -896,7 +906,7 @@ html[lang="zh-Hans"] .brand-mark-sub {
 }
 
 .section-title {
-  font-family: 'Great Vibes', cursive;
+  font-family: var(--font-script);
   font-size: 3rem;
   color: var(--charcoal);
   margin-bottom: 1rem;
