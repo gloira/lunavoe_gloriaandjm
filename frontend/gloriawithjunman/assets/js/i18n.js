@@ -6,14 +6,18 @@ window.I18N = {
     nav_travel: "Travel Guide",
     nav_gallery: "Gallery",
     nav_rsvp: "RSVP",
+    brand_mark_main: "Gloria & Junman",
+    brand_mark_sub: "Uluwatu · Bali",
     top_bar: "Gloria & Junman · Uluwatu, Bali · September 11–13, 2026",
 
     hero_script: "We\u2019re getting married",
     hero_names: "Gloria Zhang &amp; Junman Chin",
+    hero_dateplace: "Uluwatu · Bali · September 11–13, 2026",
     hero_copy:
       "Join us on a cliffside in Uluwatu for a relaxed, sea-breeze weekend of vows, sunset cocktails, and dancing under the stars.",
     hero_cta_primary: "RSVP",
     hero_cta_secondary: "Weekend details",
+    scroll_hint: "Scroll",
 
     home_intro_title: "A long weekend in Bali",
     home_intro_body:
@@ -24,6 +28,8 @@ window.I18N = {
       "Slow mornings, coffee with a view, and optional adventures around Bali.",
     home_highlight_3:
       "No strict program on Sunday \u2014 sleep in, brunch, or continue your island journey.",
+    home_story_title: "Our Story",
+    home_story_body: "A glimpse of our journey together.",
 
     schedule_title: "Weekend schedule",
     schedule_intro:
@@ -64,6 +70,8 @@ window.I18N = {
       "Some guests will stay on-site at the villas, others in nearby hotels \u2014 we\u2019ll coordinate rooms within the group chat.",
     venue_fact_3:
       "The venue is on a cliff; please plan for comfortable shoes and a light layer for the evening breeze.",
+    venue_note:
+      "We'll confirm specific room assignments and transfer details closer to the date. If you prefer to stay off-site, we'll share a short list of hotels and villas within a 10–15 minute drive.",
 
     travel_title: "Travel guide",
     travel_intro:
@@ -98,6 +106,8 @@ window.I18N = {
     gallery_title: "Gallery",
     gallery_intro:
       "A little moodboard of Bali and some space reserved for our photos. We\u2019ll also share a link here after the wedding where guests can upload their own pictures.",
+    gallery_after_note:
+      "After the wedding, we'll share a link where everyone can upload and download photos from the celebration.",
 
     rsvp_title: "RSVP",
     rsvp_intro:
@@ -107,7 +117,9 @@ window.I18N = {
     rsvp_password_label: "Wedding password",
     rsvp_password_hint:
       "You\u2019ll find this on your invitation. Please keep it within close friends & family only.",
+    rsvp_password_placeholder: "Enter the password from your invitation",
     rsvp_name_label: "Full name",
+    rsvp_name_placeholder: "Your full name",
     rsvp_attend_label: "Will you attend?",
     rsvp_attend_yes: "Yes, I\u2019ll be there",
     rsvp_attend_no: "Sadly I can\u2019t make it",
@@ -137,14 +149,18 @@ window.I18N = {
     nav_travel: "旅行指南",
     nav_gallery: "照片集",
     nav_rsvp: "出席回覆",
-    top_bar: "Gloria & Junman · 印度尼西亚巴厘岛乌鲁瓦图 · 2026 年 9 月 11–13 日",
+    brand_mark_main: "张雨言和陈俊文",
+    brand_mark_sub: "乌鲁瓦图 · 巴厘岛",
+    top_bar: "张雨言和陈俊文 · 乌鲁瓦图 · 巴厘岛 · 2026年9月11日-13日",
 
-    hero_script: "We’re getting married",
-    hero_names: "Gloria Zhang &amp; Junman Chin",
+    hero_script: "我们要结婚啦",
+    hero_names: "张雨言和陈俊文",
+    hero_dateplace: "乌鲁瓦图 · 巴厘岛 · 2026年9月11日-13日",
     hero_copy:
       "欢迎你来到巴厘岛乌鲁瓦图的海边，与我们一起在悬崖之上、日落和海风中见证这一刻。",
     hero_cta_primary: "填写出席回覆",
     hero_cta_secondary: "查看周末安排",
+    scroll_hint: "向下滚动",
 
     home_intro_title: "一个小小的巴厘岛假期",
     home_intro_body:
@@ -152,6 +168,8 @@ window.I18N = {
     home_highlight_1: "婚礼地点为 Stone Villas Uluwatu 悬崖别墅，可眺望整片印度洋。",
     home_highlight_2: "轻松的早晨、咖啡与海景，还有很多自由探索巴厘岛的时间。",
     home_highlight_3: "周日不设正式活动，可以睡到自然醒、吃早午餐，或继续下一段行程。",
+    home_story_title: "我们的故事",
+    home_story_body: "一起走过的点滴剪影。",
 
     schedule_title: "周末行程",
     schedule_intro: "我们希望大家在巴厘岛可以放松，所以正式安排不多，留出足够的自由时间。",
@@ -186,6 +204,8 @@ window.I18N = {
     venue_fact_2:
       "部分亲友会入住场地别墅，其他宾客会安排在附近酒店，具体房间我们会在群里统一协调。",
     venue_fact_3: "场地位于悬崖边，建议穿着舒适好走的鞋，并准备一件薄外套以防晚上海风。",
+    venue_note:
+      "临近日期我们会确认具体房型分配和接送安排。如果你更想住在场地外，我们会分享一份车程约10-15分钟内的酒店与别墅清单。",
 
     travel_title: "旅行指南",
     travel_intro:
@@ -220,6 +240,7 @@ window.I18N = {
     gallery_title: "照片集",
     gallery_intro:
       "这里先放一些巴厘岛氛围图和占位图，之后会更新我们的婚纱照与婚礼当天照片，也会提供链接供大家上传自己的照片。",
+    gallery_after_note: "婚礼结束后，我们会分享一个链接，方便大家上传和下载当天的照片。",
 
     rsvp_title: "出席回覆（RSVP）",
     rsvp_intro:
@@ -228,7 +249,9 @@ window.I18N = {
     rsvp_step2: "第二步 · 填写信息",
     rsvp_password_label: "婚礼密码",
     rsvp_password_hint: "密码会写在你的邀请卡上，请不要在熟人圈以外传播。",
+    rsvp_password_placeholder: "请输入邀请卡上的密码",
     rsvp_name_label: "姓名",
+    rsvp_name_placeholder: "你的姓名",
     rsvp_attend_label: "是否出席？",
     rsvp_attend_yes: "会出席",
     rsvp_attend_no: "无法前来",
@@ -244,6 +267,6 @@ window.I18N = {
     rsvp_status_success: "谢谢！我们已经收到你的出席回覆 🥂",
     rsvp_status_error: "抱歉，提交失败，请稍后重试，或直接联系我们。",
 
-    footer_text: "Gloria &amp; Junman · 巴厘岛 · 2026 · Lunavoe",
+    footer_text: "张雨言和陈俊文 · 巴厘岛 · 2026 · Lunavoe",
   },
 };
