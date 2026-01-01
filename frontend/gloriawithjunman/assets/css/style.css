@@ -78,6 +78,7 @@ body {
   font-weight: 400;
   color: var(--charcoal);
   background:
+    repeating-linear-gradient(90deg, rgba(30, 43, 57, 0.05) 0, rgba(30, 43, 57, 0.05) 2px, transparent 2px, transparent 14px),
     radial-gradient(900px 500px at 80% -10%, rgba(123, 167, 160, 0.18), transparent 60%),
     radial-gradient(700px 380px at 0% 100%, rgba(196, 110, 90, 0.14), transparent 60%),
     linear-gradient(180deg, var(--cream) 0%, #f4eadc 55%, var(--cream) 100%);
