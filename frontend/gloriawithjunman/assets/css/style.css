@@ -526,17 +526,18 @@ p:last-child {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 56px;
+  height: 56px;
   padding: 0;
-  background: var(--blush-light);
-  border: 1px solid var(--blush-deep);
+  background: var(--cream);
+  border: 1px solid var(--rose-gold);
   border-radius: 50%;
-  color: var(--charcoal);
-  font-size: 1rem;
-  font-weight: 600;
+  color: var(--rose-gold);
+  font-size: 1.3rem;
+  font-weight: 500;
   line-height: 1;
   cursor: pointer;
+  z-index: 2;
   transition: var(--transition-base);
 }
 
@@ -552,6 +553,8 @@ p:last-child {
   height: 100%;
   gap: 1.5rem;
   padding: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .mobile-nav-link {
