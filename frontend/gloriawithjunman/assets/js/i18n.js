@@ -139,6 +139,8 @@ window.I18N = {
       "Dietary needs, plus one name, or anything you'd like us to know.",
     rsvp_btn_unlock: "Unlock RSVP form",
     rsvp_btn_submit: "Send RSVP",
+    rsvp_contact_note:
+      "If you have any issues, please contact the bride or groom on WeChat or WhatsApp.",
     rsvp_status_pwd_missing: "Please enter the wedding password.",
     rsvp_status_pwd_wrong:
       "That password doesn't look right. Please check your invitation.",
@@ -298,6 +300,7 @@ window.I18N = {
       "饮食需求、同行人姓名或其他想告诉我们的事项。",
     rsvp_btn_unlock: "解锁出席回复表单",
     rsvp_btn_submit: "提交出席回复",
+    rsvp_contact_note: "如有任何问题，请通过微信或 WhatsApp 联系新娘或新郎。",
     rsvp_status_pwd_missing: "请输入婚礼密码。",
     rsvp_status_pwd_wrong: "密码不正确，请查看邀请函。",
     rsvp_status_sending: "正在发送出席回复…",

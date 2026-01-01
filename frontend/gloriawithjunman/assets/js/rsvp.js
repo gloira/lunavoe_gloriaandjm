@@ -39,9 +39,6 @@
       pwdStatus.textContent = "";
       pwdForm.style.display = "none";
       mainForm.style.display = "block";
-      document
-        .getElementById("rsvp-name")
-        .scrollIntoView({ behavior: "smooth", block: "start" });
     });
 
     mainForm.addEventListener("submit", async (e) => {
