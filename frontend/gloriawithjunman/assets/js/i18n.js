@@ -30,7 +30,7 @@ window.I18N = {
       "RSVP for Gloria and Junman's Bali wedding. Let us know if you can make it!",
 
     hero_script: "We\u2019re getting married",
-    hero_names: "Gloria Zhang &amp; Junman Chin",
+    hero_names: "Gloria &amp; Junman",
     hero_names_cn: "",
     hero_dateplace: "Uluwatu · Bali · September 11–13, 2026",
     hero_copy:
@@ -191,7 +191,7 @@ window.I18N = {
     page_desc_rsvp: "请填写出席回覆，告诉我们你是否能来参加婚礼。",
 
     hero_script: "我们要结婚啦",
-    hero_names: "Gloria Zhang &amp; Junman Chin",
+    hero_names: "Gloria &amp; Junman",
     hero_names_cn: "雨言 · 俊文",
     hero_dateplace: "乌鲁瓦图 · 巴厘岛 · 2026年9月11日-13日",
     hero_copy:
