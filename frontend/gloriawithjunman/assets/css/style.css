@@ -301,22 +301,13 @@ p:last-child {
   gap: 0.5rem;
 }
 
-.brand-logo-line {
-  width: 36px;
-  height: 6px;
-  opacity: 0.65;
-  background: radial-gradient(circle, var(--charcoal) 2px, transparent 2.5px)
-    left center / 12px 6px repeat-x;
-}
-
-.brand-logo-line--left {
-  background: radial-gradient(circle, var(--charcoal) 2px, transparent 2.5px)
-    left center / 12px 6px repeat-x;
-}
-
-.brand-logo-line--right {
-  background: radial-gradient(circle, var(--charcoal) 2px, transparent 2.5px)
-    left center / 12px 6px repeat-x;
+.brand-logo-hearts {
+  font-size: 0.7rem;
+  letter-spacing: 0.45em;
+  color: var(--rose-gold);
+  opacity: 0.85;
+  display: inline-flex;
+  align-items: center;
 }
 
 .brand-logo-script {
@@ -1526,9 +1517,9 @@ code {
     width: 200px;
   }
 
-  .brand-logo-line {
-    width: 28px;
-    background-size: 10px 6px;
+  .brand-logo-hearts {
+    font-size: 0.6rem;
+    letter-spacing: 0.35em;
   }
 
   .brand-logo-script {
