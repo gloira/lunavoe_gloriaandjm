@@ -277,29 +277,64 @@ p:last-child {
 
 .brand-logo {
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 180px;
-  height: 80px;
-  border-radius: 0;
-  overflow: hidden;
+  gap: 0.2rem;
+  width: 200px;
   background: transparent;
   transition: var(--transition-base);
 }
 
-.brand-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  transition: var(--transition-base);
-  background: transparent;
-  transform: scale(1.15);
+.brand-logo-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
-.brand-mark:hover .brand-logo img {
-  transform: scale(1.05);
+.brand-logo-line {
+  width: 72px;
+  height: 1px;
+  opacity: 0.7;
+}
+
+.brand-logo-line--left {
+  background: linear-gradient(90deg, transparent, var(--charcoal));
+}
+
+.brand-logo-line--right {
+  background: linear-gradient(90deg, var(--charcoal), transparent);
+}
+
+.brand-logo-script {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: var(--charcoal);
+}
+
+.brand-logo-names {
+  font-size: 0.55rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+}
+
+.brand-logo-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.55rem;
+  letter-spacing: 0.35em;
+  color: var(--charcoal-muted);
+}
+
+.brand-logo-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--charcoal-muted);
+  display: inline-block;
+  margin-top: 1px;
 }
 
 .brand-mark-sub {
@@ -1473,8 +1508,20 @@ code {
   }
   
   .brand-logo {
-    width: 150px;
-    height: 68px;
+    width: 170px;
+  }
+
+  .brand-logo-line {
+    width: 52px;
+  }
+
+  .brand-logo-script {
+    font-size: 1.8rem;
+  }
+
+  .brand-logo-names,
+  .brand-logo-date {
+    font-size: 0.5rem;
   }
   
   .hero-shell {
