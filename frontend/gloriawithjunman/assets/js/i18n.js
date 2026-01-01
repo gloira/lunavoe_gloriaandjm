@@ -5,6 +5,7 @@ window.I18N = {
     nav_venue: "Venue & Stay",
     nav_travel: "Travel Guide",
     nav_gallery: "Gallery",
+    nav_dresscode: "Dress Code",
     nav_rsvp: "RSVP",
     nav_close: "Close",
     brand_mark_main: "Gloria & Junman",
@@ -25,6 +26,9 @@ window.I18N = {
     page_title_gallery: "Gloria & Junman · Gallery",
     page_desc_gallery:
       "Photo gallery from Gloria and Junman's journey together and Bali wedding moments.",
+    page_title_dresscode: "Gloria & Junman · Dress Code",
+    page_desc_dresscode:
+      "Dress code inspiration for Gloria and Junman's Bali wedding in Uluwatu.",
     page_title_rsvp: "Gloria & Junman · RSVP",
     page_desc_rsvp:
       "RSVP for Gloria and Junman's Bali wedding. Let us know if you can make it!",
@@ -83,8 +87,6 @@ window.I18N = {
     venue_title: "Venue & stay",
     venue_intro:
       "Our ceremony and reception will take place at Stone Villas Uluwatu, a cliffside villa complex with sweeping ocean views.",
-    venue_story:
-      "The ceremony and dinner will both be held at Stone Villas Uluwatu, a cliffside villa estate with panoramic ocean views.",
     venue_gallery_title: "Venue glimpses",
 
     venue_fact_1:
@@ -171,6 +173,7 @@ window.I18N = {
     nav_venue: "婚礼场地与住宿",
     nav_travel: "旅行指南",
     nav_gallery: "照片集",
+    nav_dresscode: "着装要求",
     nav_rsvp: "出席回覆",
     nav_close: "关闭",
     brand_mark_main: "雨言和俊文",
@@ -190,6 +193,8 @@ window.I18N = {
       "乌鲁瓦图巴厘岛出行与游玩建议，供参加婚礼的亲友参考。",
     page_title_gallery: "雨言和俊文 · 照片集",
     page_desc_gallery: "记录我们与巴厘岛婚礼时刻的照片集。",
+    page_title_dresscode: "雨言和俊文 · 着装要求",
+    page_desc_dresscode: "婚礼着装建议与色彩参考。",
     page_title_rsvp: "雨言和俊文 · 出席回覆",
     page_desc_rsvp: "请填写出席回覆，告诉我们你是否能来参加婚礼。",
 
@@ -238,8 +243,6 @@ window.I18N = {
 
     venue_title: "婚礼场地与住宿",
     venue_intro:
-      "婚礼仪式与晚宴都会在 Stone Villas Uluwatu 举行，这是一处位于悬崖上的独栋别墅群，可以俯瞰整片海景。",
-    venue_story:
       "婚礼仪式与晚宴都会在 Stone Villas Uluwatu 举行，这是一处位于悬崖上的独栋别墅群，可以俯瞰整片海景。",
     venue_gallery_title: "场地掠影",
 
@@ -314,3 +317,27 @@ window.I18N = {
     footer_text: "雨言和俊文 · 巴厘岛 · 2026 · Lunavoe",
   },
 };
+    dresscode_title: "Dress Code",
+    dresscode_intro:
+      "Think airy, coastal, and effortless. Linen, light silk, soft cotton, or flowy fabrics are perfect for the cliffside breeze.",
+    dresscode_section_day_title: "Ceremony & dinner",
+    dresscode_section_day_body:
+      "Beach formal / resort chic. Light suits, linen sets, or midi dresses in sun‑faded neutrals and warm tones. Please avoid bright white.",
+    dresscode_section_night_title: "After party",
+    dresscode_section_night_body:
+      "Relaxed evening look. Bring a light layer and comfy shoes for the terrace and grass.",
+    dresscode_section_palette_title: "Suggested palette",
+    dresscode_section_palette_body:
+      "Sand, stone, ivory, terracotta, muted coral, seafoam, sage, and deep navy accents.",
+    dresscode_title: "着装要求",
+    dresscode_intro:
+      "整体氛围轻松、海边、通透。推荐亚麻、轻薄真丝、柔软棉质或飘逸面料，适合悬崖海风。",
+    dresscode_section_day_title: "仪式与晚宴",
+    dresscode_section_day_body:
+      "Beach formal / resort chic。浅色西装、亚麻套装或中长裙，建议选择柔和暖色与自然色系，请避免纯白。",
+    dresscode_section_night_title: "晚间派对",
+    dresscode_section_night_body:
+      "轻松舒适即可，建议带一件薄外套与好走的鞋。",
+    dresscode_section_palette_title: "推荐色系",
+    dresscode_section_palette_body:
+      "沙色、岩石灰、象牙白、陶土色、珊瑚粉、海雾绿、鼠尾草绿、深海蓝点缀。",
