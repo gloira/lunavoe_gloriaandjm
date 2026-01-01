@@ -279,10 +279,11 @@ p:last-child {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 112px;
-  height: 112px;
+  width: 180px;
+  height: 80px;
   border-radius: 0;
   overflow: hidden;
+  background: transparent;
   transition: var(--transition-base);
 }
 
@@ -294,6 +295,7 @@ p:last-child {
   display: block;
   transition: var(--transition-base);
   background: transparent;
+  transform: scale(1.15);
 }
 
 .brand-mark:hover .brand-logo img {
@@ -1462,8 +1464,8 @@ code {
   }
   
   .brand-logo {
-    width: 96px;
-    height: 96px;
+    width: 150px;
+    height: 68px;
   }
   
   .hero-shell {
