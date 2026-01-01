@@ -1,6 +1,6 @@
 (function () {
   const PASSWORD = "JMGLORIA2026";
-  const API_URL = "https://www.lunavoe.com/gloriawithjunman/rsvp";
+  const API_URL = "https://www.lunavoe.com/gloriawithjunman/rsvp-api";
 
   const pwdForm = document.getElementById("rsvp-password-form");
   const mainForm = document.getElementById("rsvp-main-form");
