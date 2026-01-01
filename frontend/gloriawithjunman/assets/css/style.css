@@ -281,20 +281,23 @@ p:last-child {
   justify-content: center;
   width: 112px;
   height: 112px;
-  border-radius: 12px;
+  border-radius: 0;
+  overflow: hidden;
   transition: var(--transition-base);
 }
 
 .brand-logo img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
   display: block;
   transition: var(--transition-base);
+  background: transparent;
 }
 
 .brand-mark:hover .brand-logo img {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 .brand-mark-sub {

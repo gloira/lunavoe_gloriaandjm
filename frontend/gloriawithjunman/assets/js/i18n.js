@@ -170,29 +170,29 @@ window.I18N = {
     nav_gallery: "照片集",
     nav_rsvp: "出席回覆",
     nav_close: "关闭",
-    brand_mark_main: "张雨言和陈俊文",
+    brand_mark_main: "雨言和俊文",
     brand_mark_sub: "乌鲁瓦图 · 巴厘岛",
-    top_bar: "张雨言和陈俊文 · 乌鲁瓦图 · 巴厘岛 · 2026年9月11日-13日",
-    page_title_home: "张雨言和陈俊文 · 巴厘岛婚礼周末",
+    top_bar: "雨言和俊文 · 乌鲁瓦图 · 巴厘岛 · 2026年9月11日-13日",
+    page_title_home: "雨言和俊文 · 巴厘岛婚礼周末",
     page_desc_home:
-      "欢迎参加张雨言和陈俊文在巴厘岛乌鲁瓦图的婚礼（2026年9月11-13日）。一个关于爱、落日与星空舞会的周末。",
-    page_title_schedule: "张雨言和陈俊文 · 周末行程",
+      "欢迎参加雨言和俊文在巴厘岛乌鲁瓦图的婚礼（2026年9月11-13日）。一个关于爱、落日与星空舞会的周末。",
+    page_title_schedule: "雨言和俊文 · 周末行程",
     page_desc_schedule:
       "查看我们巴厘岛婚礼的周末行程：周五抵达、周六婚礼、周日自由安排。",
-    page_title_venue: "张雨言和陈俊文 · 场地与住宿",
+    page_title_venue: "雨言和俊文 · 场地与住宿",
     page_desc_venue:
       "婚礼场地与住宿信息：巴厘岛乌鲁瓦图 Stone Villas。",
-    page_title_travel: "张雨言和陈俊文 · 出行指南",
+    page_title_travel: "雨言和俊文 · 出行指南",
     page_desc_travel:
       "乌鲁瓦图巴厘岛出行与游玩建议，供参加婚礼的亲友参考。",
-    page_title_gallery: "张雨言和陈俊文 · 照片集",
+    page_title_gallery: "雨言和俊文 · 照片集",
     page_desc_gallery: "记录我们与巴厘岛婚礼时刻的照片集。",
-    page_title_rsvp: "张雨言和陈俊文 · 出席回覆",
+    page_title_rsvp: "雨言和俊文 · 出席回覆",
     page_desc_rsvp: "请填写出席回覆，告诉我们你是否能来参加婚礼。",
 
     hero_script: "我们要结婚啦",
     hero_names: "Gloria Zhang &amp; Junman Chin",
-    hero_names_cn: "张雨言 · 陈俊文",
+    hero_names_cn: "雨言 · 俊文",
     hero_dateplace: "乌鲁瓦图 · 巴厘岛 · 2026年9月11日-13日",
     hero_copy:
       "欢迎你来到巴厘岛乌鲁瓦图的海边，与我们一起在悬崖之上、日落和海风中见证这一刻。",
@@ -305,6 +305,6 @@ window.I18N = {
     rsvp_status_success: "谢谢！我们已经收到你的出席回覆 🥂",
     rsvp_status_error: "抱歉，提交失败，请稍后重试，或直接联系我们。",
 
-    footer_text: "张雨言和陈俊文 · 巴厘岛 · 2026 · Lunavoe",
+    footer_text: "雨言和俊文 · 巴厘岛 · 2026 · Lunavoe",
   },
 };
