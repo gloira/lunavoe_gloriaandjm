@@ -279,8 +279,8 @@ p:last-child {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 56px;
+  width: 112px;
+  height: 112px;
   border-radius: 12px;
   transition: var(--transition-base);
 }
@@ -708,6 +708,10 @@ p:last-child {
   width: 2rem;
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--champagne));
+}
+
+.hero-name-block {
+  text-align: center;
 }
 
 .hero-names {
@@ -1455,8 +1459,8 @@ code {
   }
   
   .brand-logo {
-    width: 48px;
-    height: 48px;
+    width: 96px;
+    height: 96px;
   }
   
   .hero-shell {
