@@ -275,15 +275,25 @@ p:last-child {
   transform: translateY(-2px);
 }
 
-.brand-mark-main {
-  font-family: 'Great Vibes', cursive;
-  font-size: 1.8rem;
-  line-height: 1;
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid var(--blush-deep);
+  background: var(--cream);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.18em;
+  text-indent: 0.18em;
   color: var(--charcoal);
   transition: var(--transition-base);
 }
 
-.brand-mark:hover .brand-mark-main {
+.brand-mark:hover .brand-logo {
+  border-color: var(--rose-gold);
   color: var(--rose-gold);
 }
 
@@ -293,6 +303,17 @@ p:last-child {
   text-transform: uppercase;
   color: var(--charcoal-muted);
   margin-top: 0.15rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 /* Navigation Links */
@@ -692,6 +713,17 @@ p:last-child {
   line-height: 1.1;
   color: var(--charcoal);
   margin-bottom: 1rem;
+}
+
+html[lang="zh-Hans"] .hero-names {
+  font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  font-size: 3.2rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+
+html[lang="zh-Hans"] .brand-mark-sub {
+  letter-spacing: 0.12em;
 }
 
 .hero-dateplace {
@@ -1413,8 +1445,10 @@ code {
     padding: 0.4rem 1rem;
   }
   
-  .brand-mark-main {
-    font-size: 1.5rem;
+  .brand-logo {
+    width: 40px;
+    height: 40px;
+    font-size: 0.95rem;
   }
   
   .hero-shell {
