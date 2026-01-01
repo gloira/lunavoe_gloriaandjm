@@ -9,6 +9,24 @@ window.I18N = {
     brand_mark_main: "Gloria & Junman",
     brand_mark_sub: "Uluwatu · Bali",
     top_bar: "Gloria & Junman · Uluwatu, Bali · September 11–13, 2026",
+    page_title_home: "Gloria & Junman · Bali Wedding Weekend",
+    page_desc_home:
+      "Join Gloria and Junman for their wedding celebration in Uluwatu, Bali on September 11-13, 2026. A weekend of love, sunset views, and dancing under the stars.",
+    page_title_schedule: "Gloria & Junman · Weekend Schedule",
+    page_desc_schedule:
+      "View the weekend schedule for Gloria and Junman's Bali wedding. Friday arrival, Saturday ceremony, and Sunday at your own pace.",
+    page_title_venue: "Gloria & Junman · Venue & Stay",
+    page_desc_venue:
+      "Venue and accommodation details for Gloria and Junman's wedding at Stone Villas Uluwatu, Bali.",
+    page_title_travel: "Gloria & Junman · Travel Guide",
+    page_desc_travel:
+      "Travel guide and recommendations for visiting Uluwatu, Bali for Gloria and Junman's wedding.",
+    page_title_gallery: "Gloria & Junman · Gallery",
+    page_desc_gallery:
+      "Photo gallery from Gloria and Junman's journey together and Bali wedding moments.",
+    page_title_rsvp: "Gloria & Junman · RSVP",
+    page_desc_rsvp:
+      "RSVP for Gloria and Junman's Bali wedding. Let us know if you can make it!",
 
     hero_script: "We\u2019re getting married",
     hero_names: "Gloria Zhang &amp; Junman Chin",
@@ -152,6 +170,22 @@ window.I18N = {
     brand_mark_main: "张雨言和陈俊文",
     brand_mark_sub: "乌鲁瓦图 · 巴厘岛",
     top_bar: "张雨言和陈俊文 · 乌鲁瓦图 · 巴厘岛 · 2026年9月11日-13日",
+    page_title_home: "张雨言和陈俊文 · 巴厘岛婚礼周末",
+    page_desc_home:
+      "欢迎参加张雨言和陈俊文在巴厘岛乌鲁瓦图的婚礼（2026年9月11-13日）。一个关于爱、落日与星空舞会的周末。",
+    page_title_schedule: "张雨言和陈俊文 · 周末行程",
+    page_desc_schedule:
+      "查看我们巴厘岛婚礼的周末行程：周五抵达、周六婚礼、周日自由安排。",
+    page_title_venue: "张雨言和陈俊文 · 场地与住宿",
+    page_desc_venue:
+      "婚礼场地与住宿信息：巴厘岛乌鲁瓦图 Stone Villas。",
+    page_title_travel: "张雨言和陈俊文 · 出行指南",
+    page_desc_travel:
+      "乌鲁瓦图巴厘岛出行与游玩建议，供参加婚礼的亲友参考。",
+    page_title_gallery: "张雨言和陈俊文 · 照片集",
+    page_desc_gallery: "记录我们与巴厘岛婚礼时刻的照片集。",
+    page_title_rsvp: "张雨言和陈俊文 · 出席回覆",
+    page_desc_rsvp: "请填写出席回覆，告诉我们你是否能来参加婚礼。",
 
     hero_script: "我们要结婚啦",
     hero_names: "张雨言和陈俊文",

@@ -33,6 +33,14 @@
       }
     });
 
+    document.querySelectorAll("[data-i18n-content]").forEach((el) => {
+      const key = el.getAttribute("data-i18n-content");
+      const val = dict[key];
+      if (val != null) {
+        el.setAttribute("content", val);
+      }
+    });
+
     const topBar = document.querySelector("[data-i18n-topbar]");
     if (topBar && dict.top_bar) {
       topBar.textContent = dict.top_bar;
