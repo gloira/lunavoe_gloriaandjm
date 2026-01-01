@@ -7,6 +7,9 @@
   const pwdStatus = document.getElementById("rsvp-password-status");
   const rsvpStatus = document.getElementById("rsvp-status");
 
+  // Store the validated password
+  let validatedPassword = null;
+
   function currentLangDict() {
     const langKey =
       window.localStorage.getItem("lunavoe_lang") === "zh" ? "zh" : "en";
@@ -31,6 +34,8 @@
         pwdStatus.className = "rsvp-status rsvp-status--error";
         return;
       }
+      // Store the validated password for API submission
+      validatedPassword = val;
       pwdStatus.textContent = "";
       pwdForm.style.display = "none";
       mainForm.style.display = "block";
@@ -60,10 +65,22 @@
         const res = await fetch(API_URL, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name, attending, message }),
+          // Include the passcode that the backend expects
+          body: JSON.stringify({ 
+            passcode: validatedPassword,
+            name, 
+            attending, 
+            message 
+          }),
         });
         if (!res.ok) throw new Error("Network error");
         const data = await res.json();
+        
+        // Check for invalid password response from backend
+        if (data.status === "invalid_password") {
+          throw new Error("Invalid password");
+        }
+        
         if (data.status !== "success") throw new Error("Bad response");
 
         rsvpStatus.textContent = dict.rsvp_status_success;
