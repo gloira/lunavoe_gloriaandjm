@@ -768,6 +768,8 @@ html[lang="zh-Hans"] .brand-mark-sub {
   line-height: 1.8;
   color: var(--charcoal-soft);
   max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 2rem;
 }
 
