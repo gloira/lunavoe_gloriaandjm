@@ -1187,7 +1187,15 @@ html[lang="zh-Hans"] .brand-mark-sub {
 
 /* Venue gallery slider */
 .venue-gallery {
-  margin-top: 2.5rem;
+  margin: 2.5rem 0 3rem;
+}
+
+.venue-gallery-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .venue-gallery-title {
@@ -1195,37 +1203,44 @@ html[lang="zh-Hans"] .brand-mark-sub {
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--charcoal-muted);
-  text-align: center;
-  margin-bottom: 1rem;
+}
+
+.venue-gallery-controls {
+  display: inline-flex;
+  gap: 0.5rem;
+}
+
+.venue-gallery-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid var(--rose-gold);
+  background: var(--ivory);
+  color: var(--charcoal);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.venue-gallery-btn:hover {
+  background: var(--blush);
 }
 
 .venue-gallery-track {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: minmax(260px, 1fr);
-  gap: 1.25rem;
+  display: flex;
   overflow-x: auto;
-  padding: 0 1rem 1rem;
   scroll-snap-type: x mandatory;
-  scroll-padding: 1rem;
+  scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
 
 .venue-gallery-track::-webkit-scrollbar {
-  height: 6px;
-}
-
-.venue-gallery-track::-webkit-scrollbar-thumb {
-  background: rgba(30, 43, 57, 0.25);
-  border-radius: 999px;
-}
-
-.venue-gallery-track::-webkit-scrollbar-track {
-  background: rgba(30, 43, 57, 0.08);
-  border-radius: 999px;
+  display: none;
 }
 
 .venue-gallery-card {
+  flex: 0 0 100%;
   scroll-snap-align: center;
   border-radius: 18px;
   overflow: hidden;
@@ -1235,18 +1250,9 @@ html[lang="zh-Hans"] .brand-mark-sub {
 
 .venue-gallery-img {
   width: 100%;
-  height: 280px;
+  height: 360px;
   object-fit: cover;
   display: block;
-}
-
-.venue-gallery-hint {
-  text-align: center;
-  font-size: 0.75rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--charcoal-muted);
-  margin-top: 0.75rem;
 }
 
 .venue-pill {
@@ -1598,6 +1604,15 @@ code {
   .brand-logo-names,
   .brand-logo-date {
     font-size: 0.55rem;
+  }
+
+  .venue-gallery-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .venue-gallery-img {
+    height: 240px;
   }
   
   .hero-shell {

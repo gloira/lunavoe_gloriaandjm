@@ -102,8 +102,31 @@
     });
   }
 
+  function setupVenueGallery() {
+    const track = document.querySelector("[data-venue-track]");
+    if (!track) return;
+
+    const prev = document.querySelector("[data-venue-prev]");
+    const next = document.querySelector("[data-venue-next]");
+
+    function scrollByCard(direction) {
+      const card = track.querySelector(".venue-gallery-card");
+      const width = card ? card.getBoundingClientRect().width : track.clientWidth;
+      track.scrollBy({ left: width * direction, behavior: "smooth" });
+    }
+
+    if (prev) {
+      prev.addEventListener("click", () => scrollByCard(-1));
+    }
+
+    if (next) {
+      next.addEventListener("click", () => scrollByCard(1));
+    }
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     setupLanguage();
     setupNav();
+    setupVenueGallery();
   });
 })();

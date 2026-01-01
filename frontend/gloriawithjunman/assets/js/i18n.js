@@ -83,6 +83,9 @@ window.I18N = {
     venue_title: "Venue & stay",
     venue_intro:
       "Our ceremony and reception will take place at Stone Villas Uluwatu, a cliffside villa complex with sweeping ocean views.",
+    venue_story:
+      "The ceremony and dinner will both be held at Stone Villas Uluwatu, a cliffside villa estate with panoramic ocean views.",
+    venue_gallery_title: "Venue glimpses",
 
     venue_fact_1:
       "Stone Villas Uluwatu · Banjar Dinas Karang Boma, Jl. Raya Uluwatu Pecatu, Bali.",
@@ -236,6 +239,9 @@ window.I18N = {
     venue_title: "婚礼场地与住宿",
     venue_intro:
       "婚礼仪式与晚宴都会在 Stone Villas Uluwatu 举行，这是一处位于悬崖上的独栋别墅群，可以俯瞰整片海景。",
+    venue_story:
+      "婚礼仪式与晚宴都会在 Stone Villas Uluwatu 举行，这是一处位于悬崖上的独栋别墅群，可以俯瞰整片海景。",
+    venue_gallery_title: "场地掠影",
 
     venue_fact_1:
       "Stone Villas Uluwatu · Banjar Dinas Karang Boma, Jl. Raya Uluwatu Pecatu, Bali。",
