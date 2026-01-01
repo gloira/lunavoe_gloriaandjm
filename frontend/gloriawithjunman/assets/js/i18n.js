@@ -31,6 +31,7 @@ window.I18N = {
 
     hero_script: "We\u2019re getting married",
     hero_names: "Gloria Zhang &amp; Junman Chin",
+    hero_names_cn: "",
     hero_dateplace: "Uluwatu · Bali · September 11–13, 2026",
     hero_copy:
       "Join us on a cliffside in Uluwatu for a relaxed, sea-breeze weekend of vows, sunset cocktails, and dancing under the stars.",
@@ -190,7 +191,8 @@ window.I18N = {
     page_desc_rsvp: "请填写出席回覆，告诉我们你是否能来参加婚礼。",
 
     hero_script: "我们要结婚啦",
-    hero_names: "张雨言 · 陈俊文",
+    hero_names: "Gloria Zhang &amp; Junman Chin",
+    hero_names_cn: "张雨言 · 陈俊文",
     hero_dateplace: "乌鲁瓦图 · 巴厘岛 · 2026年9月11日-13日",
     hero_copy:
       "欢迎你来到巴厘岛乌鲁瓦图的海边，与我们一起在悬崖之上、日落和海风中见证这一刻。",

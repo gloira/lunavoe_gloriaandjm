@@ -276,24 +276,50 @@ p:last-child {
 }
 
 .brand-logo {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 46px;
-  height: 46px;
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
-  border: 1px solid var(--blush-deep);
-  background: var(--cream);
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.05rem;
-  letter-spacing: 0.18em;
-  text-indent: 0.18em;
+  border: 1px solid var(--rose-gold);
+  background: radial-gradient(circle at 30% 30%, var(--cream), var(--blush-light));
   color: var(--charcoal);
   transition: var(--transition-base);
 }
 
+.brand-logo::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border-radius: 50%;
+  border: 1px solid var(--blush-deep);
+}
+
+.brand-logo-letter {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  letter-spacing: 0;
+  color: var(--charcoal);
+}
+
+.brand-logo-letter--left {
+  left: 46%;
+}
+
+.brand-logo-letter--right {
+  left: 56%;
+}
+
 .brand-mark:hover .brand-logo {
-  border-color: var(--rose-gold);
+  border-color: var(--champagne);
+}
+
+.brand-mark:hover .brand-logo-letter {
   color: var(--rose-gold);
 }
 
@@ -715,14 +741,20 @@ p:last-child {
   font-size: 4rem;
   line-height: 1.1;
   color: var(--charcoal);
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 
-html[lang="zh-Hans"] .hero-names {
+.hero-names-cn {
   font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
-  font-size: 3.2rem;
+  font-size: 1rem;
   font-weight: 500;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.2em;
+  color: var(--charcoal-muted);
+  margin-bottom: 1.4rem;
+}
+
+.hero-names-cn:empty {
+  display: none;
 }
 
 html[lang="zh-Hans"] .brand-mark-sub {
@@ -1449,9 +1481,12 @@ code {
   }
   
   .brand-logo {
-    width: 40px;
-    height: 40px;
-    font-size: 0.95rem;
+    width: 46px;
+    height: 46px;
+  }
+
+  .brand-logo-letter {
+    font-size: 1.7rem;
   }
   
   .hero-shell {
