@@ -175,7 +175,7 @@ window.I18N = {
     dresscode_gents_group_jackets: "Jackets & Formal",
     dresscode_gents_body: "A clean, polished look is perfect \u2014 jackets are optional.",
     dresscode_gents_options_label: "Easy & safe options:",
-    dresscode_gents_shirt_palette_label: "Shirt / polo colors:",
+    dresscode_gents_shirt_palette_label: "Shirt / polo / jacket colors:",
     dresscode_gents_trouser_palette_label: "Trouser colors:",
     dresscode_gents_accent_palette_label: "Optional accents:",
     dresscode_gents_option_1: "White or light blue shirt",
@@ -184,7 +184,7 @@ window.I18N = {
     dresscode_gents_option_3:
       "Tailored trousers (beige / khaki / white / warm grey)",
     dresscode_gents_color_note:
-      "Colour note (optional): Gentlemen may also wear the ladies' palette (blush / butter yellow / champagne) as a shirt or polo, paired with neutral trousers.",
+      "Colour note (optional): Gentlemen may also wear the ladies' palette (blush / butter yellow / champagne) as a shirt or polo, paired with neutral trousers (beige / khaki / white / warm grey / warm ivory).",
     dresscode_avoid_title: "Please Avoid (Important)",
     dresscode_avoid_note:
       "To keep the ceremony atmosphere formal/semi-formal, kindly avoid overly casual outfits such as:",
@@ -232,6 +232,7 @@ window.I18N = {
     dresscode_color_khaki: "Khaki",
     dresscode_color_light_brown: "Light Brown",
     dresscode_color_warm_grey: "Warm Grey",
+    dresscode_color_warm_ivory: "Warm Ivory",
     dresscode_color_blush: "Blush",
     dresscode_color_butter_yellow: "Butter Yellow",
     dresscode_color_champagne: "Champagne",
@@ -427,7 +428,7 @@ window.I18N = {
     dresscode_gents_group_jackets: "\u5916\u5957/\u6b63\u88c5",
     dresscode_gents_body: "\u6574\u4f53\u4fdd\u6301\u6e05\u723d\u5229\u843d\u5373\u53ef, \u5916\u5957\u975e\u5fc5\u987b.",
     dresscode_gents_options_label: "\u7b80\u5355\u5b89\u5168\u642d\u914d:",
-    dresscode_gents_shirt_palette_label: "\u886c\u886b / Polo \u989c\u8272\uff1a",
+    dresscode_gents_shirt_palette_label: "\u886c\u886b / Polo / \u5916\u5957 \u989c\u8272\uff1a",
     dresscode_gents_trouser_palette_label: "\u88e4\u88c5\u989c\u8272\uff1a",
     dresscode_gents_accent_palette_label: "\u70b9\u7f00\u8272\uff08\u53ef\u9009\uff09\uff1a",
     dresscode_gents_option_1: "\u767d\u886c\u886b\u6216\u6d45\u84dd\u886c\u886b",
@@ -436,7 +437,7 @@ window.I18N = {
     dresscode_gents_option_3:
       "\u7c73\u8272 / \u5361\u5176 / \u767d\u8272 / \u6696\u7070\u7684\u957f\u88e4 (\u897f\u88e4\u6216\u4e9a\u9ebb\u88e4\u5747\u53ef)",
     dresscode_gents_color_note:
-      "\u989c\u8272\u8865\u5145 (\u53ef\u9009): \u7537\u58eb\u4e5f\u53ef\u5c06\u6d45\u7c89 / \u5976\u6cb9\u9ec4 / \u9999\u69df\u8272\u4f5c\u4e3a\u886c\u886b\u6216 Polo \u7684\u989c\u8272\u70b9\u7f00, \u4e0b\u88c5\u642d\u914d\u4e2d\u6027\u8272\u5373\u53ef.",
+      "\u989c\u8272\u8865\u5145 (\u53ef\u9009): \u7537\u58eb\u4e5f\u53ef\u5c06\u6d45\u7c89 / \u5976\u6cb9\u9ec4 / \u9999\u69df\u8272\u4f5c\u4e3a\u886c\u886b\u6216 Polo \u7684\u989c\u8272\u70b9\u7f00, \u4e0b\u88c5\u642d\u914d\u4e2d\u6027\u8272 (\u7c73\u8272 / \u5361\u5176 / \u767d\u8272 / \u6696\u7070 / \u6696\u8c61\u7259\u767d) \u5373\u53ef.",
     dresscode_avoid_title: "\u8bf7\u907f\u514d (\u91cd\u8981)",
     dresscode_avoid_note: "\u4e3a\u4fdd\u6301\u4eea\u5f0f\u6c1b\u56f4, \u8bf7\u5c3d\u91cf\u907f\u514d\u8fc7\u4e8e\u4f11\u95f2\u7684\u7a7f\u642d, \u4f8b\u5982:",
     dresscode_avoid_item_1: "T \u6064 / \u80cc\u5fc3",
@@ -482,6 +483,7 @@ window.I18N = {
     dresscode_color_khaki: "\u5361\u5176",
     dresscode_color_light_brown: "\u6d45\u68d5",
     dresscode_color_warm_grey: "\u6696\u7070",
+    dresscode_color_warm_ivory: "\u6696\u8c61\u7259\u767d",
     dresscode_color_blush: "\u6d45\u7c89",
     dresscode_color_butter_yellow: "\u5976\u6cb9\u9ec4",
     dresscode_color_champagne: "\u9999\u69df\u8272",
