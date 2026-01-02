@@ -1378,6 +1378,16 @@ html[lang="zh-Hans"] .brand-mark-sub {
 }
 
 @media (min-width: 768px) {
+  .dc-group-note {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .dc-group-note::after {
+    content: "\2190\00a0\2192";
+  }
+
   .dc-avoid-list {
     columns: 2;
   }
