@@ -182,7 +182,7 @@ window.I18N = {
     dresscode_gents_option_2:
       "Light linen shirt or a dressy polo (white / beige / light blue / light grey)",
     dresscode_gents_option_3:
-      "Tailored trousers (beige / khaki / light brown / warm grey)",
+      "Tailored trousers (beige / khaki / white / warm grey)",
     dresscode_gents_color_note:
       "Colour note (optional): Gentlemen may also wear the ladies' palette (blush / butter yellow / champagne) as a shirt or polo, paired with neutral trousers.",
     dresscode_avoid_title: "Please Avoid (Important)",
@@ -434,7 +434,7 @@ window.I18N = {
     dresscode_gents_option_2:
       "\u6d45\u8272\u4e9a\u9ebb\u886c\u886b\u6216\u504f\u6b63\u5f0f\u7684 Polo (\u767d / \u7c73 / \u6d45\u84dd / \u6d45\u7070)",
     dresscode_gents_option_3:
-      "\u7c73\u8272 / \u5361\u5176 / \u6d45\u68d5 / \u6696\u7070\u7684\u957f\u88e4 (\u897f\u88e4\u6216\u4e9a\u9ebb\u88e4\u5747\u53ef)",
+      "\u7c73\u8272 / \u5361\u5176 / \u767d\u8272 / \u6696\u7070\u7684\u957f\u88e4 (\u897f\u88e4\u6216\u4e9a\u9ebb\u88e4\u5747\u53ef)",
     dresscode_gents_color_note:
       "\u989c\u8272\u8865\u5145 (\u53ef\u9009): \u7537\u58eb\u4e5f\u53ef\u5c06\u6d45\u7c89 / \u5976\u6cb9\u9ec4 / \u9999\u69df\u8272\u4f5c\u4e3a\u886c\u886b\u6216 Polo \u7684\u989c\u8272\u70b9\u7f00, \u4e0b\u88c5\u642d\u914d\u4e2d\u6027\u8272\u5373\u53ef.",
     dresscode_avoid_title: "\u8bf7\u907f\u514d (\u91cd\u8981)",

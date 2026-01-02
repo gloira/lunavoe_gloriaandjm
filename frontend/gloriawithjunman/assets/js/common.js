@@ -124,9 +124,30 @@
     }
   }
 
+  function setupScrollGalleries() {
+    document.querySelectorAll("[data-scroll-prev], [data-scroll-next]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const group = btn.closest(".dc-group");
+        if (!group) return;
+
+        const track = group.querySelector("[data-scroll-gallery]");
+        if (!track) return;
+
+        const card = track.querySelector("figure");
+        const width = card ? card.getBoundingClientRect().width : track.clientWidth;
+        const style = window.getComputedStyle(track);
+        const gap = parseFloat(style.columnGap || style.gap || 0) || 0;
+        const direction = btn.hasAttribute("data-scroll-prev") ? -1 : 1;
+
+        track.scrollBy({ left: (width + gap) * direction, behavior: "smooth" });
+      });
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     setupLanguage();
     setupNav();
     setupVenueGallery();
+    setupScrollGalleries();
   });
 })();
