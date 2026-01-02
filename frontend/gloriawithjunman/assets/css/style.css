@@ -1160,6 +1160,36 @@ html[lang="zh-Hans"] .brand-mark-sub {
   margin-bottom: 1.5rem;
 }
 
+.dc-group {
+  margin-bottom: 2rem;
+}
+
+.dc-group:last-of-type {
+  margin-bottom: 0;
+}
+
+.dc-group-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.dc-group-title {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--charcoal-muted);
+}
+
+.dc-group-note {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--champagne);
+}
+
 .dc-label {
   font-size: 0.75rem;
   letter-spacing: 0.2em;
@@ -1179,6 +1209,25 @@ html[lang="zh-Hans"] .brand-mark-sub {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
   margin-bottom: 1.5rem;
+}
+
+.dc-gallery--scroll {
+  grid-template-columns: none;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(180px, 1fr);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 0.5rem;
+}
+
+.dc-gallery--scroll figure {
+  scroll-snap-align: start;
+}
+
+.dc-gallery--scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .dc-gallery figure {
@@ -1412,7 +1461,7 @@ html[lang="zh-Hans"] .brand-mark-sub {
 }
 
 .travel-list li::before {
-  content: '→';
+  content: '\\2022';
   position: absolute;
   left: 0;
   color: var(--champagne);

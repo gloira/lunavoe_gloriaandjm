@@ -9,33 +9,33 @@ window.I18N = {
     nav_rsvp: "RSVP",
     nav_close: "Close",
     brand_mark_main: "Gloria & Junman",
-    brand_mark_sub: "Uluwatu Â· Bali",
-    top_bar: "Gloria & Junman Â· Uluwatu, Bali Â· September 11â€“13, 2026",
-    page_title_home: "Gloria & Junman Â· Bali Wedding Weekend",
+    brand_mark_sub: "Uluwatu \u00b7 Bali",
+    top_bar: "Gloria & Junman \u00b7 Uluwatu, Bali \u00b7 September 11\u201313, 2026",
+    page_title_home: "Gloria & Junman \u00b7 Bali Wedding Weekend",
     page_desc_home:
-      "Join Gloria and Junman for their wedding celebration in Uluwatu, Bali on September 11â€“13, 2026. A weekend of love, sunset views, and dancing under the stars.",
-    page_title_schedule: "Gloria & Junman Â· Weekend Schedule",
+      "Join Gloria and Junman for their wedding celebration in Uluwatu, Bali on September 11\u201313, 2026. A weekend of love, sunset views, and dancing under the stars.",
+    page_title_schedule: "Gloria & Junman \u00b7 Weekend Schedule",
     page_desc_schedule:
       "View the weekend schedule for Gloria and Junman's Bali wedding. Friday arrival, Saturday ceremony, and Sunday at your own pace.",
-    page_title_venue: "Gloria & Junman Â· Venue & Stay",
+    page_title_venue: "Gloria & Junman \u00b7 Venue & Stay",
     page_desc_venue:
       "Venue and accommodation details for Gloria and Junman's wedding at Stone Villas Uluwatu, Bali.",
-    page_title_travel: "Gloria & Junman Â· Travel Guide",
+    page_title_travel: "Gloria & Junman \u00b7 Travel Guide",
     page_desc_travel:
       "Travel guide and recommendations for visiting Uluwatu, Bali for Gloria and Junman's wedding.",
-    page_title_gallery: "Gloria & Junman Â· Gallery",
+    page_title_gallery: "Gloria & Junman \u00b7 Gallery",
     page_desc_gallery:
       "Photo gallery from Gloria and Junman's journey together and Bali wedding moments.",
-    page_title_dresscode: "Gloria & Junman Â· Dress Code",
+    page_title_dresscode: "Gloria & Junman \u00b7 Dress Code",
     page_desc_dresscode:
       "Dress code inspiration for Gloria and Junman's Bali wedding in Uluwatu.",
-    page_title_rsvp: "Gloria & Junman Â· RSVP",
+    page_title_rsvp: "Gloria & Junman \u00b7 RSVP",
     page_desc_rsvp:
       "RSVP for Gloria and Junman's Bali wedding. Let us know if you can make it!",
     hero_script: "We're getting married",
     hero_names: "Gloria &amp; Junman",
     hero_names_cn: "",
-    hero_dateplace: "Uluwatu Â· Bali Â· September 11â€“13, 2026",
+    hero_dateplace: "Uluwatu \u00b7 Bali \u00b7 September 11\u201313, 2026",
     hero_copy:
       "Join us on a cliffside in Uluwatu for a relaxed, sea-breeze weekend of vows, sunset cocktails, and dancing under the stars.",
     hero_cta_primary: "RSVP",
@@ -49,28 +49,28 @@ window.I18N = {
     home_highlight_2:
       "Slow mornings, coffee with a view, and optional adventures around Bali.",
     home_highlight_3:
-      "No strict program on Sunday â€” sleep in, brunch, or continue your island journey.",
+      "No strict program on Sunday \u2014 sleep in, brunch, or continue your island journey.",
     home_story_title: "Our Story",
     home_story_body: "A glimpse of our journey together.",
     schedule_title: "Weekend schedule",
     schedule_intro:
       "We've kept things simple so you have plenty of time to enjoy Bali on your own as well.",
-    schedule_fri_label: "Friday Â· Settle in",
+    schedule_fri_label: "Friday \u00b7 Settle in",
     schedule_fri_meta: "Check-in & free time",
     schedule_fri_1: "Check into your villa or hotel in Uluwatu.",
     schedule_fri_2:
       "Spend the afternoon by the pool, at a cafe, or exploring nearby beaches.",
     schedule_fri_3:
-      "Evening at your own pace â€” feel free to gather with friends for dinner or sunset drinks.",
-    schedule_sat_label: "Saturday Â· Wedding day",
+      "Evening at your own pace \u2014 feel free to gather with friends for dinner or sunset drinks.",
+    schedule_sat_label: "Saturday \u00b7 Wedding day",
     schedule_sat_meta: "Ceremony & celebration",
-    schedule_sat_1: "15:30 Â· Guest arrival & check-in at Stone Villas Uluwatu.",
-    schedule_sat_2: "16:00 Â· Cliffside ceremony.",
-    schedule_sat_3: "17:00 Â· Sunset cocktails & photos.",
-    schedule_sat_4: "19:00 Â· Dinner under the lights.",
-    schedule_sat_5: "22:00 Â· After party by the pool.",
-    schedule_sat_6: "01:00 Â· Formal events end.",
-    schedule_sun_label: "Sunday Â· Slow goodbyes",
+    schedule_sat_1: "15:30 \u00b7 Guest arrival & check-in at Stone Villas Uluwatu.",
+    schedule_sat_2: "16:00 \u00b7 Cliffside ceremony.",
+    schedule_sat_3: "17:00 \u00b7 Sunset cocktails & photos.",
+    schedule_sat_4: "19:00 \u00b7 Dinner under the lights.",
+    schedule_sat_5: "22:00 \u00b7 After party by the pool.",
+    schedule_sat_6: "01:00 \u00b7 Formal events end.",
+    schedule_sun_label: "Sunday \u00b7 Slow goodbyes",
     schedule_sun_meta: "No formal program",
     schedule_sun_1: "Slow breakfast, pool time, or a gentle spa morning.",
     schedule_sun_2: "Head to the airport or move on to Seminyak, Canggu, etc.",
@@ -81,13 +81,13 @@ window.I18N = {
       "Our ceremony and reception will take place at Stone Villas Uluwatu, a cliffside villa complex with sweeping ocean views.",
     venue_gallery_title: "Venue glimpses",
     venue_fact_1:
-      "Stone Villas Uluwatu Â· Banjar Dinas Karang Boma, Jl. Raya Uluwatu Pecatu, Bali.",
+      "Stone Villas Uluwatu \u00b7 Banjar Dinas Karang Boma, Jl. Raya Uluwatu Pecatu, Bali.",
     venue_fact_2:
-      "Some guests will stay on-site at the villas, others in nearby hotels â€” we'll coordinate rooms within the group chat.",
+      "Some guests will stay on-site at the villas, others in nearby hotels \u2014 we'll coordinate rooms within the group chat.",
     venue_fact_3:
       "The venue is on a cliff; please plan for comfortable shoes and a light layer for the evening breeze.",
     venue_note:
-      "We'll confirm specific room assignments and transfer details closer to the date. If you prefer to stay off-site, we'll share a short list of hotels and villas within a 10â€“15 minute drive.",
+      "We'll confirm specific room assignments and transfer details closer to the date. If you prefer to stay off-site, we'll share a short list of hotels and villas within a 10\u201315 minute drive.",
     travel_title: "Travel guide",
     travel_intro:
       "Here are some ideas for how to spend your free time in Uluwatu and a few suggestions if you continue your trip to other parts of Bali.",
@@ -114,7 +114,7 @@ window.I18N = {
     travel_extend_li3:
       "Ubud or the mountains: rice terraces, temples, and cooler air if you'd like a contrast to the ocean.",
     travel_extend_li4:
-      "If you're unsure where to stay, feel free to ask us â€” we're happy to help with suggestions.",
+      "If you're unsure where to stay, feel free to ask us \u2014 we're happy to help with suggestions.",
     gallery_title: "Gallery",
     gallery_intro:
       "A little moodboard of Bali and some space reserved for our photos. We'll also share a link here after the wedding where guests can upload their own pictures.",
@@ -123,8 +123,8 @@ window.I18N = {
     rsvp_title: "RSVP",
     rsvp_intro:
       "Because space at the venue is limited, please help us by responding as accurately as you can. You'll be able to update us later if plans change.",
-    rsvp_step1: "Step 1 Â· Guest access",
-    rsvp_step2: "Step 2 Â· Your details",
+    rsvp_step1: "Step 1 \u00b7 Guest access",
+    rsvp_step2: "Step 2 \u00b7 Your details",
     rsvp_password_label: "Wedding password",
     rsvp_password_hint:
       "You'll find this on your invitation. Please keep it within close friends & family only.",
@@ -144,13 +144,14 @@ window.I18N = {
     rsvp_status_pwd_missing: "Please enter the wedding password.",
     rsvp_status_pwd_wrong:
       "That password doesn't look right. Please check your invitation.",
-    rsvp_status_sending: "Sending your RSVPâ€¦",
+    rsvp_status_sending: "Sending your RSVP\u2026",
     rsvp_status_missing:
       "Please fill in your name and whether you will attend.",
     rsvp_status_success: "Thank you! We've received your RSVP.",
     rsvp_status_error:
       "Sorry, something went wrong. Please try again later or contact us directly.",
-    footer_text: "Gloria & Junman Â· Bali Â· 2026 Â· Lunavoe",    dresscode_title: "Dress Code",
+    footer_text: "Gloria & Junman \u00b7 Bali \u00b7 2026 \u00b7 Lunavoe",
+    dresscode_title: "Dress Code",
     dresscode_eyebrow: "Guest Guide",
     dresscode_subtitle: "Formal / Semi-Formal &middot; Daytime Ceremony",
     dresscode_intro:
@@ -158,13 +159,20 @@ window.I18N = {
     dresscode_ladies_title: "Ladies",
     dresscode_ladies_body:
       "We recommend elegant midi or long dresses, dressy jumpsuits, or coordinated sets in soft, warm tones.",
+    dresscode_group_hint: "Swipe to view more",
+    dresscode_ladies_group_pink: "Blush & Pink",
+    dresscode_ladies_group_yellow: "Butter & Champagne",
+    dresscode_ladies_group_neutral: "Neutrals",
     dresscode_ladies_palette_label: "Recommended colours (best for daylight):",
     dresscode_ladies_neutral_label:
       "Neutral options are also welcome: Sand, Taupe, Greige, Soft Champagne.",
     dresscode_ladies_avoid:
       "Please avoid white, ivory, and very light bridal tones.",
     dresscode_gents_title: "Gentlemen",
-    dresscode_gents_body: "A clean, polished look is perfect â€” jackets are optional.",
+    dresscode_gents_group_shirts: "Shirts",
+    dresscode_gents_group_polos: "Polos & Linen",
+    dresscode_gents_group_jackets: "Jackets & Formal",
+    dresscode_gents_body: "A clean, polished look is perfect \u2014 jackets are optional.",
     dresscode_gents_options_label: "Easy & safe options:",
     dresscode_gents_option_1: "White or light blue shirt",
     dresscode_gents_option_2:
@@ -182,7 +190,7 @@ window.I18N = {
     dresscode_avoid_item_4: "Flip-flops or casual beach sandals",
     dresscode_avoid_item_5: "Sportswear / beachwear",
     dresscode_thanks:
-      "Thank you for dressing up with us â€” we can't wait to celebrate together!",
+      "Thank you for dressing up with us \u2014 we can't wait to celebrate together!",
     dresscode_caption_soft_blush: "Soft Blush",
     dresscode_caption_dusty_rose: "Dusty Rose",
     dresscode_caption_soft_pink: "Soft Pink",
@@ -373,7 +381,8 @@ window.I18N = {
     rsvp_status_missing: "\u8bf7\u586b\u5199\u59d3\u540d\u5e76\u9009\u62e9\u662f\u5426\u51fa\u5e2d\u3002",
     rsvp_status_success: "\u8c22\u8c22\uff01\u6211\u4eec\u5df2\u6536\u5230\u4f60\u7684\u51fa\u5e2d\u56de\u590d\u3002",
     rsvp_status_error: "\u62b1\u6b49\uff0c\u63d0\u4ea4\u5931\u8d25\u3002\u8bf7\u7a0d\u540e\u91cd\u8bd5\u6216\u76f4\u63a5\u8054\u7cfb\u6211\u4eec\u3002",
-    footer_text: "\u96e8\u8a00\u548c\u4fca\u6587 \u00b7 \u5df4\u5398\u5c9b \u00b7 2026 \u00b7 Lunavoe",    dresscode_title: "\u7740\u88c5\u8981\u6c42",
+    footer_text: "\u96e8\u8a00\u548c\u4fca\u6587 \u00b7 \u5df4\u5398\u5c9b \u00b7 2026 \u00b7 Lunavoe",
+    dresscode_title: "\u7740\u88c5\u8981\u6c42",
     dresscode_eyebrow: "\u5bbe\u5ba2\u6307\u5357",
     dresscode_subtitle: "\u6b63\u5f0f / \u534a\u6b63\u5f0f (\u767d\u5929\u4eea\u5f0f)",
     dresscode_intro:
@@ -381,12 +390,19 @@ window.I18N = {
     dresscode_ladies_title: "\u5973\u58eb",
     dresscode_ladies_body:
       "\u5efa\u8bae\u9009\u62e9\u4e2d\u957f\u6216\u957f\u6b3e\u8fde\u8863\u88d9, \u4f18\u96c5\u8fde\u4f53\u88e4\u6216\u6210\u5957\u642d\u914d, \u4ee5\u67d4\u548c\u504f\u6696\u7684\u8272\u7cfb\u4e3a\u4e3b.",
+    dresscode_group_hint: "\u5de6\u53f3\u6ed1\u52a8\u67e5\u770b\u66f4\u591a",
+    dresscode_ladies_group_pink: "\u7c89\u8272\u7cfb",
+    dresscode_ladies_group_yellow: "\u5976\u6cb9\u9ec4/\u9999\u69df\u9ec4",
+    dresscode_ladies_group_neutral: "\u4e2d\u6027\u8272",
     dresscode_ladies_palette_label: "\u63a8\u8350\u989c\u8272 (\u767d\u5929\u6700\u4e0a\u955c):",
     dresscode_ladies_neutral_label:
       "\u4e2d\u6027\u8272\u4e5f\u6b22\u8fce: \u6c99\u8272, \u7070\u8910\u8272, \u7070\u7c73\u8272, \u67d4\u548c\u9999\u69df\u8272.",
     dresscode_ladies_avoid:
       "\u8bf7\u5c3d\u91cf\u907f\u514d\u767d\u8272, \u8c61\u7259\u767d\u53ca\u975e\u5e38\u63a5\u8fd1\u65b0\u5a18\u793c\u670d\u7684\u6d45\u8272\u7cfb.",
     dresscode_gents_title: "\u7537\u58eb",
+    dresscode_gents_group_shirts: "\u886c\u886b",
+    dresscode_gents_group_polos: "Polo/\u4e9a\u9ebb\u886c\u886b",
+    dresscode_gents_group_jackets: "\u5916\u5957/\u6b63\u88c5",
     dresscode_gents_body: "\u6574\u4f53\u4fdd\u6301\u6e05\u723d\u5229\u843d\u5373\u53ef, \u5916\u5957\u975e\u5fc5\u987b.",
     dresscode_gents_options_label: "\u7b80\u5355\u5b89\u5168\u642d\u914d:",
     dresscode_gents_option_1: "\u767d\u886c\u886b\u6216\u6d45\u84dd\u886c\u886b",
