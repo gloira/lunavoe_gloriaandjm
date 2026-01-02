@@ -48,7 +48,7 @@
 
     const langBtn = document.querySelector("[data-lang-toggle]");
     if (langBtn) {
-      langBtn.textContent = lang === "en" ? "中文" : "EN";
+      langBtn.textContent = lang === "en" ? "\\u4e2d\\u6587" : "EN";
     }
   }
 
