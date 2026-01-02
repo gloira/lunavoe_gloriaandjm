@@ -1160,6 +1160,20 @@ html[lang="zh-Hans"] .brand-mark-sub {
   margin-bottom: 1.5rem;
 }
 
+.dc-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--charcoal-muted);
+  margin-bottom: 0.75rem;
+}
+
+.dc-note {
+  font-size: 0.95rem;
+  color: var(--charcoal-soft);
+  margin-bottom: 1rem;
+}
+
 .dc-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -1185,7 +1199,7 @@ html[lang="zh-Hans"] .brand-mark-sub {
 }
 
 .dc-gallery--landscape img {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 4;
 }
 
 .dc-gallery figcaption {
@@ -1215,6 +1229,10 @@ html[lang="zh-Hans"] .brand-mark-sub {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--charcoal-soft);
+}
+
+.dc-chip-label {
+  line-height: 1;
 }
 
 .dc-swatch {
@@ -1272,6 +1290,12 @@ html[lang="zh-Hans"] .brand-mark-sub {
   margin-bottom: 1rem;
 }
 
+.dc-avoid-note {
+  margin-bottom: 1rem;
+  color: var(--charcoal-soft);
+  font-size: 0.95rem;
+}
+
 .dc-avoid-list {
   list-style: none;
   padding: 0;
@@ -1295,6 +1319,13 @@ html[lang="zh-Hans"] .brand-mark-sub {
   height: 6px;
   background: var(--rose-gold);
   border-radius: 50%;
+}
+
+.dc-thanks {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: var(--charcoal-soft);
 }
 
 @media (min-width: 768px) {
