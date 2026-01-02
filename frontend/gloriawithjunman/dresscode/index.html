@@ -69,38 +69,111 @@
     </header>
 
     <main class="page-main" style="padding-top: 100px;">
-      <section class="section">
-        <div class="section-inner" style="max-width: 900px;">
-          <div class="section-heading">
-            <div class="section-eyebrow" data-i18n="dresscode_title">Dress Code</div>
-            <p class="section-lead" data-i18n="dresscode_intro">
-              Think airy, coastal, and effortless. Linen, light silk, soft cotton, or flowy fabrics are perfect for the
-              cliffside breeze.
+      <section id="dress-code" class="section dc-section" aria-labelledby="dc-title">
+        <div class="section-inner dc-wrap">
+          <header class="dc-header">
+            <div class="section-eyebrow">Guest Guide</div>
+            <h2 id="dc-title" class="dc-title">Dress Code</h2>
+            <p class="dc-subtitle">Formal / Semi-Formal · Daytime Ceremony</p>
+            <p class="dc-lead">
+              We kindly ask guests to dress in <strong>formal or semi-formal attire</strong>.
+              Please avoid overly casual outfits so everyone looks polished in daylight photos.
             </p>
-          </div>
+          </header>
 
-          <div class="schedule-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
-            <article class="schedule-card">
-              <div class="schedule-day" data-i18n="dresscode_section_day_title">Ceremony & dinner</div>
-              <p class="section-body" data-i18n="dresscode_section_day_body">
-                Beach formal / resort chic. Light suits, linen sets, or midi dresses in sun-faded neutrals and warm
-                tones. Please avoid bright white.
-              </p>
-            </article>
+          <article class="dc-block">
+            <h3 class="dc-block-title">Ladies</h3>
+            <p class="dc-block-note">
+              Elegant midi or long dresses, dressy jumpsuits or coordinated sets.
+              Soft, flowy fabrics photograph beautifully.
+            </p>
 
-            <article class="schedule-card">
-              <div class="schedule-day" data-i18n="dresscode_section_night_title">After party</div>
-              <p class="section-body" data-i18n="dresscode_section_night_body">
-                Relaxed evening look. Bring a light layer and comfy shoes for the terrace and grass.
-              </p>
-            </article>
+            <div class="dc-gallery dc-gallery--portrait">
+              <figure>
+                <img src="../assets/images/dresscode/ladies-soft-blush.jpg"
+                  alt="Soft blush wedding guest dress" loading="lazy">
+                <figcaption>Soft Blush / Dusty Pink</figcaption>
+              </figure>
 
-            <article class="schedule-card">
-              <div class="schedule-day" data-i18n="dresscode_section_palette_title">Suggested palette</div>
-              <p class="section-body" data-i18n="dresscode_section_palette_body">
-                Sand, stone, ivory, terracotta, muted coral, seafoam, sage, and deep navy accents.
-              </p>
-            </article>
+              <figure>
+                <img src="../assets/images/dresscode/ladies-dusty-rose.jpg"
+                  alt="Dusty rose wedding guest dress" loading="lazy">
+                <figcaption>Dusty Rose</figcaption>
+              </figure>
+
+              <figure>
+                <img src="../assets/images/dresscode/ladies-butter-yellow.jpg"
+                  alt="Butter yellow wedding guest dress" loading="lazy">
+                <figcaption>Butter Yellow</figcaption>
+              </figure>
+
+              <figure>
+                <img src="../assets/images/dresscode/ladies-champagne-yellow.jpg"
+                  alt="Champagne yellow wedding guest dress" loading="lazy">
+                <figcaption>Champagne Yellow</figcaption>
+              </figure>
+            </div>
+
+            <div class="dc-chips">
+              <span class="dc-chip"><span class="dc-swatch" style="--swatch:#F6D6D8"></span>Soft Blush</span>
+              <span class="dc-chip"><span class="dc-swatch" style="--swatch:#DDB0B4"></span>Dusty Rose</span>
+              <span class="dc-chip"><span class="dc-swatch" style="--swatch:#F4E3A8"></span>Butter Yellow</span>
+              <span class="dc-chip"><span class="dc-swatch" style="--swatch:#EED7A6"></span>Champagne Yellow</span>
+            </div>
+
+            <p class="dc-tip">
+              Please avoid white, ivory, or anything very close to bridal tones.
+            </p>
+          </article>
+
+          <article class="dc-block">
+            <h3 class="dc-block-title">Gentlemen</h3>
+            <p class="dc-block-note">
+              Neat and polished looks are recommended. Jackets are optional.
+            </p>
+
+            <div class="dc-gallery dc-gallery--landscape">
+              <figure>
+                <img src="../assets/images/dresscode/gents-white-shirt-beige-trousers.jpg"
+                  alt="White shirt with beige trousers wedding guest" loading="lazy">
+                <figcaption>White Shirt + Tailored Trousers</figcaption>
+              </figure>
+
+              <figure>
+                <img src="../assets/images/dresscode/gents-light-blue-shirt.jpg"
+                  alt="Light blue shirt wedding guest" loading="lazy">
+                <figcaption>Light Blue Shirt</figcaption>
+              </figure>
+
+              <figure>
+                <img src="../assets/images/dresscode/gents-dressy-polo.jpg"
+                  alt="Dressy polo wedding guest" loading="lazy">
+                <figcaption>Dressy Polo</figcaption>
+              </figure>
+
+              <figure>
+                <img src="../assets/images/dresscode/gents-light-jacket.jpg"
+                  alt="Linen jacket wedding guest" loading="lazy">
+                <figcaption>Light Jacket (Optional)</figcaption>
+              </figure>
+            </div>
+
+            <ul class="dc-list">
+              <li>White or light blue shirts</li>
+              <li>Dressy polos (white / beige / light blue / light grey)</li>
+              <li>Tailored trousers (beige, khaki, light brown, warm grey)</li>
+            </ul>
+          </article>
+
+          <div class="dc-avoid">
+            <h3 class="dc-avoid-title">Please Avoid</h3>
+            <ul class="dc-avoid-list">
+              <li>T-shirts, tank tops</li>
+              <li>Shorts</li>
+              <li>Denim / ripped jeans</li>
+              <li>Flip-flops or casual sandals</li>
+              <li>Sportswear / beachwear</li>
+            </ul>
           </div>
         </div>
       </section>

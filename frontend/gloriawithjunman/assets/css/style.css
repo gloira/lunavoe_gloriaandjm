@@ -1087,6 +1087,234 @@ html[lang="zh-Hans"] .brand-mark-sub {
 }
 
 /* -----------------------------------------------------
+   Dress Code Section
+   ----------------------------------------------------- */
+.dc-section {
+  position: relative;
+}
+
+.dc-wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.dc-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.dc-title {
+  font-size: clamp(2.2rem, 4vw, 2.8rem);
+  margin-bottom: 0.5rem;
+  color: var(--charcoal);
+}
+
+.dc-subtitle {
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--champagne);
+  margin-bottom: 1rem;
+}
+
+.dc-lead {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--charcoal-soft);
+}
+
+.dc-block {
+  background: white;
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  border: 1px solid var(--blush);
+  box-shadow: var(--shadow-card);
+  margin-bottom: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.dc-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--champagne), var(--rose-gold), var(--champagne));
+}
+
+.dc-block-title {
+  font-size: 0.9rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--champagne);
+  margin-bottom: 0.75rem;
+}
+
+.dc-block-note {
+  font-size: 1rem;
+  color: var(--charcoal-soft);
+  margin-bottom: 1.5rem;
+}
+
+.dc-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.dc-gallery figure {
+  margin: 0;
+  text-align: center;
+}
+
+.dc-gallery img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: var(--shadow-sm);
+  border: 3px solid white;
+}
+
+.dc-gallery--portrait img {
+  aspect-ratio: 3 / 4;
+}
+
+.dc-gallery--landscape img {
+  aspect-ratio: 4 / 3;
+}
+
+.dc-gallery figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--charcoal-muted);
+}
+
+.dc-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.dc-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--blush-deep);
+  background: var(--blush-light);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--charcoal-soft);
+}
+
+.dc-swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--swatch);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.dc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dc-list li {
+  margin: 0.5rem 0;
+  padding-left: 1.25rem;
+  position: relative;
+  color: var(--charcoal-soft);
+}
+
+.dc-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  width: 6px;
+  height: 6px;
+  background: var(--champagne);
+  border-radius: 50%;
+}
+
+.dc-tip {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--charcoal-muted);
+}
+
+.dc-avoid {
+  border: 1px dashed var(--blush-deep);
+  border-radius: 20px;
+  padding: 1.5rem;
+  background: var(--blush-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.dc-avoid-title {
+  font-size: 0.9rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--champagne);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.dc-avoid-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  columns: 1;
+}
+
+.dc-avoid-list li {
+  padding-left: 1.25rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+  color: var(--charcoal-soft);
+}
+
+.dc-avoid-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  width: 6px;
+  height: 6px;
+  background: var(--rose-gold);
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .dc-avoid-list {
+    columns: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .dc-block {
+    padding: 2rem 1.5rem;
+  }
+
+  .dc-chip {
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+  }
+}
+
+/* -----------------------------------------------------
    Travel Section
    ----------------------------------------------------- */
 .travel-grid {
