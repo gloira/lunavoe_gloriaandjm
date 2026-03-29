@@ -815,7 +815,7 @@ html[lang="zh-Hans"] .brand-mark-sub {
 }
 
 .hero-copy {
-  font-size: 1.15rem;
+  font-size: clamp(1.05rem, 0.6vw + 0.95rem, 1.28rem);
   line-height: 1.8;
   color: var(--charcoal-soft);
   max-width: 400px;
@@ -915,7 +915,7 @@ html[lang="zh-Hans"] .brand-mark-sub {
 }
 
 .section-lead {
-  font-size: 1.1rem;
+  font-size: clamp(1.05rem, 0.5vw + 0.95rem, 1.2rem);
   line-height: 1.8;
   color: var(--charcoal-soft);
   max-width: 600px;
@@ -923,8 +923,8 @@ html[lang="zh-Hans"] .brand-mark-sub {
 }
 
 .section-body {
-  font-size: 1rem;
-  line-height: 1.9;
+  font-size: clamp(1rem, 0.3vw + 0.95rem, 1.1rem);
+  line-height: 1.85;
   color: var(--charcoal-soft);
 }
 
@@ -2028,7 +2028,7 @@ code {
   }
   
   .hero-copy {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
   
   .section {
@@ -2036,7 +2036,7 @@ code {
   }
   
   .section-lead {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
   
   .gallery-grid {
