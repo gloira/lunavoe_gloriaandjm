@@ -1060,6 +1060,11 @@ html[lang="zh-Hans"] .brand-mark-sub {
   border-bottom: 1px solid var(--blush);
 }
 
+.schedule-note {
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
 .schedule-list {
   list-style: none;
   padding: 0;
