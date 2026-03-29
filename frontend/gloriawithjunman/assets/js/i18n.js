@@ -52,30 +52,32 @@ window.I18N = {
       "Sunday, left open \u2014 for rest, for brunch, or for wherever the island takes you.",
     home_story_title: "Our Story",
     home_story_body: "A glimpse of our journey together.",
-    schedule_title: "Weekend schedule",
+    schedule_title: "The weekend",
     schedule_intro:
-      "We've kept things simple so you have plenty of time to enjoy Bali on your own as well.",
+      "No rush, no rigid plans. Just a weekend shaped by the sea breeze, the sunset, and time spent together.",
     schedule_fri_label: "Sep 11 \u00b7 Friday \u00b7 Settle in",
-    schedule_fri_meta: "Check-in & free time",
-    schedule_fri_1: "Check into your villa or hotel in Uluwatu.",
+    schedule_fri_meta: "Arrival & settling in",
+    schedule_fri_1: "Arrive in Uluwatu and check into your villa or hotel.",
     schedule_fri_2:
-      "Spend the afternoon by the pool, at a cafe, or exploring nearby beaches.",
+      "Spend the afternoon however you like \u2014 by the pool, at a cafe, or by the beach.",
     schedule_fri_3:
-      "Evening at your own pace \u2014 feel free to gather with friends for dinner or sunset drinks.",
+      "The evening is yours \u2014 a quiet night, or dinner and drinks with friends.",
     schedule_sat_label: "Sep 12 \u00b7 Saturday \u00b7 Wedding day",
     schedule_sat_meta: "Ceremony & celebration",
-    schedule_sat_1: "15:30 \u00b7 Guest arrival & check-in at Stone Villas Uluwatu.",
-    schedule_sat_2: "16:00 \u00b7 Cliffside ceremony.",
+    schedule_sat_1: "15:30 \u00b7 Guest arrival at Stone Villas Uluwatu.",
+    schedule_sat_2: "16:00 \u00b7 Ceremony on the cliffs.",
     schedule_sat_3: "17:00 \u00b7 Sunset cocktails & photos.",
-    schedule_sat_4: "19:00 \u00b7 Dinner under the lights.",
-    schedule_sat_5: "22:00 \u00b7 After party by the pool.",
-    schedule_sat_6: "01:00 \u00b7 Formal events end.",
+    schedule_sat_4: "19:00 \u00b7 Dinner under the stars.",
+    schedule_sat_5: "22:00 \u00b7 Games & lucky draw.",
+    schedule_sat_6: "23:00 \u00b7 After party (for friends).",
+    schedule_sat_7: "02:00 \u00b7 The night comes to a close.",
+    schedule_sat_note:
+      "No pressure to stay till the very end \u2014 feel free to head off whenever you like, just let us know.",
     schedule_sun_label: "Sep 13 \u00b7 Sunday \u00b7 Slow goodbyes",
-    schedule_sun_meta: "No formal program",
-    schedule_sun_1: "Slow breakfast, pool time, or a gentle spa morning.",
-    schedule_sun_2: "Head to the airport or move on to Seminyak, Canggu, etc.",
-    schedule_sun_3:
-      "If you stay longer, we'll share ideas for beaches, cafes, and day trips.",
+    schedule_sun_meta: "Easy goodbyes",
+    schedule_sun_1: "A slow morning, no alarms needed.",
+    schedule_sun_2: "Breakfast, pool time, or a gentle spa.",
+    schedule_sun_3: "Head home, or continue your journey across the island.",
     venue_title: "Venue & stay",
     venue_intro:
       "Our ceremony and reception will take place at Stone Villas Uluwatu, a cliffside villa complex with sweeping ocean views.",
@@ -310,30 +312,32 @@ window.I18N = {
       "\u5468\u65e5\u7559\u767d\uff0c\u7559\u7ed9\u4f11\u606f\u3001\u65e9\u5348\u9910\uff0c\u6216\u7ee7\u7eed\u4f60\u7684\u5c9b\u5c7f\u65c5\u7a0b\u3002",
     home_story_title: "\u6211\u4eec\u7684\u6545\u4e8b",
     home_story_body: "\u4e00\u4e9b\u6211\u4eec\u7684\u65c5\u7a0b\u7247\u6bb5\u3002",
-    schedule_title: "\u5468\u672b\u65e5\u7a0b",
+    schedule_title: "\u8fd9\u573a\u5468\u672b\u3002",
     schedule_intro:
-      "\u6211\u4eec\u628a\u5b89\u6392\u4fdd\u6301\u8f7b\u677e\uff0c\u7559\u51fa\u5145\u8db3\u65f6\u95f4\u4eab\u53d7\u5df4\u5398\u5c9b\u3002",
+      "\u4e0d\u5fc5\u5306\u5fd9\uff0c\u4e5f\u65e0\u9700\u5b89\u6392\u592a\u591a\u3002\u8fd9\u4e00\u6574\u4e2a\u5468\u672b\uff0c\u6211\u4eec\u628a\u65f6\u95f4\u7559\u7ed9\u6d77\u98ce\u3001\u65e5\u843d\uff0c\u8fd8\u6709\u5f7c\u6b64\u7684\u966a\u4f34\u3002",
     schedule_fri_label: "9\u670811\u65e5 \u00b7 \u5468\u4e94 \u00b7 \u62b5\u8fbe",
-    schedule_fri_meta: "\u5165\u4f4f\u4e0e\u81ea\u7531\u65f6\u95f4",
-    schedule_fri_1: "\u5165\u4f4f\u4e4c\u9c81\u74e6\u56fe\u7684\u522b\u5885\u6216\u9152\u5e97\u3002",
+    schedule_fri_meta: "\u62b5\u8fbe\u4e0e\u5b89\u987f",
+    schedule_fri_1: "\u62b5\u8fbe\u4e4c\u9c81\u74e6\u56fe\uff0c\u5165\u4f4f\u4f60\u7684\u522b\u5885\u6216\u9152\u5e97.",
     schedule_fri_2:
-      "\u4e0b\u5348\u53ef\u5728\u6cf3\u6c60\u8fb9\u3001\u5496\u5561\u9986\u6216\u9644\u8fd1\u6d77\u6ee9\u653e\u677e\u3002",
+      "\u4e0b\u5348\u968f\u610f\u5b89\u6392\u2014\u2014\u6cf3\u6c60\u3001\u5496\u5561\u9986\uff0c\u6216\u6d77\u8fb9\u6563\u6b65.",
     schedule_fri_3:
-      "\u665a\u4e0a\u81ea\u7531\u5b89\u6392\u2014\u2014\u53ef\u4e0e\u670b\u53cb\u805a\u9910\u6216\u770b\u65e5\u843d\u3002",
+      "\u591c\u665a\u7559\u7ed9\u81ea\u5df1\uff0c\u6216\u4e0e\u670b\u53cb\u76f8\u7ea6\u4e00\u987f\u8f7b\u677e\u7684\u665a\u9910.",
     schedule_sat_label: "9\u670812\u65e5 \u00b7 \u5468\u516d \u00b7 \u5a5a\u793c\u65e5",
     schedule_sat_meta: "\u4eea\u5f0f\u4e0e\u5e86\u795d",
-    schedule_sat_1: "15:30 \u00b7 \u5bbe\u5ba2\u62b5\u8fbe Stone Villas Uluwatu\u3002",
-    schedule_sat_2: "16:00 \u00b7 \u60ac\u5d16\u4eea\u5f0f\u3002",
-    schedule_sat_3: "17:00 \u00b7 \u65e5\u843d\u9e21\u5c3e\u9152\u4e0e\u62cd\u7167\u3002",
-    schedule_sat_4: "19:00 \u00b7 \u706f\u5149\u4e0b\u7684\u665a\u5bb4\u3002",
-    schedule_sat_5: "22:00 \u00b7 \u6cf3\u6c60\u8fb9 After Party\u3002",
-    schedule_sat_6: "01:00 \u00b7 \u6b63\u5f0f\u73af\u8282\u7ed3\u675f\u3002",
+    schedule_sat_1: "15:30 \u00b7 \u6765\u5bbe\u62b5\u8fbe Stone Villas Uluwatu.",
+    schedule_sat_2: "16:00 \u00b7 \u60ac\u5d16\u4e4b\u4e0a\u7684\u4eea\u5f0f.",
+    schedule_sat_3: "17:00 \u00b7 \u65e5\u843d\u65f6\u5206\u7684\u9e21\u5c3e\u9152\u4e0e\u62cd\u7167\u3002",
+    schedule_sat_4: "19:00 \u00b7 \u661f\u7a7a\u4e4b\u4e0b\u7684\u665a\u5bb4.",
+    schedule_sat_5: "22:00 \u00b7 \u6e38\u620f\u4e0e\u62bd\u5956\u65f6\u523b.",
+    schedule_sat_6: "23:00 \u00b7 after party\uff08\u670b\u53cb\u4e13\u5c5e\uff09",
+    schedule_sat_7: "02:00 \u00b7 \u591c\u665a\u7f13\u7f13\u843d\u5e55.",
+    schedule_sat_note:
+      "\u4e0d\u5fc5\u52c9\u5f3a\u81ea\u5df1\u5f85\u5230\u6700\u540e\uff0c\u4efb\u4f55\u65f6\u5019\u60f3\u79bb\u5f00\uff0c\u8bb0\u5f97\u548c\u6211\u4eec\u8bf4\u4e00\u58f0\u5c31\u597d\u3002",
     schedule_sun_label: "9\u670813\u65e5 \u00b7 \u5468\u65e5 \u00b7 \u6162\u6162\u544a\u522b",
-    schedule_sun_meta: "\u65e0\u6b63\u5f0f\u5b89\u6392",
-    schedule_sun_1: "\u6162\u65e9\u9910\u3001\u6cf3\u6c60\u65f6\u5149\u6216\u8f7b\u677e\u7684 Spa \u4e0a\u5348\u3002",
-    schedule_sun_2: "\u524d\u5f80\u673a\u573a\u6216\u7ee7\u7eed\u53bb\u6c34\u660e\u6f3e\u3001\u4ed3\u53e4\u7b49\u5730\u3002",
-    schedule_sun_3:
-      "\u82e5\u4f60\u5ef6\u957f\u65c5\u884c\uff0c\u6211\u4eec\u4f1a\u63d0\u4f9b\u6d77\u6ee9\u3001\u5496\u5561\u9986\u4e0e\u4e00\u65e5\u6e38\u5efa\u8bae\u3002",
+    schedule_sun_meta: "\u6162\u6162\u544a\u522b",
+    schedule_sun_1: "\u4e00\u4e2a\u4e0d\u8bbe\u95f9\u949f\u7684\u65e9\u6668.",
+    schedule_sun_2: "\u65e9\u9910\u3001\u6cf3\u6c60\uff0c\u6216\u4e00\u573a\u653e\u677e\u7684 spa.",
+    schedule_sun_3: "\u542f\u7a0b\u56de\u5bb6\uff0c\u6216\u7ee7\u7eed\u4f60\u7684\u5df4\u5398\u5c9b\u65c5\u7a0b.",
     venue_title: "\u573a\u5730\u4e0e\u4f4f\u5bbf",
     venue_intro:
       "\u5a5a\u793c\u4eea\u5f0f\u4e0e\u665a\u5bb4\u5c06\u5728 Stone Villas Uluwatu \u4e3e\u884c\uff0c\u8fd9\u662f\u4e00\u5904\u60ac\u5d16\u522b\u5885\u7fa4\uff0c\u53ef\u4fef\u77b0\u6574\u7247\u6d77\u666f\u3002",
@@ -514,10 +518,6 @@ window.I18N = {
       "\u6c99\u8272\u3001\u77f3\u8272\u3001\u8c61\u7259\u767d\u3001\u9676\u571f\u3001\u67d4\u548c\u73ca\u745a\u3001\u6d77\u6ce1\u7eff\u3001\u9f20\u5c3e\u8349\u7eff\u4e0e\u6df1\u6d77\u519b\u84dd\u70b9\u7f00\u3002",
   },
 };
-
-
-
-
 
 
 
