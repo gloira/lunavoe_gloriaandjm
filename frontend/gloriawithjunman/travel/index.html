@@ -431,6 +431,14 @@
       font-size: 0.92rem;
     }
 
+    .travel-map-image {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      border-radius: 28px;
+    }
+
     .travel-note-box {
       margin-top: 1rem;
       padding: 1rem 1.05rem;
@@ -440,6 +448,12 @@
       color: #665241;
       line-height: 1.8;
     }
+
+    @media (max-width: 768px) {
+      .travel-map-image {
+        border-radius: 24px;
+      }
+}
 
     @media (max-width: 980px) {
       .travel-hero-grid,
@@ -726,25 +740,12 @@
 
                   <div class="travel-region-board">
                     <div class="travel-map-board" aria-label="Bali region guide map">
-                      <div class="bali-silhouette"></div>
-                      <div class="travel-point travel-point--uluwatu">
-                        <strong data-i18n="travel_map_point_1_title">Uluwatu</strong>
-                        <span data-i18n="travel_map_point_1_text">Cliffs, beaches, sunsets</span>
-                      </div>
-                      <div class="travel-point travel-point--seminyak">
-                        <strong data-i18n="travel_map_point_2_title">Seminyak</strong>
-                        <span data-i18n="travel_map_point_2_text">Dining, shopping, beach clubs</span>
-                      </div>
-                      <div class="travel-point travel-point--canggu">
-                        <strong data-i18n="travel_map_point_3_title">Canggu</strong>
-                        <span data-i18n="travel_map_point_3_text">Cafés, laid-back social energy</span>
-                      </div>
-                      <div class="travel-point travel-point--ubud">
-                        <strong data-i18n="travel_map_point_4_title">Ubud</strong>
-                        <span data-i18n="travel_map_point_4_text">Rice terraces, temples, nature</span>
-                      </div>
+                      <img
+                        src="../assets/images/travel/bali-guide-map.png"
+                        alt="Bali travel guide map"
+                        class="travel-map-image"
+                      />
                     </div>
-
                     <div class="travel-region-notes">
                       <div class="travel-region-card">
                         <strong data-i18n="travel_map_li1_title">Uluwatu</strong>
@@ -764,30 +765,6 @@
                       </div>
                     </div>
                   </div>
-                </article>
-
-                <article class="travel-card">
-                  <div class="travel-tag" data-i18n="travel_uluwatu_tag">Around Uluwatu</div>
-                  <h3 data-i18n="travel_uluwatu_title">Cafes, views & beach clubs</h3>
-                  <p data-i18n="travel_uluwatu_body">Uluwatu is all about cliffs, surf breaks, and golden sunsets. It’s easy to fill a day between coffee, beaches, and a sunset drink.</p>
-                  <ul class="travel-list">
-                    <li data-i18n="travel_uluwatu_li1">Cafes for brunch & coffee: Suka Espresso, Nourish Cafe, Baked, Alchemy, and The Loft.</li>
-                    <li data-i18n="travel_uluwatu_li2">Sunset spots: Single Fin, Ulu Cliff House, or El Kabron for a more dressed-up evening.</li>
-                    <li data-i18n="travel_uluwatu_li3">Beach clubs: Sundays Beach Club, Savaya, or other options along the Bukit peninsula for pool-and-ocean days.</li>
-                    <li data-i18n="travel_uluwatu_li4">Things to do: Uluwatu Temple at sunset, Kecak fire dance, Balangan or Nyang Nyang viewpoints, or a surf class.</li>
-                  </ul>
-                </article>
-
-                <article class="travel-card travel-card--soft">
-                  <div class="travel-tag" data-i18n="travel_extend_tag">After the wedding</div>
-                  <h3 data-i18n="travel_extend_title">If you keep exploring</h3>
-                  <p data-i18n="travel_extend_body">If you have extra days, it’s easy to split your time between a few different areas with completely different rhythms.</p>
-                  <ul class="travel-list">
-                    <li data-i18n="travel_extend_li1">Seminyak: restaurants, boutique shopping, and rooftop sunsets. Nearby beach clubs include Potato Head, Ku De Ta, and FINNS in nearby Canggu.</li>
-                    <li data-i18n="travel_extend_li2">Canggu: cafes, co-working spots, and sunset bars for a more laid-back but lively scene.</li>
-                    <li data-i18n="travel_extend_li3">Ubud or the mountains: rice terraces, temples, and cooler air if you’d like a contrast to the ocean.</li>
-                    <li data-i18n="travel_extend_li4">If you’re unsure where to stay, feel free to ask us — we’re always happy to help.</li>
-                  </ul>
                 </article>
               </div>
             </section>
