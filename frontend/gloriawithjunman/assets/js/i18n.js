@@ -189,31 +189,122 @@ window.I18N = {
     renaissance_experience_title_4: "In-Resort Events",
     travel_title: "Travel guide",
     travel_intro:
-      "Here are some ideas for how to spend your free time in Uluwatu and a few suggestions if you continue your trip to other parts of Bali.",
+      "A few practical notes before Bali, followed by a gentle guide to the island if you choose to stay a little longer.",
+
+    travel_hero_pill_1_title: "Before you fly",
+    travel_hero_pill_1_text:
+      "A few small things worth checking before departure — entry requirements, passport validity, and practical notes for arrival.",
+    travel_hero_pill_2_title: "Once you land",
+    travel_hero_pill_2_text:
+      "Getting around Bali is usually simple with the right apps, though the island does ask for a little more time than the map suggests.",
+    travel_hero_pill_3_title: "If you keep exploring",
+    travel_hero_pill_3_text:
+      "From southern cliffs and sunset views to rice terraces and beach towns, each part of Bali carries its own rhythm.",
+
+    travel_section_1_title: "Before Bali",
+    travel_section_1_copy:
+      "A few practical details to settle before you travel, so the weekend begins as easily as it should.",
+
+    travel_visa_tag: "Before you go",
+    travel_visa_title: "Visa & entry",
+    travel_visa_body:
+      "Entry into Bali is generally straightforward, though requirements may vary slightly depending on the passport you travel with.",
+    travel_visa_li1:
+      "China: Visa on Arrival (VOA / e-VOA), typically valid for 30 days and extendable once.",
+    travel_visa_li2:
+      "Singapore: Visa-free entry for short leisure stays.",
+    travel_visa_li3:
+      "Malaysia: Visa-free entry for short leisure stays.",
+    travel_visa_li4:
+      "Please make sure your passport has at least 6 months’ validity from the date of arrival.",
+
+    travel_payment_tag: "Good to know",
+    travel_payment_title: "Payments & currency",
+    travel_payment_body:
+      "Hotels and most restaurants are straightforward, though Bali is often easier enjoyed with a little cash on hand for smaller, more local places.",
+    travel_payment_li1:
+      "Visa and Mastercard are the most widely accepted cards.",
+    travel_payment_li2:
+      "Some smaller shops, warungs, and casual local spots may still prefer cash.",
+    travel_payment_li3:
+      "It’s useful to keep some Indonesian Rupiah (IDR) with you, especially for smaller purchases.",
+
+    travel_section_2_title: "Once you land",
+    travel_section_2_copy:
+      "Bali moves at its own pace. A little extra time — and the right apps — make everything feel much easier.",
+
+    travel_transport_tag: "Getting around",
+    travel_transport_title: "Transport & ride apps",
+    travel_transport_body:
+      "The simplest way to move around Bali is usually by ride-hailing app or private driver, depending on how much you plan to do in a day.",
+    travel_transport_li1_title: "Grab",
+    travel_transport_li1:
+      "A reliable choice for airport transfers, point-to-point rides, and general use across the island.",
+    travel_transport_li2_title: "Gojek",
+    travel_transport_li2:
+      "Also widely used in Bali for transport, food delivery, and everyday convenience.",
+    travel_transport_li3_title: "Private driver",
+    travel_transport_li3:
+      "Often the best option if you’re planning a full day out with several stops or exploring further afield.",
+    travel_transport_note:
+      "Traffic in Bali can move much more slowly than it appears on a map, particularly in the afternoon and around sunset, so it is always worth leaving a little earlier than expected.",
+
+    travel_section_3_title: "If you keep exploring",
+    travel_section_3_copy:
+      "Bali changes beautifully from one area to the next. If you plan to extend the weekend, here is the version of the island we would suggest first.",
+
+    travel_map_tag: "Explore Bali",
+    travel_map_title: "A simple guide to Bali’s main areas",
+    travel_map_body:
+      "If you are deciding where to spend an extra day or two, it helps to think of Bali in moods: cliffs and sunsets in the south, dining and beach clubs further west, cafés and easy social energy around Canggu, and rice terraces inland toward Ubud.",
+
+    travel_map_point_1_title: "Uluwatu",
+    travel_map_point_1_text: "Cliffs, beaches, sunsets",
+    travel_map_point_2_title: "Seminyak",
+    travel_map_point_2_text: "Dining, shopping, beach clubs",
+    travel_map_point_3_title: "Canggu",
+    travel_map_point_3_text: "Cafés, easy social energy",
+    travel_map_point_4_title: "Ubud",
+    travel_map_point_4_text: "Rice terraces, temples, nature",
+
+    travel_map_li1_title: "Uluwatu",
+    travel_map_li1:
+      "Best for cliffside views, beach afternoons, and some of Bali’s most memorable sunsets.",
+    travel_map_li2_title: "Seminyak",
+    travel_map_li2:
+      "Ideal for restaurants, boutique shopping, and a more polished beach-club style of day.",
+    travel_map_li3_title: "Canggu",
+    travel_map_li3:
+      "A little livelier — good for cafés, relaxed dinners, and an easygoing social atmosphere.",
+    travel_map_li4_title: "Ubud",
+    travel_map_li4:
+      "If you would like a gentler contrast to the coast: cooler air, temples, rice terraces, and greenery.",
+
     travel_uluwatu_tag: "Around Uluwatu",
-    travel_uluwatu_title: "Cafes, views & beach clubs",
+    travel_uluwatu_title: "Cafés, views & beach clubs",
     travel_uluwatu_body:
-      "Uluwatu is all about cliffs, surf breaks, and golden sunsets. It's easy to fill a day between coffee, beaches, and a sunset drink.",
+      "Uluwatu is all cliffs, surf breaks, and golden evenings. It is very easy to spend a day between coffee, the beach, and a sunset drink.",
     travel_uluwatu_li1:
-      "Cafes for brunch & coffee: Suka Espresso, Nourish Cafe, Baked, Alchemy, and The Loft.",
+      "For brunch and coffee: Suka Espresso, Nourish Cafe, Baked, Alchemy, and The Loft.",
     travel_uluwatu_li2:
-      "Sunset spots: Single Fin, Ulu Cliff House, or El Kabron for a more dressed-up evening.",
+      "For sunset: Single Fin, Ulu Cliff House, or El Kabron for something a little more dressed up.",
     travel_uluwatu_li3:
-      "Beach clubs: Sundays Beach Club, Savaya, or other options along the Bukit peninsula for pool-and-ocean days.",
+      "For beach clubs: Sundays Beach Club, Savaya, and other options along the Bukit peninsula for a pool-and-ocean day.",
     travel_uluwatu_li4:
-      "Things to do: Uluwatu Temple at sunset, Kecak fire dance, Balangan or Nyang Nyang beach viewpoints, or a surf class.",
+      "For plans: Uluwatu Temple at sunset, the Kecak fire dance, Balangan or Nyang Nyang viewpoints, or even a surf lesson.",
+
     travel_extend_tag: "After the wedding",
-    travel_extend_title: "If you keep exploring",
+    travel_extend_title: "If you stay a little longer",
     travel_extend_body:
-      "If you have extra days, it's easy to split your time between a few different areas with different vibes.",
+      "If you have a few extra days, Bali is particularly lovely when divided between two or three areas with entirely different moods.",
     travel_extend_li1:
       "Seminyak: restaurants, boutique shopping, and rooftop sunsets. Nearby beach clubs include Potato Head, Ku De Ta, and FINNS in nearby Canggu.",
     travel_extend_li2:
-      "Canggu: cafes, co-working spots, and sunset bars for a more laid-back but lively scene.",
+      "Canggu: cafés, co-working spots, and sunset bars for a more laid-back but lively scene.",
     travel_extend_li3:
-      "Ubud or the mountains: rice terraces, temples, and cooler air if you'd like a contrast to the ocean.",
+      "Ubud or the mountains: rice terraces, temples, and cooler air if you would like a contrast to the ocean.",
     travel_extend_li4:
-      "If you're unsure where to stay, feel free to ask us \u2014 we're happy to help with suggestions.",
+      "If you are unsure where to stay, please feel free to ask us — we would be very happy to help.",
     gallery_title: "Gallery",
     gallery_intro:
       "A little moodboard of Bali and some space reserved for our photos. We'll also share a link here after the wedding where guests can upload their own pictures.",
@@ -539,33 +630,124 @@ window.I18N = {
     renaissance_apple_link_text: "\u5728\u82f9\u679c\u5730\u56fe\u4e2d\u6253\u5f00\u8fd9\u5bb6\u9152\u5e97",
     renaissance_link_6_title: "\u7528 Google \u5730\u56fe\u6253\u5f00",
     renaissance_link_6_text: "\u5728 Google \u5730\u56fe\u4e2d\u67e5\u770b\u9152\u5e97\u4f4d\u7f6e",
-    travel_title: "\u51fa\u884c\u6307\u5357",
+    travel_title: "出行指南",
     travel_intro:
-      "\u8fd9\u91cc\u662f\u4e4c\u9c81\u74e6\u56fe\u7684\u6d3b\u52a8\u5efa\u8bae\uff0c\u4ee5\u53ca\u82e5\u4f60\u7ee7\u7eed\u524d\u5f80\u5df4\u5398\u5c9b\u5176\u4ed6\u5730\u533a\u7684\u7075\u611f\u3002",
-    travel_uluwatu_tag: "\u4e4c\u9c81\u74e6\u56fe\u5468\u8fb9",
-    travel_uluwatu_title: "\u5496\u5561\u9986\u3001\u6d77\u666f\u4e0e\u6d77\u6ee9\u4ff1\u4e50\u90e8",
+      "这里整理了一些前往巴厘岛之前的实用小提示；如果你想在婚礼周末之后多停留几日，也附上了一份温柔而简单的岛上指南。",
+
+    travel_hero_pill_1_title: "出发之前",
+    travel_hero_pill_1_text:
+      "出发前可以先确认几个小细节，例如入境要求、护照有效期，以及一些抵达后会用到的实用信息。",
+    travel_hero_pill_2_title: "落地之后",
+    travel_hero_pill_2_text:
+      "在巴厘岛出行通常并不复杂，只是这座岛总比地图上看起来更需要一点时间。",
+    travel_hero_pill_3_title: "如果继续玩几天",
+    travel_hero_pill_3_text:
+      "从南部悬崖与日落，到稻田、海滩小镇与不同区域的节奏，巴厘岛每一处都有它自己的风景。",
+
+    travel_section_1_title: "前往巴厘岛之前",
+    travel_section_1_copy:
+      "先把几个实用小细节准备好，会让整个婚礼周末从一开始就更轻松从容。",
+
+    travel_visa_tag: "出发前",
+    travel_visa_title: "签证与入境",
+    travel_visa_body:
+      "前往巴厘岛整体并不复杂，不过不同护照对应的入境要求会略有不同，下面做一个简单参考。",
+    travel_visa_li1:
+      "中国：可办理落地签 / 电子落地签（VOA / e-VOA），通常可停留 30 天，并可延长一次。",
+    travel_visa_li2:
+      "新加坡：短期旅游入境通常免签。",
+    travel_visa_li3:
+      "马来西亚：短期旅游入境通常免签。",
+    travel_visa_li4:
+      "请确认护照自入境日起至少还有 6 个月有效期。",
+
+    travel_payment_tag: "实用提示",
+    travel_payment_title: "消费与支付",
+    travel_payment_body:
+      "酒店和大多数餐厅使用起来都很方便，但在巴厘岛，身上带一点现金，往往会让很多细小的场景更从容。",
+    travel_payment_li1:
+      "Visa 和 Mastercard 的接受度最高。",
+    travel_payment_li2:
+      "部分小店、warung 或较随意的本地商家仍然更习惯收现金。",
+    travel_payment_li3:
+      "建议随身准备一些印尼盾（IDR），应付零碎消费会更方便。",
+
+    travel_section_2_title: "落地之后",
+    travel_section_2_copy:
+      "巴厘岛有自己的节奏。多预留一点时间，再配合合适的打车软件，出行会轻松很多。",
+
+    travel_transport_tag: "岛上出行",
+    travel_transport_title: "交通与打车软件",
+    travel_transport_body:
+      "在巴厘岛最方便的出行方式，通常是打车软件或包车，这取决于你一天里想去多少地方。",
+    travel_transport_li1_title: "Grab",
+    travel_transport_li1:
+      "适合机场接送、点对点出行，以及在岛上的日常使用。",
+    travel_transport_li2_title: "Gojek",
+    travel_transport_li2:
+      "在巴厘岛也非常常见，除了出行之外，还可以用于外卖和一些日常小需求。",
+    travel_transport_li3_title: "包车",
+    travel_transport_li3:
+      "如果当天有多个目的地，或想跑得更远一些，包车通常会更合适。",
+    travel_transport_note:
+      "巴厘岛的交通往往会比地图上看起来更慢，尤其是下午和日落前后，因此建议比预想中稍微早一点出发。",
+
+    travel_section_3_title: "如果继续玩几天",
+    travel_section_3_copy:
+      "巴厘岛不同区域的气质差别很大。如果你想把婚礼周末再延长一点，这会是我们比较推荐的打开方式。",
+
+    travel_map_tag: "探索巴厘岛",
+    travel_map_title: "巴厘岛主要区域的小指南",
+    travel_map_body:
+      "如果你正在考虑婚礼之后多住一两天，不妨把巴厘岛理解成几种不同的氛围：南部是悬崖和日落，偏西是餐厅与 beach club，仓古有咖啡馆与更轻松的社交感，而乌布则是稻田、寺庙与山林。",
+
+    travel_map_point_1_title: "乌鲁瓦图",
+    travel_map_point_1_text: "悬崖、海滩、日落",
+    travel_map_point_2_title: "水明漾",
+    travel_map_point_2_text: "餐厅、购物、海滩俱乐部",
+    travel_map_point_3_title: "仓古",
+    travel_map_point_3_text: "咖啡馆与轻松社交氛围",
+    travel_map_point_4_title: "乌布",
+    travel_map_point_4_text: "梯田、寺庙与自然风景",
+
+    travel_map_li1_title: "乌鲁瓦图",
+    travel_map_li1:
+      "适合悬崖海景、海滩时光，以及巴厘岛最令人难忘的日落之一。",
+    travel_map_li2_title: "水明漾",
+    travel_map_li2:
+      "适合餐厅、精品购物，以及更精致一点的 beach club 风格。",
+    travel_map_li3_title: "仓古",
+    travel_map_li3:
+      "整体更热闹一些，适合咖啡馆、轻松晚餐与更随性的社交氛围。",
+    travel_map_li4_title: "乌布",
+    travel_map_li4:
+      "如果你想从海边切换到另一种节奏，这里有更凉爽的空气、寺庙、梯田与绿意。",
+
+    travel_uluwatu_tag: "乌鲁瓦图附近",
+    travel_uluwatu_title: "咖啡馆、海景与 beach clubs",
     travel_uluwatu_body:
-      "\u4e4c\u9c81\u74e6\u56fe\u4ee5\u60ac\u5d16\u3001\u51b2\u6d6a\u70b9\u4e0e\u91d1\u8272\u65e5\u843d\u8457\u79f0\uff0c\u5496\u5561\u3001\u6d77\u6ee9\u4e0e\u5915\u9633\u996e\u54c1\u8db3\u4ee5\u586b\u6ee1\u4e00\u5929\u3002",
+      "乌鲁瓦图最迷人的地方，在于悬崖、海浪与金色日落。喝杯咖啡，去海边走走，再找一个地方看日落，一天就可以过得很舒服。",
     travel_uluwatu_li1:
-      "\u65e9\u5348\u9910\u4e0e\u5496\u5561\uff1aSuka Espresso\u3001Nourish Cafe\u3001Baked\u3001Alchemy\u3001The Loft\u3002",
+      "早午餐与咖啡：Suka Espresso、Nourish Cafe、Baked、Alchemy、The Loft。",
     travel_uluwatu_li2:
-      "\u65e5\u843d\u597d\u53bb\u5904\uff1aSingle Fin\u3001Ulu Cliff House\uff0c\u6216\u66f4\u6b63\u5f0f\u7684 El Kabron\u3002",
+      "看日落：Single Fin、Ulu Cliff House，或稍微打扮一下去 El Kabron。",
     travel_uluwatu_li3:
-      "\u6d77\u6ee9\u4ff1\u4e50\u90e8\uff1aSundays Beach Club\u3001Savaya\uff0c\u6216\u5e03\u5409\u534a\u5c9b\u5176\u4ed6\u6d77\u666f\u6cf3\u6c60\u9009\u62e9\u3002",
+      "Beach clubs：Sundays Beach Club、Savaya，或 Bukit 半岛沿线其他适合泳池与海景的选择。",
     travel_uluwatu_li4:
-      "\u6d3b\u52a8\u5efa\u8bae\uff1a\u65e5\u843d\u65f6\u5206\u7684\u4e4c\u9c81\u74e6\u56fe\u5bfa\u3001Kecak \u706b\u821e\u3001Balangan \u6216 Nyang Nyang \u6d77\u6ee9\u89c2\u666f\u70b9\uff0c\u6216\u51b2\u6d6a\u8bfe\u3002",
-    travel_extend_tag: "\u5a5a\u793c\u4e4b\u540e",
-    travel_extend_title: "\u7ee7\u7eed\u63a2\u7d22\u7684\u8bdd",
+      "可以安排的活动：日落时分的乌鲁瓦图寺、Kecak 火舞、Balangan 或 Nyang Nyang 观景点，或上一节冲浪课。",
+
+    travel_extend_tag: "婚礼之后",
+    travel_extend_title: "如果你还想继续走走",
     travel_extend_body:
-      "\u5982\u679c\u4f60\u8fd8\u6709\u51e0\u5929\u5047\u671f\uff0c\u53ef\u4ee5\u5728\u4e0d\u540c\u533a\u57df\u95f4\u5207\u6362\uff0c\u4f53\u9a8c\u4e0d\u540c\u6c1b\u56f4\u3002",
+      "如果你在巴厘岛还有额外几天，其实很适合把时间分给两三个氛围完全不同的区域。",
     travel_extend_li1:
-      "\u6c34\u660e\u6f3e\uff1a\u9910\u5385\u3001\u7cbe\u54c1\u5e97\u4e0e\u5c4b\u9876\u65e5\u843d\u3002\u9644\u8fd1\u6d77\u6ee9\u4ff1\u4e50\u90e8\u6709 Potato Head\u3001Ku De Ta\uff0c\u4ee5\u53ca\u4ed3\u53e4\u7684 FINNS\u3002",
+      "水明漾：餐厅、精品店与屋顶日落；附近的海滩俱乐部包括 Potato Head、Ku De Ta，以及靠近仓古的 FINNS。",
     travel_extend_li2:
-      "\u4ed3\u53e4\uff1a\u5496\u5561\u9986\u3001\u5171\u4eab\u529e\u516c\u3001\u65e5\u843d\u9152\u5427\uff0c\u98ce\u683c\u66f4\u8f7b\u677e\u4f46\u5f88\u70ed\u95f9\u3002",
+      "仓古：咖啡馆、共享办公空间，以及更轻松但热闹的日落酒吧氛围。",
     travel_extend_li3:
-      "\u4e4c\u5e03\u6216\u5c71\u91cc\uff1a\u68af\u7530\u3001\u5bfa\u5e99\u4e0e\u66f4\u51c9\u723d\u7684\u7a7a\u6c14\uff0c\u5f62\u6210\u6d77\u8fb9\u5bf9\u6bd4\u3002",
+      "乌布或山里：如果你想从海边切换一下，这里有梯田、寺庙与更凉爽的空气。",
     travel_extend_li4:
-      "\u5982\u679c\u4e0d\u786e\u5b9a\u4f4f\u54ea\u91cc\uff0c\u6b22\u8fce\u95ee\u6211\u4eec\u2014\u2014\u5f88\u4e50\u610f\u7ed9\u5efa\u8bae\u3002",
+      "如果你不确定该住哪里，也欢迎来问我们，我们很乐意给你一些建议。",
     gallery_title: "\u76f8\u518c",
     gallery_intro:
       "\u4e00\u4e9b\u5df4\u5398\u5c9b\u6c1b\u56f4\u7167\u7247\u4e0e\u6211\u4eec\u6545\u4e8b\u7684\u7559\u767d\u3002\u5a5a\u793c\u540e\u4e5f\u4f1a\u5728\u8fd9\u91cc\u5206\u4eab\u5bbe\u5ba2\u4e0a\u4f20\u7167\u7247\u7684\u94fe\u63a5\u3002",

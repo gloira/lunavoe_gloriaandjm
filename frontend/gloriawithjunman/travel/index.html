@@ -16,6 +16,404 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <style>
+    .travel-story-shell {
+      display: grid;
+      gap: 2.25rem;
+    }
+
+    .travel-hero {
+      position: relative;
+      overflow: hidden;
+      border-radius: 36px;
+      padding: clamp(2rem, 4vw, 3.4rem);
+      background:
+        radial-gradient(circle at top left, rgba(255, 246, 234, 0.92), transparent 34%),
+        linear-gradient(135deg, rgba(255, 249, 240, 0.98), rgba(246, 238, 228, 0.98));
+      border: 1px solid rgba(175, 140, 104, 0.18);
+      box-shadow: 0 22px 60px rgba(64, 42, 22, 0.08);
+    }
+
+    .travel-hero::before,
+    .travel-hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 999px;
+      pointer-events: none;
+    }
+
+    .travel-hero::before {
+      inset: -80px auto auto -80px;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.58), transparent 72%);
+    }
+
+    .travel-hero::after {
+      inset: auto -60px -90px auto;
+      width: 240px;
+      height: 240px;
+      background: radial-gradient(circle, rgba(212, 165, 116, 0.14), transparent 70%);
+    }
+
+    .travel-hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 1.4rem;
+      grid-template-columns: 1.2fr 0.8fr;
+      align-items: end;
+    }
+
+    .travel-hero-note {
+      display: grid;
+      gap: 0.8rem;
+      align-self: stretch;
+    }
+
+    .travel-pill-grid {
+      display: grid;
+      gap: 0.85rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .travel-pill {
+      padding: 1rem 1rem 1.05rem;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(175, 140, 104, 0.14);
+      box-shadow: 0 10px 30px rgba(72, 52, 32, 0.05);
+    }
+
+    .travel-pill strong {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-family: "Marcellus", serif;
+      color: #4e3828;
+      font-size: 0.98rem;
+    }
+
+    .travel-pill span {
+      color: #6a5645;
+      line-height: 1.72;
+      font-size: 0.92rem;
+    }
+
+    .travel-section {
+      display: grid;
+      gap: 1.2rem;
+    }
+
+    .travel-section-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .travel-section-title {
+      font-family: "Gilda Display", serif;
+      font-size: clamp(1.9rem, 3vw, 2.35rem);
+      color: #3f2d1f;
+      line-height: 1.1;
+      margin: 0;
+    }
+
+    .travel-section-copy {
+      margin: 0;
+      max-width: 780px;
+      color: #6a5645;
+      line-height: 1.85;
+    }
+
+    .travel-story-grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 1.15rem;
+    }
+
+    .travel-card {
+      grid-column: span 6;
+      padding: 1.35rem 1.35rem 1.4rem;
+      border-radius: 28px;
+      border: 1px solid rgba(175, 140, 104, 0.15);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(249, 244, 238, 0.92));
+      box-shadow: 0 18px 40px rgba(62, 42, 22, 0.07);
+    }
+
+    .travel-card--full {
+      grid-column: span 12;
+    }
+
+    .travel-card--soft {
+      background: linear-gradient(180deg, rgba(255, 250, 245, 0.98), rgba(246, 236, 227, 0.92));
+    }
+
+    .travel-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.38rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      background: rgba(212, 165, 116, 0.14);
+      color: #8b6341;
+      margin-bottom: 0.9rem;
+    }
+
+    .travel-card h3 {
+      margin: 0 0 0.65rem;
+      font-family: "Marcellus", serif;
+      font-size: 1.42rem;
+      color: #4b3424;
+      letter-spacing: 0.01em;
+    }
+
+    .travel-card p {
+      margin: 0;
+      color: #6a5645;
+      line-height: 1.8;
+    }
+
+    .travel-list {
+      margin: 1rem 0 0;
+      padding-left: 1.15rem;
+      color: #6a5645;
+      line-height: 1.8;
+      display: grid;
+      gap: 0.5rem;
+    }
+
+    .travel-list strong {
+      color: #4b3424;
+      font-weight: 600;
+    }
+
+    .travel-region-board {
+      margin-top: 0.95rem;
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: 1rem;
+      align-items: stretch;
+    }
+
+    .travel-map-board {
+      position: relative;
+      overflow: hidden;
+      min-height: 420px;
+      border-radius: 28px;
+      background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.52), transparent 24%),
+        linear-gradient(180deg, rgba(248, 241, 233, 0.94), rgba(241, 231, 219, 0.94));
+      border: 1px solid rgba(175, 140, 104, 0.14);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
+    }
+
+    .travel-map-board::before {
+      content: "";
+      position: absolute;
+      inset: 8% 7%;
+      border-radius: 28px;
+      border: 1px dashed rgba(175, 140, 104, 0.18);
+      pointer-events: none;
+    }
+
+    .bali-silhouette {
+      position: absolute;
+      inset: 16% 16% 16% 16%;
+      background: rgba(221, 194, 165, 0.42);
+      filter: blur(0.2px);
+      clip-path: polygon(11% 48%, 18% 39%, 24% 32%, 34% 31%, 46% 28%, 58% 24%, 71% 26%, 80% 33%, 87% 45%, 84% 54%, 74% 59%, 61% 63%, 51% 69%, 40% 71%, 29% 70%, 20% 66%, 13% 58%);
+      border-radius: 999px;
+    }
+
+    .travel-point {
+      position: absolute;
+      display: grid;
+      gap: 0.25rem;
+      width: max-content;
+      max-width: 155px;
+      padding: 0.72rem 0.78rem;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid rgba(175, 140, 104, 0.14);
+      box-shadow: 0 12px 24px rgba(67, 45, 24, 0.08);
+    }
+
+    .travel-point::before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: #c49566;
+      box-shadow: 0 0 0 4px rgba(212, 165, 116, 0.16);
+    }
+
+    .travel-point strong {
+      font-family: "Marcellus", serif;
+      color: #4b3424;
+      font-size: 0.94rem;
+      line-height: 1.1;
+    }
+
+    .travel-point span {
+      color: #6a5645;
+      line-height: 1.55;
+      font-size: 0.82rem;
+    }
+
+    .travel-point--uluwatu {
+      left: 11%;
+      bottom: 16%;
+    }
+
+    .travel-point--uluwatu::before {
+      right: -16px;
+      top: 45%;
+    }
+
+    .travel-point--seminyak {
+      left: 33%;
+      top: 17%;
+    }
+
+    .travel-point--seminyak::before {
+      left: 50%;
+      bottom: -14px;
+      transform: translateX(-50%);
+    }
+
+    .travel-point--canggu {
+      right: 16%;
+      top: 13%;
+    }
+
+    .travel-point--canggu::before {
+      left: 18px;
+      bottom: -14px;
+    }
+
+    .travel-point--ubud {
+      right: 13%;
+      bottom: 20%;
+    }
+
+    .travel-point--ubud::before {
+      left: -15px;
+      top: 46%;
+    }
+
+    .travel-region-notes {
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .travel-region-card {
+      padding: 1rem 1.05rem 1.05rem;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid rgba(175, 140, 104, 0.14);
+      box-shadow: 0 12px 24px rgba(67, 45, 24, 0.05);
+    }
+
+    .travel-region-card strong {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-family: "Marcellus", serif;
+      color: #4b3424;
+      font-size: 1rem;
+    }
+
+    .travel-region-card span {
+      color: #6a5645;
+      line-height: 1.7;
+      font-size: 0.92rem;
+    }
+
+    .travel-note-box {
+      margin-top: 1rem;
+      padding: 1rem 1.05rem;
+      border-radius: 20px;
+      background: linear-gradient(135deg, rgba(246, 237, 228, 0.96), rgba(255, 249, 244, 0.92));
+      border: 1px solid rgba(175, 140, 104, 0.14);
+      color: #665241;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 980px) {
+      .travel-hero-grid,
+      .travel-region-board {
+        grid-template-columns: 1fr;
+      }
+
+      .travel-card {
+        grid-column: span 12;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .travel-hero {
+        border-radius: 28px;
+        padding: 1.55rem 1.2rem 1.7rem;
+      }
+
+      .travel-pill-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .travel-story-grid {
+        gap: 1rem;
+      }
+
+      .travel-card {
+        padding: 1.1rem;
+        border-radius: 24px;
+      }
+
+      .travel-map-board {
+        min-height: 360px;
+        border-radius: 24px;
+      }
+
+      .travel-point {
+        max-width: 132px;
+        padding: 0.65rem 0.7rem;
+      }
+
+      .travel-point strong {
+        font-size: 0.86rem;
+      }
+
+      .travel-point span {
+        font-size: 0.75rem;
+      }
+
+      .travel-point--uluwatu {
+        left: 6%;
+        bottom: 12%;
+      }
+
+      .travel-point--seminyak {
+        left: 24%;
+        top: 11%;
+      }
+
+      .travel-point--canggu {
+        right: 8%;
+        top: 10%;
+      }
+
+      .travel-point--ubud {
+        right: 7%;
+        bottom: 16%;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -44,7 +442,7 @@
             <a href="/gloriawithjunman/dresscode/" data-nav-link class="nav-link" data-i18n="nav_dresscode">Dress Code</a>
           </nav>
           <div class="nav-right">
-          <button class="lang-toggle" type="button" data-lang-toggle>EN</button>
+            <button class="lang-toggle" type="button" data-lang-toggle>EN</button>
             <a href="/gloriawithjunman/rsvp/" class="btn btn-ghost" data-i18n="nav_rsvp">RSVP</a>
             <button class="hamburger" type="button" aria-label="Menu" data-hamburger>
               <span class="hamburger-line"></span>
@@ -54,8 +452,8 @@
           </div>
         </div>
       </div>
-    <div class="mobile-nav-panel" data-mobile-panel>
-      <button class="mobile-nav-close" type="button" data-mobile-close aria-label="Close" title="Close">&times;</button>
+      <div class="mobile-nav-panel" data-mobile-panel>
+        <button class="mobile-nav-close" type="button" data-mobile-close aria-label="Close" title="Close">&times;</button>
         <div class="mobile-nav-inner">
           <a href="/gloriawithjunman/" class="mobile-nav-link" data-i18n="nav_home">Home</a>
           <a href="/gloriawithjunman/schedule/" class="mobile-nav-link" data-i18n="nav_schedule">Schedule</a>
@@ -69,69 +467,191 @@
     </header>
 
     <main class="page-main" style="padding-top: 100px;">
-
       <section class="section">
-        <div class="section-inner">
-          <div class="section-heading">
-            <div class="section-eyebrow" data-i18n="travel_title">Travel guide</div>
-            <p class="section-lead" data-i18n="travel_intro">
-              Here are some ideas for how to spend your free time in Uluwatu and a few suggestions if
-              you continue your trip to other parts of Bali.
-            </p>
-          </div>
+        <div class="section-inner" style="max-width: 1180px;">
+          <div class="travel-story-shell">
+            <section class="travel-hero">
+              <div class="travel-hero-grid">
+                <div class="section-heading" style="margin-bottom: 0;">
+                  <div class="section-eyebrow" data-i18n="travel_title">Travel guide</div>
+                  <p class="section-lead" data-i18n="travel_intro">
+                    A few practical notes before Bali, followed by our favourite ways to enjoy the island if you stay on a little longer.
+                  </p>
+                </div>
 
-          <div class="travel-grid">
-            <article class="travel-card">
-              <div class="travel-tag" data-i18n="travel_uluwatu_tag">Around Uluwatu</div>
-              <h3 data-i18n="travel_uluwatu_title">Cafes, views & beach clubs</h3>
-              <p data-i18n="travel_uluwatu_body">
-                Uluwatu is all about cliffs, surf breaks, and golden sunsets. It's easy to fill a day
-                between coffee, beaches, and a sunset drink.
-              </p>
-              <ul class="travel-list">
-                <li data-i18n="travel_uluwatu_li1">Cafes for brunch & coffee: Suka Espresso, Nourish Cafe, Baked, Alchemy, and The Loft.</li>
-                <li data-i18n="travel_uluwatu_li2">
-                  Sunset spots: Single Fin, Ulu Cliff House, or El Kabron for a more dressed-up evening.
-                </li>
-                <li data-i18n="travel_uluwatu_li3">
-                  Beach clubs: Sundays Beach Club, Savaya, or other options along the Bukit peninsula
-                  for pool-and-ocean days.
-                </li>
-                <li data-i18n="travel_uluwatu_li4">
-                  Things to do: Uluwatu Temple at sunset, Kecak fire dance, Balangan or Nyang Nyang
-                  beach viewpoints, or a surf class.
-                </li>
-              </ul>
-            </article>
+                <div class="travel-hero-note">
+                  <div class="travel-pill-grid">
+                    <div class="travel-pill">
+                      <strong data-i18n="travel_hero_pill_1_title">Before you fly</strong>
+                      <span data-i18n="travel_hero_pill_1_text">Check entry requirements, passport validity, and a few useful payment notes before you arrive.</span>
+                    </div>
+                    <div class="travel-pill">
+                      <strong data-i18n="travel_hero_pill_2_title">Once you land</strong>
+                      <span data-i18n="travel_hero_pill_2_text">Grab and Gojek are the easiest ways around, though extra time is always worth building into your day.</span>
+                    </div>
+                    <div class="travel-pill">
+                      <strong data-i18n="travel_hero_pill_3_title">If you keep exploring</strong>
+                      <span data-i18n="travel_hero_pill_3_text">From cliffside sunsets to rice terraces and beach towns, Bali changes beautifully from one area to the next.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
 
-            <article class="travel-card">
-              <div class="travel-tag" data-i18n="travel_extend_tag">After the wedding</div>
-              <h3 data-i18n="travel_extend_title">If you keep exploring</h3>
-              <p data-i18n="travel_extend_body">
-                If you have extra days, it's easy to split your time between a few different areas with
-                different vibes.
-              </p>
-              <ul class="travel-list">
-                <li data-i18n="travel_extend_li1">
-                  Seminyak: restaurants, boutique shopping, and rooftop sunsets. Nearby beach clubs
-                  include Potato Head, Ku De Ta, and FINNS in nearby Canggu.
-                </li>
-                <li data-i18n="travel_extend_li2">Canggu: cafes, co-working spots, and sunset bars for a more laid-back but lively scene.</li>
-                <li data-i18n="travel_extend_li3">
-                  Ubud or the mountains: rice terraces, temples, and cooler air if you'd like a contrast
-                  to the ocean.
-                </li>
-                <li data-i18n="travel_extend_li4">If you're unsure where to stay, feel free to ask us &mdash; we're happy to help with suggestions.</li>
-              </ul>
-            </article>
+            <section class="travel-section">
+              <div class="travel-section-head">
+                <div>
+                  <h2 class="travel-section-title" data-i18n="travel_section_1_title">Before Bali</h2>
+                </div>
+                <p class="travel-section-copy" data-i18n="travel_section_1_copy">A few practical things worth sorting out before you fly, so the weekend feels simple from the very start.</p>
+              </div>
+
+              <div class="travel-story-grid">
+                <article class="travel-card">
+                  <div class="travel-tag" data-i18n="travel_visa_tag">Before you go</div>
+                  <h3 data-i18n="travel_visa_title">Visa & entry</h3>
+                  <p data-i18n="travel_visa_body">Bali is straightforward for most travellers, though entry rules vary slightly depending on where you’re coming from.</p>
+                  <ul class="travel-list">
+                    <li data-i18n="travel_visa_li1"><strong>China:</strong> Visa on Arrival (VOA / e-VOA), usually 30 days and extendable once.</li>
+                    <li data-i18n="travel_visa_li2"><strong>Singapore:</strong> Visa-free entry for short leisure stays.</li>
+                    <li data-i18n="travel_visa_li3"><strong>Malaysia:</strong> Visa-free entry for short leisure stays.</li>
+                    <li data-i18n="travel_visa_li4">Make sure your passport has at least 6 months validity from arrival.</li>
+                  </ul>
+                </article>
+
+                <article class="travel-card travel-card--soft">
+                  <div class="travel-tag" data-i18n="travel_payment_tag">Good to know</div>
+                  <h3 data-i18n="travel_payment_title">Payments & currency</h3>
+                  <p data-i18n="travel_payment_body">Hotels and most restaurants are easy, though Bali still feels more relaxed if you carry a little cash for the smaller moments.</p>
+                  <ul class="travel-list">
+                    <li data-i18n="travel_payment_li1">Visa and Mastercard are the most widely accepted cards.</li>
+                    <li data-i18n="travel_payment_li2">Some smaller shops, warungs, and casual local spots may still prefer cash.</li>
+                    <li data-i18n="travel_payment_li3">It’s useful to keep some Indonesian Rupiah (IDR) with you, especially for small purchases.</li>
+                  </ul>
+                </article>
+              </div>
+            </section>
+
+            <section class="travel-section">
+              <div class="travel-section-head">
+                <div>
+                  <h2 class="travel-section-title" data-i18n="travel_section_2_title">Once you land</h2>
+                </div>
+                <p class="travel-section-copy" data-i18n="travel_section_2_copy">Bali moves at its own pace. A little extra time — and the right apps — make everything much easier.</p>
+              </div>
+
+              <div class="travel-story-grid">
+                <article class="travel-card travel-card--full">
+                  <div class="travel-tag" data-i18n="travel_transport_tag">Getting around</div>
+                  <h3 data-i18n="travel_transport_title">Transport & ride apps</h3>
+                  <p data-i18n="travel_transport_body">The easiest way to get around Bali is by ride-hailing app or a private driver, depending on how many stops you have planned for the day.</p>
+                  <div class="travel-region-notes" style="margin-top: 1rem; grid-template-columns: repeat(3, minmax(0,1fr)); display:grid;">
+                    <div class="travel-region-card">
+                      <strong data-i18n="travel_transport_li1_title">Grab</strong>
+                      <span data-i18n="travel_transport_li1">Easy for airport transfers, point-to-point rides, and general use around the island.</span>
+                    </div>
+                    <div class="travel-region-card">
+                      <strong data-i18n="travel_transport_li2_title">Gojek</strong>
+                      <span data-i18n="travel_transport_li2">Also widely used in Bali for rides, food delivery, and quick everyday errands.</span>
+                    </div>
+                    <div class="travel-region-card">
+                      <strong data-i18n="travel_transport_li3_title">Private driver</strong>
+                      <span data-i18n="travel_transport_li3">Best if you’re planning a full day out with several stops or exploring further afield.</span>
+                    </div>
+                  </div>
+                  <div class="travel-note-box" data-i18n="travel_transport_note">Traffic in Bali can be much slower than it looks on a map, especially in the afternoon and around sunset — so it’s always worth leaving a little earlier than you think.</div>
+                </article>
+              </div>
+            </section>
+
+            <section class="travel-section">
+              <div class="travel-section-head">
+                <div>
+                  <h2 class="travel-section-title" data-i18n="travel_section_3_title">If you keep exploring</h2>
+                </div>
+                <p class="travel-section-copy" data-i18n="travel_section_3_copy">Bali is wonderfully different from one pocket of the island to the next. Here’s the version we’d suggest if you want to extend the weekend a little.</p>
+              </div>
+
+              <div class="travel-story-grid">
+                <article class="travel-card travel-card--full">
+                  <div class="travel-tag" data-i18n="travel_map_tag">Explore Bali</div>
+                  <h3 data-i18n="travel_map_title">A simple guide to Bali’s main areas</h3>
+                  <p data-i18n="travel_map_body">If you’re deciding where to spend an extra day or two, think of Bali in moods: cliffs and sunsets in the south, restaurants and beach clubs further west, cafés and social energy around Canggu, and rice terraces inland toward Ubud.</p>
+
+                  <div class="travel-region-board">
+                    <div class="travel-map-board" aria-label="Bali region guide map">
+                      <div class="bali-silhouette"></div>
+                      <div class="travel-point travel-point--uluwatu">
+                        <strong data-i18n="travel_map_point_1_title">Uluwatu</strong>
+                        <span data-i18n="travel_map_point_1_text">Cliffs, beaches, sunsets</span>
+                      </div>
+                      <div class="travel-point travel-point--seminyak">
+                        <strong data-i18n="travel_map_point_2_title">Seminyak</strong>
+                        <span data-i18n="travel_map_point_2_text">Dining, shopping, beach clubs</span>
+                      </div>
+                      <div class="travel-point travel-point--canggu">
+                        <strong data-i18n="travel_map_point_3_title">Canggu</strong>
+                        <span data-i18n="travel_map_point_3_text">Cafés, laid-back social energy</span>
+                      </div>
+                      <div class="travel-point travel-point--ubud">
+                        <strong data-i18n="travel_map_point_4_title">Ubud</strong>
+                        <span data-i18n="travel_map_point_4_text">Rice terraces, temples, nature</span>
+                      </div>
+                    </div>
+
+                    <div class="travel-region-notes">
+                      <div class="travel-region-card">
+                        <strong data-i18n="travel_map_li1_title">Uluwatu</strong>
+                        <span data-i18n="travel_map_li1">Best for cliffside views, beach afternoons, and some of Bali’s most memorable sunsets.</span>
+                      </div>
+                      <div class="travel-region-card">
+                        <strong data-i18n="travel_map_li2_title">Seminyak</strong>
+                        <span data-i18n="travel_map_li2">Ideal for restaurants, boutique shopping, and a polished beach-club style of day.</span>
+                      </div>
+                      <div class="travel-region-card">
+                        <strong data-i18n="travel_map_li3_title">Canggu</strong>
+                        <span data-i18n="travel_map_li3">A little livelier — good for coffee, casual dinners, and an easy social atmosphere.</span>
+                      </div>
+                      <div class="travel-region-card">
+                        <strong data-i18n="travel_map_li4_title">Ubud</strong>
+                        <span data-i18n="travel_map_li4">If you want a gentler contrast to the coast: cooler air, temples, rice terraces, and greenery.</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="travel-card">
+                  <div class="travel-tag" data-i18n="travel_uluwatu_tag">Around Uluwatu</div>
+                  <h3 data-i18n="travel_uluwatu_title">Cafes, views & beach clubs</h3>
+                  <p data-i18n="travel_uluwatu_body">Uluwatu is all about cliffs, surf breaks, and golden sunsets. It’s easy to fill a day between coffee, beaches, and a sunset drink.</p>
+                  <ul class="travel-list">
+                    <li data-i18n="travel_uluwatu_li1">Cafes for brunch & coffee: Suka Espresso, Nourish Cafe, Baked, Alchemy, and The Loft.</li>
+                    <li data-i18n="travel_uluwatu_li2">Sunset spots: Single Fin, Ulu Cliff House, or El Kabron for a more dressed-up evening.</li>
+                    <li data-i18n="travel_uluwatu_li3">Beach clubs: Sundays Beach Club, Savaya, or other options along the Bukit peninsula for pool-and-ocean days.</li>
+                    <li data-i18n="travel_uluwatu_li4">Things to do: Uluwatu Temple at sunset, Kecak fire dance, Balangan or Nyang Nyang viewpoints, or a surf class.</li>
+                  </ul>
+                </article>
+
+                <article class="travel-card travel-card--soft">
+                  <div class="travel-tag" data-i18n="travel_extend_tag">After the wedding</div>
+                  <h3 data-i18n="travel_extend_title">If you keep exploring</h3>
+                  <p data-i18n="travel_extend_body">If you have extra days, it’s easy to split your time between a few different areas with completely different rhythms.</p>
+                  <ul class="travel-list">
+                    <li data-i18n="travel_extend_li1">Seminyak: restaurants, boutique shopping, and rooftop sunsets. Nearby beach clubs include Potato Head, Ku De Ta, and FINNS in nearby Canggu.</li>
+                    <li data-i18n="travel_extend_li2">Canggu: cafes, co-working spots, and sunset bars for a more laid-back but lively scene.</li>
+                    <li data-i18n="travel_extend_li3">Ubud or the mountains: rice terraces, temples, and cooler air if you’d like a contrast to the ocean.</li>
+                    <li data-i18n="travel_extend_li4">If you’re unsure where to stay, feel free to ask us — we’re always happy to help.</li>
+                  </ul>
+                </article>
+              </div>
+            </section>
           </div>
         </div>
       </section>
-
     </main>
 
     <footer class="page-footer">
-    <p data-i18n="footer_text">Gloria & Junman &middot; Bali &middot; 2026 &middot; Lunavoe</p>
+      <p data-i18n="footer_text">Gloria & Junman &middot; Bali &middot; 2026 &middot; Lunavoe</p>
     </footer>
   </div>
   <script src="../assets/js/i18n.js"></script>
@@ -139,6 +659,3 @@
 </body>
 
 </html>
-
-
-
