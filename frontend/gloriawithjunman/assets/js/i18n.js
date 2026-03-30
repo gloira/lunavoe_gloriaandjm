@@ -183,7 +183,11 @@ window.I18N = {
     renaissance_link_5_text: "Search this hotel in \u9ad8\u5fb7\u5730\u56fe",
     renaissance_link_6_title: "Open in Google Maps",
     renaissance_link_6_text: "See the hotel location in Google Maps",
-      travel_title: "Travel guide",
+    renaissance_experience_title_1: "Pool & Spa",
+    renaissance_experience_title_2: "Beach Time",
+    renaissance_experience_title_3: "Culture",
+    renaissance_experience_title_4: "In-Resort Events",
+    travel_title: "Travel guide",
     travel_intro:
       "Here are some ideas for how to spend your free time in Uluwatu and a few suggestions if you continue your trip to other parts of Bali.",
     travel_uluwatu_tag: "Around Uluwatu",
@@ -510,7 +514,10 @@ window.I18N = {
     renaissance_link_3_text: "\u67e5\u770b\u5165\u4f4f\u671f\u95f4\u9152\u5e97\u5185\u6d3b\u52a8\u5b89\u6392",
     renaissance_link_4_title: "\u9152\u5e97\u56fe\u7247",
     renaissance_link_4_text: "\u67e5\u770b\u623f\u95f4\u4e0e\u6574\u4f53\u73af\u5883",
-
+    renaissance_experience_title_1: "泳池与水疗",
+    renaissance_experience_title_2: "海滩时光",
+    renaissance_experience_title_3: "文化体验",
+    renaissance_experience_title_4: "酒店活动",
     // final note
     room_assignment_note:
       "\u5177\u4f53\u623f\u95f4\u5b89\u6392\u4e0e\u6700\u7ec8\u4f4f\u5bbf\u4fe1\u606f\uff0c\u6211\u4eec\u4f1a\u5728\u4e34\u8fd1\u65e5\u671f\u65f6\u7edf\u4e00\u5728\u5a5a\u793c\u7fa4\u4e2d\u901a\u77e5\u5927\u5bb6\u3002\u8c22\u8c22\u4f60\u4eec\u6765\u5230\u8fd9\u91cc\uff0c\u4e0e\u6211\u4eec\u4e00\u8d77\u5ea6\u8fc7\u8fd9\u4e2a\u5468\u672b\uff0c\u4e5f\u5e0c\u671b\u5927\u5bb6\u90fd\u80fd\u5728\u4e4c\u9c81\u74e6\u56fe\u4f4f\u5f97\u5f00\u5fc3\u3001\u8212\u9002\u3002",

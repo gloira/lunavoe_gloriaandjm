@@ -302,7 +302,8 @@
     }
 
     .stay-panel h3,
-    .stay-panel h4 {
+    .stay-panel h4,
+    .experience-block-title {
       margin: 0 0 0.65rem;
       font-family: "Marcellus", serif;
       color: #4f3827;
@@ -310,7 +311,8 @@
     }
 
     .stay-panel p,
-    .stay-panel li {
+    .stay-panel li,
+    .experience-item p {
       color: #6a5645;
       line-height: 1.75;
     }
@@ -318,6 +320,27 @@
     .stay-panel ul {
       margin: 0;
       padding-left: 1.1rem;
+    }
+
+    .amap-feature-card {
+      background: linear-gradient(180deg, rgba(255, 252, 248, 0.98), rgba(246, 237, 228, 0.9));
+    }
+
+    .amap-feature-body {
+      padding: 1.15rem 1.1rem 1.2rem;
+      display: grid;
+      gap: 1rem;
+      background: rgba(255, 255, 255, 0.78);
+    }
+
+    .amap-feature-copy {
+      margin: 0;
+      color: #6a5645;
+      line-height: 1.78;
+    }
+
+    .amap-feature-links {
+      grid-template-columns: 1fr;
     }
 
     .map-links-row {
@@ -370,6 +393,41 @@
       flex-shrink: 0;
     }
 
+    .experience-block {
+      padding: 1.2rem 1.2rem 1.25rem;
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(248, 241, 233, 0.9));
+      border: 1px solid rgba(175, 140, 104, 0.15);
+      box-shadow: 0 12px 28px rgba(67, 45, 24, 0.05);
+    }
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.9rem;
+    }
+
+    .experience-item {
+      padding: 1rem;
+      border-radius: 18px;
+      background: rgba(255, 251, 247, 0.95);
+      border: 1px solid rgba(175, 140, 104, 0.12);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .experience-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 18px rgba(65, 43, 22, 0.06);
+    }
+
+    .experience-item strong {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-family: "Marcellus", serif;
+      color: #4b3424;
+      font-size: 0.98rem;
+    }
+
     .notice-block {
       margin-top: 2.5rem;
       padding: 1.25rem 1.35rem;
@@ -396,7 +454,8 @@
         grid-auto-columns: 85%;
       }
 
-      .map-links-row {
+      .map-links-row,
+      .experience-grid {
         grid-template-columns: 1fr;
       }
     }
@@ -540,14 +599,14 @@
                     </div>
                   </div>
 
-                  <div class="map-card">
+                  <div class="map-card amap-feature-card">
                     <div class="map-card-head">
                       <div class="map-card-title" data-i18n="map_amap_title">Amap / 高德地图</div>
                       <span class="map-card-label" data-i18n="map_amap_label">China-friendly</span>
                     </div>
-                    <div class="stay-panel" style="border-radius:0; border:0; box-shadow:none; background:rgba(255,255,255,0.9);">
-                      <p data-i18n="stone_amap_note">For guests based in mainland China, Google Maps may not load normally. You can tap below to open the venue directly in Amap / 高德地图.</p>
-                      <div class="map-links-row" style="margin-top: 0.9rem;">
+                    <div class="amap-feature-body">
+                      <p class="amap-feature-copy" data-i18n="stone_amap_note">For guests based in mainland China, Google Maps may not load normally. You can tap below to open the venue directly in Amap / 高德地图.</p>
+                      <div class="map-links-row amap-feature-links">
                         <a class="stay-link" href="https://uri.amap.com/search?keyword=Stone%20Villas%20Uluwatu%20Bali" target="_blank" rel="noopener noreferrer">
                           <div>
                             <strong data-i18n="stone_link_2_title">Open in Amap</strong>
@@ -572,15 +631,6 @@
                     <h3 data-i18n="stone_address_title">Address</h3>
                     <p data-i18n="stone_address_text">Stone Villas Uluwatu, Banjar Dinas Karang Boma, Jl. Raya Uluwatu Pecatu, Bali.</p>
                   </div>
-
-                  <div class="stay-panel">
-                    <h4 data-i18n="stone_note_title">Good to know</h4>
-                    <ul>
-                      <li data-i18n="stone_note_1">The venue is on a cliff, so we recommend comfortable shoes and a light layer for the evening breeze.</li>
-                      <li data-i18n="stone_note_2">We’ll coordinate final on-site room assignments closer to the date.</li>
-                      <li data-i18n="stone_note_3">Transport details will also be shared with everyone in the wedding group chat.</li>
-                    </ul>
-                  </div>
                 </div>
               </div>
             </article>
@@ -601,6 +651,28 @@
                 </div>
               </div>
 
+              <div class="experience-block">
+                <h4 class="experience-block-title" data-i18n="renaissance_activities_title">Things to enjoy</h4>
+                <div class="experience-grid">
+                  <div class="experience-item">
+                    <strong data-i18n="renaissance_experience_title_1">Pool & Spa</strong>
+                    <p data-i18n="renaissance_activity_1">Relax by the resort pools or book a spa treatment for a slower Bali day.</p>
+                  </div>
+                  <div class="experience-item">
+                    <strong data-i18n="renaissance_experience_title_2">Beach Time</strong>
+                    <p data-i18n="renaissance_activity_2">Explore nearby beaches and watersports around Pandawa and Balangan.</p>
+                  </div>
+                  <div class="experience-item">
+                    <strong data-i18n="renaissance_experience_title_3">Culture</strong>
+                    <p data-i18n="renaissance_activity_3">Check out local cultural sights such as GWK Cultural Park or Pura Uluwatu.</p>
+                  </div>
+                  <div class="experience-item">
+                    <strong data-i18n="renaissance_experience_title_4">In-Resort Events</strong>
+                    <p data-i18n="renaissance_activity_4">Browse the hotel’s events calendar for in-resort happenings and weekend activities.</p>
+                  </div>
+                </div>
+              </div>
+
               <div class="stay-grid">
                 <div class="map-stack">
                   <div class="map-card">
@@ -614,14 +686,14 @@
                     </div>
                   </div>
 
-                  <div class="map-card">
+                  <div class="map-card amap-feature-card">
                     <div class="map-card-head">
                       <div class="map-card-title" data-i18n="map_amap_title">Amap / 高德地图</div>
                       <span class="map-card-label" data-i18n="map_amap_label">China-friendly</span>
                     </div>
-                    <div class="stay-panel" style="border-radius:0; border:0; box-shadow:none; background:rgba(255,255,255,0.9);">
-                      <p data-i18n="renaissance_amap_note">For guests based in mainland China, Google Maps may not load normally. You can tap below to open the hotel directly in Amap / 高德地图.</p>
-                      <div class="map-links-row" style="margin-top: 0.9rem;">
+                    <div class="amap-feature-body">
+                      <p class="amap-feature-copy" data-i18n="renaissance_amap_note">For guests based in mainland China, Google Maps may not load normally. You can tap below to open the hotel directly in Amap / 高德地图.</p>
+                      <div class="map-links-row amap-feature-links">
                         <a class="stay-link" href="https://uri.amap.com/search?keyword=Renaissance%20Bali%20Uluwatu%20Resort%20Spa" target="_blank" rel="noopener noreferrer">
                           <div>
                             <strong data-i18n="renaissance_link_5_title">Open in Amap</strong>
@@ -645,16 +717,6 @@
                   <div class="stay-panel">
                     <h3 data-i18n="renaissance_address_title">Address</h3>
                     <p data-i18n="renaissance_address_text">Jalan Pantai Balangan 1 No. 1, Ungasan, Bali 80361, Indonesia.</p>
-                  </div>
-
-                  <div class="stay-panel">
-                    <h4 data-i18n="renaissance_activities_title">Things to enjoy</h4>
-                    <ul>
-                      <li data-i18n="renaissance_activity_1">Relax by the resort pools or book a spa treatment for a slower Bali day.</li>
-                      <li data-i18n="renaissance_activity_2">Explore nearby beaches and watersports around Pandawa and Balangan.</li>
-                      <li data-i18n="renaissance_activity_3">Check out local cultural sights such as GWK Cultural Park or Pura Uluwatu.</li>
-                      <li data-i18n="renaissance_activity_4">Browse the hotel’s events calendar for in-resort happenings and weekend activities.</li>
-                    </ul>
                   </div>
 
                   <div class="stay-links">
