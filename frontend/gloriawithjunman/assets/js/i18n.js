@@ -93,24 +93,24 @@ window.I18N = {
     // add into en: { ... }
     venue_title: "Venue & stay",
     venue_intro:
-      "Our wedding weekend will take place in Uluwatu, Bali \u2014 with both our ceremony venue and guest accommodations thoughtfully arranged to create a relaxed and beautiful experience for everyone.",
+      "Our wedding weekend will unfold in Uluwatu, Bali \u2014 where the celebration and your stay have been thoughtfully arranged to create a relaxed and beautiful experience for everyone.",
 
     // highlight section
-    stay_highlight_title_1: "A little note on our room arrangements",
+    stay_highlight_title_1: "A note on accommodation",
     stay_highlight_text_1:
-      "Because Stone Villas has a limited number of rooms within the estate, we\u2019ve prioritized immediate family, our bridal party, and guests who will be joining our wedding morning preparations on-site.",
+      "With a limited number of rooms available within the estate, these have been set aside for our immediate family, bridal party, and those joining us for the morning preparations.",
     stay_highlight_title_2: "For everyone else",
     stay_highlight_text_2:
-      "For our other guests, we\u2019ve arranged a nearby stay at Renaissance Bali Uluwatu Resort & Spa \u2014 a beautiful and comfortable resort where you can fully enjoy your time in Bali over the weekend.",
+      "For our other guests, we\u2019ve chosen Renaissance Bali Uluwatu Resort & Spa as a nearby stay \u2014 a beautiful and comfortable retreat where you can relax and enjoy your time in Bali over the weekend.",
 
     // Stone Villas
     stone_kicker: "Ceremony & on-site stay",
     stone_name: "Stone Villas Uluwatu",
     stone_intro_long:
-      "Our ceremony and dinner celebration will take place here \u2014 a private cliffside estate overlooking the ocean. A limited number of rooms within the villas will be reserved for family members, bridesmaids, groomsmen, and guests involved in the early morning preparations.",
+      "Our ceremony and dinner will take place here. Set along the southern cliffs of Uluwatu, this oceanfront villa is known for some of Bali\u2019s most beautiful sunsets. Here, we\u2019ll gather at dusk and continue our celebration beneath the night sky.",
     stone_tag_1: "Wedding venue",
     stone_tag_2: "Cliffside ocean view",
-    stone_tag_3: "Priority stay for core guests",
+    stone_tag_3: "Iconic sunset views",
 
     stone_address_title: "Address",
     stone_address_text:
@@ -128,10 +128,10 @@ window.I18N = {
     stone_link_1_text: "View the venue location on Google Maps",
 
     // Renaissance
-    renaissance_kicker: "Recommended guest hotel",
+    renaissance_kicker: "Your stay, arranged",
     renaissance_name: "Renaissance Bali Uluwatu Resort & Spa",
     renaissance_intro_long:
-      "For guests staying off-site, we\u2019ve selected Renaissance Bali Uluwatu Resort & Spa as our recommended accommodation. It offers a relaxed and elevated resort experience, with beautiful views, great facilities, and plenty to explore throughout the weekend.",
+      "For guests staying off-site, Renaissance Bali Uluwatu Resort & Spa will be your home for the weekend \u2014 just a short drive from the venue, offering a relaxed and elevated setting where you can unwind and enjoy your time in Bali.",
     renaissance_tag_1: "Comfortable resort stay",
     renaissance_tag_2: "Pools, spa & dining",
     renaissance_tag_3: "Nearby Uluwatu experiences",
@@ -449,24 +449,24 @@ window.I18N = {
     //   "\u6211\u4eec\u4f1a\u5728\u4e34\u8fd1\u65e5\u671f\u786e\u8ba4\u623f\u95f4\u4e0e\u63a5\u9001\u5b89\u6392\u3002\u5982\u9700\u4f4f\u5728\u5916\u90e8\uff0c\u6211\u4eec\u4f1a\u63d0\u4f9b\u8f66\u7a0b\u7ea6 10\u201315 \u5206\u949f\u7684\u9152\u5e97\u6216\u522b\u5885\u6e05\u5355\u3002",
     venue_title: "\u5a5a\u793c\u573a\u5730\u4e0e\u4f4f\u5bbf",
     venue_intro:
-      "\u6211\u4eec\u7684\u5a5a\u793c\u5468\u672b\u5c06\u5728\u5df4\u5398\u5c9b\u4e4c\u9c81\u74e6\u56fe\u4e3e\u884c\u3002\u6211\u4eec\u4e5f\u4e3a\u5927\u5bb6\u51c6\u5907\u4e86\u573a\u5730\u4e0e\u4f4f\u5bbf\u5b89\u6392\uff0c\u5e0c\u671b\u5927\u5bb6\u90fd\u80fd\u5728\u8fd9\u4e2a\u5468\u672b\u8f7b\u677e\u3001\u8212\u9002\u5730\u4eab\u53d7\u8fd9\u4e00\u6bb5\u65f6\u5149\u3002",
+      "\u6211\u4eec\u7684\u5a5a\u793c\u5468\u672b\u5c06\u5728\u5df4\u5398\u5c9b\u4e4c\u9c81\u74e6\u56fe\u5c55\u5f00\u3002\u6211\u4eec\u4e5f\u4e3a\u5927\u5bb6\u7ec6\u5fc3\u5b89\u6392\u4e86\u573a\u5730\u4e0e\u4f4f\u5bbf\uff0c\u5e0c\u671b\u5927\u5bb6\u80fd\u5728\u8fd9\u6bb5\u65f6\u5149\u91cc\uff0c\u4ece\u5bb9\u800c\u6109\u5feb\u5730\u4eab\u53d7\u8fd9\u573a\u76f8\u805a\u3002",
 
     // highlight
     stay_highlight_title_1: "\u5173\u4e8e\u4f4f\u5bbf\u5b89\u6392",
     stay_highlight_text_1:
-      "\u7531\u4e8e Stone Villas \u573a\u5730\u5185\u7684\u623f\u95f4\u6570\u91cf\u6709\u9650\uff0c\u6211\u4eec\u4f1a\u4f18\u5148\u5b89\u6392\u76f4\u7cfb\u5bb6\u4eba\u3001\u4f34\u90ce\u4f34\u5a18\uff0c\u4ee5\u53ca\u9700\u8981\u53c2\u4e0e\u5a5a\u793c\u5f53\u5929\u65e9\u4e0a\u51c6\u5907\u73af\u8282\u7684\u5bbe\u5ba2\u5165\u4f4f\u3002",
+      "\u7531\u4e8e\u573a\u5730\u5185\u623f\u95f4\u6570\u91cf\u6709\u9650\uff0c\u6211\u4eec\u5df2\u5c06\u623f\u95f4\u4f18\u5148\u5b89\u6392\u7ed9\u76f4\u7cfb\u5bb6\u4eba\u3001\u4f34\u90ce\u4f34\u5a18\uff0c\u4ee5\u53ca\u53c2\u4e0e\u5a5a\u793c\u5f53\u65e5\u65e9\u95f4\u51c6\u5907\u7684\u5bbe\u5ba2\u3002",
     stay_highlight_title_2: "\u5176\u4f59\u5bbe\u5ba2\u4f4f\u5bbf",
     stay_highlight_text_2:
-      "\u5176\u4ed6\u5bbe\u5ba2\u6211\u4eec\u4e5f\u51c6\u5907\u4e86\u4e4c\u9c81\u74e6\u56fe\u4e07\u4e3d\u5ea6\u5047\u9152\u5e97\u4f5c\u4e3a\u5165\u4f4f\u9009\u62e9\uff0c\u5e0c\u671b\u5927\u5bb6\u5728\u5a5a\u793c\u5468\u672b\u4e5f\u80fd\u4f4f\u5f97\u8212\u9002\u3001\u653e\u677e\uff0c\u4eab\u53d7\u5df4\u5398\u5c9b\u7684\u65f6\u5149\u3002",
+      "\u6211\u4eec\u4e5f\u4e3a\u5176\u4ed6\u5bbe\u5ba2\u9009\u62e9\u4e86\u4e4c\u9c81\u74e6\u56fe\u4e07\u4e3d\u5ea6\u5047\u9152\u5e97\u4f5c\u4e3a\u4e0b\u69bb\u4e4b\u5904\uff0c\u5e0c\u671b\u5927\u5bb6\u5728\u5a5a\u793c\u5468\u672b\u80fd\u591f\u653e\u677e\u8eab\u5fc3\uff0c\u5c3d\u60c5\u4eab\u53d7\u5df4\u5398\u5c9b\u7684\u65f6\u5149\u3002",
 
     // Stone
     stone_kicker: "\u5a5a\u793c\u573a\u5730 \u00b7 \u573a\u5185\u4f4f\u5bbf",
-    stone_name: "Stone Villas Uluwatu",
+    stone_name: "\u4e4c\u9c81\u74e6\u56fe\u77f3\u5934\u522b\u5885",
     stone_intro_long:
-      "\u6211\u4eec\u7684\u5a5a\u793c\u4eea\u5f0f\u4e0e\u665a\u5bb4\u5c06\u5728\u8fd9\u91cc\u4e3e\u884c\u3002\u8fd9\u662f\u4e00\u5904\u9762\u671d\u5927\u6d77\u7684\u60ac\u5d16\u522b\u5885\u5e84\u56ed\u3002\u7531\u4e8e\u623f\u95f4\u6570\u91cf\u6709\u9650\uff0c\u573a\u5185\u4f4f\u5bbf\u5c06\u4f18\u5148\u5b89\u6392\u5bb6\u4eba\u3001\u4f34\u90ce\u4f34\u5a18\uff0c\u4ee5\u53ca\u53c2\u4e0e\u5a5a\u793c\u5f53\u5929\u6e05\u6668\u51c6\u5907\u7684\u5bbe\u5ba2\u3002",
+      "\u6211\u4eec\u7684\u5a5a\u793c\u4eea\u5f0f\u4e0e\u665a\u5bb4\u5c06\u5728\u8fd9\u91cc\u4e3e\u884c\u3002\u8fd9\u662f\u4e00\u5904\u5750\u843d\u4e8e\u4e4c\u9c81\u74e6\u56fe\u5357\u90e8\u60ac\u5d16\u6d77\u5cb8\u7684\u522b\u5885\uff0c\u9762\u671d\u5927\u6d77\uff0c\u4e5f\u88ab\u89c6\u4e3a\u5df4\u5398\u5c9b\u6700\u8ff7\u4eba\u7684\u65e5\u843d\u89c2\u666f\u4e4b\u5730\u4e4b\u4e00\uff0c\u6211\u4eec\u5c06\u5728\u6b64\u76f8\u805a\uff0c\u5728\u591c\u7a7a\u4e4b\u4e0b\u5ef6\u7eed\u8fd9\u4e00\u573a\u5e86\u795d\u3002",
     stone_tag_1: "\u5a5a\u793c\u4e3e\u529e\u5730",
     stone_tag_2: "\u60ac\u5d16\u6d77\u666f",
-    stone_tag_3: "\u4f18\u5148\u5b89\u6392\u6838\u5fc3\u5bbe\u5ba2\u5165\u4f4f",
+    stone_tag_3: "\u6807\u5fd7\u6027\u65e5\u843d\u666f\u89c2",
 
     stone_address_title: "\u5730\u5740",
     stone_address_text:
@@ -484,10 +484,10 @@ window.I18N = {
     stone_link_1_text: "\u5728 Google \u5730\u56fe\u4e2d\u67e5\u770b\u573a\u5730\u4f4d\u7f6e",
 
     // Renaissance
-    renaissance_kicker: "\u5bbe\u5ba2\u63a8\u8350\u5165\u4f4f\u9152\u5e97",
-    renaissance_name: "Renaissance Bali Uluwatu Resort & Spa",
+    renaissance_kicker: "\u4e3a\u60a8\u5b89\u6392\u7684\u5165\u4f4f",
+    renaissance_name: "\u4e4c\u9c81\u74e6\u56fe\u4e07\u4e3d\u5ea6\u5047\u9152\u5e97",
     renaissance_intro_long:
-      "\u5bf9\u4e8e\u4e0d\u4f4f\u5728\u573a\u5730\u5185\u7684\u5bbe\u5ba2\uff0c\u6211\u4eec\u4e3a\u5927\u5bb6\u51c6\u5907\u4e86\u4e4c\u9c81\u74e6\u56fe\u4e07\u4e3d\u5ea6\u5047\u9152\u5e97\u4f5c\u4e3a\u4f4f\u5bbf\u9009\u62e9\u3002\u8fd9\u91cc\u73af\u5883\u4f18\u7f8e\u3001\u8bbe\u65bd\u5b8c\u5584\uff0c\u4e5f\u975e\u5e38\u9002\u5408\u5728\u5a5a\u793c\u5468\u672b\u653e\u677e\u4f11\u606f\u3001\u4eab\u53d7\u5df4\u5398\u5c9b\u7684\u6c1b\u56f4\u3002",
+      "\u5bf9\u4e8e\u4e0d\u4f4f\u5728\u573a\u5730\u5185\u7684\u5bbe\u5ba2\uff0c\u4e4c\u9c81\u74e6\u56fe\u4e07\u4e3d\u5ea6\u5047\u9152\u5e97\u5c06\u6210\u4e3a\u5927\u5bb6\u5728\u8fd9\u4e2a\u5468\u672b\u7684\u4e0b\u69bb\u4e4b\u5904\uff0c\u8ddd\u79bb\u5a5a\u793c\u573a\u5730\u4ec5\u9700\u77ed\u9014\u8f66\u7a0b\uff0c\u5728\u8212\u9002\u800c\u96c5\u81f4\u7684\u73af\u5883\u4e2d\uff0c\u653e\u677e\u8eab\u5fc3\uff0c\u4eab\u53d7\u5df4\u5398\u5c9b\u7684\u65f6\u5149\u3002",
     renaissance_tag_1: "\u8212\u9002\u5ea6\u5047\u578b\u4f4f\u5bbf",
     renaissance_tag_2: "\u6cf3\u6c60\u3001\u6c34\u7597\u4e0e\u9910\u996e",
     renaissance_tag_3: "\u4e4c\u9c81\u74e6\u56fe\u5468\u8fb9\u4f53\u9a8c\u4e30\u5bcc",
@@ -524,19 +524,19 @@ window.I18N = {
     venue_gallery_title: "\u573a\u5730\u4e00\u77a5",
     map_google_title: "Google \u5730\u56fe",
     map_google_label: "\u6d77\u5916\u9002\u7528",
-    map_apple_title: "Apple \u5730\u56fe",
-    map_apple_label: "Apple \u7528\u6237",
+    map_apple_title: "\u82f9\u679c\u5730\u56fe",
+    map_apple_label: "\u82f9\u679c\u7528\u6237",
 
     
     stone_apple_note:
-      "如果你使用 iPhone，也可以通过下方按钮直接在 Apple 地图中打开婚礼场地。",
-    stone_apple_link_title: "用 Apple 地图打开",
-    stone_apple_link_text: "在 Apple 地图中打开这个场地",
+      "\u5982\u679c\u4f60\u4f7f\u7528 iPhone\uff0c\u4e5f\u53ef\u4ee5\u901a\u8fc7\u4e0b\u65b9\u6309\u94ae\u76f4\u63a5\u5728\u82f9\u679c\u5730\u56fe\u4e2d\u6253\u5f00\u5a5a\u793c\u573a\u5730\u3002",
+    stone_apple_link_title: "\u7528\u82f9\u679c\u5730\u56fe\u6253\u5f00",
+    stone_apple_link_text: "\u5728\u82f9\u679c\u5730\u56fe\u4e2d\u6253\u5f00\u8fd9\u4e2a\u573a\u5730",
 
     renaissance_apple_note:
-      "如果你使用 iPhone，也可以通过下方按钮直接在 Apple 地图中打开酒店位置。",
-    renaissance_apple_link_title: "用 Apple 地图打开",
-    renaissance_apple_link_text: "在 Apple 地图中打开这家酒店",
+      "\u5982\u679c\u4f60\u4f7f\u7528 iPhone\uff0c\u4e5f\u53ef\u4ee5\u901a\u8fc7\u4e0b\u65b9\u6309\u94ae\u76f4\u63a5\u5728\u82f9\u679c\u5730\u56fe\u4e2d\u6253\u5f00\u9152\u5e97\u4f4d\u7f6e\u3002",
+    renaissance_apple_link_title: "\u7528\u82f9\u679c\u5730\u56fe\u6253\u5f00",
+    renaissance_apple_link_text: "\u5728\u82f9\u679c\u5730\u56fe\u4e2d\u6253\u5f00\u8fd9\u5bb6\u9152\u5e97",
     renaissance_link_6_title: "\u7528 Google \u5730\u56fe\u6253\u5f00",
     renaissance_link_6_text: "\u5728 Google \u5730\u56fe\u4e2d\u67e5\u770b\u9152\u5e97\u4f4d\u7f6e",
     travel_title: "\u51fa\u884c\u6307\u5357",
