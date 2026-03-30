@@ -191,15 +191,20 @@ window.I18N = {
     travel_intro:
       "A few practical notes before Bali, followed by a gentle guide to the island if you choose to stay a little longer.",
 
-    travel_hero_pill_1_title: "Before you fly",
-    travel_hero_pill_1_text:
-      "A few small things worth checking before departure — entry requirements, passport validity, and practical notes for arrival.",
-    travel_hero_pill_2_title: "Once you land",
-    travel_hero_pill_2_text:
-      "Getting around Bali is usually simple with the right apps, though the island does ask for a little more time than the map suggests.",
-    travel_hero_pill_3_title: "If you keep exploring",
-    travel_hero_pill_3_text:
-      "From southern cliffs and sunset views to rice terraces and beach towns, each part of Bali carries its own rhythm.",
+    travel_editorial_note:
+      "Consider this a quiet companion for the weekend: a few useful things before you arrive, and a few favourite corners of the island should you wish to linger.",
+
+    travel_hero_caption_title: "Cliffs, light, and a slower sense of time",
+    travel_hero_caption_text:
+      "The south of Bali is where ocean views, sea breeze, and late golden evenings tend to unfold best.",
+
+    travel_hero_small_1_title: "Uluwatu",
+    travel_hero_small_1_text:
+      "Where the cliffs meet the sea and the sunsets arrive slowly.",
+
+    travel_hero_small_2_title: "A weekend, gently planned",
+    travel_hero_small_2_text:
+      "A few practical notes first, then the island at your own pace.",
 
     travel_section_1_title: "Before Bali",
     travel_section_1_copy:
@@ -634,15 +639,20 @@ window.I18N = {
     travel_intro:
       "这里整理了一些前往巴厘岛之前的实用小提示；如果你想在婚礼周末之后多停留几日，也附上了一份温柔而简单的岛上指南。",
 
-    travel_hero_pill_1_title: "出发之前",
-    travel_hero_pill_1_text:
-      "出发前可以先确认几个小细节，例如入境要求、护照有效期，以及一些抵达后会用到的实用信息。",
-    travel_hero_pill_2_title: "落地之后",
-    travel_hero_pill_2_text:
-      "在巴厘岛出行通常并不复杂，只是这座岛总比地图上看起来更需要一点时间。",
-    travel_hero_pill_3_title: "如果继续玩几天",
-    travel_hero_pill_3_text:
-      "从南部悬崖与日落，到稻田、海滩小镇与不同区域的节奏，巴厘岛每一处都有它自己的风景。",
+    travel_editorial_note:
+      "不妨把这一页当作陪伴这个周末的一份小注脚：先是一些抵达前会用到的实用信息，再是几处若你愿意稍作停留，值得慢慢去看的岛上风景。",
+
+    travel_hero_caption_title: "悬崖、光线，与慢下来的时间",
+    travel_hero_caption_text:
+      "巴厘岛南部最迷人的地方，往往就在于海景、海风，以及那些来得很慢的金色黄昏。",
+
+    travel_hero_small_1_title: "乌鲁瓦图",
+    travel_hero_small_1_text:
+      "在这里，悬崖与海相接，日落也总是来得格外从容。",
+
+    travel_hero_small_2_title: "一场被温柔安排好的周末",
+    travel_hero_small_2_text:
+      "先准备好几件实用的小事，剩下的，就交给这座岛的节奏。",
 
     travel_section_1_title: "前往巴厘岛之前",
     travel_section_1_copy:
