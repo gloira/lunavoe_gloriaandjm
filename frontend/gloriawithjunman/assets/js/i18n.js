@@ -78,18 +78,94 @@ window.I18N = {
     schedule_sun_1: "A slow morning, no alarms needed.",
     schedule_sun_2: "Breakfast, pool time, or a gentle spa.",
     schedule_sun_3: "Head home, or continue your journey across the island.",
+    // venue_title: "Venue & stay",
+    // venue_intro:
+    //   "Our ceremony and reception will take place at Stone Villas Uluwatu, a cliffside villa complex with sweeping ocean views.",
+    // venue_gallery_title: "Venue glimpses",
+    // venue_fact_1:
+    //   "Stone Villas Uluwatu \u00b7 Banjar Dinas Karang Boma, Jl. Raya Uluwatu Pecatu, Bali.",
+    // venue_fact_2:
+    //   "Some guests will stay on-site at the villas, others in nearby hotels \u2014 we'll coordinate rooms within the group chat.",
+    // venue_fact_3:
+    //   "The venue is on a cliff; please plan for comfortable shoes and a light layer for the evening breeze.",
+    // venue_note:
+    //   "We'll confirm specific room assignments and transfer details closer to the date. If you prefer to stay off-site, we'll share a short list of hotels and villas within a 10\u201315 minute drive.",
+    // add into en: { ... }
     venue_title: "Venue & stay",
     venue_intro:
-      "Our ceremony and reception will take place at Stone Villas Uluwatu, a cliffside villa complex with sweeping ocean views.",
-    venue_gallery_title: "Venue glimpses",
-    venue_fact_1:
-      "Stone Villas Uluwatu \u00b7 Banjar Dinas Karang Boma, Jl. Raya Uluwatu Pecatu, Bali.",
-    venue_fact_2:
-      "Some guests will stay on-site at the villas, others in nearby hotels \u2014 we'll coordinate rooms within the group chat.",
-    venue_fact_3:
-      "The venue is on a cliff; please plan for comfortable shoes and a light layer for the evening breeze.",
-    venue_note:
-      "We'll confirm specific room assignments and transfer details closer to the date. If you prefer to stay off-site, we'll share a short list of hotels and villas within a 10\u201315 minute drive.",
+      "Our wedding weekend will take place in Uluwatu, Bali \u2014 with both our ceremony venue and guest accommodations thoughtfully arranged to create a relaxed and beautiful experience for everyone.",
+
+    // highlight section
+    stay_highlight_title_1: "A little note on our room arrangements",
+    stay_highlight_text_1:
+      "Because Stone Villas has a limited number of rooms within the estate, we\u2019ve prioritized immediate family, our bridal party, and guests who will be joining our wedding morning preparations on-site.",
+    stay_highlight_title_2: "For everyone else",
+    stay_highlight_text_2:
+      "For our other guests, we\u2019ve arranged a nearby stay at Renaissance Bali Uluwatu Resort & Spa \u2014 a beautiful and comfortable resort where you can fully enjoy your time in Bali over the weekend.",
+
+    // Stone Villas
+    stone_kicker: "Ceremony & on-site stay",
+    stone_name: "Stone Villas Uluwatu",
+    stone_intro_long:
+      "Our ceremony and dinner celebration will take place here \u2014 a private cliffside estate overlooking the ocean. A limited number of rooms within the villas will be reserved for family members, bridesmaids, groomsmen, and guests involved in the early morning preparations.",
+    stone_tag_1: "Wedding venue",
+    stone_tag_2: "Cliffside ocean view",
+    stone_tag_3: "Priority stay for core guests",
+
+    stone_address_title: "Address",
+    stone_address_text:
+      "Stone Villas Uluwatu, Banjar Dinas Karang Boma, Jl. Raya Uluwatu Pecatu, Bali.",
+
+    stone_note_title: "Good to know",
+    stone_note_1:
+      "The venue is located on a cliff, so we recommend comfortable shoes and a light layer for the evening breeze.",
+    stone_note_2:
+      "Final room assignments for on-site stays will be confirmed closer to the date.",
+    stone_note_3:
+      "Transportation details will also be shared with everyone in the wedding group chat.",
+
+    stone_link_1_title: "Open map",
+    stone_link_1_text: "View the venue location on Google Maps",
+
+    // Renaissance
+    renaissance_kicker: "Recommended guest hotel",
+    renaissance_name: "Renaissance Bali Uluwatu Resort & Spa",
+    renaissance_intro_long:
+      "For guests staying off-site, we\u2019ve selected Renaissance Bali Uluwatu Resort & Spa as our recommended accommodation. It offers a relaxed and elevated resort experience, with beautiful views, great facilities, and plenty to explore throughout the weekend.",
+    renaissance_tag_1: "Comfortable resort stay",
+    renaissance_tag_2: "Pools, spa & dining",
+    renaissance_tag_3: "Nearby Uluwatu experiences",
+
+    renaissance_address_title: "Address",
+    renaissance_address_text:
+      "Jalan Pantai Balangan 1 No. 1, Ungasan, Bali 80361, Indonesia.",
+
+    renaissance_activities_title: "Things to enjoy",
+    renaissance_activity_1:
+      "Relax by the resort pools or book a spa treatment for a slower Bali day.",
+    renaissance_activity_2:
+      "Explore nearby beaches such as Pandawa and Balangan.",
+    renaissance_activity_3:
+      "Visit local cultural landmarks like GWK Cultural Park or Pura Uluwatu.",
+    renaissance_activity_4:
+      "Check the hotel\u2019s event calendar for in-resort experiences and activities.",
+
+    renaissance_link_1_title: "Hotel overview",
+    renaissance_link_1_text:
+      "See accommodation details, dining options and facilities",
+    renaissance_link_2_title: "Experiences",
+    renaissance_link_2_text:
+      "Explore nearby beaches, culture and wellness activities",
+    renaissance_link_3_title: "Hotel events",
+    renaissance_link_3_text:
+      "See what\u2019s happening at the resort during your stay",
+    renaissance_link_4_title: "Photo gallery",
+    renaissance_link_4_text:
+      "View rooms, views and resort spaces",
+
+    // final note
+    room_assignment_note:
+      "Specific room assignments and final stay details will be shared closer to the date in our wedding group chat. Thank you for being part of this weekend with us \u2014 we truly hope you have a beautiful and comfortable stay in Uluwatu.",
     travel_title: "Travel guide",
     travel_intro:
       "Here are some ideas for how to spend your free time in Uluwatu and a few suggestions if you continue your trip to other parts of Bali.",
@@ -317,39 +393,110 @@ window.I18N = {
       "\u4e0d\u5fc5\u5306\u5fd9\uff0c\u4e5f\u65e0\u9700\u5b89\u6392\u592a\u591a\u3002\u8fd9\u4e00\u6574\u4e2a\u5468\u672b\uff0c\u6211\u4eec\u628a\u65f6\u95f4\u7559\u7ed9\u6d77\u98ce\u3001\u65e5\u843d\uff0c\u8fd8\u6709\u5f7c\u6b64\u7684\u966a\u4f34\u3002",
     schedule_fri_label: "9\u670811\u65e5 \u00b7 \u5468\u4e94 \u00b7 \u62b5\u8fbe",
     schedule_fri_meta: "\u62b5\u8fbe\u4e0e\u5b89\u987f",
-    schedule_fri_1: "\u62b5\u8fbe\u4e4c\u9c81\u74e6\u56fe\uff0c\u5165\u4f4f\u4f60\u7684\u522b\u5885\u6216\u9152\u5e97.",
+    schedule_fri_1: "\u62b5\u8fbe\u4e4c\u9c81\u74e6\u56fe\uff0c\u5165\u4f4f\u4f60\u7684\u522b\u5885\u6216\u9152\u5e97\u3002",
     schedule_fri_2:
-      "\u4e0b\u5348\u968f\u610f\u5b89\u6392\u2014\u2014\u6cf3\u6c60\u3001\u5496\u5561\u9986\uff0c\u6216\u6d77\u8fb9\u6563\u6b65.",
+      "\u4e0b\u5348\u968f\u610f\u5b89\u6392\u2014\u2014\u6cf3\u6c60\u3001\u5496\u5561\u9986\uff0c\u6216\u6d77\u8fb9\u6563\u6b65\u3002",
     schedule_fri_3:
-      "\u591c\u665a\u7559\u7ed9\u81ea\u5df1\uff0c\u6216\u4e0e\u670b\u53cb\u76f8\u7ea6\u4e00\u987f\u8f7b\u677e\u7684\u665a\u9910.",
+      "\u591c\u665a\u7559\u7ed9\u81ea\u5df1\uff0c\u6216\u4e0e\u670b\u53cb\u76f8\u7ea6\u4e00\u987f\u8f7b\u677e\u7684\u665a\u9910\u3002",
     schedule_sat_label: "9\u670812\u65e5 \u00b7 \u5468\u516d \u00b7 \u5a5a\u793c\u65e5",
     schedule_sat_meta: "\u4eea\u5f0f\u4e0e\u5e86\u795d",
-    schedule_sat_1: "15:30 \u00b7 \u6765\u5bbe\u62b5\u8fbe Stone Villas Uluwatu.",
-    schedule_sat_2: "16:00 \u00b7 \u60ac\u5d16\u4e4b\u4e0a\u7684\u4eea\u5f0f.",
+    schedule_sat_1: "15:30 \u00b7 \u6765\u5bbe\u62b5\u8fbe Stone Villas Uluwatu\u3002",
+    schedule_sat_2: "16:00 \u00b7 \u60ac\u5d16\u4e4b\u4e0a\u7684\u4eea\u5f0f\u3002",
     schedule_sat_3: "17:00 \u00b7 \u65e5\u843d\u65f6\u5206\u7684\u9e21\u5c3e\u9152\u4e0e\u62cd\u7167\u3002",
-    schedule_sat_4: "19:00 \u00b7 \u661f\u7a7a\u4e4b\u4e0b\u7684\u665a\u5bb4.",
-    schedule_sat_5: "22:00 \u00b7 \u6e38\u620f\u4e0e\u62bd\u5956\u65f6\u523b.",
-    schedule_sat_6: "23:00 \u00b7 after party\uff08\u670b\u53cb\u4e13\u5c5e\uff09",
-    schedule_sat_7: "02:00 \u00b7 \u591c\u665a\u7f13\u7f13\u843d\u5e55.",
+    schedule_sat_4: "19:00 \u00b7 \u661f\u7a7a\u4e4b\u4e0b\u7684\u665a\u5bb4\u3002",
+    schedule_sat_5: "22:00 \u00b7 \u6e38\u620f\u4e0e\u62bd\u5956\u65f6\u523b\u3002",
+    schedule_sat_6: "23:00 \u00b7 After Party\uff08\u670b\u53cb\u4e13\u5c5e\uff09\u3002",
+    schedule_sat_7: "02:00 \u00b7 \u591c\u665a\u7f13\u7f13\u843d\u5e55\u3002",
     schedule_sat_note:
       "\u4e0d\u5fc5\u52c9\u5f3a\u81ea\u5df1\u5f85\u5230\u6700\u540e\uff0c\u4efb\u4f55\u65f6\u5019\u60f3\u79bb\u5f00\uff0c\u8bb0\u5f97\u548c\u6211\u4eec\u8bf4\u4e00\u58f0\u5c31\u597d\u3002",
     schedule_sun_label: "9\u670813\u65e5 \u00b7 \u5468\u65e5 \u00b7 \u6162\u6162\u544a\u522b",
     schedule_sun_meta: "\u6162\u6162\u544a\u522b",
-    schedule_sun_1: "\u4e00\u4e2a\u4e0d\u8bbe\u95f9\u949f\u7684\u65e9\u6668.",
-    schedule_sun_2: "\u65e9\u9910\u3001\u6cf3\u6c60\uff0c\u6216\u4e00\u573a\u653e\u677e\u7684 spa.",
-    schedule_sun_3: "\u542f\u7a0b\u56de\u5bb6\uff0c\u6216\u7ee7\u7eed\u4f60\u7684\u5df4\u5398\u5c9b\u65c5\u7a0b.",
-    venue_title: "\u573a\u5730\u4e0e\u4f4f\u5bbf",
+    schedule_sun_1: "\u4e00\u4e2a\u4e0d\u8bbe\u95f9\u949f\u7684\u65e9\u6668\u3002",
+    schedule_sun_2: "\u65e9\u9910\u3001\u6cf3\u6c60\uff0c\u6216\u4e00\u573a\u653e\u677e\u7684 Spa\u3002",
+    schedule_sun_3: "\u542f\u7a0b\u56de\u5bb6\uff0c\u6216\u7ee7\u7eed\u4f60\u7684\u5df4\u5398\u5c9b\u65c5\u7a0b\u3002",
+    // venue_title: "\u573a\u5730\u4e0e\u4f4f\u5bbf",
+    // venue_intro:
+    //   "\u5a5a\u793c\u4eea\u5f0f\u4e0e\u665a\u5bb4\u5c06\u5728 Stone Villas Uluwatu \u4e3e\u884c\uff0c\u8fd9\u662f\u4e00\u5904\u60ac\u5d16\u522b\u5885\u7fa4\uff0c\u53ef\u4fef\u77b0\u6574\u7247\u6d77\u666f\u3002",
+    // venue_gallery_title: "\u573a\u5730\u4e00\u77a5",
+    // venue_fact_1:
+    //   "Stone Villas Uluwatu \u00b7 Banjar Dinas Karang Boma, Jl. Raya Uluwatu Pecatu, Bali.",
+    // venue_fact_2:
+    //   "\u90e8\u5206\u5bbe\u5ba2\u5c06\u4f4f\u5728\u522b\u5885\u5185\uff0c\u5176\u4ed6\u4eba\u4f4f\u9644\u8fd1\u9152\u5e97\u2014\u2014\u6211\u4eec\u4f1a\u5728\u7fa4\u91cc\u534f\u8c03\u3002",
+    // venue_fact_3:
+    //   "\u573a\u5730\u4f4d\u4e8e\u60ac\u5d16\u8fb9\uff0c\u8bf7\u51c6\u5907\u8212\u9002\u978b\u5c65\u4e0e\u8584\u5916\u5957\u4ee5\u5e94\u5bf9\u6d77\u98ce\u3002",
+    // venue_note:
+    //   "\u6211\u4eec\u4f1a\u5728\u4e34\u8fd1\u65e5\u671f\u786e\u8ba4\u623f\u95f4\u4e0e\u63a5\u9001\u5b89\u6392\u3002\u5982\u9700\u4f4f\u5728\u5916\u90e8\uff0c\u6211\u4eec\u4f1a\u63d0\u4f9b\u8f66\u7a0b\u7ea6 10\u201315 \u5206\u949f\u7684\u9152\u5e97\u6216\u522b\u5885\u6e05\u5355\u3002",
+    venue_title: "\u5a5a\u793c\u573a\u5730\u4e0e\u4f4f\u5bbf",
     venue_intro:
-      "\u5a5a\u793c\u4eea\u5f0f\u4e0e\u665a\u5bb4\u5c06\u5728 Stone Villas Uluwatu \u4e3e\u884c\uff0c\u8fd9\u662f\u4e00\u5904\u60ac\u5d16\u522b\u5885\u7fa4\uff0c\u53ef\u4fef\u77b0\u6574\u7247\u6d77\u666f\u3002",
-    venue_gallery_title: "\u573a\u5730\u4e00\u77a5",
-    venue_fact_1:
-      "Stone Villas Uluwatu \u00b7 Banjar Dinas Karang Boma, Jl. Raya Uluwatu Pecatu, Bali.",
-    venue_fact_2:
-      "\u90e8\u5206\u5bbe\u5ba2\u5c06\u4f4f\u5728\u522b\u5885\u5185\uff0c\u5176\u4ed6\u4eba\u4f4f\u9644\u8fd1\u9152\u5e97\u2014\u2014\u6211\u4eec\u4f1a\u5728\u7fa4\u91cc\u534f\u8c03\u3002",
-    venue_fact_3:
-      "\u573a\u5730\u4f4d\u4e8e\u60ac\u5d16\u8fb9\uff0c\u8bf7\u51c6\u5907\u8212\u9002\u978b\u5c65\u4e0e\u8584\u5916\u5957\u4ee5\u5e94\u5bf9\u6d77\u98ce\u3002",
-    venue_note:
-      "\u6211\u4eec\u4f1a\u5728\u4e34\u8fd1\u65e5\u671f\u786e\u8ba4\u623f\u95f4\u4e0e\u63a5\u9001\u5b89\u6392\u3002\u5982\u9700\u4f4f\u5728\u5916\u90e8\uff0c\u6211\u4eec\u4f1a\u63d0\u4f9b\u8f66\u7a0b\u7ea6 10\u201315 \u5206\u949f\u7684\u9152\u5e97\u6216\u522b\u5885\u6e05\u5355\u3002",
+      "\u6211\u4eec\u7684\u5a5a\u793c\u5468\u672b\u5c06\u5728\u5df4\u5398\u5c9b\u4e4c\u9c81\u74e6\u56fe\u4e3e\u884c\u3002\u6211\u4eec\u4e5f\u4e3a\u5927\u5bb6\u51c6\u5907\u4e86\u573a\u5730\u4e0e\u4f4f\u5bbf\u5b89\u6392\uff0c\u5e0c\u671b\u5927\u5bb6\u90fd\u80fd\u5728\u8fd9\u4e2a\u5468\u672b\u8f7b\u677e\u3001\u8212\u9002\u5730\u4eab\u53d7\u8fd9\u4e00\u6bb5\u65f6\u5149\u3002",
+
+    // highlight
+    stay_highlight_title_1: "\u5173\u4e8e\u4f4f\u5bbf\u5b89\u6392",
+    stay_highlight_text_1:
+      "\u7531\u4e8e Stone Villas \u573a\u5730\u5185\u7684\u623f\u95f4\u6570\u91cf\u6709\u9650\uff0c\u6211\u4eec\u4f1a\u4f18\u5148\u5b89\u6392\u76f4\u7cfb\u5bb6\u4eba\u3001\u4f34\u90ce\u4f34\u5a18\uff0c\u4ee5\u53ca\u9700\u8981\u53c2\u4e0e\u5a5a\u793c\u5f53\u5929\u65e9\u4e0a\u51c6\u5907\u73af\u8282\u7684\u5bbe\u5ba2\u5165\u4f4f\u3002",
+    stay_highlight_title_2: "\u5176\u4f59\u5bbe\u5ba2\u4f4f\u5bbf",
+    stay_highlight_text_2:
+      "\u5176\u4ed6\u5bbe\u5ba2\u6211\u4eec\u4e5f\u51c6\u5907\u4e86\u4e4c\u9c81\u74e6\u56fe\u4e07\u4e3d\u5ea6\u5047\u9152\u5e97\u4f5c\u4e3a\u5165\u4f4f\u9009\u62e9\uff0c\u5e0c\u671b\u5927\u5bb6\u5728\u5a5a\u793c\u5468\u672b\u4e5f\u80fd\u4f4f\u5f97\u8212\u9002\u3001\u653e\u677e\uff0c\u4eab\u53d7\u5df4\u5398\u5c9b\u7684\u65f6\u5149\u3002",
+
+    // Stone
+    stone_kicker: "\u5a5a\u793c\u573a\u5730 \u00b7 \u573a\u5185\u4f4f\u5bbf",
+    stone_name: "Stone Villas Uluwatu",
+    stone_intro_long:
+      "\u6211\u4eec\u7684\u5a5a\u793c\u4eea\u5f0f\u4e0e\u665a\u5bb4\u5c06\u5728\u8fd9\u91cc\u4e3e\u884c\u3002\u8fd9\u662f\u4e00\u5904\u9762\u671d\u5927\u6d77\u7684\u60ac\u5d16\u522b\u5885\u5e84\u56ed\u3002\u7531\u4e8e\u623f\u95f4\u6570\u91cf\u6709\u9650\uff0c\u573a\u5185\u4f4f\u5bbf\u5c06\u4f18\u5148\u5b89\u6392\u5bb6\u4eba\u3001\u4f34\u90ce\u4f34\u5a18\uff0c\u4ee5\u53ca\u53c2\u4e0e\u5a5a\u793c\u5f53\u5929\u6e05\u6668\u51c6\u5907\u7684\u5bbe\u5ba2\u3002",
+    stone_tag_1: "\u5a5a\u793c\u4e3e\u529e\u5730",
+    stone_tag_2: "\u60ac\u5d16\u6d77\u666f",
+    stone_tag_3: "\u4f18\u5148\u5b89\u6392\u6838\u5fc3\u5bbe\u5ba2\u5165\u4f4f",
+
+    stone_address_title: "\u5730\u5740",
+    stone_address_text:
+      "Stone Villas Uluwatu, Banjar Dinas Karang Boma, Jl. Raya Uluwatu Pecatu, Bali.",
+
+    stone_note_title: "\u6e29\u99a8\u63d0\u793a",
+    stone_note_1:
+      "\u573a\u5730\u4f4d\u4e8e\u60ac\u5d16\u8fb9\uff0c\u5efa\u8bae\u7a7f\u7740\u8212\u9002\u7684\u978b\u5b50\uff0c\u5e76\u51c6\u5907\u4e00\u4ef6\u8f7b\u8584\u5916\u5957\u5e94\u5bf9\u665a\u4e0a\u6d77\u98ce\u3002",
+    stone_note_2:
+      "\u573a\u5185\u623f\u95f4\u7684\u6700\u7ec8\u5b89\u6392\u4f1a\u5728\u4e34\u8fd1\u65e5\u671f\u65f6\u7edf\u4e00\u786e\u8ba4\u3002",
+    stone_note_3:
+      "\u63a5\u9001\u4e0e\u4ea4\u901a\u5b89\u6392\u4e5f\u4f1a\u5728\u5a5a\u793c\u7fa4\u4e2d\u7edf\u4e00\u901a\u77e5\u5927\u5bb6\u3002",
+
+    stone_link_1_title: "\u67e5\u770b\u5730\u56fe",
+    stone_link_1_text: "\u5728 Google Maps \u4e2d\u67e5\u770b\u573a\u5730\u4f4d\u7f6e",
+
+    // Renaissance
+    renaissance_kicker: "\u5bbe\u5ba2\u63a8\u8350\u5165\u4f4f\u9152\u5e97",
+    renaissance_name: "Renaissance Bali Uluwatu Resort & Spa",
+    renaissance_intro_long:
+      "\u5bf9\u4e8e\u4e0d\u4f4f\u5728\u573a\u5730\u5185\u7684\u5bbe\u5ba2\uff0c\u6211\u4eec\u4e3a\u5927\u5bb6\u51c6\u5907\u4e86\u4e4c\u9c81\u74e6\u56fe\u4e07\u4e3d\u5ea6\u5047\u9152\u5e97\u4f5c\u4e3a\u4f4f\u5bbf\u9009\u62e9\u3002\u8fd9\u91cc\u73af\u5883\u4f18\u7f8e\u3001\u8bbe\u65bd\u5b8c\u5584\uff0c\u4e5f\u975e\u5e38\u9002\u5408\u5728\u5a5a\u793c\u5468\u672b\u653e\u677e\u4f11\u606f\u3001\u4eab\u53d7\u5df4\u5398\u5c9b\u7684\u6c1b\u56f4\u3002",
+    renaissance_tag_1: "\u8212\u9002\u5ea6\u5047\u578b\u4f4f\u5bbf",
+    renaissance_tag_2: "\u6cf3\u6c60\u3001\u6c34\u7597\u4e0e\u9910\u996e",
+    renaissance_tag_3: "\u4e4c\u9c81\u74e6\u56fe\u5468\u8fb9\u4f53\u9a8c\u4e30\u5bcc",
+
+    renaissance_address_title: "\u5730\u5740",
+    renaissance_address_text:
+      "Jalan Pantai Balangan 1 No. 1, Ungasan, Bali 80361, Indonesia.",
+
+    renaissance_activities_title: "\u53ef\u4ee5\u4f53\u9a8c",
+    renaissance_activity_1:
+      "\u5728\u9152\u5e97\u6cf3\u6c60\u8fb9\u653e\u677e\uff0c\u6216\u9884\u7ea6\u4e00\u6b21 spa\uff0c\u4eab\u53d7\u60a0\u95f2\u7684\u5df4\u5398\u5c9b\u65f6\u5149\u3002",
+    renaissance_activity_2:
+      "\u524d\u5f80 Pandawa\u3001Balangan \u7b49\u6d77\u6ee9\u63a2\u7d22\u4e0e\u6c34\u4e0a\u6d3b\u52a8\u3002",
+    renaissance_activity_3:
+      "\u53c2\u89c2 GWK \u6587\u5316\u516c\u56ed\u3001\u4e4c\u9c81\u74e6\u56fe\u5bfa\u7b49\u5f53\u5730\u666f\u70b9\u3002",
+    renaissance_activity_4:
+      "\u67e5\u770b\u9152\u5e97\u5b98\u7f51\u6d3b\u52a8\u9875\u9762\uff0c\u770b\u770b\u5165\u4f4f\u671f\u95f4\u662f\u5426\u6709\u7279\u522b\u6d3b\u52a8\u3002",
+
+    renaissance_link_1_title: "\u9152\u5e97\u4ecb\u7ecd",
+    renaissance_link_1_text: "\u67e5\u770b\u9152\u5e97\u623f\u578b\u3001\u9910\u996e\u4e0e\u8bbe\u65bd",
+    renaissance_link_2_title: "\u5468\u8fb9\u4f53\u9a8c",
+    renaissance_link_2_text: "\u6d4f\u89c8\u9644\u8fd1\u6d77\u6ee9\u3001\u6587\u5316\u4e0e\u4f11\u95f2\u6d3b\u52a8",
+    renaissance_link_3_title: "\u9152\u5e97\u6d3b\u52a8",
+    renaissance_link_3_text: "\u67e5\u770b\u5165\u4f4f\u671f\u95f4\u9152\u5e97\u5185\u6d3b\u52a8\u5b89\u6392",
+    renaissance_link_4_title: "\u9152\u5e97\u56fe\u7247",
+    renaissance_link_4_text: "\u67e5\u770b\u623f\u95f4\u4e0e\u6574\u4f53\u73af\u5883",
+
+    // final note
+    room_assignment_note:
+      "\u5177\u4f53\u623f\u95f4\u5b89\u6392\u4e0e\u6700\u7ec8\u4f4f\u5bbf\u4fe1\u606f\uff0c\u6211\u4eec\u4f1a\u5728\u4e34\u8fd1\u65e5\u671f\u65f6\u7edf\u4e00\u5728\u5a5a\u793c\u7fa4\u4e2d\u901a\u77e5\u5927\u5bb6\u3002\u8c22\u8c22\u4f60\u4eec\u6765\u5230\u8fd9\u91cc\uff0c\u4e0e\u6211\u4eec\u4e00\u8d77\u5ea6\u8fc7\u8fd9\u4e2a\u5468\u672b\uff0c\u4e5f\u5e0c\u671b\u5927\u5bb6\u90fd\u80fd\u5728\u4e4c\u9c81\u74e6\u56fe\u4f4f\u5f97\u5f00\u5fc3\u3001\u8212\u9002\u3002",
     travel_title: "\u51fa\u884c\u6307\u5357",
     travel_intro:
       "\u8fd9\u91cc\u662f\u4e4c\u9c81\u74e6\u56fe\u7684\u6d3b\u52a8\u5efa\u8bae\uff0c\u4ee5\u53ca\u82e5\u4f60\u7ee7\u7eed\u524d\u5f80\u5df4\u5398\u5c9b\u5176\u4ed6\u5730\u533a\u7684\u7075\u611f\u3002",
@@ -411,41 +558,41 @@ window.I18N = {
     footer_text: "\u96e8\u8a00\u548c\u4fca\u6587 \u00b7 \u5df4\u5398\u5c9b \u00b7 2026 \u00b7 Lunavoe",
     dresscode_title: "\u7740\u88c5\u8981\u6c42",
     dresscode_eyebrow: "\u5bbe\u5ba2\u6307\u5357",
-    dresscode_subtitle: "\u6b63\u5f0f / \u534a\u6b63\u5f0f (\u767d\u5929\u4eea\u5f0f)",
+    dresscode_subtitle: "\u6b63\u5f0f / \u534a\u6b63\u5f0f\uff08\u767d\u5929\u4eea\u5f0f\uff09",
     dresscode_intro:
-      "\u4e3a\u4fdd\u8bc1\u767d\u5929\u4eea\u5f0f\u4e0e\u62cd\u7167\u6548\u679c, \u656c\u8bf7\u5bbe\u5ba2\u7740\u88c5\u9009\u62e9<strong>\u6b63\u5f0f\u6216\u534a\u6b63\u5f0f</strong>, \u6574\u4f53\u98ce\u683c\u4fdd\u6301\u5e72\u51c0, \u7cbe\u81f4, \u5f97\u4f53.",
+      "\u4e3a\u4fdd\u8bc1\u767d\u5929\u4eea\u5f0f\u4e0e\u62cd\u7167\u6548\u679c\uff0c\u656c\u8bf7\u5bbe\u5ba2\u9009\u62e9<strong>\u6b63\u5f0f\u6216\u534a\u6b63\u5f0f</strong>\u7740\u88c5\uff0c\u6574\u4f53\u98ce\u683c\u4fdd\u6301\u5e72\u51c0\u3001\u7cbe\u81f4\u3001\u5f97\u4f53\u3002",
     dresscode_ladies_title: "\u5973\u58eb",
     dresscode_ladies_body:
-      "\u5efa\u8bae\u9009\u62e9\u4e2d\u957f\u6216\u957f\u6b3e\u8fde\u8863\u88d9, \u4f18\u96c5\u8fde\u4f53\u88e4\u6216\u6210\u5957\u642d\u914d\u3002\u8bf7\u9009\u62e9\u4e0b\u65b9\u8272\u76d8\u4e2d\u7684\u989c\u8272\u3002",
+      "\u5efa\u8bae\u9009\u62e9\u4e2d\u957f\u6216\u957f\u6b3e\u8fde\u8863\u88d9\u3001\u4f18\u96c5\u8fde\u4f53\u88e4\u6216\u6210\u5957\u642d\u914d\u3002\u8bf7\u9009\u62e9\u4e0b\u65b9\u8272\u76d8\u4e2d\u7684\u989c\u8272\u3002",
     dresscode_group_hint: "\u5de6\u53f3\u6ed1\u52a8\u67e5\u770b\u66f4\u591a",
     dresscode_ladies_group_pink: "\u7c89\u8272\u7cfb",
     dresscode_ladies_group_yellow: "\u5976\u6cb9\u9ec4/\u9999\u69df\u9ec4",
     dresscode_ladies_group_neutral: "\u4e2d\u6027\u8272",
-    dresscode_ladies_palette_label: "\u63a8\u8350\u989c\u8272 (\u767d\u5929\u6700\u4e0a\u955c):",
+    dresscode_ladies_palette_label: "\u63a8\u8350\u989c\u8272\uff08\u767d\u5929\u6700\u4e0a\u955c\uff09\uff1a",
     dresscode_ladies_neutral_label:
-      "\u4e2d\u6027\u8272\u4e5f\u6b22\u8fce: \u6c99\u8272, \u7070\u8910\u8272, \u7070\u7c73\u8272, \u67d4\u548c\u9999\u69df\u8272.",
+      "\u4e2d\u6027\u8272\u4e5f\u6b22\u8fce\uff1a\u6c99\u8272\u3001\u7070\u8910\u8272\u3001\u7070\u7c73\u8272\u3001\u67d4\u548c\u9999\u69df\u8272\u3002",
     dresscode_ladies_neutral_palette_label: "\u4e2d\u6027\u8272\u53c2\u8003\uff1a",
     dresscode_ladies_avoid:
-      "\u8bf7\u5c3d\u91cf\u907f\u514d\u767d\u8272, \u8c61\u7259\u767d\u53ca\u975e\u5e38\u63a5\u8fd1\u65b0\u5a18\u793c\u670d\u7684\u6d45\u8272\u7cfb.",
+      "\u8bf7\u5c3d\u91cf\u907f\u514d\u767d\u8272\u3001\u8c61\u7259\u767d\u53ca\u975e\u5e38\u63a5\u8fd1\u65b0\u5a18\u793c\u670d\u7684\u6d45\u8272\u7cfb\u3002",
     dresscode_gents_title: "\u7537\u58eb",
     dresscode_gents_group_shirts: "\u886c\u886b",
-    dresscode_gents_group_polos: "Polo/\u4e9a\u9ebb\u886c\u886b",
+    dresscode_gents_group_polos: "Polo / \u4e9a\u9ebb\u886c\u886b",
     dresscode_gents_group_jackets: "\u5916\u5957/\u6b63\u88c5",
     dresscode_gents_body:
-      "\u6574\u4f53\u4fdd\u6301\u6e05\u723d\u5229\u843d\u5373\u53ef, \u5916\u5957\u975e\u5fc5\u987b\u3002\u8bf7\u9009\u62e9\u4e0b\u65b9\u8272\u76d8\u4e2d\u7684\u989c\u8272\u3002",
-    dresscode_gents_options_label: "\u7b80\u5355\u5b89\u5168\u642d\u914d:",
+      "\u6574\u4f53\u4fdd\u6301\u6e05\u723d\u5229\u843d\u5373\u53ef\uff0c\u5916\u5957\u975e\u5fc5\u987b\u3002\u8bf7\u9009\u62e9\u4e0b\u65b9\u8272\u76d8\u4e2d\u7684\u989c\u8272\u3002",
+    dresscode_gents_options_label: "\u7b80\u5355\u5b89\u5168\u642d\u914d\uff1a",
     dresscode_gents_shirt_palette_label: "\u886c\u886b / Polo / \u5916\u5957 \u989c\u8272\uff1a",
     dresscode_gents_trouser_palette_label: "\u88e4\u88c5\u989c\u8272\uff1a",
     dresscode_gents_accent_palette_label: "\u70b9\u7f00\u8272\uff08\u53ef\u9009\uff09\uff1a",
     dresscode_gents_option_1: "\u767d\u886c\u886b\u6216\u6d45\u84dd\u886c\u886b",
     dresscode_gents_option_2:
-      "\u6d45\u8272\u4e9a\u9ebb\u886c\u886b\u6216\u504f\u6b63\u5f0f\u7684 Polo (\u767d / \u7c73 / \u6d45\u84dd / \u6d45\u7070)",
+      "\u6d45\u8272\u4e9a\u9ebb\u886c\u886b\u6216\u504f\u6b63\u5f0f\u7684 Polo\uff08\u767d / \u7c73 / \u6d45\u84dd / \u6d45\u7070\uff09",
     dresscode_gents_option_3:
       "\u7c73\u8272 / \u5361\u5176 / \u767d\u8272 / \u6696\u7070\u7684\u957f\u88e4 (\u897f\u88e4\u6216\u4e9a\u9ebb\u88e4\u5747\u53ef)",
     dresscode_gents_color_note:
-      "\u989c\u8272\u8865\u5145 (\u53ef\u9009): \u7537\u58eb\u4e5f\u53ef\u5c06\u6d45\u7c89 / \u5976\u6cb9\u9ec4 / \u9999\u69df\u8272\u4f5c\u4e3a\u886c\u886b\u6216 Polo \u7684\u989c\u8272\u70b9\u7f00, \u4e0b\u88c5\u642d\u914d\u4e2d\u6027\u8272 (\u7c73\u8272 / \u5361\u5176 / \u767d\u8272 / \u6696\u7070 / \u6696\u8c61\u7259\u767d) \u5373\u53ef.",
+      "\u989c\u8272\u8865\u5145\uff08\u53ef\u9009\uff09\uff1a\u7537\u58eb\u4e5f\u53ef\u5c06\u6d45\u7c89 / \u5976\u6cb9\u9ec4 / \u9999\u69df\u8272\u4f5c\u4e3a\u886c\u886b\u6216 Polo \u7684\u989c\u8272\u70b9\u7f00\uff0c\u4e0b\u88c5\u642d\u914d\u4e2d\u6027\u8272\uff08\u7c73\u8272 / \u5361\u5176 / \u767d\u8272 / \u6696\u7070 / \u6696\u8c61\u7259\u767d\uff09\u5373\u53ef\u3002",
     dresscode_avoid_title: "\u8bf7\u907f\u514d (\u91cd\u8981)",
-    dresscode_avoid_note: "\u4e3a\u4fdd\u6301\u4eea\u5f0f\u6c1b\u56f4, \u8bf7\u5c3d\u91cf\u907f\u514d\u8fc7\u4e8e\u4f11\u95f2\u7684\u7a7f\u642d, \u4f8b\u5982:",
+    dresscode_avoid_note: "\u4e3a\u4fdd\u6301\u4eea\u5f0f\u6c1b\u56f4\uff0c\u8bf7\u5c3d\u91cf\u907f\u514d\u8fc7\u4e8e\u4f11\u95f2\u7684\u7a7f\u642d\uff0c\u4f8b\u5982\uff1a",
     dresscode_avoid_item_1: "T \u6064 / \u80cc\u5fc3",
     dresscode_avoid_item_2: "\u77ed\u88e4",
     dresscode_avoid_item_3: "\u725b\u4ed4\u88e4 / \u7834\u6d1e\u725b\u4ed4",
@@ -454,7 +601,7 @@ window.I18N = {
     dresscode_style_title: "\u98ce\u683c\u63d0\u793a",
     dresscode_style_body:
       "\u4e3a\u4fdd\u6301\u6574\u4f53\u98ce\u683c\u4f18\u96c5\u7ecf\u5178\uff0c\u656c\u8bf7\u5bbe\u5ba2\u907f\u514d\u5e26\u6709\u5927 logo\u3001\u660e\u663e\u54c1\u724c\u6807\u8bc6\u6216\u9c9c\u660e\u56fe\u6848\u7684\u670d\u88c5\u3002\u8bf7\u4f18\u5148\u9009\u62e9\u4e0a\u65b9\u63a8\u8350\u8272\u76d8\u7684\u989c\u8272\u3002\u5982\u679c\u4e0d\u786e\u5b9a\u81ea\u5df1\u7684\u7a7f\u642d\u662f\u5426\u5408\u9002\uff0c\u6b22\u8fce\u968f\u65f6\u8be2\u95ee\u65b0\u5a18\u6216\u65b0\u90ce\u534f\u52a9\u786e\u8ba4\u3002",
-    dresscode_thanks: "\u975e\u5e38\u611f\u8c22\u4f60\u4eec\u4e3a\u8fd9\u4e00\u5929\u7528\u5fc3\u6253\u626e, \u671f\u5f85\u4e0e\u4f60\u76f8\u89c1!",
+    dresscode_thanks: "\u975e\u5e38\u611f\u8c22\u4f60\u4eec\u4e3a\u8fd9\u4e00\u5929\u7528\u5fc3\u6253\u626e\uff0c\u671f\u5f85\u4e0e\u4f60\u76f8\u89c1\uff01",
     dresscode_caption_soft_blush: "\u6d45\u7c89",
     dresscode_caption_dusty_rose: "\u73ab\u7470\u7070\u7c89",
     dresscode_caption_soft_pink: "\u67d4\u7c89",
@@ -518,6 +665,5 @@ window.I18N = {
       "\u6c99\u8272\u3001\u77f3\u8272\u3001\u8c61\u7259\u767d\u3001\u9676\u571f\u3001\u67d4\u548c\u73ca\u745a\u3001\u6d77\u6ce1\u7eff\u3001\u9f20\u5c3e\u8349\u7eff\u4e0e\u6df1\u6d77\u519b\u84dd\u70b9\u7f00\u3002",
   },
 };
-
 
 

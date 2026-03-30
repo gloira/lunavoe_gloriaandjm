@@ -16,6 +16,258 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <style>
+    .venue-hero-shell {
+      position: relative;
+      overflow: hidden;
+      border-radius: 36px;
+      padding: clamp(2rem, 4vw, 3.5rem);
+      background:
+        radial-gradient(circle at top left, rgba(255, 246, 234, 0.9), transparent 34%),
+        linear-gradient(135deg, rgba(255, 249, 240, 0.98), rgba(246, 238, 228, 0.98));
+      border: 1px solid rgba(175, 140, 104, 0.18);
+      box-shadow: 0 22px 60px rgba(64, 42, 22, 0.08);
+    }
+
+    .venue-hero-shell::after {
+      content: "";
+      position: absolute;
+      inset: auto -60px -80px auto;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(212, 165, 116, 0.12), transparent 70%);
+      pointer-events: none;
+    }
+
+    .stay-highlight {
+      margin-top: 2rem;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    .stay-highlight-card {
+      grid-column: span 12;
+      padding: 1.15rem 1.25rem;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(175, 140, 104, 0.16);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(72, 52, 32, 0.06);
+    }
+
+    .stay-highlight-card strong {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-family: "Marcellus", serif;
+      font-size: 1rem;
+      letter-spacing: 0.03em;
+      color: #5c4633;
+    }
+
+    .stay-collection {
+      margin-top: 2.75rem;
+      display: grid;
+      gap: 1.75rem;
+    }
+
+    .stay-card {
+      display: grid;
+      gap: 1.5rem;
+      padding: clamp(1.2rem, 3vw, 1.75rem);
+      border-radius: 30px;
+      border: 1px solid rgba(175, 140, 104, 0.16);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(249, 244, 238, 0.92));
+      box-shadow: 0 18px 40px rgba(62, 42, 22, 0.08);
+    }
+
+    .stay-card--accent {
+      background: linear-gradient(180deg, rgba(255, 250, 245, 0.98), rgba(246, 236, 227, 0.92));
+    }
+
+    .stay-card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .stay-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.38rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      background: rgba(212, 165, 116, 0.14);
+      color: #8b6341;
+    }
+
+    .stay-name {
+      margin: 0.55rem 0 0;
+      font-family: "Gilda Display", serif;
+      font-size: clamp(1.85rem, 3vw, 2.35rem);
+      line-height: 1.1;
+      color: #3f2d1f;
+    }
+
+    .stay-subcopy {
+      margin: 0.8rem 0 0;
+      max-width: 760px;
+      color: #6c5847;
+      line-height: 1.8;
+    }
+
+    .stay-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-top: 0.2rem;
+    }
+
+    .stay-tag {
+      padding: 0.5rem 0.8rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(175, 140, 104, 0.18);
+      font-size: 0.85rem;
+      color: #6d5845;
+    }
+
+    .stay-grid {
+      display: grid;
+      gap: 1.25rem;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: start;
+    }
+
+    .map-embed--tall {
+      min-height: 380px;
+      overflow: hidden;
+      border-radius: 24px;
+      border: 1px solid rgba(175, 140, 104, 0.16);
+      box-shadow: 0 14px 34px rgba(58, 40, 24, 0.08);
+      background: #f3ece5;
+    }
+
+    .map-embed--tall iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 380px;
+      border: 0;
+    }
+
+    .stay-side {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .stay-panel {
+      padding: 1.15rem 1.15rem 1.2rem;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(175, 140, 104, 0.15);
+    }
+
+    .stay-panel h3,
+    .stay-panel h4 {
+      margin: 0 0 0.65rem;
+      font-family: "Marcellus", serif;
+      color: #4f3827;
+      letter-spacing: 0.01em;
+    }
+
+    .stay-panel p,
+    .stay-panel li {
+      color: #6a5645;
+      line-height: 1.75;
+    }
+
+    .stay-panel ul {
+      margin: 0;
+      padding-left: 1.1rem;
+    }
+
+    .stay-links {
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .stay-link {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: center;
+      padding: 0.9rem 1rem;
+      border-radius: 18px;
+      text-decoration: none;
+      color: #4b3424;
+      background: rgba(255, 248, 241, 0.96);
+      border: 1px solid rgba(175, 140, 104, 0.16);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .stay-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px rgba(69, 46, 24, 0.08);
+      border-color: rgba(175, 140, 104, 0.28);
+    }
+
+    .stay-link strong {
+      display: block;
+      font-family: "Marcellus", serif;
+      font-size: 0.98rem;
+      margin-bottom: 0.18rem;
+    }
+
+    .stay-link span {
+      font-size: 0.85rem;
+      color: #7a6451;
+    }
+
+    .stay-link-arrow {
+      font-size: 1.15rem;
+      line-height: 1;
+      color: #8f6947;
+      flex-shrink: 0;
+    }
+
+    .notice-block {
+      margin-top: 2.5rem;
+      padding: 1.25rem 1.35rem;
+      border-radius: 24px;
+      background: linear-gradient(135deg, rgba(246, 237, 228, 0.96), rgba(255, 249, 244, 0.92));
+      border: 1px solid rgba(175, 140, 104, 0.16);
+      box-shadow: 0 14px 30px rgba(58, 40, 24, 0.06);
+    }
+
+    .notice-block p {
+      margin: 0;
+      color: #665241;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 900px) {
+      .stay-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (min-width: 780px) {
+      .stay-highlight-card--wide {
+        grid-column: span 7;
+      }
+
+      .stay-highlight-card--small {
+        grid-column: span 5;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -44,7 +296,7 @@
             <a href="/gloriawithjunman/dresscode/" data-nav-link class="nav-link" data-i18n="nav_dresscode">Dress Code</a>
           </nav>
           <div class="nav-right">
-          <button class="lang-toggle" type="button" data-lang-toggle>EN</button>
+            <button class="lang-toggle" type="button" data-lang-toggle>EN</button>
             <a href="/gloriawithjunman/rsvp/" class="btn btn-ghost" data-i18n="nav_rsvp">RSVP</a>
             <button class="hamburger" type="button" aria-label="Menu" data-hamburger>
               <span class="hamburger-line"></span>
@@ -54,8 +306,8 @@
           </div>
         </div>
       </div>
-    <div class="mobile-nav-panel" data-mobile-panel>
-      <button class="mobile-nav-close" type="button" data-mobile-close aria-label="Close" title="Close">&times;</button>
+      <div class="mobile-nav-panel" data-mobile-panel>
+        <button class="mobile-nav-close" type="button" data-mobile-close aria-label="Close" title="Close">&times;</button>
         <div class="mobile-nav-inner">
           <a href="/gloriawithjunman/" class="mobile-nav-link" data-i18n="nav_home">Home</a>
           <a href="/gloriawithjunman/schedule/" class="mobile-nav-link" data-i18n="nav_schedule">Schedule</a>
@@ -69,66 +321,166 @@
     </header>
 
     <main class="page-main" style="padding-top: 100px;">
-
       <section class="section">
-        <div class="section-inner" style="max-width: 1100px;">
-          <div class="section-heading">
-            <div class="section-eyebrow" data-i18n="venue_title">Venue & stay</div>
-            <p class="section-lead" data-i18n="venue_intro">
-              Our ceremony and reception will take place at Stone Villas Uluwatu, a cliffside villa
-              complex with sweeping ocean views.
+        <div class="section-inner" style="max-width: 1180px;">
+          <div class="venue-hero-shell">
+            <div class="section-heading" style="margin-bottom: 0;">
+              <div class="section-eyebrow" data-i18n="venue_title">Venue &amp; stay</div>
+              <p class="section-lead" data-i18n="venue_intro">
+                We’ll be celebrating at Stone Villas Uluwatu, with guest stays thoughtfully arranged between our wedding venue and Renaissance Bali Uluwatu Resort &amp; Spa.
+              </p>
+            </div>
+
+            <div class="stay-highlight">
+              <div class="stay-highlight-card stay-highlight-card--wide">
+                <strong data-i18n="stay_highlight_title_1">A little note on our room arrangements</strong>
+                <span data-i18n="stay_highlight_text_1">Because Stone Villas has a limited number of rooms within the resort, we’ve prioritized immediate family, bridal party members, and guests who will be joining our wedding morning preparations on-site.</span>
+              </div>
+              <div class="stay-highlight-card stay-highlight-card--small">
+                <strong data-i18n="stay_highlight_title_2">For everyone else</strong>
+                <span data-i18n="stay_highlight_text_2">We’ve also reserved Renaissance Bali Uluwatu Resort &amp; Spa as a beautiful nearby stay option, so everyone can relax comfortably and enjoy the weekend.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="stay-collection">
+            <article class="stay-card">
+              <div class="stay-card-top">
+                <div>
+                  <div class="stay-kicker" data-i18n="stone_kicker">Ceremony &amp; on-site stay</div>
+                  <h2 class="stay-name" data-i18n="stone_name">Stone Villas Uluwatu</h2>
+                  <p class="stay-subcopy" data-i18n="stone_intro_long">
+                    Our ceremony and reception will take place here, on a dramatic cliffside estate overlooking the ocean. A limited number of rooms on-site will be reserved first for family members, bridesmaids, groomsmen, and those joining us for the early morning wedding preparations.
+                  </p>
+                </div>
+                <div class="stay-tags" aria-label="Stone Villas highlights">
+                  <span class="stay-tag" data-i18n="stone_tag_1">Wedding venue</span>
+                  <span class="stay-tag" data-i18n="stone_tag_2">Ocean-view cliffside</span>
+                  <span class="stay-tag" data-i18n="stone_tag_3">Priority stay for core guests</span>
+                </div>
+              </div>
+
+              <div class="stay-grid">
+                <div class="map-embed map-embed--tall">
+                  <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps?q=Stone+Villas+Uluwatu,+Bali&output=embed"></iframe>
+                </div>
+
+                <div class="stay-side">
+                  <div class="stay-panel">
+                    <h3 data-i18n="stone_address_title">Address</h3>
+                    <p data-i18n="stone_address_text">Stone Villas Uluwatu, Banjar Dinas Karang Boma, Jl. Raya Uluwatu Pecatu, Bali.</p>
+                  </div>
+
+                  <div class="stay-panel">
+                    <h4 data-i18n="stone_note_title">Good to know</h4>
+                    <ul>
+                      <li data-i18n="stone_note_1">The venue is on a cliff, so we recommend comfortable shoes and a light layer for the evening breeze.</li>
+                      <li data-i18n="stone_note_2">We’ll coordinate final on-site room assignments closer to the date.</li>
+                      <li data-i18n="stone_note_3">Transport details will also be shared with everyone in the wedding group chat.</li>
+                    </ul>
+                  </div>
+
+                  <div class="stay-links">
+                    <a class="stay-link" href="https://www.google.com/maps/search/?api=1&query=Stone+Villas+Uluwatu+Bali" target="_blank" rel="noopener noreferrer">
+                      <div>
+                        <strong data-i18n="stone_link_1_title">Open map</strong>
+                        <span data-i18n="stone_link_1_text">See the venue location in Google Maps</span>
+                      </div>
+                      <span class="stay-link-arrow">↗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="stay-card stay-card--accent">
+              <div class="stay-card-top">
+                <div>
+                  <div class="stay-kicker" data-i18n="renaissance_kicker">Recommended guest hotel</div>
+                  <h2 class="stay-name" data-i18n="renaissance_name">Renaissance Bali Uluwatu Resort &amp; Spa</h2>
+                  <p class="stay-subcopy" data-i18n="renaissance_intro_long">
+                    For guests staying off-site, we’ve chosen Renaissance Bali Uluwatu Resort &amp; Spa as our additional accommodation option. It’s a beautiful resort stay with elevated views, relaxing facilities, and plenty to enjoy throughout the weekend.
+                  </p>
+                </div>
+                <div class="stay-tags" aria-label="Renaissance highlights">
+                  <span class="stay-tag" data-i18n="renaissance_tag_1">Comfortable resort stay</span>
+                  <span class="stay-tag" data-i18n="renaissance_tag_2">Pools, spa &amp; dining</span>
+                  <span class="stay-tag" data-i18n="renaissance_tag_3">Nearby Uluwatu experiences</span>
+                </div>
+              </div>
+
+              <div class="stay-grid">
+                <div class="map-embed map-embed--tall">
+                  <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps?q=Renaissance+Bali+Uluwatu+Resort+%26+Spa&output=embed"></iframe>
+                </div>
+
+                <div class="stay-side">
+                  <div class="stay-panel">
+                    <h3 data-i18n="renaissance_address_title">Address</h3>
+                    <p data-i18n="renaissance_address_text">Jalan Pantai Balangan 1 No. 1, Ungasan, Bali 80361, Indonesia.</p>
+                  </div>
+
+                  <div class="stay-panel">
+                    <h4 data-i18n="renaissance_activities_title">Things to enjoy</h4>
+                    <ul>
+                      <li data-i18n="renaissance_activity_1">Relax by the resort pools or book a spa treatment for a slower Bali day.</li>
+                      <li data-i18n="renaissance_activity_2">Explore nearby beaches and watersports around Pandawa and Balangan.</li>
+                      <li data-i18n="renaissance_activity_3">Check out local cultural sights such as GWK Cultural Park or Pura Uluwatu.</li>
+                      <li data-i18n="renaissance_activity_4">Browse the hotel’s events calendar for in-resort happenings and weekend activities.</li>
+                    </ul>
+                  </div>
+
+                  <div class="stay-links">
+                    <a class="stay-link" href="https://www.marriott.com/en-us/hotels/dpsuw-renaissance-bali-uluwatu-resort-and-spa/overview/" target="_blank" rel="noopener noreferrer">
+                      <div>
+                        <strong data-i18n="renaissance_link_1_title">Hotel overview</strong>
+                        <span data-i18n="renaissance_link_1_text">See resort details, dining and accommodation info</span>
+                      </div>
+                      <span class="stay-link-arrow">↗</span>
+                    </a>
+
+                    <a class="stay-link" href="https://www.marriott.com/en-us/hotels/dpsuw-renaissance-bali-uluwatu-resort-and-spa/experiences/" target="_blank" rel="noopener noreferrer">
+                      <div>
+                        <strong data-i18n="renaissance_link_2_title">Experiences</strong>
+                        <span data-i18n="renaissance_link_2_text">Browse beaches, golf, culture and spa activities nearby</span>
+                      </div>
+                      <span class="stay-link-arrow">↗</span>
+                    </a>
+
+                    <a class="stay-link" href="https://event.marriott.com/dpsuw-renaissance-bali-uluwatu-resort-spa/events" target="_blank" rel="noopener noreferrer">
+                      <div>
+                        <strong data-i18n="renaissance_link_3_title">Hotel events</strong>
+                        <span data-i18n="renaissance_link_3_text">Check what’s happening at the resort during your stay</span>
+                      </div>
+                      <span class="stay-link-arrow">↗</span>
+                    </a>
+
+                    <a class="stay-link" href="https://www.marriott.com/en-us/hotels/dpsuw-renaissance-bali-uluwatu-resort-and-spa/photos/" target="_blank" rel="noopener noreferrer">
+                      <div>
+                        <strong data-i18n="renaissance_link_4_title">Photo gallery</strong>
+                        <span data-i18n="renaissance_link_4_text">Take a look at the rooms, views and resort spaces</span>
+                      </div>
+                      <span class="stay-link-arrow">↗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="notice-block">
+            <p data-i18n="room_assignment_note">
+              Specific room assignments and final stay details will be shared closer to the date in our wedding group chat. Thank you for being part of this weekend with us — we truly hope everyone has a beautiful and comfortable stay in Uluwatu.
             </p>
           </div>
-
-          <div class="venue-gallery" aria-label="Venue photos">
-            <div class="venue-gallery-header">
-              <div class="venue-gallery-title" data-i18n="venue_gallery_title">Venue glimpses</div>
-              <div class="venue-gallery-controls">
-                <button class="venue-gallery-btn" type="button" data-venue-prev aria-label="Previous photo">&#10094;</button>
-                <button class="venue-gallery-btn" type="button" data-venue-next aria-label="Next photo">&#10095;</button>
-              </div>
-            </div>
-            <div class="venue-gallery-track" data-venue-track>
-              <div class="venue-gallery-card">
-                <img class="venue-gallery-img" src="../assets/images/venue/venue-01.jpg" alt="Stone Villas Uluwatu view" loading="eager" />
-              </div>
-              <div class="venue-gallery-card">
-                <img class="venue-gallery-img" src="../assets/images/venue/venue-02.jpg" alt="Cliffside ceremony setting" loading="eager" />
-              </div>
-              <div class="venue-gallery-card">
-                <img class="venue-gallery-img" src="../assets/images/venue/venue-03.jpg" alt="Sunset terrace at the venue" loading="eager" />
-              </div>
-              <div class="venue-gallery-card">
-                <img class="venue-gallery-img" src="../assets/images/venue/venue-04.jpg" alt="Pool area and ocean breeze" loading="eager" />
-              </div>
-            </div>
-          </div>
-
-          <div class="venue-layout">
-            <div class="map-embed">
-              <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps?q=Stone+Villas+Uluwatu,+Bali&output=embed"></iframe>
-            </div>
-            <div>
-              <div class="venue-facts">
-                <div class="venue-pill" data-i18n="venue_fact_1">Stone Villas Uluwatu &middot; Banjar Dinas Karang Boma, Jl. Raya Uluwatu Pecatu, Bali.</div>
-                <div class="venue-pill" data-i18n="venue_fact_2">Some guests will stay on-site at the villas, others in nearby hotels &mdash; we'll coordinate rooms within the group chat.</div>
-                <div class="venue-pill" data-i18n="venue_fact_3">The venue is on a cliff; please plan for comfortable shoes and a light layer for the evening breeze.</div>
-              </div>
-
-              <div class="section-body" style="margin-top:2rem;">
-                <p data-i18n="venue_note">We'll confirm specific room assignments and transfer details closer to the date. If you prefer to stay off-site, we'll share a short list of hotels and villas within a 10&ndash;15 minute drive.</p>
-              </div>
-            </div>
-          </div>
-
         </div>
       </section>
-
     </main>
 
     <footer class="page-footer">
-    <p data-i18n="footer_text">Gloria & Junman &middot; Bali &middot; 2026 &middot; Lunavoe</p>
+      <p data-i18n="footer_text">Gloria & Junman &middot; Bali &middot; 2026 &middot; Lunavoe</p>
     </footer>
   </div>
   <script src="../assets/js/i18n.js"></script>
@@ -136,6 +488,3 @@
 </body>
 
 </html>
-
-
-
