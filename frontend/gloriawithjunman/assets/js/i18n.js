@@ -166,7 +166,24 @@ window.I18N = {
     // final note
     room_assignment_note:
       "Specific room assignments and final stay details will be shared closer to the date in our wedding group chat. Thank you for being part of this weekend with us \u2014 we truly hope you have a beautiful and comfortable stay in Uluwatu.",
-    travel_title: "Travel guide",
+    venue_gallery_title: "Venue glimpses",
+    map_google_title: "Google Map",
+    map_google_label: "International",
+    map_amap_title: "Amap / 高德地图",
+    map_amap_label: "China-friendly",
+
+    stone_amap_note:
+      "For guests based in mainland China, Google Maps may not load normally. You can tap below to open the venue directly in Amap / 高德地图.",
+    stone_link_2_title: "Open in Amap",
+    stone_link_2_text: "Search this venue in 高德地图",
+
+    renaissance_amap_note:
+      "For guests based in mainland China, Google Maps may not load normally. You can tap below to open the hotel directly in Amap / 高德地图.",
+    renaissance_link_5_title: "Open in Amap",
+    renaissance_link_5_text: "Search this hotel in 高德地图",
+    renaissance_link_6_title: "Open in Google Maps",
+    renaissance_link_6_text: "See the hotel location in Google Maps",
+      travel_title: "Travel guide",
     travel_intro:
       "Here are some ideas for how to spend your free time in Uluwatu and a few suggestions if you continue your trip to other parts of Bali.",
     travel_uluwatu_tag: "Around Uluwatu",
@@ -497,6 +514,23 @@ window.I18N = {
     // final note
     room_assignment_note:
       "\u5177\u4f53\u623f\u95f4\u5b89\u6392\u4e0e\u6700\u7ec8\u4f4f\u5bbf\u4fe1\u606f\uff0c\u6211\u4eec\u4f1a\u5728\u4e34\u8fd1\u65e5\u671f\u65f6\u7edf\u4e00\u5728\u5a5a\u793c\u7fa4\u4e2d\u901a\u77e5\u5927\u5bb6\u3002\u8c22\u8c22\u4f60\u4eec\u6765\u5230\u8fd9\u91cc\uff0c\u4e0e\u6211\u4eec\u4e00\u8d77\u5ea6\u8fc7\u8fd9\u4e2a\u5468\u672b\uff0c\u4e5f\u5e0c\u671b\u5927\u5bb6\u90fd\u80fd\u5728\u4e4c\u9c81\u74e6\u56fe\u4f4f\u5f97\u5f00\u5fc3\u3001\u8212\u9002\u3002",
+    venue_gallery_title: "场地一瞥",
+    map_google_title: "Google 地图",
+    map_google_label: "海外适用",
+    map_amap_title: "高德地图",
+    map_amap_label: "国内适用",
+
+    stone_amap_note:
+      "如果你在中国大陆，Google 地图可能无法正常打开。可以点击下方按钮，直接在高德地图中搜索婚礼场地。",
+    stone_link_2_title: "用高德打开",
+    stone_link_2_text: "在高德地图中搜索这个场地",
+
+    renaissance_amap_note:
+      "如果你在中国大陆，Google 地图可能无法正常打开。可以点击下方按钮，直接在高德地图中搜索酒店位置。",
+    renaissance_link_5_title: "用高德打开",
+    renaissance_link_5_text: "在高德地图中搜索这家酒店",
+    renaissance_link_6_title: "用 Google 打开",
+    renaissance_link_6_text: "在 Google 地图中查看酒店位置",
     travel_title: "\u51fa\u884c\u6307\u5357",
     travel_intro:
       "\u8fd9\u91cc\u662f\u4e4c\u9c81\u74e6\u56fe\u7684\u6d3b\u52a8\u5efa\u8bae\uff0c\u4ee5\u53ca\u82e5\u4f60\u7ee7\u7eed\u524d\u5f80\u5df4\u5398\u5c9b\u5176\u4ed6\u5730\u533a\u7684\u7075\u611f\u3002",
