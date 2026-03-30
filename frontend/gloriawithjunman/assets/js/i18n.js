@@ -169,18 +169,18 @@ window.I18N = {
     venue_gallery_title: "Venue glimpses",
     map_google_title: "Google Map",
     map_google_label: "International",
-    map_amap_title: "Amap / 高德地图",
+    map_amap_title: "Amap / \u9ad8\u5fb7\u5730\u56fe",
     map_amap_label: "China-friendly",
 
     stone_amap_note:
-      "For guests based in mainland China, Google Maps may not load normally. You can tap below to open the venue directly in Amap / 高德地图.",
+      "For guests based in mainland China, Google Maps may not load normally. You can tap below to open the venue directly in Amap / \u9ad8\u5fb7\u5730\u56fe.",
     stone_link_2_title: "Open in Amap",
-    stone_link_2_text: "Search this venue in 高德地图",
+    stone_link_2_text: "Search this venue in \u9ad8\u5fb7\u5730\u56fe",
 
     renaissance_amap_note:
-      "For guests based in mainland China, Google Maps may not load normally. You can tap below to open the hotel directly in Amap / 高德地图.",
+      "For guests based in mainland China, Google Maps may not load normally. You can tap below to open the hotel directly in Amap / \u9ad8\u5fb7\u5730\u56fe.",
     renaissance_link_5_title: "Open in Amap",
-    renaissance_link_5_text: "Search this hotel in 高德地图",
+    renaissance_link_5_text: "Search this hotel in \u9ad8\u5fb7\u5730\u56fe",
     renaissance_link_6_title: "Open in Google Maps",
     renaissance_link_6_text: "See the hotel location in Google Maps",
       travel_title: "Travel guide",
@@ -422,14 +422,14 @@ window.I18N = {
     schedule_sat_3: "17:00 \u00b7 \u65e5\u843d\u65f6\u5206\u7684\u9e21\u5c3e\u9152\u4e0e\u62cd\u7167\u3002",
     schedule_sat_4: "19:00 \u00b7 \u661f\u7a7a\u4e4b\u4e0b\u7684\u665a\u5bb4\u3002",
     schedule_sat_5: "22:00 \u00b7 \u6e38\u620f\u4e0e\u62bd\u5956\u65f6\u523b\u3002",
-    schedule_sat_6: "23:00 \u00b7 After Party\uff08\u670b\u53cb\u4e13\u5c5e\uff09\u3002",
+    schedule_sat_6: "23:00 \u00b7 \u4f59\u5174\u6d3e\u5bf9\uff08\u670b\u53cb\u4e13\u5c5e\uff09\u3002",
     schedule_sat_7: "02:00 \u00b7 \u591c\u665a\u7f13\u7f13\u843d\u5e55\u3002",
     schedule_sat_note:
       "\u4e0d\u5fc5\u52c9\u5f3a\u81ea\u5df1\u5f85\u5230\u6700\u540e\uff0c\u4efb\u4f55\u65f6\u5019\u60f3\u79bb\u5f00\uff0c\u8bb0\u5f97\u548c\u6211\u4eec\u8bf4\u4e00\u58f0\u5c31\u597d\u3002",
     schedule_sun_label: "9\u670813\u65e5 \u00b7 \u5468\u65e5 \u00b7 \u6162\u6162\u544a\u522b",
     schedule_sun_meta: "\u6162\u6162\u544a\u522b",
     schedule_sun_1: "\u4e00\u4e2a\u4e0d\u8bbe\u95f9\u949f\u7684\u65e9\u6668\u3002",
-    schedule_sun_2: "\u65e9\u9910\u3001\u6cf3\u6c60\uff0c\u6216\u4e00\u573a\u653e\u677e\u7684 Spa\u3002",
+    schedule_sun_2: "\u65e9\u9910\u3001\u6cf3\u6c60\uff0c\u6216\u4e00\u573a\u653e\u677e\u7684\u6c34\u7597\u3002",
     schedule_sun_3: "\u542f\u7a0b\u56de\u5bb6\uff0c\u6216\u7ee7\u7eed\u4f60\u7684\u5df4\u5398\u5c9b\u65c5\u7a0b\u3002",
     // venue_title: "\u573a\u5730\u4e0e\u4f4f\u5bbf",
     // venue_intro:
@@ -477,7 +477,7 @@ window.I18N = {
       "\u63a5\u9001\u4e0e\u4ea4\u901a\u5b89\u6392\u4e5f\u4f1a\u5728\u5a5a\u793c\u7fa4\u4e2d\u7edf\u4e00\u901a\u77e5\u5927\u5bb6\u3002",
 
     stone_link_1_title: "\u67e5\u770b\u5730\u56fe",
-    stone_link_1_text: "\u5728 Google Maps \u4e2d\u67e5\u770b\u573a\u5730\u4f4d\u7f6e",
+    stone_link_1_text: "\u5728 Google \u5730\u56fe\u4e2d\u67e5\u770b\u573a\u5730\u4f4d\u7f6e",
 
     // Renaissance
     renaissance_kicker: "\u5bbe\u5ba2\u63a8\u8350\u5165\u4f4f\u9152\u5e97",
@@ -494,7 +494,7 @@ window.I18N = {
 
     renaissance_activities_title: "\u53ef\u4ee5\u4f53\u9a8c",
     renaissance_activity_1:
-      "\u5728\u9152\u5e97\u6cf3\u6c60\u8fb9\u653e\u677e\uff0c\u6216\u9884\u7ea6\u4e00\u6b21 spa\uff0c\u4eab\u53d7\u60a0\u95f2\u7684\u5df4\u5398\u5c9b\u65f6\u5149\u3002",
+      "\u5728\u9152\u5e97\u6cf3\u6c60\u8fb9\u653e\u677e\uff0c\u6216\u9884\u7ea6\u4e00\u6b21\u6c34\u7597\uff0c\u4eab\u53d7\u60a0\u95f2\u7684\u5df4\u5398\u5c9b\u65f6\u5149\u3002",
     renaissance_activity_2:
       "\u524d\u5f80 Pandawa\u3001Balangan \u7b49\u6d77\u6ee9\u63a2\u7d22\u4e0e\u6c34\u4e0a\u6d3b\u52a8\u3002",
     renaissance_activity_3:
@@ -514,23 +514,23 @@ window.I18N = {
     // final note
     room_assignment_note:
       "\u5177\u4f53\u623f\u95f4\u5b89\u6392\u4e0e\u6700\u7ec8\u4f4f\u5bbf\u4fe1\u606f\uff0c\u6211\u4eec\u4f1a\u5728\u4e34\u8fd1\u65e5\u671f\u65f6\u7edf\u4e00\u5728\u5a5a\u793c\u7fa4\u4e2d\u901a\u77e5\u5927\u5bb6\u3002\u8c22\u8c22\u4f60\u4eec\u6765\u5230\u8fd9\u91cc\uff0c\u4e0e\u6211\u4eec\u4e00\u8d77\u5ea6\u8fc7\u8fd9\u4e2a\u5468\u672b\uff0c\u4e5f\u5e0c\u671b\u5927\u5bb6\u90fd\u80fd\u5728\u4e4c\u9c81\u74e6\u56fe\u4f4f\u5f97\u5f00\u5fc3\u3001\u8212\u9002\u3002",
-    venue_gallery_title: "场地一瞥",
-    map_google_title: "Google 地图",
-    map_google_label: "海外适用",
-    map_amap_title: "高德地图",
-    map_amap_label: "国内适用",
+    venue_gallery_title: "\u573a\u5730\u4e00\u77a5",
+    map_google_title: "Google \u5730\u56fe",
+    map_google_label: "\u6d77\u5916\u9002\u7528",
+    map_amap_title: "\u9ad8\u5fb7\u5730\u56fe",
+    map_amap_label: "\u56fd\u5185\u9002\u7528",
 
     stone_amap_note:
-      "如果你在中国大陆，Google 地图可能无法正常打开。可以点击下方按钮，直接在高德地图中搜索婚礼场地。",
-    stone_link_2_title: "用高德打开",
-    stone_link_2_text: "在高德地图中搜索这个场地",
+      "\u5982\u679c\u4f60\u5728\u4e2d\u56fd\u5927\u9646\uff0cGoogle \u5730\u56fe\u53ef\u80fd\u65e0\u6cd5\u6b63\u5e38\u6253\u5f00\u3002\u53ef\u4ee5\u70b9\u51fb\u4e0b\u65b9\u6309\u94ae\uff0c\u76f4\u63a5\u5728\u9ad8\u5fb7\u5730\u56fe\u4e2d\u641c\u7d22\u5a5a\u793c\u573a\u5730\u3002",
+    stone_link_2_title: "\u7528\u9ad8\u5fb7\u6253\u5f00",
+    stone_link_2_text: "\u5728\u9ad8\u5fb7\u5730\u56fe\u4e2d\u641c\u7d22\u8fd9\u4e2a\u573a\u5730",
 
     renaissance_amap_note:
-      "如果你在中国大陆，Google 地图可能无法正常打开。可以点击下方按钮，直接在高德地图中搜索酒店位置。",
-    renaissance_link_5_title: "用高德打开",
-    renaissance_link_5_text: "在高德地图中搜索这家酒店",
-    renaissance_link_6_title: "用 Google 打开",
-    renaissance_link_6_text: "在 Google 地图中查看酒店位置",
+      "\u5982\u679c\u4f60\u5728\u4e2d\u56fd\u5927\u9646\uff0cGoogle \u5730\u56fe\u53ef\u80fd\u65e0\u6cd5\u6b63\u5e38\u6253\u5f00\u3002\u53ef\u4ee5\u70b9\u51fb\u4e0b\u65b9\u6309\u94ae\uff0c\u76f4\u63a5\u5728\u9ad8\u5fb7\u5730\u56fe\u4e2d\u641c\u7d22\u9152\u5e97\u4f4d\u7f6e\u3002",
+    renaissance_link_5_title: "\u7528\u9ad8\u5fb7\u6253\u5f00",
+    renaissance_link_5_text: "\u5728\u9ad8\u5fb7\u5730\u56fe\u4e2d\u641c\u7d22\u8fd9\u5bb6\u9152\u5e97",
+    renaissance_link_6_title: "\u7528 Google \u5730\u56fe\u6253\u5f00",
+    renaissance_link_6_text: "\u5728 Google \u5730\u56fe\u4e2d\u67e5\u770b\u9152\u5e97\u4f4d\u7f6e",
     travel_title: "\u51fa\u884c\u6307\u5357",
     travel_intro:
       "\u8fd9\u91cc\u662f\u4e4c\u9c81\u74e6\u56fe\u7684\u6d3b\u52a8\u5efa\u8bae\uff0c\u4ee5\u53ca\u82e5\u4f60\u7ee7\u7eed\u524d\u5f80\u5df4\u5398\u5c9b\u5176\u4ed6\u5730\u533a\u7684\u7075\u611f\u3002",
@@ -610,21 +610,21 @@ window.I18N = {
       "\u8bf7\u5c3d\u91cf\u907f\u514d\u767d\u8272\u3001\u8c61\u7259\u767d\u53ca\u975e\u5e38\u63a5\u8fd1\u65b0\u5a18\u793c\u670d\u7684\u6d45\u8272\u7cfb\u3002",
     dresscode_gents_title: "\u7537\u58eb",
     dresscode_gents_group_shirts: "\u886c\u886b",
-    dresscode_gents_group_polos: "Polo / \u4e9a\u9ebb\u886c\u886b",
+    dresscode_gents_group_polos: "Polo \u886b / \u4e9a\u9ebb\u886c\u886b",
     dresscode_gents_group_jackets: "\u5916\u5957/\u6b63\u88c5",
     dresscode_gents_body:
       "\u6574\u4f53\u4fdd\u6301\u6e05\u723d\u5229\u843d\u5373\u53ef\uff0c\u5916\u5957\u975e\u5fc5\u987b\u3002\u8bf7\u9009\u62e9\u4e0b\u65b9\u8272\u76d8\u4e2d\u7684\u989c\u8272\u3002",
     dresscode_gents_options_label: "\u7b80\u5355\u5b89\u5168\u642d\u914d\uff1a",
-    dresscode_gents_shirt_palette_label: "\u886c\u886b / Polo / \u5916\u5957 \u989c\u8272\uff1a",
+    dresscode_gents_shirt_palette_label: "\u886c\u886b / Polo \u886b / \u5916\u5957\u989c\u8272\uff1a",
     dresscode_gents_trouser_palette_label: "\u88e4\u88c5\u989c\u8272\uff1a",
     dresscode_gents_accent_palette_label: "\u70b9\u7f00\u8272\uff08\u53ef\u9009\uff09\uff1a",
     dresscode_gents_option_1: "\u767d\u886c\u886b\u6216\u6d45\u84dd\u886c\u886b",
     dresscode_gents_option_2:
-      "\u6d45\u8272\u4e9a\u9ebb\u886c\u886b\u6216\u504f\u6b63\u5f0f\u7684 Polo\uff08\u767d / \u7c73 / \u6d45\u84dd / \u6d45\u7070\uff09",
+      "\u6d45\u8272\u4e9a\u9ebb\u886c\u886b\u6216\u504f\u6b63\u5f0f\u7684 Polo \u886b\uff08\u767d / \u7c73 / \u6d45\u84dd / \u6d45\u7070\uff09",
     dresscode_gents_option_3:
       "\u7c73\u8272 / \u5361\u5176 / \u767d\u8272 / \u6696\u7070\u7684\u957f\u88e4 (\u897f\u88e4\u6216\u4e9a\u9ebb\u88e4\u5747\u53ef)",
     dresscode_gents_color_note:
-      "\u989c\u8272\u8865\u5145\uff08\u53ef\u9009\uff09\uff1a\u7537\u58eb\u4e5f\u53ef\u5c06\u6d45\u7c89 / \u5976\u6cb9\u9ec4 / \u9999\u69df\u8272\u4f5c\u4e3a\u886c\u886b\u6216 Polo \u7684\u989c\u8272\u70b9\u7f00\uff0c\u4e0b\u88c5\u642d\u914d\u4e2d\u6027\u8272\uff08\u7c73\u8272 / \u5361\u5176 / \u767d\u8272 / \u6696\u7070 / \u6696\u8c61\u7259\u767d\uff09\u5373\u53ef\u3002",
+      "\u989c\u8272\u8865\u5145\uff08\u53ef\u9009\uff09\uff1a\u7537\u58eb\u4e5f\u53ef\u5c06\u6d45\u7c89 / \u5976\u6cb9\u9ec4 / \u9999\u69df\u8272\u4f5c\u4e3a\u886c\u886b\u6216 Polo \u886b\u7684\u989c\u8272\u70b9\u7f00\uff0c\u4e0b\u88c5\u642d\u914d\u4e2d\u6027\u8272\uff08\u7c73\u8272 / \u5361\u5176 / \u767d\u8272 / \u6696\u7070 / \u6696\u8c61\u7259\u767d\uff09\u5373\u53ef\u3002",
     dresscode_avoid_title: "\u8bf7\u907f\u514d (\u91cd\u8981)",
     dresscode_avoid_note: "\u4e3a\u4fdd\u6301\u4eea\u5f0f\u6c1b\u56f4\uff0c\u8bf7\u5c3d\u91cf\u907f\u514d\u8fc7\u4e8e\u4f11\u95f2\u7684\u7a7f\u642d\uff0c\u4f8b\u5982\uff1a",
     dresscode_avoid_item_1: "T \u6064 / \u80cc\u5fc3",
@@ -634,7 +634,7 @@ window.I18N = {
     dresscode_avoid_item_5: "\u8fd0\u52a8\u88c5 / \u7eaf\u5ea6\u5047\u6c99\u6ee9\u88c5",
     dresscode_style_title: "\u98ce\u683c\u63d0\u793a",
     dresscode_style_body:
-      "\u4e3a\u4fdd\u6301\u6574\u4f53\u98ce\u683c\u4f18\u96c5\u7ecf\u5178\uff0c\u656c\u8bf7\u5bbe\u5ba2\u907f\u514d\u5e26\u6709\u5927 logo\u3001\u660e\u663e\u54c1\u724c\u6807\u8bc6\u6216\u9c9c\u660e\u56fe\u6848\u7684\u670d\u88c5\u3002\u8bf7\u4f18\u5148\u9009\u62e9\u4e0a\u65b9\u63a8\u8350\u8272\u76d8\u7684\u989c\u8272\u3002\u5982\u679c\u4e0d\u786e\u5b9a\u81ea\u5df1\u7684\u7a7f\u642d\u662f\u5426\u5408\u9002\uff0c\u6b22\u8fce\u968f\u65f6\u8be2\u95ee\u65b0\u5a18\u6216\u65b0\u90ce\u534f\u52a9\u786e\u8ba4\u3002",
+      "\u4e3a\u4fdd\u6301\u6574\u4f53\u98ce\u683c\u4f18\u96c5\u7ecf\u5178\uff0c\u656c\u8bf7\u5bbe\u5ba2\u907f\u514d\u7a7f\u7740\u5e26\u6709\u5927\u9762\u79ef Logo\u3001\u660e\u663e\u54c1\u724c\u6807\u8bc6\u6216\u9c9c\u660e\u56fe\u6848\u7684\u670d\u88c5\u3002\u8bf7\u4f18\u5148\u9009\u62e9\u4e0a\u65b9\u63a8\u8350\u8272\u76d8\u7684\u989c\u8272\u3002\u5982\u679c\u4e0d\u786e\u5b9a\u81ea\u5df1\u7684\u7a7f\u642d\u662f\u5426\u5408\u9002\uff0c\u6b22\u8fce\u968f\u65f6\u8be2\u95ee\u65b0\u5a18\u6216\u65b0\u90ce\u534f\u52a9\u786e\u8ba4\u3002",
     dresscode_thanks: "\u975e\u5e38\u611f\u8c22\u4f60\u4eec\u4e3a\u8fd9\u4e00\u5929\u7528\u5fc3\u6253\u626e\uff0c\u671f\u5f85\u4e0e\u4f60\u76f8\u89c1\uff01",
     dresscode_caption_soft_blush: "\u6d45\u7c89",
     dresscode_caption_dusty_rose: "\u73ab\u7470\u7070\u7c89",
@@ -678,11 +678,11 @@ window.I18N = {
     dresscode_gents_caption_2: "\u6d45\u84dd\u886c\u886b",
     dresscode_gents_caption_3: "\u7c73\u8272\u886c\u886b",
     dresscode_gents_caption_4: "\u6d45\u7070\u886c\u886b",
-    dresscode_gents_caption_5: "\u767d\u8272 Polo",
-    dresscode_gents_caption_6: "\u6d45\u84dd Polo",
-    dresscode_gents_caption_7: "\u7c73\u8272 Polo",
-    dresscode_gents_caption_8: "\u6d45\u7070 Polo",
-    dresscode_gents_caption_9: "\u6c99\u8272 Polo",
+    dresscode_gents_caption_5: "\u767d\u8272 Polo \u886b",
+    dresscode_gents_caption_6: "\u6d45\u84dd Polo \u886b",
+    dresscode_gents_caption_7: "\u7c73\u8272 Polo \u886b",
+    dresscode_gents_caption_8: "\u6d45\u7070 Polo \u886b",
+    dresscode_gents_caption_9: "\u6c99\u8272 Polo \u886b",
     dresscode_gents_caption_10: "\u6c99\u8272\u5916\u5957",
     dresscode_gents_caption_11: "\u7070\u8910\u8272\u5916\u5957",
     dresscode_gents_caption_12: "\u6696\u7070\u5916\u5957",
@@ -690,7 +690,7 @@ window.I18N = {
     dresscode_gents_caption_14: "\u5361\u5176\u5916\u5957",
     dresscode_section_day_title: "\u4eea\u5f0f\u4e0e\u665a\u5bb4",
     dresscode_section_day_body:
-      "\u6d77\u6ee9\u6b63\u88c5/\u5ea6\u5047 chic\u3002\u8f7b\u8584\u897f\u88c5\u3001\u4e9a\u9ebb\u5957\u88c5\u6216\u4e2d\u957f\u88d9\uff0c\u504f\u65e5\u6652\u67d4\u548c\u7684\u4e2d\u6027\u8272\u4e0e\u6696\u8272\u8c03\u3002\u8bf7\u907f\u514d\u7eaf\u767d\u3002",
+      "\u6d77\u6ee9\u6b63\u88c5 / \u5ea6\u5047\u96c5\u81f4\u98ce\u3002\u8f7b\u8584\u897f\u88c5\u3001\u4e9a\u9ebb\u5957\u88c5\u6216\u4e2d\u957f\u88d9\uff0c\u9002\u5408\u504f\u65e5\u6652\u67d4\u548c\u7684\u4e2d\u6027\u8272\u4e0e\u6696\u8272\u8c03\u3002\u8bf7\u907f\u514d\u7eaf\u767d\u3002",
     dresscode_section_night_title: "\u665a\u95f4\u6d3e\u5bf9",
     dresscode_section_night_body:
       "\u8f7b\u677e\u591c\u95f4\u88c5\u626e\u3002\u9732\u53f0\u4e0e\u8349\u5730\u53ef\u80fd\u4f1a\u51c9\uff0c\u5efa\u8bae\u5e26\u8584\u5916\u5957\u548c\u8212\u9002\u978b\u3002",
@@ -699,5 +699,4 @@ window.I18N = {
       "\u6c99\u8272\u3001\u77f3\u8272\u3001\u8c61\u7259\u767d\u3001\u9676\u571f\u3001\u67d4\u548c\u73ca\u745a\u3001\u6d77\u6ce1\u7eff\u3001\u9f20\u5c3e\u8349\u7eff\u4e0e\u6df1\u6d77\u519b\u84dd\u70b9\u7f00\u3002",
   },
 };
-
 
