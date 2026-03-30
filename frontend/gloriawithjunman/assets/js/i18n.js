@@ -310,6 +310,17 @@ window.I18N = {
       "Ubud or the mountains: rice terraces, temples, and cooler air if you would like a contrast to the ocean.",
     travel_extend_li4:
       "If you are unsure where to stay, please feel free to ask us — we would be very happy to help.",
+    travel_map_li5_title: "Kintamani",
+    travel_map_li5:
+      "Known for mountain air, volcano views, and a very different side of Bali from the coast.",
+
+    travel_map_li6_title: "Lovina",
+    travel_map_li6:
+      "Further north, with black-sand beaches, early dolphin tours, and a quieter pace.",
+
+    travel_map_li7_title: "Nusa Penida",
+    travel_map_li7:
+      "Ideal for dramatic coastal views, bright water, and a full-day island escape.",
     gallery_title: "Gallery",
     gallery_intro:
       "A little moodboard of Bali and some space reserved for our photos. We'll also share a link here after the wedding where guests can upload their own pictures.",
@@ -758,6 +769,17 @@ window.I18N = {
       "乌布或山里：如果你想从海边切换一下，这里有梯田、寺庙与更凉爽的空气。",
     travel_extend_li4:
       "如果你不确定该住哪里，也欢迎来问我们，我们很乐意给你一些建议。",
+    travel_map_li5_title: "金塔马尼",
+    travel_map_li5:
+      "以山间空气、火山景观，以及与海岸截然不同的巴厘岛风貌而闻名。",
+
+    travel_map_li6_title: "罗威纳",
+    travel_map_li6:
+      "位于巴厘岛北部，以黑沙海滩、清晨追海豚，以及更安静的节奏著称。",
+
+    travel_map_li7_title: "佩尼达岛",
+    travel_map_li7:
+      "适合壮阔海岸线、清透海水，以及安排一整天的离岛行程。",
     gallery_title: "\u76f8\u518c",
     gallery_intro:
       "\u4e00\u4e9b\u5df4\u5398\u5c9b\u6c1b\u56f4\u7167\u7247\u4e0e\u6211\u4eec\u6545\u4e8b\u7684\u7559\u767d\u3002\u5a5a\u793c\u540e\u4e5f\u4f1a\u5728\u8fd9\u91cc\u5206\u4eab\u5bbe\u5ba2\u4e0a\u4f20\u7167\u7247\u7684\u94fe\u63a5\u3002",
