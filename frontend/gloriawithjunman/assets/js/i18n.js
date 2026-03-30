@@ -173,14 +173,14 @@ window.I18N = {
     map_amap_label: "China-friendly",
 
     stone_amap_note:
-      "For guests based in mainland China, Google Maps may not load normally. You can tap below to open the venue directly in Amap / \u9ad8\u5fb7\u5730\u56fe.",
-    stone_link_2_title: "Open in Amap",
-    stone_link_2_text: "Search this venue in \u9ad8\u5fb7\u5730\u56fe",
+      "If you use an iPhone, you can also open the venue directly in Apple Maps below.",
+    stone_link_2_title: "Open in Apple Maps",
+    stone_link_2_text: "Open this venue in Apple Maps",
 
     renaissance_amap_note:
-      "For guests based in mainland China, Google Maps may not load normally. You can tap below to open the hotel directly in Amap / \u9ad8\u5fb7\u5730\u56fe.",
-    renaissance_link_5_title: "Open in Amap",
-    renaissance_link_5_text: "Search this hotel in \u9ad8\u5fb7\u5730\u56fe",
+      "If you use an iPhone, you can also open the hotel directly in Apple Maps below.",
+    renaissance_link_5_title: "Open in Apple Maps",
+    renaissance_link_5_text: "Open this hotel in Apple Maps",
     renaissance_link_6_title: "Open in Google Maps",
     renaissance_link_6_text: "See the hotel location in Google Maps",
     renaissance_experience_title_1: "Pool & Spa",
@@ -527,15 +527,16 @@ window.I18N = {
     map_amap_title: "\u9ad8\u5fb7\u5730\u56fe",
     map_amap_label: "\u56fd\u5185\u9002\u7528",
 
+    
     stone_amap_note:
-      "\u5982\u679c\u4f60\u5728\u4e2d\u56fd\u5927\u9646\uff0cGoogle \u5730\u56fe\u53ef\u80fd\u65e0\u6cd5\u6b63\u5e38\u6253\u5f00\u3002\u53ef\u4ee5\u70b9\u51fb\u4e0b\u65b9\u6309\u94ae\uff0c\u76f4\u63a5\u5728\u9ad8\u5fb7\u5730\u56fe\u4e2d\u641c\u7d22\u5a5a\u793c\u573a\u5730\u3002",
-    stone_link_2_title: "\u7528\u9ad8\u5fb7\u6253\u5f00",
-    stone_link_2_text: "\u5728\u9ad8\u5fb7\u5730\u56fe\u4e2d\u641c\u7d22\u8fd9\u4e2a\u573a\u5730",
+      "如果你使用 iPhone，也可以通过下方按钮直接在 Apple 地图中打开婚礼场地。",
+    stone_link_2_title: "用 Apple 地图打开",
+    stone_link_2_text: "在 Apple 地图中打开这个场地",
 
     renaissance_amap_note:
-      "\u5982\u679c\u4f60\u5728\u4e2d\u56fd\u5927\u9646\uff0cGoogle \u5730\u56fe\u53ef\u80fd\u65e0\u6cd5\u6b63\u5e38\u6253\u5f00\u3002\u53ef\u4ee5\u70b9\u51fb\u4e0b\u65b9\u6309\u94ae\uff0c\u76f4\u63a5\u5728\u9ad8\u5fb7\u5730\u56fe\u4e2d\u641c\u7d22\u9152\u5e97\u4f4d\u7f6e\u3002",
-    renaissance_link_5_title: "\u7528\u9ad8\u5fb7\u6253\u5f00",
-    renaissance_link_5_text: "\u5728\u9ad8\u5fb7\u5730\u56fe\u4e2d\u641c\u7d22\u8fd9\u5bb6\u9152\u5e97",
+      "如果你使用 iPhone，也可以通过下方按钮直接在 Apple 地图中打开酒店位置。",
+    renaissance_link_5_title: "用 Apple 地图打开",
+    renaissance_link_5_text: "在 Apple 地图中打开这家酒店",
     renaissance_link_6_title: "\u7528 Google \u5730\u56fe\u6253\u5f00",
     renaissance_link_6_text: "\u5728 Google \u5730\u56fe\u4e2d\u67e5\u770b\u9152\u5e97\u4f4d\u7f6e",
     travel_title: "\u51fa\u884c\u6307\u5357",
