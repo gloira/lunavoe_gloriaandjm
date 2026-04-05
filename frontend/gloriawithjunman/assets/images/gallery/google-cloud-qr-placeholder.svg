@@ -30,7 +30,8 @@
   <rect x="312" y="432" width="28" height="28" rx="4" fill="#39281C"/>
   <rect x="424" y="432" width="28" height="28" rx="4" fill="#39281C"/>
   <rect x="480" y="432" width="28" height="28" rx="4" fill="#39281C"/>
-  <text x="360" y="560" fill="#39281C" font-family="Georgia, 'Times New Roman', serif" font-size="38" text-anchor="middle">Google Cloud QR</text>
-  <text x="360" y="602" fill="#7B5C44" font-family="Georgia, 'Times New Roman', serif" font-size="24" text-anchor="middle">Placeholder</text>
-  <text x="360" y="640" fill="#7B5C44" font-family="Georgia, 'Times New Roman', serif" font-size="20" text-anchor="middle">Replace with the final upload code</text>
+  <rect x="248" y="546" width="224" height="16" rx="8" fill="#39281C" fill-opacity="0.12"/>
+  <rect x="220" y="584" width="280" height="12" rx="6" fill="#7B5C44" fill-opacity="0.16"/>
+  <rect x="242" y="614" width="236" height="12" rx="6" fill="#7B5C44" fill-opacity="0.12"/>
+  <circle cx="360" cy="646" r="8" fill="#CFB69B"/>
 </svg>

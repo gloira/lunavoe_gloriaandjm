@@ -15,6 +15,25 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <style>
+    .rsvp-conditional {
+      display: grid;
+      gap: 1.25rem;
+      margin-top: 0.5rem;
+    }
+
+    .rsvp-subpanel {
+      padding: 1.1rem 1rem;
+      border-radius: 18px;
+      background: rgba(249, 243, 234, 0.72);
+      border: 1px solid rgba(226, 198, 171, 0.7);
+    }
+
+    .rsvp-subpanel[hidden] {
+      display: none !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -124,6 +143,85 @@
                     <input type="radio" name="attending" value="No" />
                     <span data-i18n="rsvp_attend_no">Sadly I can't make it</span>
                   </label>
+                </div>
+              </div>
+
+              <div class="rsvp-conditional rsvp-subpanel" data-rsvp-attending-yes hidden>
+                <div class="form-row" style="margin-bottom: 0;">
+                  <label data-i18n="rsvp_allergy_label">
+                    Do you have any food allergy?<span class="required">*</span>
+                  </label>
+                  <div class="radio-group">
+                    <label class="radio-pill">
+                      <input type="radio" name="hasAllergy" value="Yes" />
+                      <span data-i18n="rsvp_yes">Yes</span>
+                    </label>
+                    <label class="radio-pill">
+                      <input type="radio" name="hasAllergy" value="No" />
+                      <span data-i18n="rsvp_no">No</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-row" data-rsvp-allergy-details hidden style="margin-bottom: 0;">
+                  <label for="rsvp-allergy-remarks" data-i18n="rsvp_allergy_remarks_label">
+                    Please let us know your food allergy
+                  </label>
+                  <textarea id="rsvp-allergy-remarks" name="allergyRemarks" class="textarea"
+                    data-i18n-placeholder="rsvp_allergy_remarks_placeholder"
+                    placeholder="Please share the allergy details here."></textarea>
+                </div>
+
+                <div class="form-row" style="margin-bottom: 0;">
+                  <label data-i18n="rsvp_partner_label">
+                    Will you bring your boyfriend/girlfriend?<span class="required">*</span>
+                  </label>
+                  <div class="radio-group">
+                    <label class="radio-pill">
+                      <input type="radio" name="bringingGuest" value="Yes" />
+                      <span data-i18n="rsvp_yes">Yes</span>
+                    </label>
+                    <label class="radio-pill">
+                      <input type="radio" name="bringingGuest" value="No" />
+                      <span data-i18n="rsvp_no">No</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="rsvp-subpanel" data-rsvp-guest-details hidden>
+                  <div class="form-row">
+                    <label for="rsvp-guest-name" data-i18n="rsvp_partner_name_label">
+                      Partner's name<span class="required">*</span>
+                    </label>
+                    <input id="rsvp-guest-name" name="guestName" type="text" class="input-text"
+                      data-i18n-placeholder="rsvp_partner_name_placeholder"
+                      placeholder="Your partner's full name" />
+                  </div>
+
+                  <div class="form-row" style="margin-bottom: 0;">
+                    <label data-i18n="rsvp_partner_allergy_label">
+                      Does he/she have any food allergy?<span class="required">*</span>
+                    </label>
+                    <div class="radio-group">
+                      <label class="radio-pill">
+                        <input type="radio" name="guestHasAllergy" value="Yes" />
+                        <span data-i18n="rsvp_yes">Yes</span>
+                      </label>
+                      <label class="radio-pill">
+                        <input type="radio" name="guestHasAllergy" value="No" />
+                        <span data-i18n="rsvp_no">No</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-row" data-rsvp-guest-allergy-details hidden style="margin-top: 1.25rem; margin-bottom: 0;">
+                    <label for="rsvp-guest-allergy-remarks" data-i18n="rsvp_partner_allergy_remarks_label">
+                      Please let us know your partner's food allergy
+                    </label>
+                    <textarea id="rsvp-guest-allergy-remarks" name="guestAllergyRemarks" class="textarea"
+                      data-i18n-placeholder="rsvp_partner_allergy_remarks_placeholder"
+                      placeholder="Please share your partner's allergy details here."></textarea>
+                  </div>
                 </div>
               </div>
 

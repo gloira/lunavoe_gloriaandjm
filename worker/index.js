@@ -48,13 +48,39 @@ export default {
 
     const id = crypto.randomUUID();
     const timestamp = new Date().toISOString();
+    const attending = (data.attending || "").toString().trim();
+    const hasAllergy =
+      attending === "Yes" ? (data.hasAllergy || "").toString().trim() : "";
+    const bringingGuest =
+      attending === "Yes" ? (data.bringingGuest || "").toString().trim() : "";
+    const guestHasAllergy =
+      attending === "Yes" && bringingGuest === "Yes"
+        ? (data.guestHasAllergy || "").toString().trim()
+        : "";
 
     const rsvp = {
       id,
       timestamp,
-      name: data.name || "",
-      attending: data.attending || "",
-      message: data.message || "",
+      name: (data.name || "").toString().trim(),
+      attending,
+      hasAllergy,
+      allergyRemarks:
+        attending === "Yes" && hasAllergy === "Yes"
+          ? (data.allergyRemarks || "").toString().trim()
+          : "",
+      bringingGuest,
+      guestName:
+        attending === "Yes" && bringingGuest === "Yes"
+          ? (data.guestName || "").toString().trim()
+          : "",
+      guestHasAllergy,
+      guestAllergyRemarks:
+        attending === "Yes" &&
+        bringingGuest === "Yes" &&
+        guestHasAllergy === "Yes"
+          ? (data.guestAllergyRemarks || "").toString().trim()
+          : "",
+      message: (data.message || "").toString().trim(),
       // 注意：这里故意不保存 passcode，避免在 KV / Sheet 里留下密码
     };
 

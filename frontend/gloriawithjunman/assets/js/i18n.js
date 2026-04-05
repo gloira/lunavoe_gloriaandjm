@@ -387,6 +387,20 @@ window.I18N = {
     rsvp_attend_label: "Will you attend?",
     rsvp_attend_yes: "Yes, I'll be there",
     rsvp_attend_no: "Sadly I can't make it",
+    rsvp_yes: "Yes",
+    rsvp_no: "No",
+    rsvp_allergy_label: "Do you have any food allergy?",
+    rsvp_allergy_remarks_label: "Please let us know your food allergy",
+    rsvp_allergy_remarks_placeholder:
+      "Please share the allergy details here.",
+    rsvp_partner_label: "Will you bring your boyfriend/girlfriend?",
+    rsvp_partner_name_label: "Partner's name",
+    rsvp_partner_name_placeholder: "Your partner's full name",
+    rsvp_partner_allergy_label: "Does he/she have any food allergy?",
+    rsvp_partner_allergy_remarks_label:
+      "Please let us know your partner's food allergy",
+    rsvp_partner_allergy_remarks_placeholder:
+      "Please share your partner's allergy details here.",
     rsvp_message_label: "Notes (dietary, plus one, etc.)",
     rsvp_message_placeholder:
       "Dietary needs, plus one name, or anything you'd like us to know.",
@@ -400,6 +414,8 @@ window.I18N = {
     rsvp_status_sending: "Sending your RSVP\u2026",
     rsvp_status_missing:
       "Please fill in your name and whether you will attend.",
+    rsvp_status_missing_details:
+      "Please complete the allergy and guest details that apply to you.",
     rsvp_status_success: "Thank you! We've received your RSVP.",
     rsvp_status_error:
       "Sorry, something went wrong. Please try again later or contact us directly.",
@@ -905,6 +921,20 @@ window.I18N = {
     rsvp_attend_label: "\u4f60\u4f1a\u51fa\u5e2d\u5417\uff1f",
     rsvp_attend_yes: "\u4f1a\u51fa\u5e2d",
     rsvp_attend_no: "\u5f88\u9057\u61be\u4e0d\u80fd\u5230\u573a",
+    rsvp_yes: "\u662f",
+    rsvp_no: "\u5426",
+    rsvp_allergy_label: "\u4f60\u6709\u98df\u7269\u8fc7\u654f\u5417\uff1f",
+    rsvp_allergy_remarks_label: "\u8bf7\u544a\u8bc9\u6211\u4eec\u4f60\u7684\u98df\u7269\u8fc7\u654f\u60c5\u51b5",
+    rsvp_allergy_remarks_placeholder:
+      "\u8bf7\u5728\u8fd9\u91cc\u586b\u5199\u8fc7\u654f\u8be6\u60c5\u3002",
+    rsvp_partner_label: "\u4f60\u4f1a\u5e26\u7537/\u5973\u670b\u53cb\u4e00\u8d77\u6765\u5417\uff1f",
+    rsvp_partner_name_label: "\u4ed6/\u5979\u7684\u59d3\u540d",
+    rsvp_partner_name_placeholder: "\u4f60\u7684\u7537/\u5973\u670b\u53cb\u59d3\u540d",
+    rsvp_partner_allergy_label: "\u4ed6/\u5979\u6709\u98df\u7269\u8fc7\u654f\u5417\uff1f",
+    rsvp_partner_allergy_remarks_label:
+      "\u8bf7\u544a\u8bc9\u6211\u4eec\u4ed6/\u5979\u7684\u98df\u7269\u8fc7\u654f\u60c5\u51b5",
+    rsvp_partner_allergy_remarks_placeholder:
+      "\u8bf7\u5728\u8fd9\u91cc\u586b\u5199\u4ed6/\u5979\u7684\u8fc7\u654f\u8be6\u60c5\u3002",
     rsvp_message_label: "\u5907\u6ce8\uff08\u996e\u98df\u3001\u540c\u884c\u4eba\u7b49\uff09",
     rsvp_message_placeholder:
       "\u996e\u98df\u9700\u6c42\u3001\u540c\u884c\u4eba\u59d3\u540d\u6216\u5176\u4ed6\u60f3\u544a\u8bc9\u6211\u4eec\u7684\u4e8b\u9879\u3002",
@@ -915,6 +945,8 @@ window.I18N = {
     rsvp_status_pwd_wrong: "\u5bc6\u7801\u4e0d\u6b63\u786e\uff0c\u8bf7\u67e5\u770b\u9080\u8bf7\u51fd\u3002",
     rsvp_status_sending: "\u6b63\u5728\u53d1\u9001\u786e\u8ba4\u51fa\u5e2d\u2026",
     rsvp_status_missing: "\u8bf7\u586b\u5199\u59d3\u540d\u5e76\u9009\u62e9\u662f\u5426\u51fa\u5e2d\u3002",
+    rsvp_status_missing_details:
+      "\u8bf7\u628a\u9002\u7528\u4e8e\u4f60\u7684\u8fc7\u654f\u548c\u540c\u884c\u4eba\u4fe1\u606f\u8865\u5145\u5b8c\u6574\u3002",
     rsvp_status_success: "\u8c22\u8c22\uff01\u6211\u4eec\u5df2\u6536\u5230\u4f60\u7684\u786e\u8ba4\u51fa\u5e2d\u3002",
     rsvp_status_error: "\u62b1\u6b49\uff0c\u63d0\u4ea4\u5931\u8d25\u3002\u8bf7\u7a0d\u540e\u91cd\u8bd5\u6216\u76f4\u63a5\u8054\u7cfb\u6211\u4eec\u3002",
     footer_text: "\u96e8\u8a00\u548c\u4fca\u6587 \u00b7 \u5df4\u5398\u5c9b \u00b7 2026 \u00b7 Lunavoe",
