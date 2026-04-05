@@ -132,9 +132,9 @@
     const next = document.querySelector("[data-renaissance-next]");
 
     function scrollByCard(direction) {
-      const card = track.querySelector(".venue-gallery-card");
-      const width = card ? card.getBoundingClientRect().width : track.clientWidth;
-      track.scrollBy({ left: width * direction, behavior: "smooth" });
+      // Scroll by 50% of container width to show next/prev pair of images
+      const scrollAmount = track.clientWidth * 0.5 * direction;
+      track.scrollBy({ left: scrollAmount, behavior: "smooth" });
     }
 
     if (prev) {
