@@ -167,6 +167,7 @@ window.I18N = {
     room_assignment_note:
       "Specific room assignments and final stay details will be shared closer to the date in our wedding group chat. Thank you for being part of this weekend with us \u2014 we truly hope you have a beautiful and comfortable stay in Uluwatu.",
     venue_gallery_title: "Venue glimpses",
+    renaissance_gallery_title: "Resort glimpses",
     map_google_title: "Google Map",
     map_google_label: "International",
     map_apple_title: "Apple Maps",
@@ -629,6 +630,7 @@ window.I18N = {
     room_assignment_note:
       "\u5177\u4f53\u623f\u95f4\u5b89\u6392\u4e0e\u6700\u7ec8\u4f4f\u5bbf\u4fe1\u606f\uff0c\u6211\u4eec\u4f1a\u5728\u4e34\u8fd1\u65e5\u671f\u65f6\u7edf\u4e00\u5728\u5a5a\u793c\u7fa4\u4e2d\u901a\u77e5\u5927\u5bb6\u3002\u8c22\u8c22\u4f60\u4eec\u6765\u5230\u8fd9\u91cc\uff0c\u4e0e\u6211\u4eec\u4e00\u8d77\u5ea6\u8fc7\u8fd9\u4e2a\u5468\u672b\uff0c\u4e5f\u5e0c\u671b\u5927\u5bb6\u90fd\u80fd\u5728\u4e4c\u9c81\u74e6\u56fe\u4f4f\u5f97\u5f00\u5fc3\u3001\u8212\u9002\u3002",
     venue_gallery_title: "\u573a\u5730\u4e00\u77a5",
+    renaissance_gallery_title: "\u9152\u5e97\u4e00\u77a5",
     map_google_title: "Google \u5730\u56fe",
     map_google_label: "\u6d77\u5916\u9002\u7528",
     map_apple_title: "\u82f9\u679c\u5730\u56fe",

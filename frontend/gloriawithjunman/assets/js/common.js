@@ -124,6 +124,28 @@
     }
   }
 
+  function setupRenaissanceGallery() {
+    const track = document.querySelector("[data-renaissance-track]");
+    if (!track) return;
+
+    const prev = document.querySelector("[data-renaissance-prev]");
+    const next = document.querySelector("[data-renaissance-next]");
+
+    function scrollByCard(direction) {
+      const card = track.querySelector(".venue-gallery-card");
+      const width = card ? card.getBoundingClientRect().width : track.clientWidth;
+      track.scrollBy({ left: width * direction, behavior: "smooth" });
+    }
+
+    if (prev) {
+      prev.addEventListener("click", () => scrollByCard(-1));
+    }
+
+    if (next) {
+      next.addEventListener("click", () => scrollByCard(1));
+    }
+  }
+
   function setupScrollGalleries() {
     document.querySelectorAll("[data-scroll-prev], [data-scroll-next]").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -148,6 +170,7 @@
     setupLanguage();
     setupNav();
     setupVenueGallery();
+    setupRenaissanceGallery();
     setupScrollGalleries();
   });
 })();
