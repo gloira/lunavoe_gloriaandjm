@@ -151,9 +151,6 @@
     if (!lightbox) return;
 
     const image = lightbox.querySelector("[data-lightbox-image]");
-    const title = lightbox.querySelector("[data-lightbox-title]");
-    const caption = lightbox.querySelector("[data-lightbox-caption]");
-    const counter = lightbox.querySelector("[data-lightbox-counter]");
     const prev = lightbox.querySelector("[data-lightbox-prev]");
     const next = lightbox.querySelector("[data-lightbox-next]");
     const close = lightbox.querySelector(".venue-lightbox-close");
@@ -165,19 +162,15 @@
     )
       .map((track) => {
         const items = Array.from(track.querySelectorAll(".venue-gallery-card"));
-        const gallery = track.closest(".venue-gallery");
-        const galleryTitle = gallery
-          ? gallery.querySelector(".venue-gallery-title")
-          : null;
 
         return {
-          title: galleryTitle ? galleryTitle.textContent.trim() : "",
+          track,
           items,
         };
       })
       .filter((gallery) => gallery.items.length);
 
-    if (!galleries.length || !image || !title || !caption || !counter) return;
+    if (!galleries.length || !image) return;
 
     const state = {
       galleryIndex: 0,
@@ -225,16 +218,12 @@
     }
 
     function renderLightbox() {
-      const gallery = getCurrentGallery();
       const item = getCurrentItem();
       const source = item.querySelector("img");
       if (!source) return;
 
       image.src = source.currentSrc || source.src;
-      image.alt = source.alt || gallery.title;
-      title.textContent = gallery.title;
-      caption.textContent = source.alt || gallery.title;
-      counter.textContent = (state.itemIndex + 1) + " / " + gallery.items.length;
+      image.alt = source.alt || "";
 
       updateNavState();
       preloadNearbyImages();
@@ -253,7 +242,7 @@
       document.addEventListener("keydown", handleKeydown);
 
       if (close) {
-        close.focus();
+        window.requestAnimationFrame(() => close.focus());
       }
     }
 
@@ -295,10 +284,14 @@
     }
 
     galleries.forEach((gallery, galleryIndex) => {
-      gallery.items.forEach((item, itemIndex) => {
-        item.addEventListener("click", () => {
-          openLightbox(galleryIndex, itemIndex, item);
-        });
+      gallery.track.addEventListener("click", (event) => {
+        const item = event.target.closest(".venue-gallery-card");
+        if (!item || !gallery.track.contains(item)) return;
+
+        const itemIndex = gallery.items.indexOf(item);
+        if (itemIndex === -1) return;
+
+        openLightbox(galleryIndex, itemIndex, item);
       });
     });
 
