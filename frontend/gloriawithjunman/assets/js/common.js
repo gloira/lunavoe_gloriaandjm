@@ -146,6 +146,208 @@
     }
   }
 
+  function setupVenueLightbox() {
+    const lightbox = document.querySelector("[data-venue-lightbox]");
+    if (!lightbox) return;
+
+    const image = lightbox.querySelector("[data-lightbox-image]");
+    const title = lightbox.querySelector("[data-lightbox-title]");
+    const caption = lightbox.querySelector("[data-lightbox-caption]");
+    const counter = lightbox.querySelector("[data-lightbox-counter]");
+    const prev = lightbox.querySelector("[data-lightbox-prev]");
+    const next = lightbox.querySelector("[data-lightbox-next]");
+    const close = lightbox.querySelector(".venue-lightbox-close");
+    const closeButtons = lightbox.querySelectorAll("[data-lightbox-close]");
+    const stage = lightbox.querySelector("[data-lightbox-stage]");
+
+    const galleries = Array.from(
+      document.querySelectorAll("[data-lightbox-gallery]")
+    )
+      .map((track) => {
+        const items = Array.from(track.querySelectorAll(".venue-gallery-card"));
+        const gallery = track.closest(".venue-gallery");
+        const galleryTitle = gallery
+          ? gallery.querySelector(".venue-gallery-title")
+          : null;
+
+        return {
+          title: galleryTitle ? galleryTitle.textContent.trim() : "",
+          items,
+        };
+      })
+      .filter((gallery) => gallery.items.length);
+
+    if (!galleries.length || !image || !title || !caption || !counter) return;
+
+    const state = {
+      galleryIndex: 0,
+      itemIndex: 0,
+      lastTrigger: null,
+      touchStartX: 0,
+      touchStartY: 0,
+    };
+
+    function getCurrentGallery() {
+      return galleries[state.galleryIndex];
+    }
+
+    function getCurrentItem() {
+      return getCurrentGallery().items[state.itemIndex];
+    }
+
+    function updateNavState() {
+      const gallery = getCurrentGallery();
+      const atStart = state.itemIndex === 0;
+      const atEnd = state.itemIndex === gallery.items.length - 1;
+
+      if (prev) {
+        prev.disabled = atStart;
+      }
+
+      if (next) {
+        next.disabled = atEnd;
+      }
+    }
+
+    function preloadNearbyImages() {
+      const gallery = getCurrentGallery();
+      const nearbyIndexes = [state.itemIndex - 1, state.itemIndex + 1].filter(
+        (index) => index >= 0 && index < gallery.items.length
+      );
+
+      nearbyIndexes.forEach((index) => {
+        const source = gallery.items[index].querySelector("img");
+        if (!source) return;
+
+        const preload = new Image();
+        preload.src = source.currentSrc || source.src;
+      });
+    }
+
+    function renderLightbox() {
+      const gallery = getCurrentGallery();
+      const item = getCurrentItem();
+      const source = item.querySelector("img");
+      if (!source) return;
+
+      image.src = source.currentSrc || source.src;
+      image.alt = source.alt || gallery.title;
+      title.textContent = gallery.title;
+      caption.textContent = source.alt || gallery.title;
+      counter.textContent = (state.itemIndex + 1) + " / " + gallery.items.length;
+
+      updateNavState();
+      preloadNearbyImages();
+    }
+
+    function openLightbox(galleryIndex, itemIndex, trigger) {
+      state.galleryIndex = galleryIndex;
+      state.itemIndex = itemIndex;
+      state.lastTrigger = trigger || null;
+
+      renderLightbox();
+
+      lightbox.classList.add("is-open");
+      lightbox.setAttribute("aria-hidden", "false");
+      document.body.classList.add("venue-lightbox-open");
+      document.addEventListener("keydown", handleKeydown);
+
+      if (close) {
+        close.focus();
+      }
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove("is-open");
+      lightbox.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("venue-lightbox-open");
+      document.removeEventListener("keydown", handleKeydown);
+
+      if (state.lastTrigger && typeof state.lastTrigger.focus === "function") {
+        state.lastTrigger.focus();
+      }
+    }
+
+    function stepLightbox(direction) {
+      const gallery = getCurrentGallery();
+      const nextIndex = state.itemIndex + direction;
+
+      if (nextIndex < 0 || nextIndex >= gallery.items.length) return;
+
+      state.itemIndex = nextIndex;
+      renderLightbox();
+    }
+
+    function handleKeydown(event) {
+      if (!lightbox.classList.contains("is-open")) return;
+
+      if (event.key === "Escape") {
+        closeLightbox();
+      }
+
+      if (event.key === "ArrowLeft") {
+        stepLightbox(-1);
+      }
+
+      if (event.key === "ArrowRight") {
+        stepLightbox(1);
+      }
+    }
+
+    galleries.forEach((gallery, galleryIndex) => {
+      gallery.items.forEach((item, itemIndex) => {
+        item.addEventListener("click", () => {
+          openLightbox(galleryIndex, itemIndex, item);
+        });
+      });
+    });
+
+    closeButtons.forEach((button) => {
+      button.addEventListener("click", closeLightbox);
+    });
+
+    if (prev) {
+      prev.addEventListener("click", () => stepLightbox(-1));
+    }
+
+    if (next) {
+      next.addEventListener("click", () => stepLightbox(1));
+    }
+
+    if (stage) {
+      stage.addEventListener(
+        "touchstart",
+        (event) => {
+          const touch = event.changedTouches[0];
+          state.touchStartX = touch.clientX;
+          state.touchStartY = touch.clientY;
+        },
+        { passive: true }
+      );
+
+      stage.addEventListener(
+        "touchend",
+        (event) => {
+          const touch = event.changedTouches[0];
+          const deltaX = touch.clientX - state.touchStartX;
+          const deltaY = touch.clientY - state.touchStartY;
+
+          if (Math.abs(deltaX) < 48 || Math.abs(deltaX) <= Math.abs(deltaY)) {
+            return;
+          }
+
+          if (deltaX < 0) {
+            stepLightbox(1);
+            return;
+          }
+
+          stepLightbox(-1);
+        },
+        { passive: true }
+      );
+    }
+  }
+
   function setupScrollGalleries() {
     document.querySelectorAll("[data-scroll-prev], [data-scroll-next]").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -171,6 +373,7 @@
     setupNav();
     setupVenueGallery();
     setupRenaissanceGallery();
+    setupVenueLightbox();
     setupScrollGalleries();
   });
 })();
