@@ -15,14 +15,137 @@
     href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Marcellus&family=Parisienne&display=swap"
     rel="stylesheet">
 
-  <link rel="preload" as="image" href="../assets/images/dresscode/ladies-pink-1.png" fetchpriority="high" />
-  <link rel="preload" as="image" href="../assets/images/dresscode/ladies-yellow-1.png" fetchpriority="high" />
-  <link rel="preload" as="image" href="../assets/images/dresscode/ladies-neutral-1.png" fetchpriority="high" />
-  <link rel="preload" as="image" href="../assets/images/dresscode/gents-shirts/gents-2.png" fetchpriority="high" />
-  <link rel="preload" as="image" href="../assets/images/dresscode/gents-polos/gents-8.png" fetchpriority="high" />
-  <link rel="preload" as="image" href="../assets/images/dresscode/gents-jackets/gents-1.png" fetchpriority="high" />
+  <link rel="preload" as="image" href="../assets/images/dresscode/dresscode1.jpg" fetchpriority="high" />
+  <link rel="preload" as="image" href="../assets/images/dresscode/dresscode2.jpg" fetchpriority="high" />
+  <link rel="preload" as="image" href="../assets/images/dresscode/dresscode3.jpg" fetchpriority="high" />
 
   <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <style>
+    .dc-rule-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .dc-rule-card {
+      padding: 1.35rem 1.2rem;
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 241, 234, 0.92));
+      border: 1px solid var(--blush);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .dc-rule-card h3 {
+      margin-bottom: 0.6rem;
+      font-size: 1rem;
+      color: var(--charcoal);
+    }
+
+    .dc-rule-card p {
+      margin: 0;
+      color: var(--charcoal-soft);
+      line-height: 1.78;
+      font-size: 0.96rem;
+    }
+
+    .dc-rule-stack {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .dc-rule-panel {
+      padding: 1.35rem 1.2rem;
+      border-radius: 22px;
+      border: 1px solid var(--blush);
+      background: rgba(255, 252, 248, 0.96);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .dc-rule-panel h3 {
+      margin-bottom: 0.75rem;
+      font-size: 1rem;
+      color: var(--charcoal);
+    }
+
+    .dc-rule-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .dc-rule-list li {
+      position: relative;
+      padding-left: 1.1rem;
+      margin: 0.55rem 0;
+      color: var(--charcoal-soft);
+      line-height: 1.7;
+    }
+
+    .dc-rule-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.7rem;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--champagne);
+    }
+
+    .dc-reference-block {
+      margin-top: 2.5rem;
+    }
+
+    .dc-reference-title {
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--champagne);
+    }
+
+    .dc-reference-lead {
+      margin-bottom: 1.2rem;
+      color: var(--charcoal-soft);
+      line-height: 1.8;
+    }
+
+    .dc-reference-gallery {
+      grid-template-columns: none;
+      grid-auto-flow: column;
+      grid-auto-columns: clamp(220px, 24vw, 280px);
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 0.5rem;
+      scrollbar-width: none;
+    }
+
+    .dc-reference-gallery::-webkit-scrollbar {
+      display: none;
+    }
+
+    .dc-reference-gallery figure {
+      scroll-snap-align: start;
+      margin: 0;
+    }
+
+    .dc-reference-gallery img {
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+    }
+
+    @media (max-width: 900px) {
+      .dc-rule-grid,
+      .dc-rule-stack {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -51,7 +174,7 @@
             <a href="/gloriawithjunman/dresscode/" data-nav-link class="nav-link" data-i18n="nav_dresscode">Dress Code</a>
           </nav>
           <div class="nav-right">
-          <button class="lang-toggle" type="button" data-lang-toggle>EN</button>
+            <button class="lang-toggle" type="button" data-lang-toggle>EN</button>
             <a href="/gloriawithjunman/rsvp/" class="btn btn-ghost" data-i18n="nav_rsvp">RSVP</a>
             <button class="hamburger" type="button" aria-label="Menu" data-hamburger>
               <span class="hamburger-line"></span>
@@ -62,7 +185,7 @@
         </div>
       </div>
       <div class="mobile-nav-panel" data-mobile-panel>
-      <button class="mobile-nav-close" type="button" data-mobile-close aria-label="Close" title="Close">&times;</button>
+        <button class="mobile-nav-close" type="button" data-mobile-close aria-label="Close" title="Close">&times;</button>
         <div class="mobile-nav-inner">
           <a href="/gloriawithjunman/" class="mobile-nav-link" data-i18n="nav_home">Home</a>
           <a href="/gloriawithjunman/schedule/" class="mobile-nav-link" data-i18n="nav_schedule">Schedule</a>
@@ -81,483 +204,92 @@
           <header class="dc-header">
             <div class="section-eyebrow" data-i18n="dresscode_eyebrow">Guest Guide</div>
             <h2 id="dc-title" class="dc-title" data-i18n="dresscode_title">Dress Code</h2>
-            <p class="dc-subtitle" data-i18n="dresscode_subtitle">Formal / Semi-Formal &middot; Daytime Ceremony</p>
+            <p class="dc-subtitle" data-i18n="dresscode_subtitle">Semi-Formal &middot; Daytime Ceremony</p>
             <div class="dc-palette-preview" aria-label="Dress code palette">
-              <span class="dc-swatch" style="--swatch:#F6D6D8">
-                <span class="sr-only" data-i18n="dresscode_caption_soft_blush">Soft Blush</span>
-              </span>
-              <span class="dc-swatch" style="--swatch:#DDB0B4">
-                <span class="sr-only" data-i18n="dresscode_caption_dusty_rose">Dusty Rose</span>
-              </span>
-              <span class="dc-swatch" style="--swatch:#F4E3A8">
-                <span class="sr-only" data-i18n="dresscode_caption_butter_yellow">Butter Yellow</span>
-              </span>
-              <span class="dc-swatch" style="--swatch:#EED7A6">
-                <span class="sr-only" data-i18n="dresscode_caption_champagne_yellow">Champagne Yellow</span>
-              </span>
-              <span class="dc-swatch" style="--swatch:#E2CFB4">
-                <span class="sr-only" data-i18n="dresscode_color_sand">Sand</span>
-              </span>
-              <span class="dc-swatch" style="--swatch:#BBA797">
-                <span class="sr-only" data-i18n="dresscode_color_taupe">Taupe</span>
-              </span>
-              <span class="dc-swatch" style="--swatch:#C6BBAE">
-                <span class="sr-only" data-i18n="dresscode_color_greige">Greige</span>
-              </span>
-              <span class="dc-swatch" style="--swatch:#E7D9C4">
-                <span class="sr-only" data-i18n="dresscode_color_soft_champagne">Soft Champagne</span>
-              </span>
+              <span class="dc-swatch" style="--swatch:#F4E5A5"><span class="sr-only" data-i18n="dresscode_color_yellow">Yellow</span></span>
+              <span class="dc-swatch" style="--swatch:#BFD4BE"><span class="sr-only" data-i18n="dresscode_color_green">Green</span></span>
+              <span class="dc-swatch" style="--swatch:#C7D8F2"><span class="sr-only" data-i18n="dresscode_color_blue">Blue</span></span>
+              <span class="dc-swatch" style="--swatch:#F7F2EA"><span class="sr-only" data-i18n="dresscode_color_white_series">White Series</span></span>
+              <span class="dc-swatch" style="--swatch:#E4D3BC"><span class="sr-only" data-i18n="dresscode_color_beige_series">Beige Series</span></span>
+              <span class="dc-swatch" style="--swatch:#1F2430"><span class="sr-only" data-i18n="dresscode_color_dark_trousers">Dark Trousers</span></span>
             </div>
             <p class="dc-lead" data-i18n="dresscode_intro">
-              We kindly ask guests to dress in <strong>formal or semi-formal attire</strong>. Please keep the look neat,
-              polished, and wedding-appropriate for daylight photos.
+              We kindly ask guests to dress in <strong>semi-formal attire</strong> with a polished, light, and celebratory feel for the daytime ceremony.
             </p>
           </header>
 
           <article class="dc-block">
-            <h3 class="dc-block-title" data-i18n="dresscode_ladies_title">Ladies</h3>
-            <p class="dc-block-note" data-i18n="dresscode_ladies_body">
-              We recommend elegant midi or long dresses, dressy jumpsuits, or coordinated sets. Please choose colors
-              from the palette below.
+            <h3 class="dc-block-title" data-i18n="dresscode_rules_title">Dress code rules</h3>
+            <p class="dc-block-note" data-i18n="dresscode_rules_intro">
+              Please keep the overall look semi-formal, refined, and light in feeling. We would love the guest palette to feel colorful, airy, and elegant rather than dark or overly casual.
             </p>
 
-            <div class="dc-group">
-              <div class="dc-group-head">
-                <h4 class="dc-group-title" data-i18n="dresscode_ladies_group_pink">Blush &amp; Pink</h4>
-                <div class="dc-group-actions">
-                  <span class="dc-group-note" data-i18n="dresscode_group_hint">Swipe to view more</span>
-                  <div class="venue-gallery-controls dc-group-controls">
-                    <button class="venue-gallery-btn dc-group-btn" type="button" data-scroll-prev
-                      aria-label="Scroll left">&#10094;</button>
-                    <button class="venue-gallery-btn dc-group-btn" type="button" data-scroll-next
-                      aria-label="Scroll right">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-              <div class="dc-gallery dc-gallery--scroll dc-gallery--portrait" data-scroll-gallery>
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-pink-1.png"
-                    alt="Soft blush wedding guest dress" loading="eager" decoding="async" fetchpriority="high">
-                  <figcaption data-i18n="dresscode_caption_soft_blush">Soft Blush</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-pink-2.png"
-                    alt="Dusty rose wedding guest dress" loading="eager">
-                  <figcaption data-i18n="dresscode_caption_dusty_rose">Dusty Rose</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-pink-3.png"
-                    alt="Soft pink wedding guest dress" loading="eager">
-                  <figcaption data-i18n="dresscode_caption_soft_pink">Soft Pink</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-pink-4.png"
-                    alt="Blush pink wedding guest dress" loading="eager">
-                  <figcaption data-i18n="dresscode_caption_blush_pink">Blush Pink</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-pink-5.jpg"
-                    alt="Dusty blush wedding guest dress" loading="eager">
-                  <figcaption data-i18n="dresscode_caption_dusty_blush">Dusty Blush</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-pink-6.jpg"
-                    alt="Rose pink wedding guest dress" loading="eager">
-                  <figcaption data-i18n="dresscode_caption_rose_pink">Rose Pink</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-pink-7.jpg"
-                    alt="Muted blush wedding guest dress" loading="eager">
-                  <figcaption data-i18n="dresscode_caption_muted_blush">Muted Blush</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-pink-8.jpg"
-                    alt="Dusty pink wedding guest dress" loading="eager">
-                  <figcaption data-i18n="dresscode_caption_dusty_pink">Dusty Pink</figcaption>
-                </figure>
-              </div>
+            <div class="dc-rule-grid">
+              <article class="dc-rule-card">
+                <h3 data-i18n="dresscode_rule_card_1_title">Dress level</h3>
+                <p data-i18n="dresscode_rule_card_1_body">
+                  Semi-formal is the direction: polished dresses, coordinated sets, tailoring, and neat dress shirts or refined separates.
+                </p>
+              </article>
+              <article class="dc-rule-card">
+                <h3 data-i18n="dresscode_rule_card_2_title">Color direction</h3>
+                <p data-i18n="dresscode_rule_card_2_body">
+                  Yellow, green, and blue are the main color families. Lighter shades are preferred over very dark full looks.
+                </p>
+              </article>
+              <article class="dc-rule-card">
+                <h3 data-i18n="dresscode_rule_card_3_title">Overall mood</h3>
+                <p data-i18n="dresscode_rule_card_3_body">
+                  Think elegant daytime celebration rather than officewear or beachwear: fresh, tailored, and photo-friendly.
+                </p>
+              </article>
             </div>
 
-            <div class="dc-group">
-              <div class="dc-group-head">
-                <h4 class="dc-group-title" data-i18n="dresscode_ladies_group_yellow">Butter &amp; Champagne</h4>
-                <div class="dc-group-actions">
-                  <span class="dc-group-note" data-i18n="dresscode_group_hint">Swipe to view more</span>
-                  <div class="venue-gallery-controls dc-group-controls">
-                    <button class="venue-gallery-btn dc-group-btn" type="button" data-scroll-prev
-                      aria-label="Scroll left">&#10094;</button>
-                    <button class="venue-gallery-btn dc-group-btn" type="button" data-scroll-next
-                      aria-label="Scroll right">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-              <div class="dc-gallery dc-gallery--scroll dc-gallery--portrait" data-scroll-gallery>
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-yellow-1.png"
-                    alt="Butter yellow wedding guest dress" loading="eager" decoding="async" fetchpriority="high">
-                  <figcaption data-i18n="dresscode_caption_butter_yellow">Butter Yellow</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-yellow-2.png"
-                    alt="Champagne yellow wedding guest dress" loading="eager">
-                  <figcaption data-i18n="dresscode_caption_champagne_yellow">Champagne Yellow</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-yellow-3.png"
-                    alt="Golden sand wedding guest dress" loading="eager">
-                  <figcaption data-i18n="dresscode_caption_golden_sand">Golden Sand</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-yellow-4.png"
-                    alt="Sunflower yellow wedding guest dress" loading="eager">
-                  <figcaption data-i18n="dresscode_caption_sunflower_yellow">Sunflower Yellow</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-yellow-5.png"
-                    alt="Marigold wedding guest dress" loading="eager">
-                  <figcaption data-i18n="dresscode_caption_marigold">Marigold</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-yellow-6.png"
-                    alt="Honey gold wedding guest dress" loading="eager">
-                  <figcaption data-i18n="dresscode_caption_honey_gold">Honey Gold</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-yellow-7.png"
-                    alt="Warm ochre wedding guest dress" loading="eager">
-                  <figcaption data-i18n="dresscode_caption_warm_ochre">Warm Ochre</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-yellow-8.png"
-                    alt="Lemon cream wedding guest dress" loading="eager">
-                  <figcaption data-i18n="dresscode_caption_lemon_cream">Lemon Cream</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-yellow-9.png"
-                    alt="Soft gold wedding guest dress" loading="eager">
-                  <figcaption data-i18n="dresscode_caption_soft_gold">Soft Gold</figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div class="dc-group">
-              <div class="dc-group-head">
-                <h4 class="dc-group-title" data-i18n="dresscode_ladies_group_neutral">Neutrals</h4>
-                <div class="dc-group-actions">
-                  <span class="dc-group-note" data-i18n="dresscode_group_hint">Swipe to view more</span>
-                  <div class="venue-gallery-controls dc-group-controls">
-                    <button class="venue-gallery-btn dc-group-btn" type="button" data-scroll-prev
-                      aria-label="Scroll left">&#10094;</button>
-                    <button class="venue-gallery-btn dc-group-btn" type="button" data-scroll-next
-                      aria-label="Scroll right">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-              <div class="dc-gallery dc-gallery--scroll dc-gallery--portrait" data-scroll-gallery>
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-neutral-1.png"
-                    alt="Soft neutral wedding guest dress" loading="eager" decoding="async" fetchpriority="high">
-                  <figcaption data-i18n="dresscode_caption_soft_neutral">Soft Neutral</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-neutral-2.png"
-                    alt="Sand beige wedding guest dress" loading="eager">
-                  <figcaption data-i18n="dresscode_caption_sand_beige">Sand Beige</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-neutral-3.png"
-                    alt="Warm stone wedding guest dress" loading="eager">
-                  <figcaption data-i18n="dresscode_caption_warm_stone">Warm Stone</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-neutral-4.png"
-                    alt="Taupe wedding guest dress" loading="eager">
-                  <figcaption data-i18n="dresscode_caption_taupe">Taupe</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-neutral-5.png"
-                    alt="Champagne beige wedding guest dress" loading="eager">
-                  <figcaption data-i18n="dresscode_caption_champagne_beige">Champagne Beige</figcaption>
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/ladies-neutral-6.png"
-                    alt="Warm ivory wedding guest dress" loading="eager">
-                  <figcaption data-i18n="dresscode_caption_warm_ivory">Warm Ivory</figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <p class="dc-label" data-i18n="dresscode_ladies_palette_label">Recommended colours (best for daylight):</p>
+            <p class="dc-label" data-i18n="dresscode_palette_label">Approved palette:</p>
             <div class="dc-chips">
               <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#F6D6D8"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_caption_soft_blush">Soft Blush</span>
+                <span class="dc-swatch" style="--swatch:#F4E5A5"></span>
+                <span class="dc-chip-label" data-i18n="dresscode_color_yellow">Yellow</span>
               </span>
               <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#DDB0B4"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_caption_dusty_rose">Dusty Rose</span>
+                <span class="dc-swatch" style="--swatch:#BFD4BE"></span>
+                <span class="dc-chip-label" data-i18n="dresscode_color_green">Green</span>
               </span>
               <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#F4E3A8"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_caption_butter_yellow">Butter Yellow</span>
+                <span class="dc-swatch" style="--swatch:#C7D8F2"></span>
+                <span class="dc-chip-label" data-i18n="dresscode_color_blue">Blue</span>
               </span>
               <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#EED7A6"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_caption_champagne_yellow">Champagne Yellow</span>
-              </span>
-            </div>
-            <p class="dc-label" data-i18n="dresscode_ladies_neutral_palette_label">Neutral options:</p>
-            <div class="dc-chips">
-              <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#E2CFB4"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_color_sand">Sand</span>
+                <span class="dc-swatch" style="--swatch:#F7F2EA"></span>
+                <span class="dc-chip-label" data-i18n="dresscode_color_white_series">White Series</span>
               </span>
               <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#BBA797"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_color_taupe">Taupe</span>
-              </span>
-              <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#C6BBAE"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_color_greige">Greige</span>
-              </span>
-              <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#E7D9C4"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_color_soft_champagne">Soft Champagne</span>
+                <span class="dc-swatch" style="--swatch:#E4D3BC"></span>
+                <span class="dc-chip-label" data-i18n="dresscode_color_beige_series">Beige Series</span>
               </span>
             </div>
 
-            <p class="dc-tip" data-i18n="dresscode_ladies_avoid">
-              Please avoid white, ivory, and very light bridal tones.
-            </p>
-          </article>
+            <div class="dc-rule-stack">
+              <section class="dc-rule-panel">
+                <h3 data-i18n="dresscode_ladies_title">Ladies</h3>
+                <ul class="dc-rule-list">
+                  <li data-i18n="dresscode_ladies_rule_1">Please choose yellow, green, or blue as the main color family, preferably in lighter shades.</li>
+                  <li data-i18n="dresscode_ladies_rule_2">You may wear one colorful tone on its own, or mix it with another approved color, white series, or beige series.</li>
+                  <li data-i18n="dresscode_ladies_rule_3">Please avoid an all-white look and also avoid an all-beige look.</li>
+                  <li data-i18n="dresscode_ladies_rule_4">Elegant midi or long dresses, refined jumpsuits, and polished coordinated sets are all welcome.</li>
+                </ul>
+              </section>
 
-          <article class="dc-block">
-            <h3 class="dc-block-title" data-i18n="dresscode_gents_title">Gentlemen</h3>
-            <p class="dc-block-note" data-i18n="dresscode_gents_body">
-              A clean, polished look is perfect &mdash; jackets are optional. Please choose colors from the palette
-              below.
-            </p>
-
-            <div class="dc-group">
-              <div class="dc-group-head">
-                <h4 class="dc-group-title" data-i18n="dresscode_gents_group_shirts">Shirts</h4>
-                <div class="dc-group-actions">
-                  <span class="dc-group-note" data-i18n="dresscode_group_hint">Swipe to view more</span>
-                  <div class="venue-gallery-controls dc-group-controls">
-                    <button class="venue-gallery-btn dc-group-btn" type="button" data-scroll-prev
-                      aria-label="Scroll left">&#10094;</button>
-                    <button class="venue-gallery-btn dc-group-btn" type="button" data-scroll-next
-                      aria-label="Scroll right">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-              <div class="dc-gallery dc-gallery--scroll dc-gallery--landscape" data-scroll-gallery>
-                <figure>
-                  <img src="../assets/images/dresscode/gents-shirts/gents-2.png"
-                    alt="Gentlemen outfit inspiration 2" loading="eager" decoding="async" fetchpriority="high">
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/gents-shirts/gents-3.png"
-                    alt="Gentlemen outfit inspiration 3" loading="eager">
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/gents-shirts/gents-14.png"
-                    alt="Gentlemen outfit inspiration 14" loading="eager">
-                </figure>
-              </div>
+              <section class="dc-rule-panel">
+                <h3 data-i18n="dresscode_gents_title">Gentlemen</h3>
+                <ul class="dc-rule-list">
+                  <li data-i18n="dresscode_gents_rule_1">Please stay within a semi-formal direction: neat shirts, tailored trousers, lightweight suiting, or refined separates.</li>
+                  <li data-i18n="dresscode_gents_rule_2">Yellow, green, blue, white series, and beige series are all welcome on the upper body.</li>
+                  <li data-i18n="dresscode_gents_rule_3">Dark trousers such as black or dark blue are fine, but please avoid making the whole outfit feel too dark overall.</li>
+                  <li data-i18n="dresscode_gents_rule_4">Please avoid overly casual items such as T-shirts, shorts, denim, flip-flops, and sporty beachwear.</li>
+                </ul>
+              </section>
             </div>
-
-            <div class="dc-group">
-              <div class="dc-group-head">
-                <h4 class="dc-group-title" data-i18n="dresscode_gents_group_polos">Polos &amp; Linen</h4>
-                <div class="dc-group-actions">
-                  <span class="dc-group-note" data-i18n="dresscode_group_hint">Swipe to view more</span>
-                  <div class="venue-gallery-controls dc-group-controls">
-                    <button class="venue-gallery-btn dc-group-btn" type="button" data-scroll-prev
-                      aria-label="Scroll left">&#10094;</button>
-                    <button class="venue-gallery-btn dc-group-btn" type="button" data-scroll-next
-                      aria-label="Scroll right">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-              <div class="dc-gallery dc-gallery--scroll dc-gallery--landscape" data-scroll-gallery>
-                <figure>
-                  <img src="../assets/images/dresscode/gents-polos/gents-8.png"
-                    alt="Gentlemen outfit inspiration 8" loading="eager" decoding="async" fetchpriority="high">
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/gents-polos/gents-9.png"
-                    alt="Gentlemen outfit inspiration 9" loading="eager">
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/gents-polos/gents-10.png"
-                    alt="Gentlemen outfit inspiration 10" loading="eager">
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/gents-polos/gents-11.png"
-                    alt="Gentlemen outfit inspiration 11" loading="eager">
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/gents-polos/gents-12.png"
-                    alt="Gentlemen outfit inspiration 12" loading="eager">
-                </figure>
-              </div>
-            </div>
-
-            <div class="dc-group">
-              <div class="dc-group-head">
-                <h4 class="dc-group-title" data-i18n="dresscode_gents_group_jackets">Jackets &amp; Formal</h4>
-                <div class="dc-group-actions">
-                  <span class="dc-group-note" data-i18n="dresscode_group_hint">Swipe to view more</span>
-                  <div class="venue-gallery-controls dc-group-controls">
-                    <button class="venue-gallery-btn dc-group-btn" type="button" data-scroll-prev
-                      aria-label="Scroll left">&#10094;</button>
-                    <button class="venue-gallery-btn dc-group-btn" type="button" data-scroll-next
-                      aria-label="Scroll right">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-              <div class="dc-gallery dc-gallery--scroll dc-gallery--landscape" data-scroll-gallery>
-                <figure>
-                  <img src="../assets/images/dresscode/gents-jackets/gents-1.png"
-                    alt="Gentlemen outfit inspiration 1" loading="eager" decoding="async" fetchpriority="high">
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/gents-jackets/gents-4.png"
-                    alt="Gentlemen outfit inspiration 4" loading="eager">
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/gents-jackets/gents-5.png"
-                    alt="Gentlemen outfit inspiration 5" loading="eager">
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/gents-jackets/gents-7.png"
-                    alt="Gentlemen outfit inspiration 7" loading="eager">
-                </figure>
-
-                <figure>
-                  <img src="../assets/images/dresscode/gents-jackets/gents-13.png"
-                    alt="Gentlemen outfit inspiration 13" loading="eager">
-                </figure>
-              </div>
-            </div>
-
-            <p class="dc-label" data-i18n="dresscode_gents_options_label">Easy &amp; safe options:</p>
-            <ul class="dc-list">
-              <li data-i18n="dresscode_gents_option_1">White or light blue shirt</li>
-              <li data-i18n="dresscode_gents_option_2">
-                Light linen shirt or a dressy polo (white / beige / light blue / light grey)
-              </li>
-              <li data-i18n="dresscode_gents_option_3">
-                Tailored trousers (beige / khaki / light brown / warm grey)
-              </li>
-            </ul>
-            <p class="dc-label" data-i18n="dresscode_gents_shirt_palette_label">Shirt / polo / jacket colors:</p>
-            <div class="dc-chips">
-              <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#FFFFFF"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_color_white">White</span>
-              </span>
-              <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#F2E6D8"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_color_warm_ivory">Warm Ivory</span>
-              </span>
-              <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#D9E7F6"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_color_light_blue">Light Blue</span>
-              </span>
-              <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#E8D5B5"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_color_beige">Beige</span>
-              </span>
-              <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#E2CFB4"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_color_sand">Sand</span>
-              </span>
-              <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#BBA797"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_color_taupe">Taupe</span>
-              </span>
-              <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#D8D8D8"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_color_light_grey">Light Grey</span>
-              </span>
-              <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#B9B0A7"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_color_warm_grey">Warm Grey</span>
-              </span>
-            </div>
-            <p class="dc-label" data-i18n="dresscode_gents_trouser_palette_label">Trouser colors:</p>
-            <div class="dc-chips">
-              <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#E8D5B5"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_color_beige">Beige</span>
-              </span>
-              <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#F2E6D8"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_color_warm_ivory">Warm Ivory</span>
-              </span>
-              <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#C8B58B"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_color_khaki">Khaki</span>
-              </span>
-              <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#FFFFFF"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_color_white">White</span>
-              </span>
-              <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#B9B0A7"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_color_warm_grey">Warm Grey</span>
-              </span>
-            </div>
-            <p class="dc-label" data-i18n="dresscode_gents_accent_palette_label">Optional accents:</p>
-            <div class="dc-chips">
-              <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#F6D6D8"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_color_blush">Blush</span>
-              </span>
-              <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#F4E3A8"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_color_butter_yellow">Butter Yellow</span>
-              </span>
-              <span class="dc-chip">
-                <span class="dc-swatch" style="--swatch:#EED7A6"></span>
-                <span class="dc-chip-label" data-i18n="dresscode_color_champagne">Champagne</span>
-              </span>
-            </div>
-            <p class="dc-note" data-i18n="dresscode_gents_color_note">
-              Colour note (optional): Gentlemen may also wear the ladies' palette (blush / butter yellow / champagne)
-              as a shirt or polo, paired with neutral trousers (beige / khaki / white / warm grey / warm ivory).
-            </p>
           </article>
 
           <div class="dc-avoid">
@@ -580,13 +312,46 @@
             </p>
           </div>
 
+          <article class="dc-block dc-reference-block">
+            <h3 class="dc-reference-title" data-i18n="dresscode_reference_title">Reference Looks</h3>
+            <p class="dc-reference-lead" data-i18n="dresscode_reference_body">
+              A few visual references for the overall mood: colorful, light, elegant, and semi-formal.
+            </p>
+            <div class="dc-group">
+              <div class="dc-group-head">
+                <h4 class="dc-group-title" data-i18n="dresscode_reference_gallery_title">Reference Gallery</h4>
+                <div class="dc-group-actions">
+                  <span class="dc-group-note" data-i18n="dresscode_group_hint">Swipe to view more</span>
+                  <div class="venue-gallery-controls dc-group-controls">
+                    <button class="venue-gallery-btn dc-group-btn" type="button" data-scroll-prev
+                      aria-label="Scroll left">&#10094;</button>
+                    <button class="venue-gallery-btn dc-group-btn" type="button" data-scroll-next
+                      aria-label="Scroll right">&#10095;</button>
+                  </div>
+                </div>
+              </div>
+              <div class="dc-gallery dc-reference-gallery" data-scroll-gallery>
+                <figure><img src="../assets/images/dresscode/dresscode1.jpg" alt="Dress code reference look 1" loading="eager" decoding="async" fetchpriority="high"></figure>
+                <figure><img src="../assets/images/dresscode/dresscode2.jpg" alt="Dress code reference look 2" loading="eager" decoding="async" fetchpriority="high"></figure>
+                <figure><img src="../assets/images/dresscode/dresscode3.jpg" alt="Dress code reference look 3" loading="eager" decoding="async" fetchpriority="high"></figure>
+                <figure><img src="../assets/images/dresscode/dresscode4.jpg" alt="Dress code reference look 4" loading="lazy"></figure>
+                <figure><img src="../assets/images/dresscode/dresscode5.jpg" alt="Dress code reference look 5" loading="lazy"></figure>
+                <figure><img src="../assets/images/dresscode/dresscode6.jpg" alt="Dress code reference look 6" loading="lazy"></figure>
+                <figure><img src="../assets/images/dresscode/dresscode7.jpg" alt="Dress code reference look 7" loading="lazy"></figure>
+                <figure><img src="../assets/images/dresscode/dresscode8.jpg" alt="Dress code reference look 8" loading="lazy"></figure>
+                <figure><img src="../assets/images/dresscode/dresscode9.jpg" alt="Dress code reference look 9" loading="lazy"></figure>
+                <figure><img src="../assets/images/dresscode/dresscode10.jpg" alt="Dress code reference look 10" loading="lazy"></figure>
+              </div>
+            </div>
+          </article>
+
           <p class="dc-thanks" data-i18n="dresscode_thanks">Thank you for dressing up with us &mdash; we can't wait to celebrate together!</p>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
-    <p data-i18n="footer_text">Gloria & Junman &middot; Bali &middot; 2026 &middot; Lunavoe</p>
+      <p data-i18n="footer_text">Gloria & Junman &middot; Bali &middot; 2026 &middot; Lunavoe</p>
     </footer>
   </div>
   <script src="../assets/js/i18n.js"></script>
@@ -594,11 +359,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-

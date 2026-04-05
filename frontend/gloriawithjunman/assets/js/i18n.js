@@ -406,39 +406,47 @@ window.I18N = {
     footer_text: "Gloria & Junman \u00b7 Bali \u00b7 2026 \u00b7 Lunavoe",
     dresscode_title: "Dress Code",
     dresscode_eyebrow: "Guest Guide",
-    dresscode_subtitle: "Formal / Semi-Formal &middot; Daytime Ceremony",
+    dresscode_subtitle: "Semi-Formal &middot; Daytime Ceremony",
     dresscode_intro:
-      "We kindly ask guests to dress in <strong>formal or semi-formal attire</strong>. Please keep the look neat, polished, and wedding-appropriate for daylight photos.",
+      "We kindly ask guests to dress in <strong>semi-formal attire</strong> with a polished, light, and celebratory feel for the daytime ceremony.",
+    dresscode_rules_title: "Dress code rules",
+    dresscode_rules_intro:
+      "Please keep the overall look semi-formal, refined, and light in feeling. We would love the guest palette to feel colorful, airy, and elegant rather than dark or overly casual.",
+    dresscode_rule_card_1_title: "Dress level",
+    dresscode_rule_card_1_body:
+      "Semi-formal is the direction: polished dresses, coordinated sets, tailoring, and neat dress shirts or refined separates.",
+    dresscode_rule_card_2_title: "Color direction",
+    dresscode_rule_card_2_body:
+      "Yellow, green, and blue are the main color families. Lighter shades are preferred over very dark full looks.",
+    dresscode_rule_card_3_title: "Overall mood",
+    dresscode_rule_card_3_body:
+      "Think elegant daytime celebration rather than officewear or beachwear: fresh, tailored, and photo-friendly.",
+    dresscode_palette_label: "Approved palette:",
+    dresscode_color_yellow: "Yellow",
+    dresscode_color_green: "Green",
+    dresscode_color_blue: "Blue",
+    dresscode_color_white_series: "White Series",
+    dresscode_color_beige_series: "Beige Series",
+    dresscode_color_dark_trousers: "Dark Trousers",
     dresscode_ladies_title: "Ladies",
-    dresscode_ladies_body:
-      "We recommend elegant midi or long dresses, dressy jumpsuits, or coordinated sets. Please choose colors from the palette below.",
+    dresscode_ladies_rule_1:
+      "Please choose yellow, green, or blue as the main color family, preferably in lighter shades.",
+    dresscode_ladies_rule_2:
+      "You may wear one colorful tone on its own, or mix it with another approved color, white series, or beige series.",
+    dresscode_ladies_rule_3:
+      "Please avoid an all-white look and also avoid an all-beige look.",
+    dresscode_ladies_rule_4:
+      "Elegant midi or long dresses, refined jumpsuits, and polished coordinated sets are all welcome.",
     dresscode_group_hint: "Swipe to view more",
-    dresscode_ladies_group_pink: "Blush & Pink",
-    dresscode_ladies_group_yellow: "Butter & Champagne",
-    dresscode_ladies_group_neutral: "Neutrals",
-    dresscode_ladies_palette_label: "Recommended colours (best for daylight):",
-    dresscode_ladies_neutral_label:
-      "Neutral options are also welcome: Sand, Taupe, Greige, Soft Champagne.",
-    dresscode_ladies_neutral_palette_label: "Neutral options:",
-    dresscode_ladies_avoid:
-      "Please avoid white, ivory, and very light bridal tones.",
     dresscode_gents_title: "Gentlemen",
-    dresscode_gents_group_shirts: "Shirts",
-    dresscode_gents_group_polos: "Polos & Linen",
-    dresscode_gents_group_jackets: "Jackets & Formal",
-    dresscode_gents_body:
-      "A clean, polished look is perfect \u2014 jackets are optional. Please choose colors from the palette below.",
-    dresscode_gents_options_label: "Easy & safe options:",
-    dresscode_gents_shirt_palette_label: "Shirt / polo / jacket colors:",
-    dresscode_gents_trouser_palette_label: "Trouser colors:",
-    dresscode_gents_accent_palette_label: "Optional accents:",
-    dresscode_gents_option_1: "White or light blue shirt",
-    dresscode_gents_option_2:
-      "Light linen shirt or a dressy polo (white / beige / light blue / light grey)",
-    dresscode_gents_option_3:
-      "Tailored trousers (beige / khaki / white / warm grey)",
-    dresscode_gents_color_note:
-      "Colour note (optional): Gentlemen may also wear the ladies' palette (blush / butter yellow / champagne) as a shirt or polo, paired with neutral trousers (beige / khaki / white / warm grey / warm ivory).",
+    dresscode_gents_rule_1:
+      "Please stay within a semi-formal direction: neat shirts, tailored trousers, lightweight suiting, or refined separates.",
+    dresscode_gents_rule_2:
+      "Yellow, green, blue, white series, and beige series are all welcome on the upper body.",
+    dresscode_gents_rule_3:
+      "Dark trousers such as black or dark blue are fine, but please avoid making the whole outfit feel too dark overall.",
+    dresscode_gents_rule_4:
+      "Please avoid overly casual items such as T-shirts, shorts, denim, flip-flops, and sporty beachwear.",
     dresscode_avoid_title: "Please Avoid (Important)",
     dresscode_avoid_note:
       "To keep the ceremony atmosphere formal/semi-formal, kindly avoid overly casual outfits such as:",
@@ -450,6 +458,10 @@ window.I18N = {
     dresscode_style_title: "Style Notes",
     dresscode_style_body:
       "To keep the overall look elegant and timeless, we kindly ask guests to avoid outfits with large logos, bold branding, or prominent graphics. Please choose colors from the palettes above. If you're unsure whether your outfit is appropriate, feel free to ask the bride or groom to confirm.",
+    dresscode_reference_title: "Reference Looks",
+    dresscode_reference_body:
+      "A few visual references for the overall mood: colorful, light, elegant, and semi-formal.",
+    dresscode_reference_gallery_title: "Reference Gallery",
     dresscode_thanks:
       "Thank you for dressing up with us \u2014 we can't wait to celebrate together!",
     dresscode_caption_soft_blush: "Soft Blush",
@@ -908,39 +920,47 @@ window.I18N = {
     footer_text: "\u96e8\u8a00\u548c\u4fca\u6587 \u00b7 \u5df4\u5398\u5c9b \u00b7 2026 \u00b7 Lunavoe",
     dresscode_title: "\u7740\u88c5\u8981\u6c42",
     dresscode_eyebrow: "\u5bbe\u5ba2\u6307\u5357",
-    dresscode_subtitle: "\u6b63\u5f0f / \u534a\u6b63\u5f0f\uff08\u767d\u5929\u4eea\u5f0f\uff09",
+    dresscode_subtitle: "\u534a\u6b63\u5f0f\uff08\u767d\u5929\u4eea\u5f0f\uff09",
     dresscode_intro:
-      "\u4e3a\u4fdd\u8bc1\u767d\u5929\u4eea\u5f0f\u4e0e\u62cd\u7167\u6548\u679c\uff0c\u656c\u8bf7\u5bbe\u5ba2\u9009\u62e9<strong>\u6b63\u5f0f\u6216\u534a\u6b63\u5f0f</strong>\u7740\u88c5\uff0c\u6574\u4f53\u98ce\u683c\u4fdd\u6301\u5e72\u51c0\u3001\u7cbe\u81f4\u3001\u5f97\u4f53\u3002",
+      "\u6211\u4eec\u5e0c\u671b\u5927\u5bb6\u4ee5<strong>\u534a\u6b63\u5f0f</strong>\u4e3a\u4e3b\uff0c\u6574\u4f53\u611f\u89c9\u4f18\u96c5\u3001\u660e\u4eae\uff0c\u9002\u5408\u767d\u5929\u4eea\u5f0f\u7684\u6c1b\u56f4\u3002",
+    dresscode_rules_title: "\u7740\u88c5\u89c4\u5219",
+    dresscode_rules_intro:
+      "\u6574\u4f53\u8bf7\u4ee5\u534a\u6b63\u5f0f\u3001\u7cbe\u81f4\u3001\u8f7b\u76c8\u7684\u611f\u89c9\u4e3a\u4e3b\u3002\u6211\u4eec\u5e0c\u671b\u5927\u5bb6\u7684\u914d\u8272\u504f\u5411\u6709\u8272\u5f69\u3001\u901a\u900f\u3001\u4f18\u96c5\uff0c\u800c\u4e0d\u662f\u8fc7\u4e8e\u6c89\u91cd\u6216\u8fc7\u4e8e\u4f11\u95f2\u3002",
+    dresscode_rule_card_1_title: "\u7740\u88c5\u7a0b\u5ea6",
+    dresscode_rule_card_1_body:
+      "\u4ee5\u534a\u6b63\u5f0f\u4e3a\u51c6\uff1a\u4f18\u96c5\u88d9\u88c5\u3001\u6210\u5957\u642d\u914d\u3001\u526a\u88c1\u5f97\u4f53\u7684\u886c\u886b\u6216\u897f\u88c5\u5206\u4ef6\u90fd\u5f88\u9002\u5408\u3002",
+    dresscode_rule_card_2_title: "\u989c\u8272\u65b9\u5411",
+    dresscode_rule_card_2_body:
+      "\u9ec4\u8272\u3001\u7eff\u8272\u3001\u84dd\u8272\u662f\u6211\u4eec\u5e0c\u671b\u770b\u5230\u7684\u4e3b\u8981\u8272\u7cfb\uff0c\u4e5f\u66f4\u63a8\u8350\u660e\u4eae\u4e00\u4e9b\u7684\u8272\u9636\uff0c\u5c3d\u91cf\u907f\u514d\u6574\u8eab\u8fc7\u4e8e\u6df1\u6c89\u3002",
+    dresscode_rule_card_3_title: "\u6574\u4f53\u611f\u89c9",
+    dresscode_rule_card_3_body:
+      "\u53ef\u4ee5\u60f3\u8c61\u6210\u4e00\u573a\u4f18\u96c5\u7684\u767d\u5929\u5e86\u5178\uff0c\u800c\u4e0d\u662f\u4e0a\u73ed\u7a7f\u642d\u6216\u7eaf\u5ea6\u5047\u98ce\uff1a\u6e05\u723d\u3001\u6709\u526a\u88c1\u611f\uff0c\u4e5f\u66f4\u9002\u5408\u62cd\u7167\u3002",
+    dresscode_palette_label: "\u53ef\u9009\u914d\u8272\uff1a",
+    dresscode_color_yellow: "\u9ec4\u8272",
+    dresscode_color_green: "\u7eff\u8272",
+    dresscode_color_blue: "\u84dd\u8272",
+    dresscode_color_white_series: "\u767d\u8272\u7cfb",
+    dresscode_color_beige_series: "\u7c73\u8272\u7cfb",
+    dresscode_color_dark_trousers: "\u6df1\u8272\u88e4\u88c5",
     dresscode_ladies_title: "\u5973\u58eb",
-    dresscode_ladies_body:
-      "\u5efa\u8bae\u9009\u62e9\u4e2d\u957f\u6216\u957f\u6b3e\u8fde\u8863\u88d9\u3001\u4f18\u96c5\u8fde\u4f53\u88e4\u6216\u6210\u5957\u642d\u914d\u3002\u8bf7\u9009\u62e9\u4e0b\u65b9\u8272\u76d8\u4e2d\u7684\u989c\u8272\u3002",
+    dresscode_ladies_rule_1:
+      "\u5efa\u8bae\u4ee5\u9ec4\u8272\u3001\u7eff\u8272\u6216\u84dd\u8272\u4f5c\u4e3a\u4e3b\u8272\u7cfb\uff0c\u4e5f\u66f4\u63a8\u8350\u8f83\u8f7b\u76c8\u3001\u8f83\u660e\u4eae\u7684\u8272\u8c03\u3002",
+    dresscode_ladies_rule_2:
+      "\u53ef\u4ee5\u5355\u7a7f\u4e00\u79cd\u6709\u8272\u5f69\u7684\u989c\u8272\uff0c\u4e5f\u53ef\u4ee5\u5c06\u5b83\u4e0e\u5176\u4ed6\u5141\u8bb8\u7684\u5f69\u8272\u3001\u767d\u8272\u7cfb\u6216\u7c73\u8272\u7cfb\u642d\u914d\u3002",
+    dresscode_ladies_rule_3:
+      "\u4f46\u8bf7\u5c3d\u91cf\u907f\u514d\u6574\u4f53\u5168\u767d\uff0c\u4e5f\u907f\u514d\u6574\u4f53\u5168\u7c73\u8272\u7cfb\u3002",
+    dresscode_ladies_rule_4:
+      "\u4f18\u96c5\u7684\u4e2d\u957f\u6216\u957f\u88d9\u3001\u7cbe\u81f4\u7684\u8fde\u4f53\u88e4\uff0c\u6216\u5f97\u4f53\u7684\u6210\u5957\u642d\u914d\u90fd\u5f88\u5408\u9002\u3002",
     dresscode_group_hint: "\u5de6\u53f3\u6ed1\u52a8\u67e5\u770b\u66f4\u591a",
-    dresscode_ladies_group_pink: "\u7c89\u8272\u7cfb",
-    dresscode_ladies_group_yellow: "\u5976\u6cb9\u9ec4/\u9999\u69df\u9ec4",
-    dresscode_ladies_group_neutral: "\u4e2d\u6027\u8272",
-    dresscode_ladies_palette_label: "\u63a8\u8350\u989c\u8272\uff08\u767d\u5929\u6700\u4e0a\u955c\uff09\uff1a",
-    dresscode_ladies_neutral_label:
-      "\u4e2d\u6027\u8272\u4e5f\u6b22\u8fce\uff1a\u6c99\u8272\u3001\u7070\u8910\u8272\u3001\u7070\u7c73\u8272\u3001\u67d4\u548c\u9999\u69df\u8272\u3002",
-    dresscode_ladies_neutral_palette_label: "\u4e2d\u6027\u8272\u53c2\u8003\uff1a",
-    dresscode_ladies_avoid:
-      "\u8bf7\u5c3d\u91cf\u907f\u514d\u767d\u8272\u3001\u8c61\u7259\u767d\u53ca\u975e\u5e38\u63a5\u8fd1\u65b0\u5a18\u793c\u670d\u7684\u6d45\u8272\u7cfb\u3002",
     dresscode_gents_title: "\u7537\u58eb",
-    dresscode_gents_group_shirts: "\u886c\u886b",
-    dresscode_gents_group_polos: "Polo \u886b / \u4e9a\u9ebb\u886c\u886b",
-    dresscode_gents_group_jackets: "\u5916\u5957/\u6b63\u88c5",
-    dresscode_gents_body:
-      "\u6574\u4f53\u4fdd\u6301\u6e05\u723d\u5229\u843d\u5373\u53ef\uff0c\u5916\u5957\u975e\u5fc5\u987b\u3002\u8bf7\u9009\u62e9\u4e0b\u65b9\u8272\u76d8\u4e2d\u7684\u989c\u8272\u3002",
-    dresscode_gents_options_label: "\u7b80\u5355\u5b89\u5168\u642d\u914d\uff1a",
-    dresscode_gents_shirt_palette_label: "\u886c\u886b / Polo \u886b / \u5916\u5957\u989c\u8272\uff1a",
-    dresscode_gents_trouser_palette_label: "\u88e4\u88c5\u989c\u8272\uff1a",
-    dresscode_gents_accent_palette_label: "\u70b9\u7f00\u8272\uff08\u53ef\u9009\uff09\uff1a",
-    dresscode_gents_option_1: "\u767d\u886c\u886b\u6216\u6d45\u84dd\u886c\u886b",
-    dresscode_gents_option_2:
-      "\u6d45\u8272\u4e9a\u9ebb\u886c\u886b\u6216\u504f\u6b63\u5f0f\u7684 Polo \u886b\uff08\u767d / \u7c73 / \u6d45\u84dd / \u6d45\u7070\uff09",
-    dresscode_gents_option_3:
-      "\u7c73\u8272 / \u5361\u5176 / \u767d\u8272 / \u6696\u7070\u7684\u957f\u88e4 (\u897f\u88e4\u6216\u4e9a\u9ebb\u88e4\u5747\u53ef)",
-    dresscode_gents_color_note:
-      "\u989c\u8272\u8865\u5145\uff08\u53ef\u9009\uff09\uff1a\u7537\u58eb\u4e5f\u53ef\u5c06\u6d45\u7c89 / \u5976\u6cb9\u9ec4 / \u9999\u69df\u8272\u4f5c\u4e3a\u886c\u886b\u6216 Polo \u886b\u7684\u989c\u8272\u70b9\u7f00\uff0c\u4e0b\u88c5\u642d\u914d\u4e2d\u6027\u8272\uff08\u7c73\u8272 / \u5361\u5176 / \u767d\u8272 / \u6696\u7070 / \u6696\u8c61\u7259\u767d\uff09\u5373\u53ef\u3002",
+    dresscode_gents_rule_1:
+      "\u8bf7\u4ee5\u534a\u6b63\u5f0f\u4e3a\u65b9\u5411\uff1a\u5e72\u51c0\u7684\u886c\u886b\uff0c\u526a\u88c1\u5f97\u4f53\u7684\u957f\u88e4\uff0c\u8f7b\u8584\u897f\u88c5\u6216\u7cbe\u81f4\u5206\u4ef6\u90fd\u5f88\u5408\u9002\u3002",
+    dresscode_gents_rule_2:
+      "\u9ec4\u8272\u3001\u7eff\u8272\u3001\u84dd\u8272\uff0c\u4ee5\u53ca\u767d\u8272\u7cfb\u548c\u7c73\u8272\u7cfb\uff0c\u90fd\u9002\u5408\u7528\u5728\u4e0a\u8eab\u642d\u914d\u3002",
+    dresscode_gents_rule_3:
+      "\u88e4\u88c5\u53ef\u4ee5\u9009\u62e9\u9ed1\u8272\u6216\u6df1\u84dd\u8272\u8fd9\u6837\u7684\u6df1\u8272\uff0c\u4f46\u8bf7\u5c3d\u91cf\u907f\u514d\u6574\u4f53\u770b\u8d77\u6765\u8fc7\u4e8e\u6c89\u91cd\u3002",
+    dresscode_gents_rule_4:
+      "\u8bf7\u5c3d\u91cf\u907f\u514d T \u6064\u3001\u77ed\u88e4\u3001\u725b\u4ed4\u3001\u4eba\u5b57\u62d6\u548c\u8fc7\u4e8e\u8fd0\u52a8\u6216\u6c99\u6ee9\u611f\u7684\u670d\u88c5\u3002",
     dresscode_avoid_title: "\u8bf7\u907f\u514d (\u91cd\u8981)",
     dresscode_avoid_note: "\u4e3a\u4fdd\u6301\u4eea\u5f0f\u6c1b\u56f4\uff0c\u8bf7\u5c3d\u91cf\u907f\u514d\u8fc7\u4e8e\u4f11\u95f2\u7684\u7a7f\u642d\uff0c\u4f8b\u5982\uff1a",
     dresscode_avoid_item_1: "T \u6064 / \u80cc\u5fc3",
@@ -951,6 +971,10 @@ window.I18N = {
     dresscode_style_title: "\u98ce\u683c\u63d0\u793a",
     dresscode_style_body:
       "\u4e3a\u4fdd\u6301\u6574\u4f53\u98ce\u683c\u4f18\u96c5\u7ecf\u5178\uff0c\u656c\u8bf7\u5bbe\u5ba2\u907f\u514d\u7a7f\u7740\u5e26\u6709\u5927\u9762\u79ef Logo\u3001\u660e\u663e\u54c1\u724c\u6807\u8bc6\u6216\u9c9c\u660e\u56fe\u6848\u7684\u670d\u88c5\u3002\u8bf7\u4f18\u5148\u9009\u62e9\u4e0a\u65b9\u63a8\u8350\u8272\u76d8\u7684\u989c\u8272\u3002\u5982\u679c\u4e0d\u786e\u5b9a\u81ea\u5df1\u7684\u7a7f\u642d\u662f\u5426\u5408\u9002\uff0c\u6b22\u8fce\u968f\u65f6\u8be2\u95ee\u65b0\u5a18\u6216\u65b0\u90ce\u534f\u52a9\u786e\u8ba4\u3002",
+    dresscode_reference_title: "\u53c2\u8003\u7a7f\u642d",
+    dresscode_reference_body:
+      "\u4e0b\u9762\u662f\u4e00\u4e9b\u53ef\u4ee5\u53c2\u8003\u7684\u6574\u4f53\u611f\u89c9\uff1a\u6709\u8272\u5f69\u3001\u8f83\u8f7b\u76c8\uff0c\u4f18\u96c5\uff0c\u540c\u65f6\u4fdd\u6301\u534a\u6b63\u5f0f\u3002",
+    dresscode_reference_gallery_title: "\u53c2\u8003\u56fe\u96c6",
     dresscode_thanks: "\u975e\u5e38\u611f\u8c22\u4f60\u4eec\u4e3a\u8fd9\u4e00\u5929\u7528\u5fc3\u6253\u626e\uff0c\u671f\u5f85\u4e0e\u4f60\u76f8\u89c1\uff01",
     dresscode_caption_soft_blush: "\u6d45\u7c89",
     dresscode_caption_dusty_rose: "\u73ab\u7470\u7070\u7c89",
