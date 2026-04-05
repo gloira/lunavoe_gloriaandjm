@@ -95,7 +95,7 @@ export default {
     // 转发到 Google Sheets（Apps Script）
     try {
       await fetch(
-        "https://script.google.com/macros/s/AKfycbw8NFgJ73QhrCIw_cXpomOilWyHDfiviEplncMj1RxJBIwZWr9E6xL16ti4q5H3aE19/exec",
+        "https://script.google.com/macros/s/AKfycbxgosAVPHg3uYcYAl-dRAP8dQlBK2ightTQVRYbdNJIfJhWJEHF_ISnifhWwrIoiE91/exec",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
