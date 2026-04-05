@@ -25,7 +25,7 @@ window.I18N = {
       "Travel guide and recommendations for visiting Uluwatu, Bali for Gloria and Junman's wedding.",
     page_title_gallery: "Gloria & Junman \u00b7 Gallery",
     page_desc_gallery:
-      "Photo gallery from Gloria and Junman's journey together and Bali wedding moments.",
+      "A pre-wedding gallery of Gloria and Junman, with portrait chapters and photo upload details for the Bali wedding weekend.",
     page_title_dresscode: "Gloria & Junman \u00b7 Dress Code",
     page_desc_dresscode:
       "Dress code inspiration for Gloria and Junman's Bali wedding in Uluwatu.",
@@ -327,8 +327,50 @@ window.I18N = {
     travel_map_li7:
       "Ideal for dramatic coastal views, bright water, and a full-day island escape.",
     gallery_title: "Gallery",
+    gallery_hero_title: "A softer chapter before the wedding weekend",
     gallery_intro:
-      "A little moodboard of Bali and some space reserved for our photos. We'll also share a link here after the wedding where guests can upload their own pictures.",
+      "A small pre-wedding journal before Bali: a few frames, a few quiet moods, and the chapter that came before the vows.",
+    gallery_hero_body:
+      "These photographs come from our pre-wedding shoot. We wanted them to feel a little old-world, a little slower, and close to the atmosphere we hope to share with everyone in Bali: warm light, soft elegance, and a celebration that never needs to hurry.",
+    gallery_note_title: "The mood of this page",
+    gallery_note_body:
+      "We imagined this page like an album left open in a drawing room: polished wood, sea air, warm stone, and the kind of romance that feels classic without trying too hard.",
+    gallery_scene_1_title: "Morning Light",
+    gallery_scene_1_body:
+      "The quieter portraits - soft neutrals, stillness, and the first layer of this story.",
+    gallery_scene_2_title: "Sea Air",
+    gallery_scene_2_body:
+      "Movement, breeze, and a more cinematic side of the island we love.",
+    gallery_scene_3_title: "Evening Form",
+    gallery_scene_3_body:
+      "A more polished note - richer tones, tailored silhouettes, and a hint of ceremony.",
+    gallery_story_title: "A pre-wedding salon",
+    gallery_story_body:
+      "We arranged these photographs like a small salon wall: part keepsake, part moodboard, and part preview of the atmosphere we hope to share with everyone in Bali.",
+    gallery_photo_tag_1: "Morning Light",
+    gallery_photo_tag_2: "Editorial Calm",
+    gallery_photo_tag_3: "Sea Air",
+    gallery_photo_tag_4: "Afterglow",
+    gallery_photo_tag_5: "Stillness",
+    gallery_photo_tag_6: "Coastline",
+    gallery_photo_tag_7: "Evening Form",
+    gallery_photo_tag_8: "Golden Hour",
+    gallery_upload_eyebrow: "After the wedding",
+    gallery_upload_title: "Share your photographs with us",
+    gallery_upload_intro:
+      "If you take pictures during the wedding weekend, we would love to keep them together in one place. We have reserved two upload routes so it stays easy for guests in Mainland China and for guests joining from outside Mainland China.",
+    gallery_upload_note:
+      "The final upload QR codes will be placed here before the wedding.",
+    gallery_upload_tencent_label: "Mainland China",
+    gallery_upload_tencent_title: "Tencent Cloud Upload",
+    gallery_upload_tencent_body:
+      "Guests accessing from Mainland China can scan this QR code to upload wedding photos to our Tencent Cloud folder.",
+    gallery_upload_google_label: "Outside Mainland China",
+    gallery_upload_google_title: "Google Cloud Upload",
+    gallery_upload_google_body:
+      "Guests accessing from outside Mainland China can scan this QR code to upload wedding photos to our Google Cloud folder.",
+    gallery_upload_hint:
+      "Replace this placeholder with the final QR code before the wedding.",
     gallery_after_note:
       "After the wedding, we'll share a link where everyone can upload and download photos from the celebration.",
     rsvp_title: "RSVP",
@@ -496,7 +538,7 @@ window.I18N = {
     page_desc_travel:
       "\u4e4c\u9c81\u74e6\u56fe\u65c5\u884c\u5efa\u8bae\u4e0e\u5a5a\u793c\u5468\u672b\u51fa\u884c\u6307\u5357\u3002",
     page_title_gallery: "\u96e8\u8a00\u548c\u4fca\u6587 \u00b7 \u76f8\u518c",
-    page_desc_gallery: "\u6211\u4eec\u7684\u65c5\u7a0b\u4e0e\u5df4\u5398\u5c9b\u5a5a\u793c\u7167\u7247\u76f8\u518c\u3002",
+    page_desc_gallery: "\u96e8\u8a00\u4e0e\u4fca\u6587\u7684\u5a5a\u524d\u62cd\u6444\u76f8\u518c\uff0c\u4ee5\u53ca\u5df4\u5398\u5c9b\u5a5a\u793c\u7167\u7247\u4e0a\u4f20\u4fe1\u606f\u3002",
     page_title_dresscode: "\u96e8\u8a00\u548c\u4fca\u6587 \u00b7 \u7740\u88c5\u8981\u6c42",
     page_desc_dresscode: "\u5a5a\u793c\u7740\u88c5\u5efa\u8bae\u4e0e\u8272\u7cfb\u53c2\u8003\u3002",
     page_title_rsvp: "\u96e8\u8a00\u548c\u4fca\u6587 \u00b7 \u786e\u8ba4\u51fa\u5e2d",
@@ -791,8 +833,50 @@ window.I18N = {
     travel_map_li7:
       "适合壮阔海岸线、清透海水，以及安排一整天的离岛行程。",
     gallery_title: "\u76f8\u518c",
+    gallery_hero_title: "\u5728\u5a5a\u793c\u5468\u672b\u4e4b\u524d\uff0c\u5148\u7559\u4e0b\u4e00\u9875\u66f4\u6e29\u67d4\u7684\u5e8f\u7ae0",
     gallery_intro:
-      "\u4e00\u4e9b\u5df4\u5398\u5c9b\u6c1b\u56f4\u7167\u7247\u4e0e\u6211\u4eec\u6545\u4e8b\u7684\u7559\u767d\u3002\u5a5a\u793c\u540e\u4e5f\u4f1a\u5728\u8fd9\u91cc\u5206\u4eab\u5bbe\u5ba2\u4e0a\u4f20\u7167\u7247\u7684\u94fe\u63a5\u3002",
+      "\u8fd9\u91cc\u60f3\u7559\u4e0b\u4e00\u7ec4\u6211\u4eec\u7684\u5a5a\u524d\u62cd\u6444\u7167\u7247\uff0c\u50cf\u4e00\u672c\u6162\u6162\u7ffb\u5f00\u7684\u76f8\u518c\uff0c\u5728\u5a5a\u793c\u5230\u6765\u4e4b\u524d\uff0c\u5148\u628a\u8fd9\u4e00\u6bb5\u6e29\u67d4\u7684\u7bc7\u7ae0\u653e\u5728\u8fd9\u91cc\u3002",
+    gallery_hero_body:
+      "\u8fd9\u7ec4\u7167\u7247\u6765\u81ea\u6211\u4eec\u7684\u5a5a\u524d\u62cd\u6444\u3002\u6211\u4eec\u5e0c\u671b\u5b83\u5e26\u4e00\u70b9\u65e7\u65f6\u4f18\u96c5\uff0c\u8282\u594f\u6162\u4e00\u70b9\uff0c\u4e5f\u66f4\u63a5\u8fd1\u6211\u4eec\u60f3\u8c61\u4e2d\u7684\u5a5a\u793c\u6c1b\u56f4\uff1a\u6e29\u6696\u7684\u5149\u7ebf\uff0c\u542b\u84c4\u7684\u7cbe\u81f4\uff0c\u4ee5\u53ca\u4e00\u573a\u4e0d\u5fc5\u5306\u5fd9\u7684\u5e86\u795d\u3002",
+    gallery_note_title: "\u5173\u4e8e\u8fd9\u4e00\u9875\u7684\u611f\u89c9",
+    gallery_note_body:
+      "\u6211\u4eec\u60f3\u628a\u5b83\u505a\u5f97\u50cf\u4e00\u672c\u653e\u5728\u5ba2\u5385\u91cc\u7684\u8001\u76f8\u518c\uff1a\u6728\u8d28\u5149\u6cfd\uff0c\u6d77\u8fb9\u7a7a\u6c14\uff0c\u6696\u8272\u77f3\u9762\uff0c\u4ee5\u53ca\u4e0d\u9700\u8981\u523b\u610f\u5f20\u626c\u7684\u6d6a\u6f2b\uff0c\u90fd\u653e\u8fdb\u8fd9\u4e00\u9875\u91cc\u3002",
+    gallery_scene_1_title: "\u6668\u5149",
+    gallery_scene_1_body:
+      "\u66f4\u5b89\u9759\u3001\u66f4\u67d4\u548c\u7684\u8096\u50cf\uff0c\u5e26\u7740\u4e2d\u6027\u8272\u4e0e\u7b2c\u4e00\u5c42\u6545\u4e8b\u611f\u3002",
+    gallery_scene_2_title: "\u6d77\u98ce",
+    gallery_scene_2_body:
+      "\u6709\u4e00\u70b9\u98ce\uff0c\u4e5f\u6709\u4e00\u70b9\u52a8\u611f\uff0c\u50cf\u5c9b\u4e0a\u6700\u8f7b\u7684\u90a3\u79cd\u7535\u5f71\u753b\u9762\u3002",
+    gallery_scene_3_title: "\u665a\u5149",
+    gallery_scene_3_body:
+      "\u66f4\u7cbe\u81f4\u4e00\u4e9b\uff0c\u8272\u8c03\u66f4\u6df1\u4e00\u4e9b\uff0c\u4e5f\u50cf\u5728\u5a5a\u793c\u6765\u4e34\u4e4b\u524d\u5148\u94fa\u597d\u4e00\u70b9\u4eea\u5f0f\u611f\u3002",
+    gallery_story_title: "\u6211\u4eec\u7684\u5a5a\u524d\u76f8\u518c",
+    gallery_story_body:
+      "\u6211\u4eec\u628a\u8fd9\u7ec4\u7167\u7247\u6574\u7406\u6210\u50cf\u6c99\u9f99\u5899\u4e00\u6837\u7684\u6392\u5e03\uff0c\u65e2\u662f\u7eaa\u5ff5\uff0c\u4e5f\u50cf\u662f\u5bf9\u5a5a\u793c\u6c1b\u56f4\u7684\u4e00\u70b9\u9884\u544a\u3002",
+    gallery_photo_tag_1: "\u6668\u5149",
+    gallery_photo_tag_2: "\u9759\u8c27\u611f",
+    gallery_photo_tag_3: "\u6d77\u98ce",
+    gallery_photo_tag_4: "\u4f59\u6656",
+    gallery_photo_tag_5: "\u5b89\u9759",
+    gallery_photo_tag_6: "\u6d77\u5cb8",
+    gallery_photo_tag_7: "\u665a\u95f4\u5f62\u6001",
+    gallery_photo_tag_8: "\u91d1\u8272\u65f6\u523b",
+    gallery_upload_eyebrow: "\u5a5a\u793c\u4e4b\u540e",
+    gallery_upload_title: "\u4e5f\u628a\u4f60\u62cd\u5230\u7684\u77ac\u95f4\u7559\u7ed9\u6211\u4eec",
+    gallery_upload_intro:
+      "\u5982\u679c\u4f60\u5728\u5a5a\u793c\u5468\u672b\u62cd\u4e86\u7167\u7247\uff0c\u4e5f\u6b22\u8fce\u4e0a\u4f20\u7ed9\u6211\u4eec\u3002\u6211\u4eec\u51c6\u5907\u4e86\u4e24\u4e2a\u4e0a\u4f20\u5165\u53e3\uff0c\u65b9\u4fbf\u4e2d\u56fd\u5927\u9646\u4e0e\u6d77\u5916\u7684\u5bbe\u5ba2\u5206\u522b\u4f7f\u7528\u3002",
+    gallery_upload_note:
+      "\u6700\u7ec8\u7684\u4e0a\u4f20\u4e8c\u7ef4\u7801\u4f1a\u5728\u5a5a\u793c\u524d\u653e\u5728\u8fd9\u91cc\u3002",
+    gallery_upload_tencent_label: "\u4e2d\u56fd\u5927\u9646",
+    gallery_upload_tencent_title: "\u817e\u8baf\u4e91\u4e0a\u4f20",
+    gallery_upload_tencent_body:
+      "\u5982\u679c\u4f60\u4ece\u4e2d\u56fd\u5927\u9646\u8bbf\u95ee\uff0c\u53ef\u4ee5\u626b\u63cf\u8fd9\u4e2a\u4e8c\u7ef4\u7801\uff0c\u5c06\u5a5a\u793c\u7167\u7247\u4e0a\u4f20\u81f3\u6211\u4eec\u7684\u817e\u8baf\u4e91\u76f8\u518c\u3002",
+    gallery_upload_google_label: "\u4e2d\u56fd\u5927\u9646\u4ee5\u5916",
+    gallery_upload_google_title: "Google Cloud \u4e0a\u4f20",
+    gallery_upload_google_body:
+      "\u5982\u679c\u4f60\u4ece\u4e2d\u56fd\u5927\u9646\u4ee5\u5916\u8bbf\u95ee\uff0c\u53ef\u4ee5\u626b\u63cf\u8fd9\u4e2a\u4e8c\u7ef4\u7801\uff0c\u5c06\u5a5a\u793c\u7167\u7247\u4e0a\u4f20\u81f3\u6211\u4eec\u7684 Google Cloud \u76f8\u518c\u3002",
+    gallery_upload_hint:
+      "\u8bf7\u5728\u5a5a\u793c\u524d\u5c06\u8fd9\u4e2a\u5360\u4f4d\u56fe\u66ff\u6362\u4e3a\u6700\u7ec8\u4e8c\u7ef4\u7801\u3002",
     gallery_after_note:
       "\u5a5a\u793c\u540e\u6211\u4eec\u4f1a\u5206\u4eab\u4e00\u4e2a\u94fe\u63a5\uff0c\u65b9\u4fbf\u5927\u5bb6\u4e0a\u4f20\u4e0e\u4e0b\u8f7d\u5e86\u795d\u7167\u7247\u3002",
     rsvp_title: "\u786e\u8ba4\u51fa\u5e2d",
