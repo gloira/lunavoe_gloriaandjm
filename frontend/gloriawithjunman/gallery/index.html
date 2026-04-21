@@ -19,7 +19,7 @@
 
   <style>
     .gallery-page-shell {
-      max-width: 1200px;
+      max-width: 1240px;
     }
 
     .gallery-manor {
@@ -63,11 +63,11 @@
     }
 
     .gallery-manor-title {
-      max-width: 11ch;
+      max-width: 12ch;
       margin: 0 0 1rem;
       font-family: "Gilda Display", serif;
       font-size: clamp(2.4rem, 4vw, 4.2rem);
-      line-height: 1.02;
+      line-height: 1.04;
       color: #3f2d1f;
     }
 
@@ -136,71 +136,183 @@
       font-size: 0.96rem;
     }
 
-    .gallery-salon {
+    .gallery-storybook {
       margin-top: 2rem;
-      padding: clamp(1.3rem, 2.5vw, 2rem);
+      display: grid;
+      gap: 2rem;
+    }
+
+    .gallery-chapter {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(1.2rem, 2.4vw, 1.85rem);
       border-radius: 34px;
       background: linear-gradient(180deg, rgba(255, 251, 246, 0.96), rgba(243, 234, 224, 0.94));
-      border: 1px solid rgba(168, 132, 97, 0.18);
-      box-shadow: 0 20px 50px rgba(47, 32, 20, 0.08);
+      border: 1px solid rgba(168, 132, 97, 0.16);
+      box-shadow: 0 20px 50px rgba(47, 32, 20, 0.07);
     }
 
-    .gallery-salon-head {
+    .gallery-chapter::before {
+      content: "";
+      position: absolute;
+      inset: 12px;
+      border-radius: 26px;
+      border: 1px solid rgba(168, 132, 97, 0.1);
+      pointer-events: none;
+    }
+
+    .gallery-chapter-head {
+      position: relative;
+      z-index: 1;
       display: grid;
-      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-      gap: 1.2rem;
+      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+      gap: 1.25rem;
       align-items: end;
-      margin-bottom: 1.75rem;
+      margin-bottom: 1.4rem;
     }
 
-    .gallery-salon-title {
+    .gallery-chapter-title-wrap {
+      max-width: 480px;
+    }
+
+    .gallery-chapter-kicker {
+      display: inline-flex;
+      margin-bottom: 0.7rem;
+      padding: 0.36rem 0.78rem;
+      border-radius: 999px;
+      background: rgba(212, 165, 116, 0.12);
+      color: #8b6546;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .gallery-chapter-title {
       margin: 0;
       font-family: "Gilda Display", serif;
-      font-size: clamp(1.8rem, 2.6vw, 2.7rem);
-      color: #3e2c1f;
+      font-size: clamp(1.95rem, 2.8vw, 3rem);
+      line-height: 1.08;
+      color: #3c2b1f;
     }
 
-    .gallery-salon-body {
+    .gallery-chapter-body {
       margin: 0;
-      color: #67513f;
-      line-height: 1.82;
+      color: #685241;
+      line-height: 1.84;
     }
 
-    .gallery-salon .gallery-grid {
-      gap: 1.2rem;
+    .gallery-chapter-layout {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1.12fr) minmax(280px, 0.88fr);
+      gap: 1rem;
     }
 
-    .gallery-salon .gallery-arch {
-      padding: 0.55rem;
-      aspect-ratio: 3 / 4.85;
-      border-radius: 220px 220px 22px 22px;
-      background: linear-gradient(180deg, rgba(252, 248, 243, 0.98), rgba(236, 224, 211, 0.98));
-      border: 1px solid rgba(168, 132, 97, 0.16);
-      box-shadow: 0 16px 34px rgba(50, 34, 21, 0.08);
+    .gallery-chapter-hero {
+      position: relative;
+      overflow: hidden;
+      border-radius: 28px;
+      background: #efe5d9;
+      min-height: 480px;
+      box-shadow: 0 18px 38px rgba(47, 32, 20, 0.08);
     }
 
-    .gallery-salon .gallery-arch img {
-      border-radius: 190px 190px 16px 16px;
-      object-position: center top;
+    .gallery-chapter-hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 700ms ease;
     }
 
-    .gallery-arch-label {
+    .gallery-chapter-side {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery-chapter-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 22px;
+      background: #efe5d9;
+      aspect-ratio: 0.82;
+      box-shadow: 0 14px 28px rgba(49, 34, 22, 0.06);
+    }
+
+    .gallery-chapter-card--wide {
+      grid-column: span 2;
+      aspect-ratio: 1.75;
+    }
+
+    .gallery-chapter-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 700ms ease;
+    }
+
+    .gallery-chapter:hover .gallery-chapter-hero img,
+    .gallery-chapter:hover .gallery-chapter-card img,
+    .gallery-chapter:hover .gallery-bts-card img {
+      transform: scale(1.025);
+    }
+
+    .gallery-chapter-label {
       position: absolute;
-      left: 1rem;
-      right: 1rem;
-      bottom: 1rem;
-      z-index: 2;
+      left: 0.85rem;
+      bottom: 0.85rem;
       display: inline-flex;
-      justify-content: center;
-      padding: 0.42rem 0.8rem;
+      align-items: center;
+      padding: 0.4rem 0.78rem;
       border-radius: 999px;
-      background: rgba(255, 249, 241, 0.88);
-      border: 1px solid rgba(168, 132, 97, 0.12);
-      color: #6e533d;
-      font-size: 0.72rem;
-      letter-spacing: 0.16em;
+      background: rgba(255, 250, 244, 0.86);
+      border: 1px solid rgba(168, 132, 97, 0.14);
+      color: #6d533e;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       backdrop-filter: blur(10px);
+    }
+
+    .gallery-bts-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery-bts-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 22px;
+      background: #efe5d9;
+      aspect-ratio: 0.8;
+      box-shadow: 0 14px 28px rgba(49, 34, 22, 0.06);
+    }
+
+    .gallery-bts-card--wide {
+      grid-column: span 2;
+      aspect-ratio: 1.18;
+    }
+
+    .gallery-bts-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 700ms ease;
+    }
+
+    .gallery-ending-note {
+      margin-top: 0.95rem;
+      text-align: center;
+      color: #7a5e47;
+      font-size: 0.96rem;
+      line-height: 1.8;
     }
 
     .gallery-upload-shell {
@@ -309,8 +421,10 @@
     }
 
     @media (max-width: 980px) {
+
       .gallery-manor-top,
-      .gallery-salon-head,
+      .gallery-chapter-head,
+      .gallery-chapter-layout,
       .gallery-upload-grid {
         grid-template-columns: 1fr;
       }
@@ -318,16 +432,27 @@
       .gallery-scene-grid {
         grid-template-columns: 1fr;
       }
+
+      .gallery-bts-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .gallery-bts-card--wide {
+        grid-column: span 1;
+        aspect-ratio: 0.82;
+      }
     }
 
     @media (max-width: 768px) {
+
       .gallery-manor,
-      .gallery-salon,
+      .gallery-chapter,
       .gallery-upload-vault {
         border-radius: 28px;
       }
 
       .gallery-manor::before,
+      .gallery-chapter::before,
       .gallery-upload-vault::before {
         inset: 10px;
         border-radius: 22px;
@@ -340,25 +465,34 @@
         border-radius: 22px;
       }
 
-      .gallery-salon .gallery-grid {
-        gap: 0.9rem;
+      .gallery-chapter-side {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8rem;
       }
 
-      .gallery-salon .gallery-arch {
-        padding: 0.42rem;
-        aspect-ratio: 3 / 4.55;
+      .gallery-chapter-hero {
+        min-height: 300px;
+        border-radius: 24px;
       }
 
-      .gallery-salon .gallery-arch img {
-        border-radius: 130px 130px 14px 14px;
+      .gallery-chapter-card,
+      .gallery-bts-card {
+        border-radius: 18px;
       }
 
-      .gallery-arch-label {
-        left: 0.75rem;
-        right: 0.75rem;
-        bottom: 0.75rem;
-        font-size: 0.64rem;
-        letter-spacing: 0.12em;
+      .gallery-chapter-card--wide {
+        aspect-ratio: 1.2;
+      }
+
+      .gallery-bts-grid {
+        gap: 0.8rem;
+      }
+
+      .gallery-chapter-label {
+        left: 0.7rem;
+        bottom: 0.7rem;
+        font-size: 0.63rem;
+        letter-spacing: 0.1em;
       }
     }
   </style>
@@ -390,7 +524,7 @@
             <a href="/gloriawithjunman/dresscode/" data-nav-link class="nav-link" data-i18n="nav_dresscode">Dress Code</a>
           </nav>
           <div class="nav-right">
-          <button class="lang-toggle" type="button" data-lang-toggle>EN</button>
+            <button class="lang-toggle" type="button" data-lang-toggle>EN</button>
             <a href="/gloriawithjunman/rsvp/" class="btn btn-ghost" data-i18n="nav_rsvp">RSVP</a>
             <button class="hamburger" type="button" aria-label="Menu" data-hamburger>
               <span class="hamburger-line"></span>
@@ -400,9 +534,9 @@
           </div>
         </div>
       </div>
-    <div class="mobile-nav-panel" data-mobile-panel>
-      <button class="mobile-nav-close" type="button" data-mobile-close aria-label="Close" title="Close">&times;</button>
-      <div class="mobile-nav-inner">
+      <div class="mobile-nav-panel" data-mobile-panel>
+        <button class="mobile-nav-close" type="button" data-mobile-close aria-label="Close" title="Close">&times;</button>
+        <div class="mobile-nav-inner">
           <a href="/gloriawithjunman/" class="mobile-nav-link" data-i18n="nav_home">Home</a>
           <a href="/gloriawithjunman/schedule/" class="mobile-nav-link" data-i18n="nav_schedule">Schedule</a>
           <a href="/gloriawithjunman/venue/" class="mobile-nav-link" data-i18n="nav_venue">Venue & Stay</a>
@@ -425,117 +559,220 @@
                   A softer chapter before the wedding weekend
                 </h1>
                 <p class="gallery-manor-lead" data-i18n="gallery_intro">
-                  A small pre-wedding journal before Bali: a few frames, a few quiet moods, and the chapter that came before the vows.
+                  A small pre-wedding journal before Bali: a few frames, a few moods, and the chapter that quietly came before the vows.
                 </p>
                 <p class="gallery-manor-body" data-i18n="gallery_hero_body">
-                  These photographs come from our pre-wedding shoot. We wanted them to feel a little old-world, a little slower, and close to the atmosphere we hope to share with everyone in Bali: warm light, soft elegance, and a celebration that never needs to hurry.
+                  These photographs come from our pre-wedding shoot. We wanted this page to feel like a visual story rather than a simple album — moving from candid city light to garden stillness, from playful bloom to more formal portraits, with the behind-the-scenes moments woven in between.
                 </p>
               </div>
 
               <aside class="gallery-manor-note">
                 <div class="gallery-note-label" data-i18n="gallery_note_title">The mood of this page</div>
                 <p data-i18n="gallery_note_body">
-                  We imagined this page like an album left open in a drawing room: polished wood, sea air, warm stone, and the kind of romance that feels classic without trying too hard.
+                  We imagined this page like an album left open in a drawing room: softer light, polished wood, warm stone, and a romance that feels classic without trying too hard.
                 </p>
               </aside>
             </div>
 
             <div class="gallery-scene-grid">
               <article class="gallery-scene-card">
-                <h3 data-i18n="gallery_scene_1_title">Morning Light</h3>
+                <h3 data-i18n="gallery_scene_1_title">City Chapters</h3>
                 <p data-i18n="gallery_scene_1_body">
-                  The quieter portraits - soft neutrals, stillness, and the first layer of this story.
+                  From Yihe Road street portraits to softer Korean-style interiors, this chapter feels the most like us: light, candid, and unhurried.
                 </p>
               </article>
               <article class="gallery-scene-card">
-                <h3 data-i18n="gallery_scene_2_title">Sea Air</h3>
+                <h3 data-i18n="gallery_scene_2_title">Garden & Bloom</h3>
                 <p data-i18n="gallery_scene_2_body">
-                  Movement, breeze, and a more cinematic side of the island we love.
+                  One chapter is rooted in Chinese garden stillness, another in floral windows and playful colour — both romantic in completely different ways.
                 </p>
               </article>
               <article class="gallery-scene-card">
-                <h3 data-i18n="gallery_scene_3_title">Evening Form</h3>
+                <h3 data-i18n="gallery_scene_3_title">Portrait & Process</h3>
                 <p data-i18n="gallery_scene_3_body">
-                  A more polished note - richer tones, tailored silhouettes, and a hint of ceremony.
+                  The final portraits are more formal and painterly, while the behind-the-scenes frames keep the page alive with movement, laughter, and the making of it all.
                 </p>
               </article>
             </div>
           </div>
 
-          <div class="gallery-salon">
-            <div class="gallery-salon-head">
-              <h2 class="gallery-salon-title" data-i18n="gallery_story_title">A pre-wedding salon</h2>
-              <p class="gallery-salon-body" data-i18n="gallery_story_body">
-                We arranged these photographs like a small salon wall: part keepsake, part moodboard, and part preview of the atmosphere we hope to share with everyone in Bali.
-              </p>
-            </div>
+          <div class="gallery-storybook">
+            <section class="gallery-chapter">
+              <div class="gallery-chapter-head">
+                <div class="gallery-chapter-title-wrap">
+                  <div class="gallery-chapter-kicker" data-i18n="gallery_chapter_1_kicker">Chapter One</div>
+                  <h2 class="gallery-chapter-title" data-i18n="gallery_chapter_1_title">Just Us</h2>
+                </div>
+                <p class="gallery-chapter-body" data-i18n="gallery_chapter_1_body">
+                  From Yihe Road street portraits to the softer Korean-style interiors, this first chapter feels effortless, bright, and closest to our everyday selves.
+                </p>
+              </div>
 
-            <div class="gallery-grid">
-              <div class="gallery-arch">
-                <img src="../assets/gallery/gallery-01.jpg" alt="Pre-wedding portrait in morning light" loading="eager" decoding="async" fetchpriority="high" />
-                <div class="gallery-arch-label" data-i18n="gallery_photo_tag_1">Morning Light</div>
+              <div class="gallery-chapter-layout">
+                <div class="gallery-chapter-hero">
+                  <img src="../assets/gallery/city-hero.jpg" alt="Yihe Road street-style pre-wedding portrait" loading="eager" decoding="async" fetchpriority="high" />
+                  <div class="gallery-chapter-label" data-i18n="gallery_chapter_1_label_hero">Yihe Road</div>
+                </div>
+                <div class="gallery-chapter-side">
+                  <div class="gallery-chapter-card">
+                    <img src="../assets/gallery/city-1.jpg" alt="Candid city pre-wedding portrait" loading="lazy" decoding="async" />
+                    <div class="gallery-chapter-label" data-i18n="gallery_chapter_1_label_1">Street Light</div>
+                  </div>
+                  <div class="gallery-chapter-card">
+                    <img src="../assets/gallery/city-2.jpg" alt="Relaxed street pre-wedding portrait" loading="lazy" decoding="async" />
+                    <div class="gallery-chapter-label" data-i18n="gallery_chapter_1_label_2">Easy Afternoon</div>
+                  </div>
+                  <div class="gallery-chapter-card gallery-chapter-card--wide">
+                    <img src="../assets/gallery/korean-1.jpg" alt="Korean-style interior pre-wedding portrait" loading="lazy" decoding="async" />
+                    <div class="gallery-chapter-label" data-i18n="gallery_chapter_1_label_3">Soft Interior</div>
+                  </div>
+                  <div class="gallery-chapter-card">
+                    <img src="../assets/gallery/city-3.jpg" alt="Editorial street portrait" loading="lazy" decoding="async" />
+                    <div class="gallery-chapter-label" data-i18n="gallery_chapter_1_label_4">Editorial Ease</div>
+                  </div>
+                  <div class="gallery-chapter-card">
+                    <img src="../assets/gallery/korean-2.jpg" alt="Minimal Korean-style indoor portrait" loading="lazy" decoding="async" />
+                    <div class="gallery-chapter-label" data-i18n="gallery_chapter_1_label_5">Quiet Frame</div>
+                  </div>
+                </div>
               </div>
-              <div class="gallery-arch">
-                <img src="../assets/gallery/gallery-02.jpg" alt="Pre-wedding portrait with quiet editorial mood" loading="lazy" decoding="async" />
-                <div class="gallery-arch-label" data-i18n="gallery_photo_tag_2">Editorial Calm</div>
+            </section>
+
+            <section class="gallery-chapter">
+              <div class="gallery-chapter-head">
+                <div class="gallery-chapter-title-wrap">
+                  <div class="gallery-chapter-kicker" data-i18n="gallery_chapter_2_kicker">Chapter Two</div>
+                  <h2 class="gallery-chapter-title" data-i18n="gallery_chapter_2_title">In Stillness</h2>
+                </div>
+                <p class="gallery-chapter-body" data-i18n="gallery_chapter_2_body">
+                  The Chinese garden chapter is quieter and more composed — a little more ceremonial, a little more timeless, and full of measured beauty.
+                </p>
               </div>
-              <div class="gallery-arch">
-                <img src="../assets/gallery/gallery-03.jpg" alt="Pre-wedding portrait by the shore" loading="lazy" decoding="async" />
-                <div class="gallery-arch-label" data-i18n="gallery_photo_tag_3">Sea Air</div>
+
+              <div class="gallery-chapter-layout">
+                <div class="gallery-chapter-hero">
+                  <img src="../assets/gallery/garden-hero.jpg" alt="Chinese garden pre-wedding portrait" loading="lazy" decoding="async" />
+                  <div class="gallery-chapter-label" data-i18n="gallery_chapter_2_label_hero">Chinese Garden</div>
+                </div>
+                <div class="gallery-chapter-side">
+                  <div class="gallery-chapter-card">
+                    <img src="../assets/gallery/garden-1.jpg" alt="Chinese garden portrait detail" loading="lazy" decoding="async" />
+                    <div class="gallery-chapter-label" data-i18n="gallery_chapter_2_label_1">Garden Walk</div>
+                  </div>
+                  <div class="gallery-chapter-card">
+                    <img src="../assets/gallery/garden-2.jpg" alt="Still portrait in Chinese garden" loading="lazy" decoding="async" />
+                    <div class="gallery-chapter-label" data-i18n="gallery_chapter_2_label_2">Quiet Poise</div>
+                  </div>
+                  <div class="gallery-chapter-card gallery-chapter-card--wide">
+                    <img src="../assets/gallery/garden-3.jpg" alt="Elegant Chinese garden scene" loading="lazy" decoding="async" />
+                    <div class="gallery-chapter-label" data-i18n="gallery_chapter_2_label_3">Framed in Green</div>
+                  </div>
+                </div>
               </div>
-              <div class="gallery-arch">
-                <img src="../assets/gallery/gallery-04.jpg" alt="Pre-wedding portrait at golden hour" loading="lazy" decoding="async" />
-                <div class="gallery-arch-label" data-i18n="gallery_photo_tag_4">Afterglow</div>
+            </section>
+
+            <section class="gallery-chapter">
+              <div class="gallery-chapter-head">
+                <div class="gallery-chapter-title-wrap">
+                  <div class="gallery-chapter-kicker" data-i18n="gallery_chapter_3_kicker">Chapter Three</div>
+                  <h2 class="gallery-chapter-title" data-i18n="gallery_chapter_3_title">In Bloom</h2>
+                </div>
+                <p class="gallery-chapter-body" data-i18n="gallery_chapter_3_body">
+                  This is the sweetest chapter: floral windows, brighter colour, and a more playful mood that feels light, charming, and full of movement.
+                </p>
               </div>
-              <div class="gallery-arch">
-                <img src="../assets/gallery/gallery-05.jpg" alt="Elegant pre-wedding portrait in stillness" loading="lazy" decoding="async" />
-                <div class="gallery-arch-label" data-i18n="gallery_photo_tag_5">Stillness</div>
+
+              <div class="gallery-chapter-layout">
+                <div class="gallery-chapter-hero">
+                  <img src="../assets/gallery/floral-hero.jpg" alt="Playful floral window pre-wedding portrait" loading="lazy" decoding="async" />
+                  <div class="gallery-chapter-label" data-i18n="gallery_chapter_3_label_hero">Floral Window</div>
+                </div>
+                <div class="gallery-chapter-side">
+                  <div class="gallery-chapter-card">
+                    <img src="../assets/gallery/floral-1.jpg" alt="Playful floral portrait" loading="lazy" decoding="async" />
+                    <div class="gallery-chapter-label" data-i18n="gallery_chapter_3_label_1">Playful Mood</div>
+                  </div>
+                  <div class="gallery-chapter-card">
+                    <img src="../assets/gallery/floral-2.jpg" alt="Cute floral portrait" loading="lazy" decoding="async" />
+                    <div class="gallery-chapter-label" data-i18n="gallery_chapter_3_label_2">Bloom Light</div>
+                  </div>
+                  <div class="gallery-chapter-card gallery-chapter-card--wide">
+                    <img src="../assets/gallery/floral-3.jpg" alt="Bright floral studio portrait" loading="lazy" decoding="async" />
+                    <div class="gallery-chapter-label" data-i18n="gallery_chapter_3_label_3">Sweet Chapter</div>
+                  </div>
+                </div>
               </div>
-              <div class="gallery-arch">
-                <img src="../assets/gallery/gallery-06.jpg" alt="Coastal pre-wedding portrait" loading="lazy" decoding="async" />
-                <div class="gallery-arch-label" data-i18n="gallery_photo_tag_6">Coastline</div>
+            </section>
+
+            <section class="gallery-chapter">
+              <div class="gallery-chapter-head">
+                <div class="gallery-chapter-title-wrap">
+                  <div class="gallery-chapter-kicker" data-i18n="gallery_chapter_4_kicker">Chapter Four</div>
+                  <h2 class="gallery-chapter-title" data-i18n="gallery_chapter_4_title">Portraits of Time</h2>
+                </div>
+                <p class="gallery-chapter-body" data-i18n="gallery_chapter_4_body">
+                  The final portraits are more formal and painterly: French vintage styling, a green oil-painting backdrop, and a slower, more composed elegance.
+                </p>
               </div>
-              <div class="gallery-arch">
-                <img src="../assets/gallery/gallery-07.jpg" alt="Tailored pre-wedding portrait with formal styling" loading="lazy" decoding="async" />
-                <div class="gallery-arch-label" data-i18n="gallery_photo_tag_7">Evening Form</div>
+
+              <div class="gallery-chapter-layout">
+                <div class="gallery-chapter-hero">
+                  <img src="../assets/gallery/french-hero.jpg" alt="Formal French vintage pre-wedding portrait" loading="lazy" decoding="async" />
+                  <div class="gallery-chapter-label" data-i18n="gallery_chapter_4_label_hero">Vintage Portrait</div>
+                </div>
+                <div class="gallery-chapter-side">
+                  <div class="gallery-chapter-card">
+                    <img src="../assets/gallery/french-1.jpg" alt="French vintage portrait" loading="lazy" decoding="async" />
+                    <div class="gallery-chapter-label" data-i18n="gallery_chapter_4_label_1">Oil Green</div>
+                  </div>
+                  <div class="gallery-chapter-card">
+                    <img src="../assets/gallery/french-2.jpg" alt="Painterly studio portrait" loading="lazy" decoding="async" />
+                    <div class="gallery-chapter-label" data-i18n="gallery_chapter_4_label_2">Formal Light</div>
+                  </div>
+                  <div class="gallery-chapter-card gallery-chapter-card--wide">
+                    <img src="../assets/gallery/french-3.jpg" alt="Elegant formal portrait detail" loading="lazy" decoding="async" />
+                    <div class="gallery-chapter-label" data-i18n="gallery_chapter_4_label_3">Saved in Time</div>
+                  </div>
+                </div>
               </div>
-              <div class="gallery-arch">
-                <img src="../assets/gallery/gallery-08.jpg" alt="Warm pre-wedding portrait at sunset" loading="lazy" decoding="async" />
-                <div class="gallery-arch-label" data-i18n="gallery_photo_tag_8">Golden Hour</div>
+            </section>
+
+            <section class="gallery-chapter">
+              <div class="gallery-chapter-head">
+                <div class="gallery-chapter-title-wrap">
+                  <div class="gallery-chapter-kicker" data-i18n="gallery_chapter_5_kicker">Chapter Five</div>
+                  <h2 class="gallery-chapter-title" data-i18n="gallery_chapter_5_title">In Between</h2>
+                </div>
+                <p class="gallery-chapter-body" data-i18n="gallery_chapter_5_body">
+                  The behind-the-scenes frames may be the most alive of all — the laughter between takes, the small adjustments, and the version of us that happened in motion.
+                </p>
               </div>
-              <div class="gallery-arch">
-                <img src="../assets/gallery/gallery-09.jpg" alt="Pre-wedding portrait with relaxed coastal styling" loading="lazy" decoding="async" />
-                <div class="gallery-arch-label" data-i18n="gallery_photo_tag_9">Soft Moment</div>
+
+              <div class="gallery-bts-grid">
+                <div class="gallery-bts-card gallery-bts-card--wide">
+                  <img src="../assets/gallery/bts-1.jpg" alt="Behind the scenes wedding shoot moment" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-bts-card">
+                  <img src="../assets/gallery/bts-2.jpg" alt="Behind the scenes candid moment" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-bts-card">
+                  <img src="../assets/gallery/bts-3.jpg" alt="Playful behind the scenes frame" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-bts-card">
+                  <img src="../assets/gallery/bts-4.jpg" alt="Wedding shoot preparation moment" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-bts-card">
+                  <img src="../assets/gallery/bts-5.jpg" alt="Laughing behind the scenes frame" loading="lazy" decoding="async" />
+                </div>
+                <div class="gallery-bts-card gallery-bts-card--wide">
+                  <img src="../assets/gallery/bts-6.jpg" alt="Behind the scenes portrait setup" loading="lazy" decoding="async" />
+                </div>
               </div>
-              <div class="gallery-arch">
-                <img src="../assets/gallery/gallery-10.jpg" alt="Pre-wedding portrait in a quiet frame" loading="lazy" decoding="async" />
-                <div class="gallery-arch-label" data-i18n="gallery_photo_tag_10">Quiet Frame</div>
-              </div>
-              <div class="gallery-arch">
-                <img src="../assets/gallery/gallery-11.jpg" alt="Pre-wedding portrait with warm natural light" loading="lazy" decoding="async" />
-                <div class="gallery-arch-label" data-i18n="gallery_photo_tag_11">Warm Light</div>
-              </div>
-              <div class="gallery-arch">
-                <img src="../assets/gallery/gallery-12.jpg" alt="Candid pre-wedding portrait" loading="lazy" decoding="async" />
-                <div class="gallery-arch-label" data-i18n="gallery_photo_tag_12">Candid Ease</div>
-              </div>
-              <div class="gallery-arch">
-                <img src="../assets/gallery/gallery-13.jpg" alt="Pre-wedding portrait with refined styling" loading="lazy" decoding="async" />
-                <div class="gallery-arch-label" data-i18n="gallery_photo_tag_13">Refined Ease</div>
-              </div>
-              <div class="gallery-arch">
-                <img src="../assets/gallery/gallery-14.jpg" alt="Pre-wedding portrait against a scenic backdrop" loading="lazy" decoding="async" />
-                <div class="gallery-arch-label" data-i18n="gallery_photo_tag_14">Scenic Pause</div>
-              </div>
-              <div class="gallery-arch">
-                <img src="../assets/gallery/gallery-15.jpg" alt="Pre-wedding portrait with evening tones" loading="lazy" decoding="async" />
-                <div class="gallery-arch-label" data-i18n="gallery_photo_tag_15">Evening Tone</div>
-              </div>
-              <div class="gallery-arch">
-                <img src="../assets/gallery/gallery-16.jpg" alt="Pre-wedding portrait in golden light" loading="lazy" decoding="async" />
-                <div class="gallery-arch-label" data-i18n="gallery_photo_tag_16">Golden Note</div>
-              </div>
-            </div>
+
+              <p class="gallery-ending-note" data-i18n="gallery_after_note">
+                After the wedding, we'll share a link where everyone can upload and download photos from the celebration.
+              </p>
+            </section>
           </div>
         </div>
       </section>
@@ -593,9 +830,10 @@
     </main>
 
     <footer class="page-footer">
-    <p data-i18n="footer_text">Gloria & Junman &middot; Bali &middot; 2026 &middot; Lunavoe</p>
+      <p data-i18n="footer_text">Gloria & Junman &middot; Bali &middot; 2026 &middot; Lunavoe</p>
     </footer>
   </div>
+
   <script src="../assets/js/i18n.js"></script>
   <script src="../assets/js/common.js"></script>
 </body>
