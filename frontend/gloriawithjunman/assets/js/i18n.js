@@ -327,67 +327,42 @@ window.I18N = {
     travel_map_li7:
       "Ideal for dramatic coastal views, bright water, and a full-day island escape.",
     gallery_title: "Gallery",
-    gallery_hero_title: "A softer chapter before the wedding weekend",
+    gallery_hero_title: "A quiet prelude before September",
     gallery_intro:
-      "A small pre-wedding journal before Bali: a few frames, a few moods, and the chapter that quietly came before the vows.",
-    gallery_hero_body:
-      "These photographs come from our pre-wedding shoot. We wanted this page to feel like a visual story rather than a simple album — moving from candid city light to garden stillness, from playful bloom to more formal portraits, with the behind-the-scenes moments woven in between.",
-    gallery_note_title: "The mood of this page",
+      "Before the wedding weekend, we wanted to leave one page like this — light, still, and ours.",
+    gallery_note_title: "A note",
     gallery_note_body:
-      "We imagined this page like an album left open in a drawing room: softer light, polished wood, warm stone, and a romance that feels classic without trying too hard.",
+      "Not a full story, only a few frames we wanted to keep close.",
 
-    gallery_scene_1_title: "City Chapters",
+    gallery_scene_1_title: "City Light",
     gallery_scene_1_body:
-      "From Yihe Road street portraits to softer Korean-style interiors, this chapter feels the most like us: light, candid, and unhurried.",
-    gallery_scene_2_title: "Garden & Bloom",
+      "Some days begin softly and stay that way.",
+    gallery_scene_2_title: "Garden Light",
     gallery_scene_2_body:
-      "One chapter is rooted in Chinese garden stillness, another in floral windows and playful colour — both romantic in completely different ways.",
-    gallery_scene_3_title: "Portrait & Process",
+      "Some love speaks best in stillness.",
+    gallery_scene_3_title: "Portrait Light",
     gallery_scene_3_body:
-      "The final portraits are more formal and painterly, while the behind-the-scenes frames keep the page alive with movement, laughter, and the making of it all.",
+      "What is loved becomes timeless.",
 
-    gallery_chapter_1_kicker: "Chapter One",
     gallery_chapter_1_title: "Just Us",
-    gallery_chapter_1_body:
-      "From Yihe Road street portraits to the softer Korean-style interiors, this first chapter feels effortless, bright, and closest to our everyday selves.",
-    gallery_chapter_1_label_hero: "Yihe Road",
-    gallery_chapter_1_label_1: "Street Light",
-    gallery_chapter_1_label_2: "Easy Afternoon",
-    gallery_chapter_1_label_3: "Soft Interior",
-    gallery_chapter_1_label_4: "Editorial Ease",
-    gallery_chapter_1_label_5: "Quiet Frame",
+    gallery_chapter_1_poem:
+      "In the lightest hours, love asked for nothing more.",
 
-    gallery_chapter_2_kicker: "Chapter Two",
     gallery_chapter_2_title: "In Stillness",
-    gallery_chapter_2_body:
-      "The Chinese garden chapter is quieter and more composed — a little more ceremonial, a little more timeless, and full of measured beauty.",
-    gallery_chapter_2_label_hero: "Chinese Garden",
-    gallery_chapter_2_label_1: "Garden Walk",
-    gallery_chapter_2_label_2: "Quiet Poise",
-    gallery_chapter_2_label_3: "Framed in Green",
+    gallery_chapter_2_poem:
+      "Where silence softened everything into grace.",
 
-    gallery_chapter_3_kicker: "Chapter Three",
     gallery_chapter_3_title: "In Bloom",
-    gallery_chapter_3_body:
-      "This is the sweetest chapter: floral windows, brighter colour, and a more playful mood that feels light, charming, and full of movement.",
-    gallery_chapter_3_label_hero: "Floral Window",
-    gallery_chapter_3_label_1: "Playful Mood",
-    gallery_chapter_3_label_2: "Bloom Light",
-    gallery_chapter_3_label_3: "Sweet Chapter",
+    gallery_chapter_3_poem:
+      "The day turned bright, and so did we.",
 
-    gallery_chapter_4_kicker: "Chapter Four",
     gallery_chapter_4_title: "Portraits of Time",
-    gallery_chapter_4_body:
-      "The final portraits are more formal and painterly: French vintage styling, a green oil-painting backdrop, and a slower, more composed elegance.",
-    gallery_chapter_4_label_hero: "Vintage Portrait",
-    gallery_chapter_4_label_1: "Oil Green",
-    gallery_chapter_4_label_2: "Formal Light",
-    gallery_chapter_4_label_3: "Saved in Time",
+    gallery_chapter_4_poem:
+      "As if time itself had learned to stand still.",
 
-    gallery_chapter_5_kicker: "Chapter Five",
     gallery_chapter_5_title: "In Between",
-    gallery_chapter_5_body:
-      "The behind-the-scenes frames may be the most alive of all — the laughter between takes, the small adjustments, and the version of us that happened in motion.",
+    gallery_chapter_5_poem:
+      "And in the in-between, we were most ourselves.",
 
     gallery_upload_eyebrow: "After the wedding",
     gallery_upload_title: "Share your photographs with us",
@@ -895,67 +870,42 @@ window.I18N = {
     travel_map_li7:
       "适合壮阔海岸线、清透海水，以及安排一整天的离岛行程。",
     gallery_title: "相册",
-    gallery_hero_title: "在婚礼周末之前，先留下一页更温柔的序章",
+    gallery_hero_title: "在九月之前，先留一页安静的序章",
     gallery_intro:
-      "这里放着我们的婚纱照与拍摄花絮，像一本慢慢翻开的影像故事，在婚礼到来之前，先把这一段属于我们的温柔章节留在这里。",
-    gallery_hero_body:
-      "这组照片来自我们的婚前拍摄。我们希望这一页不只是简单相册，而更像一段有起伏的视觉故事：从颐和路街拍与韩系内景的轻松日常，到中式园林的安静与留白、花房的俏皮、法式复古肖像的正式感，再到拍摄过程里那些真实又好看的花絮瞬间。",
-    gallery_note_title: "关于这一页的感觉",
+      "在婚礼周末到来之前，我们想先把这一页留在这里——轻一点，静一点，也更像我们自己。",
+    gallery_note_title: "一页小注",
     gallery_note_body:
-      "我们想把它做得像一本被随手翻开的旧相册：有一点柔光，有一点木质与石面的温度，也有一种不需要刻意张扬的浪漫。",
+      "不是完整故事，只是几帧我们想好好留住的瞬间。",
 
-    gallery_scene_1_title: "城市章节",
+    gallery_scene_1_title: "城市光线",
     gallery_scene_1_body:
-      "从颐和路街拍到韩系内景，这一部分最轻松，也最像我们平时的样子：自然、明亮、不赶时间。",
-    gallery_scene_2_title: "园林与花房",
+      "有些日子，轻轻开始，也轻轻停留。",
+    gallery_scene_2_title: "园林光线",
     gallery_scene_2_body:
-      "一部分是中式园林里的安静与留白，一部分是花窗与花房里的可爱与颜色，同样浪漫，却完全不同。",
-    gallery_scene_3_title: "肖像与过程",
+      "有些喜欢，最适合安静地发生。",
+    gallery_scene_3_title: "肖像光线",
     gallery_scene_3_body:
-      "最后的法式复古肖像更正式、更像油画，而花絮则让这一页保留了笑声、动作与拍摄过程本身的生动感。",
+      "被爱着的事物，自然会变得恒久。",
 
-    gallery_chapter_1_kicker: "第一章",
     gallery_chapter_1_title: "Just Us",
-    gallery_chapter_1_body:
-      "从颐和路街拍到韩系内景，这一章最轻盈，也最接近日常中的我们：松弛、自然、明亮而不刻意。",
-    gallery_chapter_1_label_hero: "颐和路",
-    gallery_chapter_1_label_1: "街头光影",
-    gallery_chapter_1_label_2: "轻松午后",
-    gallery_chapter_1_label_3: "柔和内景",
-    gallery_chapter_1_label_4: "日杂感",
-    gallery_chapter_1_label_5: "安静入镜",
+    gallery_chapter_1_poem:
+      "那天很轻，喜欢也不需要多说什么。",
 
-    gallery_chapter_2_kicker: "第二章",
     gallery_chapter_2_title: "In Stillness",
-    gallery_chapter_2_body:
-      "中式园林这一章更安静、更克制，也更接近一种慢慢展开的仪式感，带着留白与含蓄的美。",
-    gallery_chapter_2_label_hero: "中式园林",
-    gallery_chapter_2_label_1: "园中漫步",
-    gallery_chapter_2_label_2: "安静姿态",
-    gallery_chapter_2_label_3: "绿意成景",
+    gallery_chapter_2_poem:
+      "安静落下来以后，一切都显得温柔。",
 
-    gallery_chapter_3_kicker: "第三章",
     gallery_chapter_3_title: "In Bloom",
-    gallery_chapter_3_body:
-      "这一章最甜，也最俏皮：花窗、花房、明亮的颜色与更灵动的表情，让整组照片多了一种轻快可爱的节奏。",
-    gallery_chapter_3_label_hero: "花窗时刻",
-    gallery_chapter_3_label_1: "俏皮感",
-    gallery_chapter_3_label_2: "花房光线",
-    gallery_chapter_3_label_3: "甜美一章",
+    gallery_chapter_3_poem:
+      "天色明亮起来的时候，我们也刚好在发光。",
 
-    gallery_chapter_4_kicker: "第四章",
     gallery_chapter_4_title: "Portraits of Time",
-    gallery_chapter_4_body:
-      "最后这一章更正式，也更像被时间保存下来的肖像：法式复古造型、绿色油画背景，以及更慢、更沉静的优雅。",
-    gallery_chapter_4_label_hero: "复古肖像",
-    gallery_chapter_4_label_1: "油画绿调",
-    gallery_chapter_4_label_2: "正式光影",
-    gallery_chapter_4_label_3: "被时间留住",
+    gallery_chapter_4_poem:
+      "像时间也愿意为这一刻慢慢停住。",
 
-    gallery_chapter_5_kicker: "第五章",
     gallery_chapter_5_title: "In Between",
-    gallery_chapter_5_body:
-      "花絮也许是最有生命力的一部分：镜头之间的笑声、整理衣摆的小动作、跑动与停顿，都是这次拍摄真正发生过的样子。",
+    gallery_chapter_5_poem:
+      "而最像我们的，往往都在正片之外。",
 
     gallery_upload_eyebrow: "婚礼之后",
     gallery_upload_title: "也把你拍到的瞬间留给我们",
