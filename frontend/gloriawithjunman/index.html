@@ -277,13 +277,13 @@
 
   <div class="floating-rsvp-bar" id="floating-rsvp-bar" hidden>
     <div class="floating-rsvp-inner">
-      <div class="floating-rsvp-pill" id="floating-rsvp-pill" data-state="yes">
+      <div class="floating-rsvp-pill" id="floating-rsvp-pill" data-state="yes" data-i18n="home_rsvp_confirmed">
         Confirmed Attending
       </div>
       <div class="floating-rsvp-countdown" id="floating-rsvp-countdown">000d 00h 00m 00s</div>
-      <div class="floating-rsvp-note" id="floating-rsvp-note">until Bali ceremony</div>
+      <div class="floating-rsvp-note" id="floating-rsvp-note" data-i18n="home_rsvp_note_attending">until Bali ceremony</div>
       <div class="floating-rsvp-actions">
-        <a href="/gloriawithjunman/rsvp/" class="floating-rsvp-link" id="floating-rsvp-edit-link">Edit RSVP</a>
+        <a href="/gloriawithjunman/rsvp/" class="floating-rsvp-link" id="floating-rsvp-edit-link" data-i18n="home_rsvp_edit">Edit RSVP</a>
       </div>
     </div>
   </div>
@@ -293,8 +293,8 @@
   </footer>
 </div>
 
-<script src="assets/js/i18n.js"></script>
-<script src="assets/js/common.js"></script>
+<script src="assets/js/i18n.js?v=20260422-lang-sync"></script>
+<script src="assets/js/common.js?v=20260422-lang-sync"></script>
 <script>
 (function () {
   const RSVP_STATE_KEY = "lunavoe_rsvp_state";
@@ -310,11 +310,14 @@
   if (!bar || !pill || !countdownEl || !noteEl || !editLink || !primaryCta) return;
 
   function currentLang() {
-    const stored = window.localStorage.getItem("lunavoe_lang");
-    if (stored === "zh") return "zh";
+    if (window.LUNAVOE_LANG === "zh" || window.LUNAVOE_LANG === "en") {
+      return window.LUNAVOE_LANG;
+    }
     if (document.documentElement.lang.toLowerCase().startsWith("zh")) {
       return "zh";
     }
+    const stored = window.localStorage.getItem("lunavoe_lang");
+    if (stored === "zh") return "zh";
     return "en";
   }
 
@@ -413,6 +416,7 @@
 
   window.addEventListener("storage", renderHomeRsvp);
   window.addEventListener("lunavoe:rsvp-state-updated", renderHomeRsvp);
+  window.addEventListener("lunavoe:language-updated", renderHomeRsvp);
 })();
 </script>
 </body>

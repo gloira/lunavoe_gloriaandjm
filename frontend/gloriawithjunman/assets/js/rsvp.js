@@ -27,11 +27,14 @@
   let validatedPassword = null;
 
   function currentLang() {
-    const stored = window.localStorage.getItem("lunavoe_lang");
-    if (stored === "zh") return "zh";
+    if (window.LUNAVOE_LANG === "zh" || window.LUNAVOE_LANG === "en") {
+      return window.LUNAVOE_LANG;
+    }
     if (document.documentElement.lang.toLowerCase().startsWith("zh")) {
       return "zh";
     }
+    const stored = window.localStorage.getItem("lunavoe_lang");
+    if (stored === "zh") return "zh";
     return "en";
   }
 
@@ -264,6 +267,13 @@
         }, 0);
       });
     }
+
+    window.addEventListener("lunavoe:language-updated", () => {
+      const state = getStoredState();
+      renderExistingBanner(state);
+      updateSubmitButtonLabel(Boolean(state));
+      updatePasswordToggle();
+    });
 
     if (pwdInput && pwdToggle) {
       updatePasswordToggle();

@@ -5,8 +5,15 @@
 
   function getCurrentLang() {
     if (typeof window === "undefined") return "en";
+    if (window.LUNAVOE_LANG === "zh" || window.LUNAVOE_LANG === "en") {
+      return window.LUNAVOE_LANG;
+    }
     const stored = window.localStorage.getItem(LANG_KEY);
-    return stored === "zh" ? "zh" : "en";
+    if (stored === "zh" || stored === "en") return stored;
+    if (document.documentElement.lang.toLowerCase().startsWith("zh")) {
+      return "zh";
+    }
+    return "en";
   }
 
   function setCurrentLang(lang) {
@@ -17,6 +24,7 @@
     const dict = window.I18N && window.I18N[lang];
     if (!dict) return;
 
+    window.LUNAVOE_LANG = lang;
     document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
 
     document.querySelectorAll("[data-i18n]").forEach((el) => {
@@ -54,6 +62,9 @@
     }
 
     updateRsvpStateButtons();
+    window.dispatchEvent(
+      new CustomEvent("lunavoe:language-updated", { detail: { lang } })
+    );
   }
 
   function getRsvpState() {
