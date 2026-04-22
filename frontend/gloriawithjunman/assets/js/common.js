@@ -108,7 +108,9 @@
     const stateButtons = Array.from(
       document.querySelectorAll("[data-rsvp-state-button]")
     );
-    const targets = rsvpLinks.concat(stateButtons);
+    const targets = rsvpLinks
+      .concat(stateButtons)
+      .filter((target) => !target.hasAttribute("data-rsvp-state-skip"));
 
     if (!targets.length) return;
 
@@ -120,10 +122,7 @@
       return;
     }
 
-    const label =
-      state.attending === "Yes"
-        ? dict.rsvp_state_attending || "Attending"
-        : dict.rsvp_state_not_attending || dict.rsvp_state_submitted || "Not attending";
+    const label = dict.home_rsvp_edit || "Edit RSVP";
     const countdown = formatCountdown(lang);
 
     targets.forEach((target) => {
