@@ -26,22 +26,29 @@
 
   let validatedPassword = null;
 
-  function currentLangDict() {
-    const langKey =
-      window.localStorage.getItem("lunavoe_lang") === "zh" ? "zh" : "en";
-    return window.I18N[langKey] || window.I18N.en;
+  function currentLang() {
+    const stored = window.localStorage.getItem("lunavoe_lang");
+    if (stored === "zh") return "zh";
+    if (document.documentElement.lang.toLowerCase().startsWith("zh")) {
+      return "zh";
+    }
+    return "en";
   }
 
-  function currentLang() {
-    return window.localStorage.getItem("lunavoe_lang") === "zh" ? "zh" : "en";
+  function currentLangDict() {
+    const langKey = currentLang();
+    return (window.I18N && window.I18N[langKey]) || window.I18N.en;
+  }
+
+  function i18nText(key, fallback) {
+    const dict = currentLangDict();
+    return dict[key] || fallback;
   }
 
   function passwordToggleLabel(isVisible) {
-    const lang = currentLang();
-    if (lang === "zh") {
-      return isVisible ? "\u9690\u85cf" : "\u663e\u793a";
-    }
-    return isVisible ? "Hide" : "Show";
+    return isVisible
+      ? i18nText("rsvp_password_hide", "Hide")
+      : i18nText("rsvp_password_show", "Show");
   }
 
   function updatePasswordToggle() {
@@ -201,47 +208,36 @@
   function updateSubmitButtonLabel(isEditing) {
     if (!submitButton) return;
 
-    const lang = currentLang();
     submitButton.textContent = isEditing
-      ? lang === "zh"
-        ? "\u66f4\u65b0 RSVP"
-        : "Update RSVP"
-      : lang === "zh"
-        ? "\u63d0\u4ea4\u786e\u8ba4\u51fa\u5e2d"
-        : "Send RSVP";
+      ? i18nText("rsvp_btn_update", "Update RSVP")
+      : i18nText("rsvp_btn_submit", "Send RSVP");
   }
 
   function renderExistingBanner(state) {
     if (!existingNote || !existingTitle || !existingBody || !updateTip) return;
 
-    const lang = currentLang();
-
     if (!state || !state.attending) {
       existingNote.hidden = true;
-      updateTip.textContent =
-        lang === "zh"
-          ? "你之后仍然可以回到这里，再次提交来修改 RSVP。"
-          : "You can come back and submit this form again anytime to update your RSVP.";
+      updateTip.textContent = i18nText(
+        "rsvp_existing_empty_tip",
+        "You can come back and submit this form again anytime to update your RSVP."
+      );
       return;
     }
 
     existingNote.hidden = false;
-
-    if (lang === "zh") {
-      existingTitle.textContent =
-        state.attending === "Yes" ? "你已确认出席" : "你已回复不参加";
-      existingBody.textContent =
-        "解锁表单后，你可以直接修改并再次提交，我们会以你最后一次的回复为准。";
-      updateTip.textContent =
-        "你可以随时返回这里重新提交，以更新你的 RSVP。";
-    } else {
-      existingTitle.textContent =
-        state.attending === "Yes" ? "You’re confirmed attending" : "You’ve replied not attending";
-      existingBody.textContent =
-        "Unlock the form below and submit again anytime to update your RSVP. Your latest submission will be treated as your current response.";
-      updateTip.textContent =
-        "You can return anytime and resubmit this form to update your RSVP.";
-    }
+    existingTitle.textContent =
+      state.attending === "Yes"
+        ? i18nText("rsvp_existing_yes_title", "You’re confirmed attending")
+        : i18nText("rsvp_existing_no_title", "You’ve replied not attending");
+    existingBody.textContent = i18nText(
+      "rsvp_existing_body",
+      "Unlock the form below and submit again anytime to update your RSVP. Your latest submission will be treated as your current response."
+    );
+    updateTip.textContent = i18nText(
+      "rsvp_existing_update_tip",
+      "You can return anytime and resubmit this form to update your RSVP."
+    );
   }
 
   if (pwdForm && mainForm) {
@@ -252,14 +248,18 @@
     mainForm.style.display = "none";
 
     document.addEventListener("DOMContentLoaded", () => {
+      renderExistingBanner(getStoredState());
       updateSubmitButtonLabel(Boolean(getStoredState()));
+      updatePasswordToggle();
     });
 
     const langToggle = document.querySelector("[data-lang-toggle]");
     if (langToggle) {
       langToggle.addEventListener("click", () => {
         window.setTimeout(() => {
-          updateSubmitButtonLabel(Boolean(getStoredState()));
+          const state = getStoredState();
+          renderExistingBanner(state);
+          updateSubmitButtonLabel(Boolean(state));
           updatePasswordToggle();
         }, 0);
       });
@@ -448,7 +448,9 @@
     });
 
     window.addEventListener("storage", () => {
-      renderExistingBanner(getStoredState());
+      const state = getStoredState();
+      renderExistingBanner(state);
+      updateSubmitButtonLabel(Boolean(state));
     });
   }
 })();

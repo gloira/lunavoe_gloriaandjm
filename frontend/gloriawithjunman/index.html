@@ -310,7 +310,17 @@
   if (!bar || !pill || !countdownEl || !noteEl || !editLink || !primaryCta) return;
 
   function currentLang() {
-    return window.localStorage.getItem("lunavoe_lang") === "zh" ? "zh" : "en";
+    const stored = window.localStorage.getItem("lunavoe_lang");
+    if (stored === "zh") return "zh";
+    if (document.documentElement.lang.toLowerCase().startsWith("zh")) {
+      return "zh";
+    }
+    return "en";
+  }
+
+  function i18nText(key, fallback) {
+    const dict = (window.I18N && window.I18N[currentLang()]) || window.I18N.en;
+    return dict[key] || fallback;
   }
 
   function getState() {
@@ -326,37 +336,24 @@
   }
 
   function getCopy(attending) {
-    const zh = currentLang() === "zh";
-
     if (attending === "Yes") {
-      return zh
-        ? {
-            pill: "已确认出席",
-            note: "距离巴厘岛婚礼仪式",
-            edit: "修改 RSVP",
-            cta: "修改 RSVP",
-          }
-        : {
-            pill: "Confirmed Attending",
-            note: "until Bali ceremony",
-            edit: "Edit RSVP",
-            cta: "Edit RSVP",
-          };
+      return {
+        pill: i18nText("home_rsvp_confirmed", "Confirmed Attending"),
+        note: i18nText("home_rsvp_note_attending", "until Bali ceremony"),
+        edit: i18nText("home_rsvp_edit", "Edit RSVP"),
+        cta: i18nText("home_rsvp_edit", "Edit RSVP"),
+      };
     }
 
-    return zh
-      ? {
-          pill: "不参加",
-          note: "你之后仍然可以修改 RSVP",
-          edit: "修改 RSVP",
-          cta: "修改 RSVP",
-        }
-      : {
-          pill: "Not attending",
-          note: "you can still update your RSVP",
-          edit: "Edit RSVP",
-          cta: "Edit RSVP",
-        };
+    return {
+      pill: i18nText("rsvp_state_not_attending", "Not attending"),
+      note: i18nText(
+        "home_rsvp_note_not_attending",
+        "you can still update your RSVP"
+      ),
+      edit: i18nText("home_rsvp_edit", "Edit RSVP"),
+      cta: i18nText("home_rsvp_edit", "Edit RSVP"),
+    };
   }
 
   function renderCountdown(state) {
@@ -379,7 +376,9 @@
     const seconds = Math.floor((diff / 1000) % 60);
 
     countdownEl.textContent =
-      `${days}d ${pad(hours)}h ${pad(minutes)}m ${pad(seconds)}s`;
+      currentLang() === "zh"
+        ? `${days}\u5929 ${pad(hours)}\u65f6 ${pad(minutes)}\u5206 ${pad(seconds)}\u79d2`
+        : `${days}d ${pad(hours)}h ${pad(minutes)}m ${pad(seconds)}s`;
   }
 
   function renderHomeRsvp() {
@@ -404,6 +403,13 @@
 
   renderHomeRsvp();
   setInterval(() => renderCountdown(getState()), 1000);
+
+  const langToggle = document.querySelector("[data-lang-toggle]");
+  if (langToggle) {
+    langToggle.addEventListener("click", () => {
+      window.setTimeout(renderHomeRsvp, 0);
+    });
+  }
 
   window.addEventListener("storage", renderHomeRsvp);
   window.addEventListener("lunavoe:rsvp-state-updated", renderHomeRsvp);

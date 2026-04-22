@@ -112,7 +112,7 @@
     const label =
       state.attending === "Yes"
         ? dict.rsvp_state_attending || "Attending"
-        : dict.rsvp_state_submitted || "RSVP sent";
+        : dict.rsvp_state_not_attending || dict.rsvp_state_submitted || "Not attending";
     const countdown = formatCountdown(lang);
 
     targets.forEach((target) => {

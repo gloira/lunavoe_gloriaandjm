@@ -376,6 +376,8 @@ window.I18N = {
     rsvp_password_hint:
       "You'll find this on your invitation. Please keep it within close friends & family only.",
     rsvp_password_placeholder: "Enter the password from your invitation",
+    rsvp_password_show: "Show",
+    rsvp_password_hide: "Hide",
     rsvp_name_label: "Full name",
     rsvp_name_placeholder: "Your full name",
     rsvp_attend_label: "Will you attend?",
@@ -400,9 +402,23 @@ window.I18N = {
       "Dietary needs, plus one name, or anything you'd like us to know.",
     rsvp_btn_unlock: "Unlock RSVP form",
     rsvp_btn_submit: "Send RSVP",
+    rsvp_btn_update: "Update RSVP",
     rsvp_state_attending: "Attending",
+    rsvp_state_not_attending: "Not attending",
     rsvp_state_submitted: "RSVP sent",
     rsvp_countdown_today: "Today",
+    home_rsvp_confirmed: "Confirmed Attending",
+    home_rsvp_note_attending: "until Bali ceremony",
+    home_rsvp_note_not_attending: "you can still update your RSVP",
+    home_rsvp_edit: "Edit RSVP",
+    rsvp_existing_empty_tip:
+      "You can come back and submit this form again anytime to update your RSVP.",
+    rsvp_existing_yes_title: "You\u2019re confirmed attending",
+    rsvp_existing_no_title: "You\u2019ve replied not attending",
+    rsvp_existing_body:
+      "Unlock the form below and submit again anytime to update your RSVP. Your latest submission will be treated as your current response.",
+    rsvp_existing_update_tip:
+      "You can return anytime and resubmit this form to update your RSVP.",
     rsvp_contact_note:
       "If you have any issues, please contact the bride or groom on WeChat or WhatsApp.",
     rsvp_status_pwd_missing: "Please enter the wedding password.",
@@ -907,6 +923,8 @@ window.I18N = {
     rsvp_password_hint:
       "\u9080\u8bf7\u51fd\u4e0a\u6709\u5bc6\u7801\uff0c\u8bf7\u4ec5\u5728\u4eb2\u53cb\u4e4b\u95f4\u5206\u4eab\u3002",
     rsvp_password_placeholder: "\u8f93\u5165\u9080\u8bf7\u51fd\u4e0a\u7684\u5bc6\u7801",
+    rsvp_password_show: "\u663e\u793a",
+    rsvp_password_hide: "\u9690\u85cf",
     rsvp_name_label: "\u59d3\u540d",
     rsvp_name_placeholder: "\u4f60\u7684\u59d3\u540d",
     rsvp_attend_label: "\u4f60\u4f1a\u51fa\u5e2d\u5417\uff1f",
@@ -931,9 +949,23 @@ window.I18N = {
       "\u996e\u98df\u9700\u6c42\u3001\u540c\u884c\u4eba\u59d3\u540d\u6216\u5176\u4ed6\u60f3\u544a\u8bc9\u6211\u4eec\u7684\u4e8b\u9879\u3002",
     rsvp_btn_unlock: "\u89e3\u9501\u786e\u8ba4\u51fa\u5e2d\u8868\u5355",
     rsvp_btn_submit: "\u63d0\u4ea4\u786e\u8ba4\u51fa\u5e2d",
+    rsvp_btn_update: "\u66f4\u65b0 RSVP",
     rsvp_state_attending: "\u4f1a\u51fa\u5e2d",
+    rsvp_state_not_attending: "\u4e0d\u80fd\u51fa\u5e2d",
     rsvp_state_submitted: "\u5df2\u63d0\u4ea4",
     rsvp_countdown_today: "\u5c31\u662f\u4eca\u5929",
+    home_rsvp_confirmed: "\u5df2\u786e\u8ba4\u51fa\u5e2d",
+    home_rsvp_note_attending: "\u8ddd\u79bb\u5df4\u5398\u5c9b\u5a5a\u793c\u4eea\u5f0f",
+    home_rsvp_note_not_attending: "\u4f60\u4e4b\u540e\u4ecd\u7136\u53ef\u4ee5\u4fee\u6539 RSVP",
+    home_rsvp_edit: "\u4fee\u6539 RSVP",
+    rsvp_existing_empty_tip:
+      "\u4f60\u4e4b\u540e\u4ecd\u7136\u53ef\u4ee5\u56de\u5230\u8fd9\u91cc\uff0c\u518d\u6b21\u63d0\u4ea4\u6765\u4fee\u6539 RSVP\u3002",
+    rsvp_existing_yes_title: "\u4f60\u5df2\u786e\u8ba4\u51fa\u5e2d",
+    rsvp_existing_no_title: "\u4f60\u5df2\u56de\u590d\u4e0d\u53c2\u52a0",
+    rsvp_existing_body:
+      "\u89e3\u9501\u8868\u5355\u540e\uff0c\u4f60\u53ef\u4ee5\u76f4\u63a5\u4fee\u6539\u5e76\u518d\u6b21\u63d0\u4ea4\uff0c\u6211\u4eec\u4f1a\u4ee5\u4f60\u6700\u540e\u4e00\u6b21\u7684\u56de\u590d\u4e3a\u51c6\u3002",
+    rsvp_existing_update_tip:
+      "\u4f60\u53ef\u4ee5\u968f\u65f6\u8fd4\u56de\u8fd9\u91cc\u91cd\u65b0\u63d0\u4ea4\uff0c\u4ee5\u66f4\u65b0\u4f60\u7684 RSVP\u3002",
     rsvp_contact_note: "\u5982\u6709\u4efb\u4f55\u95ee\u9898\uff0c\u8bf7\u901a\u8fc7\u5fae\u4fe1\u6216 WhatsApp \u8054\u7cfb\u65b0\u5a18\u6216\u65b0\u90ce\u3002",
     rsvp_status_pwd_missing: "\u8bf7\u8f93\u5165\u5a5a\u793c\u5bc6\u7801\u3002",
     rsvp_status_pwd_wrong: "\u5bc6\u7801\u4e0d\u6b63\u786e\uff0c\u8bf7\u67e5\u770b\u9080\u8bf7\u51fd\u3002",
