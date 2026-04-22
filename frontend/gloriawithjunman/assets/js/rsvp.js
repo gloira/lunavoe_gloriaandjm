@@ -2,6 +2,7 @@
   const PASSWORD = "JMGLORIA2026";
   const API_URL = "https://www.lunavoe.com/gloriawithjunman/rsvp-api";
   const RSVP_STATE_KEY = "lunavoe_rsvp_state";
+  const HOME_URL = new URL("../", window.location.href).href;
 
   const pwdForm = document.getElementById("rsvp-password-form");
   const mainForm = document.getElementById("rsvp-main-form");
@@ -125,6 +126,25 @@
     } catch (err) {
       // convenience only
     }
+  }
+
+  function isSuccessResponse(data) {
+    const status = (data && data.status ? data.status : "")
+      .toString()
+      .toLowerCase()
+      .replace(/[\s-]+/g, "_");
+
+    return (
+      data &&
+      (data.success === true ||
+        status === "success" ||
+        status === "submitted_successfully" ||
+        status === "submitted")
+    );
+  }
+
+  function redirectHome() {
+    window.location.assign(HOME_URL);
   }
 
   function setRadioValue(name, value) {
@@ -349,7 +369,7 @@
           throw new Error("Invalid password");
         }
 
-        if (data.status !== "success") throw new Error("Bad response");
+        if (!isSuccessResponse(data)) throw new Error("Bad response");
 
         rememberRsvpState({
           id: data.id,
@@ -359,9 +379,7 @@
         rsvpStatus.textContent = dict.rsvp_status_success;
         rsvpStatus.className = "rsvp-status rsvp-status--success";
 
-        setTimeout(() => {
-          window.location.href = "/gloriawithjunman/";
-        }, 900);
+        setTimeout(redirectHome, 900);
       } catch (err) {
         console.error(err);
         rsvpStatus.textContent = dict.rsvp_status_error;
