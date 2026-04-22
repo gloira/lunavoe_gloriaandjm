@@ -19,148 +19,75 @@
 
   <style>
     .gallery-page-shell {
-      max-width: 1240px;
+      max-width: 1180px;
     }
 
-    .gallery-manor {
-      position: relative;
-      overflow: hidden;
-      padding: clamp(1.5rem, 3vw, 2.5rem);
-      border-radius: 34px;
-      background:
-        radial-gradient(circle at top left, rgba(255, 255, 255, 0.72), transparent 28%),
-        linear-gradient(135deg, rgba(251, 245, 236, 0.98), rgba(243, 232, 220, 0.96));
-      border: 1px solid rgba(168, 132, 97, 0.2);
-      box-shadow: 0 24px 60px rgba(49, 33, 20, 0.08);
+    .gallery-hero-minimal {
+      max-width: 720px;
+      margin: 0 auto 2.8rem;
+      text-align: center;
+      padding-top: 0.35rem;
     }
 
-    .gallery-manor::before {
-      content: "";
-      position: absolute;
-      inset: 14px;
-      border-radius: 26px;
-      border: 1px solid rgba(168, 132, 97, 0.14);
-      pointer-events: none;
-    }
-
-    .gallery-manor-top {
-      position: relative;
-      z-index: 1;
-      display: grid;
-      grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.75fr);
-      gap: 1.4rem;
-      align-items: stretch;
-    }
-
-    .gallery-manor-copy,
-    .gallery-manor-note {
-      padding: clamp(1.2rem, 2vw, 1.6rem);
-      border-radius: 26px;
-      background: rgba(255, 252, 248, 0.72);
-      border: 1px solid rgba(168, 132, 97, 0.16);
-      backdrop-filter: blur(10px);
-    }
-
-    .gallery-manor-title {
-      max-width: 10ch;
-      margin: 0 0 0.85rem;
+    .gallery-hero-minimal-title {
+      margin: 0.55rem 0 0.9rem;
       font-family: "Gilda Display", serif;
-      font-size: clamp(2.5rem, 4.2vw, 4.4rem);
-      line-height: 1.02;
-      color: #3f2d1f;
+      font-size: clamp(2.8rem, 5vw, 5rem);
+      line-height: 0.98;
+      letter-spacing: -0.02em;
+      color: #3d2b1f;
     }
 
-    .gallery-manor-lead {
-      max-width: 620px;
-      margin: 0;
-      font-size: 1.04rem;
+    .gallery-hero-minimal-intro {
+      max-width: 560px;
+      margin: 0 auto;
+      color: #6a5240;
       line-height: 1.9;
-      color: #5f4937;
-    }
-
-    .gallery-note-label {
-      display: inline-flex;
-      align-items: center;
-      padding: 0.38rem 0.8rem;
-      border-radius: 999px;
-      margin-bottom: 0.9rem;
-      font-size: 0.72rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: #8a6344;
-      background: rgba(212, 165, 116, 0.12);
-    }
-
-    .gallery-manor-note p {
-      margin: 0;
-      color: #67503d;
-      line-height: 1.88;
+      font-size: 1rem;
     }
 
     .gallery-storybook {
-      margin-top: 2rem;
       display: grid;
-      gap: 2rem;
+      gap: 2.35rem;
     }
 
     .gallery-chapter {
-      position: relative;
-      overflow: hidden;
-      padding: clamp(1.2rem, 2.5vw, 1.9rem);
-      border-radius: 34px;
-      background: linear-gradient(180deg, rgba(255, 251, 246, 0.96), rgba(243, 234, 224, 0.94));
-      border: 1px solid rgba(168, 132, 97, 0.16);
-      box-shadow: 0 20px 50px rgba(47, 32, 20, 0.07);
-    }
-
-    .gallery-chapter::before {
-      content: "";
-      position: absolute;
-      inset: 12px;
-      border-radius: 26px;
-      border: 1px solid rgba(168, 132, 97, 0.1);
-      pointer-events: none;
+      padding-top: 0.2rem;
     }
 
     .gallery-chapter-head {
-      position: relative;
-      z-index: 1;
-      max-width: 640px;
-      margin: 0 auto 1.5rem;
+      max-width: 560px;
+      margin: 0 auto 1.4rem;
       text-align: center;
     }
 
     .gallery-chapter-title {
-      margin: 0 0 0.5rem;
+      margin: 0 0 0.45rem;
       font-family: "Gilda Display", serif;
-      font-size: clamp(2rem, 2.8vw, 3rem);
+      font-size: clamp(1.95rem, 2.7vw, 2.9rem);
       line-height: 1.08;
       color: #3c2b1f;
     }
 
     .gallery-chapter-poem {
       margin: 0;
-      color: #725846;
-      line-height: 1.9;
-      font-size: 1rem;
+      color: #7a5f49;
+      line-height: 1.85;
+      font-size: 0.98rem;
       font-style: italic;
     }
 
     .gallery-chapter-layout {
-      position: relative;
-      z-index: 1;
       display: grid;
       grid-template-columns: minmax(0, 1.14fr) minmax(280px, 0.86fr);
       gap: 1rem;
     }
 
     .gallery-chapter-hero {
-      position: relative;
       overflow: hidden;
-      border-radius: 28px;
+      border-radius: 26px;
       background: #efe5d9;
       min-height: 520px;
-      box-shadow: 0 18px 38px rgba(47, 32, 20, 0.08);
     }
 
     .gallery-chapter-hero img {
@@ -178,17 +105,15 @@
     }
 
     .gallery-chapter-card {
-      position: relative;
       overflow: hidden;
-      border-radius: 22px;
+      border-radius: 20px;
       background: #efe5d9;
       aspect-ratio: 0.82;
-      box-shadow: 0 14px 28px rgba(49, 34, 22, 0.06);
     }
 
     .gallery-chapter-card--wide {
       grid-column: span 2;
-      aspect-ratio: 1.72;
+      aspect-ratio: 1.7;
     }
 
     .gallery-chapter-card img {
@@ -202,24 +127,20 @@
     .gallery-chapter:hover .gallery-chapter-hero img,
     .gallery-chapter:hover .gallery-chapter-card img,
     .gallery-chapter:hover .gallery-bts-card img {
-      transform: scale(1.025);
+      transform: scale(1.02);
     }
 
     .gallery-bts-grid {
-      position: relative;
-      z-index: 1;
       display: grid;
       grid-template-columns: repeat(6, minmax(0, 1fr));
       gap: 1rem;
     }
 
     .gallery-bts-card {
-      position: relative;
       overflow: hidden;
-      border-radius: 22px;
+      border-radius: 20px;
       background: #efe5d9;
       aspect-ratio: 0.8;
-      box-shadow: 0 14px 28px rgba(49, 34, 22, 0.06);
     }
 
     .gallery-bts-card--wide {
@@ -233,14 +154,6 @@
       object-fit: cover;
       display: block;
       transition: transform 700ms ease;
-    }
-
-    .gallery-ending-note {
-      margin-top: 0.95rem;
-      text-align: center;
-      color: #7a5e47;
-      font-size: 0.96rem;
-      line-height: 1.8;
     }
 
     .gallery-upload-shell {
@@ -349,7 +262,6 @@
     }
 
     @media (max-width: 980px) {
-      .gallery-manor-top,
       .gallery-chapter-layout,
       .gallery-upload-grid {
         grid-template-columns: 1fr;
@@ -366,23 +278,8 @@
     }
 
     @media (max-width: 768px) {
-      .gallery-manor,
-      .gallery-chapter,
-      .gallery-upload-vault {
-        border-radius: 28px;
-      }
-
-      .gallery-manor::before,
-      .gallery-chapter::before,
-      .gallery-upload-vault::before {
-        inset: 10px;
-        border-radius: 22px;
-      }
-
-      .gallery-manor-copy,
-      .gallery-manor-note,
-      .gallery-upload-card {
-        border-radius: 22px;
+      .gallery-hero-minimal {
+        margin-bottom: 2.1rem;
       }
 
       .gallery-chapter-side {
@@ -392,12 +289,12 @@
 
       .gallery-chapter-hero {
         min-height: 320px;
-        border-radius: 24px;
+        border-radius: 20px;
       }
 
       .gallery-chapter-card,
       .gallery-bts-card {
-        border-radius: 18px;
+        border-radius: 16px;
       }
 
       .gallery-chapter-card--wide {
@@ -406,6 +303,19 @@
 
       .gallery-bts-grid {
         gap: 0.8rem;
+      }
+
+      .gallery-upload-vault {
+        border-radius: 28px;
+      }
+
+      .gallery-upload-vault::before {
+        inset: 10px;
+        border-radius: 22px;
+      }
+
+      .gallery-upload-card {
+        border-radius: 22px;
       }
     }
   </style>
@@ -464,25 +374,14 @@
     <main class="page-main" style="padding-top: 100px;">
       <section class="section">
         <div class="section-inner gallery-page-shell">
-          <div class="gallery-manor">
-            <div class="gallery-manor-top">
-              <div class="gallery-manor-copy">
-                <div class="section-eyebrow" data-i18n="gallery_title">Gallery</div>
-                <h1 class="gallery-manor-title" data-i18n="gallery_hero_title">
-                  A quiet prelude before September
-                </h1>
-                <p class="gallery-manor-lead" data-i18n="gallery_intro">
-                  Before the wedding weekend, we wanted to leave one page like this — light, still, and ours.
-                </p>
-              </div>
-
-              <aside class="gallery-manor-note">
-                <div class="gallery-note-label" data-i18n="gallery_note_title">A note</div>
-                <p data-i18n="gallery_note_body">
-                  Not a full story, only a few frames we wanted to keep close.
-                </p>
-              </aside>
-            </div>
+          <div class="gallery-hero-minimal">
+            <div class="section-eyebrow" data-i18n="gallery_title">Gallery</div>
+            <h1 class="gallery-hero-minimal-title" data-i18n="gallery_hero_title">
+              A quiet prelude before September
+            </h1>
+            <p class="gallery-hero-minimal-intro" data-i18n="gallery_intro">
+              Before the wedding weekend, we wanted to leave one page like this — light, still, and ours.
+            </p>
           </div>
 
           <div class="gallery-storybook">

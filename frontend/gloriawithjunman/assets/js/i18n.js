@@ -330,9 +330,6 @@ window.I18N = {
     gallery_hero_title: "A quiet prelude before September",
     gallery_intro:
       "Before the wedding weekend, we wanted to leave one page like this — light, still, and ours.",
-    gallery_note_title: "A note",
-    gallery_note_body:
-      "Not a full story, only a few frames we wanted to keep close.",
 
     gallery_chapter_1_title: "Just Us",
     gallery_chapter_1_poem:
@@ -861,27 +858,24 @@ window.I18N = {
     gallery_hero_title: "在九月之前，先留一页安静的序章",
     gallery_intro:
       "在婚礼周末到来之前，我们想先把这一页留在这里——轻一点，静一点，也更像我们自己。",
-    gallery_note_title: "一页小注",
-    gallery_note_body:
-      "不是完整故事，只是几帧我们想好好留住的瞬间。",
 
-    gallery_chapter_1_title: "只有我们",
+    gallery_chapter_1_title: "Just Us",
     gallery_chapter_1_poem:
       "那天很轻，喜欢也不需要多说什么。",
 
-    gallery_chapter_2_title: "安静之间",
+    gallery_chapter_2_title: "In Stillness",
     gallery_chapter_2_poem:
       "安静落下来以后，一切都显得温柔。",
 
-    gallery_chapter_3_title: "花开时",
+    gallery_chapter_3_title: "In Bloom",
     gallery_chapter_3_poem:
       "天色明亮起来的时候，我们也刚好在发光。",
 
-    gallery_chapter_4_title: "时间里的肖像",
+    gallery_chapter_4_title: "Portraits of Time",
     gallery_chapter_4_poem:
       "像时间也愿意为这一刻慢慢停住。",
 
-    gallery_chapter_5_title: "正片之外",
+    gallery_chapter_5_title: "In Between",
     gallery_chapter_5_poem:
       "而最像我们的，往往都在正片之外。",
 
@@ -896,9 +890,9 @@ window.I18N = {
     gallery_upload_tencent_body:
       "如果你从中国大陆访问，可以扫描这个二维码，将婚礼照片上传至我们的腾讯云相册。",
     gallery_upload_google_label: "中国大陆以外",
-    gallery_upload_google_title: "Google 云端上传",
+    gallery_upload_google_title: "Google Cloud 上传",
     gallery_upload_google_body:
-      "如果你从中国大陆以外访问，可以扫描这个二维码，将婚礼照片上传至我们的 Google 云端相册。",
+      "如果你从中国大陆以外访问，可以扫描这个二维码，将婚礼照片上传至我们的 Google Cloud 相册。",
     gallery_upload_hint:
       "请在婚礼前将这个占位图替换为最终二维码。",
     rsvp_title: "\u786e\u8ba4\u51fa\u5e2d",
