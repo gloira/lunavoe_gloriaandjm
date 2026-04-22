@@ -1,5 +1,7 @@
 (function () {
   const LANG_KEY = "lunavoe_lang";
+  const RSVP_STATE_KEY = "lunavoe_rsvp_state";
+  const WEDDING_DAY = new Date("2026-09-12T00:00:00+08:00");
 
   function getCurrentLang() {
     if (typeof window === "undefined") return "en";
@@ -50,6 +52,73 @@
     if (langBtn) {
       langBtn.textContent = lang === "en" ? "\u4e2d\u6587" : "EN";
     }
+
+    updateRsvpStateButtons();
+  }
+
+  function getRsvpState() {
+    try {
+      const raw = window.localStorage.getItem(RSVP_STATE_KEY);
+      return raw ? JSON.parse(raw) : null;
+    } catch (err) {
+      return null;
+    }
+  }
+
+  function formatCountdown(lang) {
+    const now = new Date();
+    const diff = WEDDING_DAY.getTime() - now.getTime();
+    const dict = (window.I18N && window.I18N[lang]) || window.I18N.en;
+
+    if (diff <= 0) {
+      return dict.rsvp_countdown_today || (lang === "zh" ? "\u5c31\u662f\u4eca\u5929" : "Today");
+    }
+
+    const totalMinutes = Math.floor(diff / 60000);
+    const days = Math.floor(totalMinutes / 1440);
+    const hours = Math.floor((totalMinutes % 1440) / 60);
+    const minutes = totalMinutes % 60;
+
+    if (lang === "zh") {
+      return days > 0 ? `${days}\u5929 ${hours}\u5c0f\u65f6` : `${hours}\u5c0f\u65f6 ${minutes}\u5206\u949f`;
+    }
+
+    return days > 0 ? `${days}d ${hours}h` : `${hours}h ${minutes}m`;
+  }
+
+  function updateRsvpStateButtons() {
+    const state = getRsvpState();
+    const lang = getCurrentLang();
+    const dict = (window.I18N && window.I18N[lang]) || window.I18N.en;
+    const rsvpLinks = Array.from(
+      document.querySelectorAll('a[href$="/rsvp/"], a[href$="/rsvp"]')
+    );
+    const stateButtons = Array.from(
+      document.querySelectorAll("[data-rsvp-state-button]")
+    );
+    const targets = rsvpLinks.concat(stateButtons);
+
+    if (!targets.length) return;
+
+    if (!state) {
+      targets.forEach((target) => {
+        target.classList.remove("rsvp-state-button");
+        target.removeAttribute("data-rsvp-state-active");
+      });
+      return;
+    }
+
+    const label =
+      state.attending === "Yes"
+        ? dict.rsvp_state_attending || "Attending"
+        : dict.rsvp_state_submitted || "RSVP sent";
+    const countdown = formatCountdown(lang);
+
+    targets.forEach((target) => {
+      target.classList.add("rsvp-state-button");
+      target.setAttribute("data-rsvp-state-active", "true");
+      target.innerHTML = `<span class="rsvp-state-label">${label}</span><span class="rsvp-state-countdown">${countdown}</span>`;
+    });
   }
 
   function setupLanguage() {
@@ -62,6 +131,7 @@
         const next = getCurrentLang() === "en" ? "zh" : "en";
         setCurrentLang(next);
         applyLanguage(next);
+        updateRsvpStateButtons();
       });
     }
   }
@@ -368,5 +438,8 @@
     setupRenaissanceGallery();
     setupVenueLightbox();
     setupScrollGalleries();
+    updateRsvpStateButtons();
+    window.setInterval(updateRsvpStateButtons, 60000);
+    window.addEventListener("lunavoe:rsvp-state-updated", updateRsvpStateButtons);
   });
 })();

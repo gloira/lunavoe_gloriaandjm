@@ -1,6 +1,7 @@
 (function () {
   const PASSWORD = "JMGLORIA2026";
   const API_URL = "https://www.lunavoe.com/gloriawithjunman/rsvp-api";
+  const RSVP_STATE_KEY = "lunavoe_rsvp_state";
 
   const pwdForm = document.getElementById("rsvp-password-form");
   const mainForm = document.getElementById("rsvp-main-form");
@@ -81,6 +82,22 @@
         guestHasAllergy === "Yes",
       'textarea[name="guestAllergyRemarks"]'
     );
+  }
+
+  function rememberRsvpState(payload) {
+    try {
+      window.localStorage.setItem(
+        RSVP_STATE_KEY,
+        JSON.stringify({
+          name: payload.name,
+          attending: payload.attending,
+          submittedAt: new Date().toISOString(),
+        })
+      );
+      window.dispatchEvent(new CustomEvent("lunavoe:rsvp-state-updated"));
+    } catch (err) {
+      // The RSVP has already reached the server; local state is only a convenience.
+    }
   }
 
   if (pwdForm && mainForm) {
@@ -230,6 +247,7 @@
         
         if (data.status !== "success") throw new Error("Bad response");
 
+        rememberRsvpState({ name, attending });
         rsvpStatus.textContent = dict.rsvp_status_success;
         rsvpStatus.className = "rsvp-status rsvp-status--success";
         mainForm.reset();
