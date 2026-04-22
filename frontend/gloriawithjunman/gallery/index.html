@@ -25,11 +25,10 @@
     .gallery-manor {
       position: relative;
       overflow: hidden;
-      padding: clamp(1.5rem, 3vw, 2.4rem);
+      padding: clamp(1.5rem, 3vw, 2.5rem);
       border-radius: 34px;
       background:
         radial-gradient(circle at top left, rgba(255, 255, 255, 0.72), transparent 28%),
-        repeating-linear-gradient(90deg, rgba(72, 49, 31, 0.04) 0, rgba(72, 49, 31, 0.04) 1px, transparent 1px, transparent 16px),
         linear-gradient(135deg, rgba(251, 245, 236, 0.98), rgba(243, 232, 220, 0.96));
       border: 1px solid rgba(168, 132, 97, 0.2);
       box-shadow: 0 24px 60px rgba(49, 33, 20, 0.08);
@@ -48,7 +47,7 @@
       position: relative;
       z-index: 1;
       display: grid;
-      grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.8fr);
+      grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.75fr);
       gap: 1.4rem;
       align-items: stretch;
     }
@@ -57,25 +56,25 @@
     .gallery-manor-note {
       padding: clamp(1.2rem, 2vw, 1.6rem);
       border-radius: 26px;
-      background: rgba(255, 252, 248, 0.74);
+      background: rgba(255, 252, 248, 0.72);
       border: 1px solid rgba(168, 132, 97, 0.16);
       backdrop-filter: blur(10px);
     }
 
     .gallery-manor-title {
-      max-width: 11ch;
-      margin: 0 0 0.9rem;
+      max-width: 10ch;
+      margin: 0 0 0.85rem;
       font-family: "Gilda Display", serif;
-      font-size: clamp(2.4rem, 4vw, 4.2rem);
-      line-height: 1.04;
+      font-size: clamp(2.5rem, 4.2vw, 4.4rem);
+      line-height: 1.02;
       color: #3f2d1f;
     }
 
     .gallery-manor-lead {
-      max-width: 640px;
+      max-width: 620px;
       margin: 0;
       font-size: 1.04rem;
-      line-height: 1.85;
+      line-height: 1.9;
       color: #5f4937;
     }
 
@@ -84,7 +83,7 @@
       align-items: center;
       padding: 0.38rem 0.8rem;
       border-radius: 999px;
-      margin-bottom: 1rem;
+      margin-bottom: 0.9rem;
       font-size: 0.72rem;
       letter-spacing: 0.16em;
       text-transform: uppercase;
@@ -98,37 +97,6 @@
       line-height: 1.88;
     }
 
-    .gallery-scene-grid {
-      position: relative;
-      z-index: 1;
-      margin-top: 1.4rem;
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
-    }
-
-    .gallery-scene-card {
-      padding: 1.1rem 1.1rem 1.2rem;
-      border-radius: 24px;
-      background: rgba(255, 251, 246, 0.84);
-      border: 1px solid rgba(168, 132, 97, 0.14);
-      box-shadow: 0 14px 28px rgba(52, 35, 21, 0.05);
-    }
-
-    .gallery-scene-card h3 {
-      margin: 0 0 0.4rem;
-      font-family: "Marcellus", serif;
-      font-size: 1.02rem;
-      color: #453123;
-    }
-
-    .gallery-scene-card p {
-      margin: 0;
-      color: #6d5643;
-      line-height: 1.75;
-      font-size: 0.94rem;
-    }
-
     .gallery-storybook {
       margin-top: 2rem;
       display: grid;
@@ -138,7 +106,7 @@
     .gallery-chapter {
       position: relative;
       overflow: hidden;
-      padding: clamp(1.2rem, 2.4vw, 1.85rem);
+      padding: clamp(1.2rem, 2.5vw, 1.9rem);
       border-radius: 34px;
       background: linear-gradient(180deg, rgba(255, 251, 246, 0.96), rgba(243, 234, 224, 0.94));
       border: 1px solid rgba(168, 132, 97, 0.16);
@@ -158,12 +126,12 @@
       position: relative;
       z-index: 1;
       max-width: 640px;
-      margin: 0 auto 1.4rem;
+      margin: 0 auto 1.5rem;
       text-align: center;
     }
 
     .gallery-chapter-title {
-      margin: 0 0 0.55rem;
+      margin: 0 0 0.5rem;
       font-family: "Gilda Display", serif;
       font-size: clamp(2rem, 2.8vw, 3rem);
       line-height: 1.08;
@@ -182,7 +150,7 @@
       position: relative;
       z-index: 1;
       display: grid;
-      grid-template-columns: minmax(0, 1.12fr) minmax(280px, 0.88fr);
+      grid-template-columns: minmax(0, 1.14fr) minmax(280px, 0.86fr);
       gap: 1rem;
     }
 
@@ -191,7 +159,7 @@
       overflow: hidden;
       border-radius: 28px;
       background: #efe5d9;
-      min-height: 500px;
+      min-height: 520px;
       box-shadow: 0 18px 38px rgba(47, 32, 20, 0.08);
     }
 
@@ -220,7 +188,7 @@
 
     .gallery-chapter-card--wide {
       grid-column: span 2;
-      aspect-ratio: 1.75;
+      aspect-ratio: 1.72;
     }
 
     .gallery-chapter-card img {
@@ -381,14 +349,9 @@
     }
 
     @media (max-width: 980px) {
-
       .gallery-manor-top,
       .gallery-chapter-layout,
       .gallery-upload-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery-scene-grid {
         grid-template-columns: 1fr;
       }
 
@@ -403,7 +366,6 @@
     }
 
     @media (max-width: 768px) {
-
       .gallery-manor,
       .gallery-chapter,
       .gallery-upload-vault {
@@ -419,7 +381,6 @@
 
       .gallery-manor-copy,
       .gallery-manor-note,
-      .gallery-scene-card,
       .gallery-upload-card {
         border-radius: 22px;
       }
@@ -521,27 +482,6 @@
                   Not a full story, only a few frames we wanted to keep close.
                 </p>
               </aside>
-            </div>
-
-            <div class="gallery-scene-grid">
-              <article class="gallery-scene-card">
-                <h3 data-i18n="gallery_scene_1_title">City Light</h3>
-                <p data-i18n="gallery_scene_1_body">
-                  Some days begin softly and stay that way.
-                </p>
-              </article>
-              <article class="gallery-scene-card">
-                <h3 data-i18n="gallery_scene_2_title">Garden Light</h3>
-                <p data-i18n="gallery_scene_2_body">
-                  Some love speaks best in stillness.
-                </p>
-              </article>
-              <article class="gallery-scene-card">
-                <h3 data-i18n="gallery_scene_3_title">Portrait Light</h3>
-                <p data-i18n="gallery_scene_3_body">
-                  What is loved becomes timeless.
-                </p>
-              </article>
             </div>
           </div>
 
@@ -684,10 +624,6 @@
                   <img src="../assets/gallery/bts-6.jpg" alt="Behind the scenes portrait setup" loading="lazy" decoding="async" />
                 </div>
               </div>
-
-              <p class="gallery-ending-note" data-i18n="gallery_after_note">
-                After the wedding, we'll share a link where everyone can upload and download photos from the celebration.
-              </p>
             </section>
           </div>
         </div>

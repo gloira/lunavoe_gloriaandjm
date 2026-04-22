@@ -334,16 +334,6 @@ window.I18N = {
     gallery_note_body:
       "Not a full story, only a few frames we wanted to keep close.",
 
-    gallery_scene_1_title: "City Light",
-    gallery_scene_1_body:
-      "Some days begin softly and stay that way.",
-    gallery_scene_2_title: "Garden Light",
-    gallery_scene_2_body:
-      "Some love speaks best in stillness.",
-    gallery_scene_3_title: "Portrait Light",
-    gallery_scene_3_body:
-      "What is loved becomes timeless.",
-
     gallery_chapter_1_title: "Just Us",
     gallery_chapter_1_poem:
       "In the lightest hours, love asked for nothing more.",
@@ -380,8 +370,6 @@ window.I18N = {
       "Guests accessing from outside Mainland China can scan this QR code to upload wedding photos to our Google Cloud folder.",
     gallery_upload_hint:
       "Replace this placeholder with the final QR code before the wedding.",
-    gallery_after_note:
-      "After the wedding, we'll share a link where everyone can upload and download photos from the celebration.",
     rsvp_title: "RSVP",
     rsvp_intro:
       "Because space at the venue is limited, please help us by responding as accurately as you can. You'll be able to update us later if plans change.",
@@ -877,33 +865,23 @@ window.I18N = {
     gallery_note_body:
       "不是完整故事，只是几帧我们想好好留住的瞬间。",
 
-    gallery_scene_1_title: "城市光线",
-    gallery_scene_1_body:
-      "有些日子，轻轻开始，也轻轻停留。",
-    gallery_scene_2_title: "园林光线",
-    gallery_scene_2_body:
-      "有些喜欢，最适合安静地发生。",
-    gallery_scene_3_title: "肖像光线",
-    gallery_scene_3_body:
-      "被爱着的事物，自然会变得恒久。",
-
-    gallery_chapter_1_title: "Just Us",
+    gallery_chapter_1_title: "只有我们",
     gallery_chapter_1_poem:
       "那天很轻，喜欢也不需要多说什么。",
 
-    gallery_chapter_2_title: "In Stillness",
+    gallery_chapter_2_title: "安静之间",
     gallery_chapter_2_poem:
       "安静落下来以后，一切都显得温柔。",
 
-    gallery_chapter_3_title: "In Bloom",
+    gallery_chapter_3_title: "花开时",
     gallery_chapter_3_poem:
       "天色明亮起来的时候，我们也刚好在发光。",
 
-    gallery_chapter_4_title: "Portraits of Time",
+    gallery_chapter_4_title: "时间里的肖像",
     gallery_chapter_4_poem:
       "像时间也愿意为这一刻慢慢停住。",
 
-    gallery_chapter_5_title: "In Between",
+    gallery_chapter_5_title: "正片之外",
     gallery_chapter_5_poem:
       "而最像我们的，往往都在正片之外。",
 
@@ -918,13 +896,11 @@ window.I18N = {
     gallery_upload_tencent_body:
       "如果你从中国大陆访问，可以扫描这个二维码，将婚礼照片上传至我们的腾讯云相册。",
     gallery_upload_google_label: "中国大陆以外",
-    gallery_upload_google_title: "Google Cloud 上传",
+    gallery_upload_google_title: "Google 云端上传",
     gallery_upload_google_body:
-      "如果你从中国大陆以外访问，可以扫描这个二维码，将婚礼照片上传至我们的 Google Cloud 相册。",
+      "如果你从中国大陆以外访问，可以扫描这个二维码，将婚礼照片上传至我们的 Google 云端相册。",
     gallery_upload_hint:
       "请在婚礼前将这个占位图替换为最终二维码。",
-    gallery_after_note:
-      "婚礼后我们也会分享统一链接，方便大家上传与下载庆祝当天的照片。",
     rsvp_title: "\u786e\u8ba4\u51fa\u5e2d",
     rsvp_intro:
       "\u573a\u5730\u5e2d\u4f4d\u6709\u9650\uff0c\u8bf7\u5c3d\u91cf\u51c6\u786e\u56de\u590d\uff0c\u82e5\u8ba1\u5212\u6709\u53d8\u4e5f\u53ef\u4e4b\u540e\u66f4\u65b0\u3002",
