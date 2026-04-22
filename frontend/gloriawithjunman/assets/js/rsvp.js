@@ -18,6 +18,9 @@
   const existingTitle = document.getElementById("rsvp-existing-title");
   const existingBody = document.getElementById("rsvp-existing-body");
   const updateTip = document.getElementById("rsvp-update-tip");
+  const submitButton = mainForm
+    ? mainForm.querySelector('button[type="submit"]')
+    : null;
 
   let validatedPassword = null;
 
@@ -162,18 +165,31 @@
     const guestAllergyRemarksInput = document.getElementById("rsvp-guest-allergy-remarks");
     const messageInput = document.getElementById("rsvp-message");
 
+    setRadioValue("attending", state.attending || "");
+    setRadioValue("hasAllergy", state.hasAllergy || "");
+    setRadioValue("bringingGuest", state.bringingGuest || "");
+    setRadioValue("guestHasAllergy", state.guestHasAllergy || "");
+
     if (nameInput) nameInput.value = state.name || "";
     if (allergyRemarksInput) allergyRemarksInput.value = state.allergyRemarks || "";
     if (guestNameInput) guestNameInput.value = state.guestName || "";
     if (guestAllergyRemarksInput) guestAllergyRemarksInput.value = state.guestAllergyRemarks || "";
     if (messageInput) messageInput.value = state.message || "";
 
-    setRadioValue("attending", state.attending || "");
-    setRadioValue("hasAllergy", state.hasAllergy || "");
-    setRadioValue("bringingGuest", state.bringingGuest || "");
-    setRadioValue("guestHasAllergy", state.guestHasAllergy || "");
-
     syncConditionalFields();
+  }
+
+  function updateSubmitButtonLabel(isEditing) {
+    if (!submitButton) return;
+
+    const lang = currentLang();
+    submitButton.textContent = isEditing
+      ? lang === "zh"
+        ? "\u66f4\u65b0 RSVP"
+        : "Update RSVP"
+      : lang === "zh"
+        ? "\u63d0\u4ea4\u786e\u8ba4\u51fa\u5e2d"
+        : "Send RSVP";
   }
 
   function renderExistingBanner(state) {
@@ -212,8 +228,22 @@
   if (pwdForm && mainForm) {
     const initialState = getStoredState();
     renderExistingBanner(initialState);
+    updateSubmitButtonLabel(Boolean(initialState));
 
     mainForm.style.display = "none";
+
+    document.addEventListener("DOMContentLoaded", () => {
+      updateSubmitButtonLabel(Boolean(getStoredState()));
+    });
+
+    const langToggle = document.querySelector("[data-lang-toggle]");
+    if (langToggle) {
+      langToggle.addEventListener("click", () => {
+        window.setTimeout(() => {
+          updateSubmitButtonLabel(Boolean(getStoredState()));
+        }, 0);
+      });
+    }
 
     pwdForm.addEventListener("submit", (e) => {
       e.preventDefault();
@@ -238,11 +268,13 @@
       pwdForm.style.display = "none";
       mainForm.style.display = "block";
 
-      syncConditionalFields();
-
       const state = getStoredState();
       if (state) {
         prefillFormFromState(state);
+        updateSubmitButtonLabel(true);
+      } else {
+        syncConditionalFields();
+        updateSubmitButtonLabel(false);
       }
     });
 
