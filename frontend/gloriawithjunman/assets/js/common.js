@@ -123,13 +123,11 @@
     }
 
     const label = dict.home_rsvp_edit || "Edit RSVP";
-    const countdown = formatCountdown(lang);
-
     targets.forEach((target) => {
       target.classList.add("rsvp-state-button");
       target.setAttribute("data-rsvp-state-active", "true");
-      target.innerHTML = `<span class="rsvp-state-label">${label}</span><span class="rsvp-state-countdown">${countdown}</span>`;
-      target.setAttribute("aria-label", `${label}, ${countdown}`);
+      target.innerHTML = `<span class="rsvp-state-label">${label}</span>`;
+      target.setAttribute("aria-label", label);
     });
   }
 
@@ -453,7 +451,6 @@
     setupVenueLightbox();
     setupScrollGalleries();
     updateRsvpStateButtons();
-    window.setInterval(updateRsvpStateButtons, 1000);
     window.addEventListener("lunavoe:rsvp-state-updated", updateRsvpStateButtons);
   });
 })();
