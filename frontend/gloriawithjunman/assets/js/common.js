@@ -121,6 +121,8 @@
     });
   }
 
+  window.updateLunavoeRsvpStateButtons = updateRsvpStateButtons;
+
   function setupLanguage() {
     const current = getCurrentLang();
     applyLanguage(current);

@@ -327,9 +327,9 @@ window.I18N = {
     travel_map_li7:
       "Ideal for dramatic coastal views, bright water, and a full-day island escape.",
     gallery_title: "Gallery",
-    gallery_hero_title: "A quiet prelude before September",
+    gallery_hero_title: "Before the wedding",
     gallery_intro:
-      "Before the wedding weekend, we wanted to leave one page like this — light, still, and ours.",
+      "A quiet page of us, kept before everything begins.",
 
     gallery_chapter_1_title: "Just Us",
     gallery_chapter_1_poem:
@@ -544,7 +544,7 @@ window.I18N = {
     nav_schedule: "\u65e5\u7a0b",
     nav_venue: "\u573a\u5730\u4e0e\u4f4f\u5bbf",
     nav_travel: "\u51fa\u884c\u6307\u5357",
-    nav_gallery: "\u76f8\u518c",
+    nav_gallery: "\u5f71\u96c6",
     nav_dresscode: "\u7740\u88c5\u8981\u6c42",
     nav_rsvp: "\u786e\u8ba4\u51fa\u5e2d",
     nav_close: "\u5173\u95ed",
@@ -857,10 +857,10 @@ window.I18N = {
     travel_map_li7_title: "佩尼达岛",
     travel_map_li7:
       "适合壮阔海岸线、清透海水，以及安排一整天的离岛行程。",
-    gallery_title: "相册",
-    gallery_hero_title: "在九月之前，先留一页安静的序章",
+    gallery_title: "影集",
+    gallery_hero_title: "婚礼之前",
     gallery_intro:
-      "在婚礼周末到来之前，我们想先把这一页留在这里——轻一点，静一点，也更像我们自己。",
+      "先留下一页，属于我们的安静时刻。",
 
     gallery_chapter_1_title: "Just Us",
     gallery_chapter_1_poem:

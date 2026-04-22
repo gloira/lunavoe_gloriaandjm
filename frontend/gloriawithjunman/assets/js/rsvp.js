@@ -94,6 +94,9 @@
           submittedAt: new Date().toISOString(),
         })
       );
+      if (typeof window.updateLunavoeRsvpStateButtons === "function") {
+        window.updateLunavoeRsvpStateButtons();
+      }
       window.dispatchEvent(new CustomEvent("lunavoe:rsvp-state-updated"));
     } catch (err) {
       // The RSVP has already reached the server; local state is only a convenience.
