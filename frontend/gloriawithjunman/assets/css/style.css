@@ -484,8 +484,11 @@ p:last-child {
 }
 
 .rsvp-state-button {
-  gap: 0.35rem;
-  letter-spacing: 0.08em;
+  flex-direction: column;
+  gap: 0.16rem;
+  padding-inline: 1.15rem;
+  letter-spacing: 0.06em;
+  line-height: 1.15;
   white-space: nowrap;
 }
 
@@ -496,8 +499,9 @@ p:last-child {
 }
 
 .rsvp-state-button .rsvp-state-countdown {
-  opacity: 0.72;
-  font-size: 0.68rem;
+  opacity: 0.76;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
 }
 
 .mobile-nav-link.rsvp-state-button {

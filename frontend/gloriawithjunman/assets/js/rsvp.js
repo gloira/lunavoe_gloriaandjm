@@ -6,6 +6,8 @@
 
   const pwdForm = document.getElementById("rsvp-password-form");
   const mainForm = document.getElementById("rsvp-main-form");
+  const pwdInput = document.getElementById("rsvp-password");
+  const pwdToggle = document.querySelector("[data-password-toggle]");
   const pwdStatus = document.getElementById("rsvp-password-status");
   const rsvpStatus = document.getElementById("rsvp-status");
   const attendingYesBlock = document.querySelector("[data-rsvp-attending-yes]");
@@ -32,6 +34,23 @@
 
   function currentLang() {
     return window.localStorage.getItem("lunavoe_lang") === "zh" ? "zh" : "en";
+  }
+
+  function passwordToggleLabel(isVisible) {
+    const lang = currentLang();
+    if (lang === "zh") {
+      return isVisible ? "\u9690\u85cf" : "\u663e\u793a";
+    }
+    return isVisible ? "Hide" : "Show";
+  }
+
+  function updatePasswordToggle() {
+    if (!pwdInput || !pwdToggle) return;
+
+    const isVisible = pwdInput.type === "text";
+    pwdToggle.textContent = passwordToggleLabel(isVisible);
+    pwdToggle.setAttribute("aria-pressed", isVisible ? "true" : "false");
+    pwdToggle.setAttribute("aria-label", passwordToggleLabel(isVisible));
   }
 
   function getStoredState() {
@@ -241,14 +260,23 @@
       langToggle.addEventListener("click", () => {
         window.setTimeout(() => {
           updateSubmitButtonLabel(Boolean(getStoredState()));
+          updatePasswordToggle();
         }, 0);
+      });
+    }
+
+    if (pwdInput && pwdToggle) {
+      updatePasswordToggle();
+      pwdToggle.addEventListener("click", () => {
+        pwdInput.type = pwdInput.type === "password" ? "text" : "password";
+        updatePasswordToggle();
+        pwdInput.focus();
       });
     }
 
     pwdForm.addEventListener("submit", (e) => {
       e.preventDefault();
       const dict = currentLangDict();
-      const pwdInput = document.getElementById("rsvp-password");
       const val = (pwdInput.value || "").trim();
 
       if (!val) {

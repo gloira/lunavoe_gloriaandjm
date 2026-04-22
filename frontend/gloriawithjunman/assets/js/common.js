@@ -74,16 +74,17 @@
       return dict.rsvp_countdown_today || (lang === "zh" ? "\u5c31\u662f\u4eca\u5929" : "Today");
     }
 
-    const totalMinutes = Math.floor(diff / 60000);
-    const days = Math.floor(totalMinutes / 1440);
-    const hours = Math.floor((totalMinutes % 1440) / 60);
-    const minutes = totalMinutes % 60;
+    const totalSeconds = Math.floor(diff / 1000);
+    const days = Math.floor(totalSeconds / 86400);
+    const hours = Math.floor((totalSeconds % 86400) / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
 
     if (lang === "zh") {
-      return days > 0 ? `${days}\u5929 ${hours}\u5c0f\u65f6` : `${hours}\u5c0f\u65f6 ${minutes}\u5206\u949f`;
+      return `${days}\u5929 ${hours}\u65f6 ${minutes}\u5206 ${seconds}\u79d2`;
     }
 
-    return days > 0 ? `${days}d ${hours}h` : `${hours}h ${minutes}m`;
+    return `${days}d ${hours}h ${minutes}m ${seconds}s`;
   }
 
   function updateRsvpStateButtons() {
@@ -118,6 +119,7 @@
       target.classList.add("rsvp-state-button");
       target.setAttribute("data-rsvp-state-active", "true");
       target.innerHTML = `<span class="rsvp-state-label">${label}</span><span class="rsvp-state-countdown">${countdown}</span>`;
+      target.setAttribute("aria-label", `${label}, ${countdown}`);
     });
   }
 
@@ -441,7 +443,7 @@
     setupVenueLightbox();
     setupScrollGalleries();
     updateRsvpStateButtons();
-    window.setInterval(updateRsvpStateButtons, 60000);
+    window.setInterval(updateRsvpStateButtons, 1000);
     window.addEventListener("lunavoe:rsvp-state-updated", updateRsvpStateButtons);
   });
 })();
