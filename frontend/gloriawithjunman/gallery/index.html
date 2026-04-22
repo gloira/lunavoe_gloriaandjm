@@ -56,7 +56,10 @@
       overflow: hidden;
       padding: clamp(1.15rem, 2.4vw, 1.7rem);
       border-radius: 30px;
-      background: linear-gradient(180deg, rgba(255, 252, 248, 0.9), rgba(247, 240, 232, 0.88));
+      background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.58), transparent 28%),
+        repeating-linear-gradient(90deg, rgba(72, 49, 31, 0.035) 0, rgba(72, 49, 31, 0.035) 1px, transparent 1px, transparent 16px),
+        linear-gradient(180deg, rgba(255, 252, 248, 0.9), rgba(247, 240, 232, 0.88));
       border: 1px solid rgba(168, 132, 97, 0.10);
       box-shadow: 0 10px 30px rgba(47, 32, 20, 0.04);
     }
@@ -187,21 +190,22 @@
     .gallery-upload-vault {
       position: relative;
       overflow: hidden;
-      padding: clamp(1.35rem, 2.5vw, 2rem);
-      border-radius: 34px;
+      padding: clamp(1.15rem, 2.4vw, 1.7rem);
+      border-radius: 30px;
       background:
-        radial-gradient(circle at bottom right, rgba(194, 139, 91, 0.14), transparent 28%),
-        linear-gradient(180deg, rgba(248, 241, 232, 0.98), rgba(255, 251, 245, 0.96));
-      border: 1px solid rgba(168, 132, 97, 0.18);
-      box-shadow: 0 20px 48px rgba(44, 29, 18, 0.07);
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.58), transparent 28%),
+        repeating-linear-gradient(90deg, rgba(72, 49, 31, 0.035) 0, rgba(72, 49, 31, 0.035) 1px, transparent 1px, transparent 16px),
+        linear-gradient(180deg, rgba(255, 252, 248, 0.9), rgba(247, 240, 232, 0.88));
+      border: 1px solid rgba(168, 132, 97, 0.10);
+      box-shadow: 0 10px 30px rgba(47, 32, 20, 0.04);
     }
 
     .gallery-upload-vault::before {
       content: "";
       position: absolute;
-      inset: 14px;
-      border-radius: 26px;
-      border: 1px solid rgba(168, 132, 97, 0.13);
+      inset: 10px;
+      border-radius: 22px;
+      border: 1px solid rgba(168, 132, 97, 0.06);
       pointer-events: none;
     }
 
