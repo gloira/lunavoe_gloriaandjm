@@ -331,25 +331,25 @@ window.I18N = {
     gallery_intro:
       "A quiet page of us, kept before everything begins.",
 
-    gallery_chapter_1_title: "Just Us",
+    gallery_chapter_1_title: "In Ordinary Light",
     gallery_chapter_1_poem:
-      "In the lightest hours, love asked for nothing more.",
+      "Where love looked most like everyday life.",
 
-    gallery_chapter_2_title: "In Stillness",
+    gallery_chapter_2_title: "Where Silence Stayed",
     gallery_chapter_2_poem:
-      "Where silence softened everything into grace.",
+      "Some beauty only appears in stillness.",
 
-    gallery_chapter_3_title: "In Bloom",
+    gallery_chapter_3_title: "A Brighter Hour",
     gallery_chapter_3_poem:
-      "The day turned bright, and so did we.",
+      "The day turned playful, and so did we.",
 
-    gallery_chapter_4_title: "Portraits of Time",
+    gallery_chapter_4_title: "Held by Time",
     gallery_chapter_4_poem:
-      "As if time itself had learned to stand still.",
+      "As if time had chosen to pause for us.",
 
-    gallery_chapter_5_title: "In Between",
+    gallery_chapter_5_title: "Between the Frames",
     gallery_chapter_5_poem:
-      "And in the in-between, we were most ourselves.",
+      "And in between, we were most ourselves.",
 
     gallery_upload_eyebrow: "After the wedding",
     gallery_upload_title: "Share your photographs with us",
@@ -862,25 +862,25 @@ window.I18N = {
     gallery_intro:
       "先留下一页，属于我们的安静时刻。",
 
-    gallery_chapter_1_title: "Just Us",
+    gallery_chapter_1_title: "寻常光影里",
     gallery_chapter_1_poem:
-      "那天很轻，喜欢也不需要多说什么。",
+      "原来相爱，也可以这样自然发生。",
 
-    gallery_chapter_2_title: "In Stillness",
+    gallery_chapter_2_title: "静处生光",
     gallery_chapter_2_poem:
-      "安静落下来以后，一切都显得温柔。",
+      "有些美，只在安静的时候出现。",
 
-    gallery_chapter_3_title: "In Bloom",
+    gallery_chapter_3_title: "明亮时刻",
     gallery_chapter_3_poem:
-      "天色明亮起来的时候，我们也刚好在发光。",
+      "那一天忽然变得明快，我们也是。",
 
-    gallery_chapter_4_title: "Portraits of Time",
+    gallery_chapter_4_title: "被时光珍藏",
     gallery_chapter_4_poem:
-      "像时间也愿意为这一刻慢慢停住。",
+      "像时间也愿意，为我们停留片刻。",
 
-    gallery_chapter_5_title: "In Between",
+    gallery_chapter_5_title: "镜头之间",
     gallery_chapter_5_poem:
-      "而最像我们的，往往都在正片之外。",
+      "那些不经意的瞬间，最像我们自己。",
 
     gallery_upload_eyebrow: "婚礼之后",
     gallery_upload_title: "也把你拍到的瞬间留给我们",

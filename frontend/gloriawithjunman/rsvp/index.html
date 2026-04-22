@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <title data-i18n="page_title_rsvp">Gloria & Junman &middot; RSVP</title>
-  <meta name="description" data-i18n-content="page_desc_rsvp" content="RSVP for Gloria and Junman's Bali wedding. Let us know if you can make it!" />
+  <meta
+    name="description"
+    data-i18n-content="page_desc_rsvp"
+    content="RSVP for Gloria and Junman's Bali wedding. Let us know if you can make it!"
+  />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#d4a574" />
 
@@ -12,7 +16,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Marcellus&family=Parisienne&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"
+  >
 
   <link rel="stylesheet" href="../assets/css/style.css" />
 
@@ -32,6 +37,54 @@
 
     .rsvp-subpanel[hidden] {
       display: none !important;
+    }
+
+    .rsvp-existing-note {
+      margin-bottom: 1rem;
+      padding: 1rem 1rem 1.05rem;
+      border-radius: 18px;
+      background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.58), transparent 28%),
+        repeating-linear-gradient(90deg, rgba(72, 49, 31, 0.03) 0, rgba(72, 49, 31, 0.03) 1px, transparent 1px, transparent 16px),
+        linear-gradient(180deg, rgba(255, 252, 248, 0.92), rgba(247, 240, 232, 0.9));
+      border: 1px solid rgba(168, 132, 97, 0.12);
+      box-shadow: 0 10px 24px rgba(47, 32, 20, 0.04);
+    }
+
+    .rsvp-existing-note strong {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-family: "Marcellus", serif;
+      color: #3f2d1f;
+      font-size: 1rem;
+    }
+
+    .rsvp-existing-note p {
+      margin: 0;
+      color: #6a5442;
+      line-height: 1.78;
+      font-size: 0.94rem;
+    }
+
+    .rsvp-update-tip {
+      margin-top: 1rem;
+      padding: 0.85rem 0.95rem;
+      border-radius: 16px;
+      background: rgba(255, 252, 248, 0.72);
+      border: 1px solid rgba(168, 132, 97, 0.12);
+      color: #6b5542;
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      .rsvp-existing-note {
+        border-radius: 16px;
+      }
+
+      .rsvp-update-tip {
+        border-radius: 14px;
+      }
     }
   </style>
 </head>
@@ -62,7 +115,7 @@
             <a href="/gloriawithjunman/dresscode/" data-nav-link class="nav-link" data-i18n="nav_dresscode">Dress Code</a>
           </nav>
           <div class="nav-right">
-          <button class="lang-toggle" type="button" data-lang-toggle>EN</button>
+            <button class="lang-toggle" type="button" data-lang-toggle>EN</button>
             <a href="/gloriawithjunman/rsvp/" class="btn btn-ghost" data-i18n="nav_rsvp">RSVP</a>
             <button class="hamburger" type="button" aria-label="Menu" data-hamburger>
               <span class="hamburger-line"></span>
@@ -72,9 +125,9 @@
           </div>
         </div>
       </div>
-    <div class="mobile-nav-panel" data-mobile-panel>
-      <button class="mobile-nav-close" type="button" data-mobile-close aria-label="Close" title="Close">&times;</button>
-      <div class="mobile-nav-inner">
+      <div class="mobile-nav-panel" data-mobile-panel>
+        <button class="mobile-nav-close" type="button" data-mobile-close aria-label="Close" title="Close">&times;</button>
+        <div class="mobile-nav-inner">
           <a href="/gloriawithjunman/" class="mobile-nav-link" data-i18n="nav_home">Home</a>
           <a href="/gloriawithjunman/schedule/" class="mobile-nav-link" data-i18n="nav_schedule">Schedule</a>
           <a href="/gloriawithjunman/venue/" class="mobile-nav-link" data-i18n="nav_venue">Venue & Stay</a>
@@ -87,27 +140,36 @@
     </header>
 
     <main class="page-main" style="padding-top: 100px;">
-
       <section class="section" style="min-height: calc(100vh - 200px);">
         <div class="section-inner rsvp-shell">
           <div class="section-heading">
             <div class="section-eyebrow" data-i18n="rsvp_title">RSVP</div>
             <p class="section-lead" data-i18n="rsvp_intro">
-              Because space at the venue is limited, please help us by responding as accurately as you
-              can. You'll be able to update us later if plans change.
+              Because space at the venue is limited, please help us by responding as accurately as you can. You'll be able to update us later if plans change.
             </p>
           </div>
 
           <div class="rsvp-panel">
+            <div id="rsvp-existing-note" class="rsvp-existing-note" hidden>
+              <strong id="rsvp-existing-title">You already responded</strong>
+              <p id="rsvp-existing-body">You can unlock the form and submit again anytime to update your RSVP.</p>
+            </div>
+
             <form id="rsvp-password-form">
               <div class="rsvp-step-label" data-i18n="rsvp_step1">Step 1 &middot; Guest access</div>
               <div class="form-row">
                 <label for="rsvp-password" data-i18n="rsvp_password_label">
                   Wedding password<span class="required">*</span>
                 </label>
-                <input id="rsvp-password" name="password" type="password" class="input-text" autocomplete="off"
+                <input
+                  id="rsvp-password"
+                  name="password"
+                  type="password"
+                  class="input-text"
+                  autocomplete="off"
                   data-i18n-placeholder="rsvp_password_placeholder"
-                  placeholder="Enter the password from your invitation" />
+                  placeholder="Enter the password from your invitation"
+                />
                 <p class="muted" style="margin-top: 0.5rem; font-size: 0.85rem;" data-i18n="rsvp_password_hint">
                   You'll find this on your invitation. Please keep it within close friends & family only.
                 </p>
@@ -125,9 +187,14 @@
                 <label for="rsvp-name" data-i18n="rsvp_name_label">
                   Full name<span class="required">*</span>
                 </label>
-                <input id="rsvp-name" name="name" type="text" class="input-text"
+                <input
+                  id="rsvp-name"
+                  name="name"
+                  type="text"
+                  class="input-text"
                   data-i18n-placeholder="rsvp_name_placeholder"
-                  placeholder="Your full name" />
+                  placeholder="Your full name"
+                />
               </div>
 
               <div class="form-row">
@@ -167,9 +234,13 @@
                   <label for="rsvp-allergy-remarks" data-i18n="rsvp_allergy_remarks_label">
                     Please let us know your food allergy
                   </label>
-                  <textarea id="rsvp-allergy-remarks" name="allergyRemarks" class="textarea"
+                  <textarea
+                    id="rsvp-allergy-remarks"
+                    name="allergyRemarks"
+                    class="textarea"
                     data-i18n-placeholder="rsvp_allergy_remarks_placeholder"
-                    placeholder="Please share the allergy details here."></textarea>
+                    placeholder="Please share the allergy details here."
+                  ></textarea>
                 </div>
 
                 <div class="form-row" style="margin-bottom: 0;">
@@ -193,9 +264,14 @@
                     <label for="rsvp-guest-name" data-i18n="rsvp_partner_name_label">
                       Partner's name<span class="required">*</span>
                     </label>
-                    <input id="rsvp-guest-name" name="guestName" type="text" class="input-text"
+                    <input
+                      id="rsvp-guest-name"
+                      name="guestName"
+                      type="text"
+                      class="input-text"
                       data-i18n-placeholder="rsvp_partner_name_placeholder"
-                      placeholder="Your partner's full name" />
+                      placeholder="Your partner's full name"
+                    />
                   </div>
 
                   <div class="form-row" style="margin-bottom: 0;">
@@ -218,9 +294,13 @@
                     <label for="rsvp-guest-allergy-remarks" data-i18n="rsvp_partner_allergy_remarks_label">
                       Please let us know your partner's food allergy
                     </label>
-                    <textarea id="rsvp-guest-allergy-remarks" name="guestAllergyRemarks" class="textarea"
+                    <textarea
+                      id="rsvp-guest-allergy-remarks"
+                      name="guestAllergyRemarks"
+                      class="textarea"
                       data-i18n-placeholder="rsvp_partner_allergy_remarks_placeholder"
-                      placeholder="Please share your partner's allergy details here."></textarea>
+                      placeholder="Please share your partner's allergy details here."
+                    ></textarea>
                   </div>
                 </div>
               </div>
@@ -229,15 +309,24 @@
                 <label for="rsvp-message" data-i18n="rsvp_message_label">
                   Notes (optional)
                 </label>
-                <textarea id="rsvp-message" name="message" class="textarea"
+                <textarea
+                  id="rsvp-message"
+                  name="message"
+                  class="textarea"
                   data-i18n-placeholder="rsvp_message_placeholder"
-                  placeholder="Dietary needs, plus one name, or anything you'd like us to know."></textarea>
+                  placeholder="Dietary needs, plus one name, or anything you'd like us to know."
+                ></textarea>
               </div>
 
               <button type="submit" class="btn" style="width: 100%;" data-i18n="rsvp_btn_submit" data-rsvp-state-button>
                 Send RSVP
               </button>
               <p id="rsvp-status" class="rsvp-status" aria-live="polite"></p>
+
+              <div class="rsvp-update-tip" id="rsvp-update-tip">
+                You can come back and submit this form again anytime to update your RSVP.
+              </div>
+
               <p class="section-body muted text-center" style="margin-top: 1.5rem;" data-i18n="rsvp_contact_note">
                 If you have any issues, please contact the bride or groom on WeChat or WhatsApp.
               </p>
@@ -245,11 +334,10 @@
           </div>
         </div>
       </section>
-
     </main>
 
     <footer class="page-footer">
-    <p data-i18n="footer_text">Gloria & Junman &middot; Bali &middot; 2026 &middot; Lunavoe</p>
+      <p data-i18n="footer_text">Gloria & Junman &middot; Bali &middot; 2026 &middot; Lunavoe</p>
     </footer>
   </div>
   <script src="../assets/js/i18n.js"></script>
