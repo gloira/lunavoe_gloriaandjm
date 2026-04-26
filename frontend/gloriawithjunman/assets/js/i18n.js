@@ -8,32 +8,32 @@ window.I18N = {
     nav_dresscode: "Dress Code",
     nav_rsvp: "RSVP",
     nav_close: "Close",
-    brand_mark_main: "Gloria & Junman",
+    brand_mark_main: "Junman & Gloria",
     brand_mark_sub: "Uluwatu \u00b7 Bali",
-    top_bar: "Gloria & Junman \u00b7 Uluwatu, Bali \u00b7 September 11\u201313, 2026",
-    page_title_home: "Gloria & Junman \u00b7 Bali Wedding Weekend",
+    top_bar: "Junman & Gloria \u00b7 Uluwatu, Bali \u00b7 September 11\u201313, 2026",
+    page_title_home: "Junman & Gloria \u00b7 Bali Wedding Weekend",
     page_desc_home:
-      "Join Gloria and Junman for their wedding celebration in Uluwatu, Bali on September 11\u201313, 2026. A weekend of love, sunset views, and dancing under the stars.",
-    page_title_schedule: "Gloria & Junman \u00b7 Weekend Schedule",
+      "Join Junman and Gloria for their wedding celebration in Uluwatu, Bali on September 11\u201313, 2026. A weekend of love, sunset views, and dancing under the stars.",
+    page_title_schedule: "Junman & Gloria \u00b7 Weekend Schedule",
     page_desc_schedule:
-      "View the weekend schedule for Gloria and Junman's Bali wedding. Friday arrival, Saturday ceremony, and Sunday at your own pace.",
-    page_title_venue: "Gloria & Junman \u00b7 Venue & Stay",
+      "View the weekend schedule for Junman and Gloria's Bali wedding. Friday arrival, Saturday ceremony, and Sunday at your own pace.",
+    page_title_venue: "Junman & Gloria \u00b7 Venue & Stay",
     page_desc_venue:
-      "Venue and accommodation details for Gloria and Junman's wedding at Stone Villas Uluwatu, Bali.",
-    page_title_travel: "Gloria & Junman \u00b7 Travel Guide",
+      "Venue and accommodation details for Junman and Gloria's wedding at Stone Villas Uluwatu, Bali.",
+    page_title_travel: "Junman & Gloria \u00b7 Travel Guide",
     page_desc_travel:
-      "Travel guide and recommendations for visiting Uluwatu, Bali for Gloria and Junman's wedding.",
-    page_title_gallery: "Gloria & Junman \u00b7 Gallery",
+      "Travel guide and recommendations for visiting Uluwatu, Bali for Junman and Gloria's wedding.",
+    page_title_gallery: "Junman & Gloria \u00b7 Gallery",
     page_desc_gallery:
-      "A pre-wedding gallery of Gloria and Junman, with portrait chapters and photo upload details for the Bali wedding weekend.",
-    page_title_dresscode: "Gloria & Junman \u00b7 Dress Code",
+      "A pre-wedding gallery of Junman and Gloria, with portrait chapters and photo upload details for the Bali wedding weekend.",
+    page_title_dresscode: "Junman & Gloria \u00b7 Dress Code",
     page_desc_dresscode:
-      "Dress code inspiration for Gloria and Junman's Bali wedding in Uluwatu.",
-    page_title_rsvp: "Gloria & Junman \u00b7 RSVP",
+      "Dress code inspiration for Junman and Gloria's Bali wedding in Uluwatu.",
+    page_title_rsvp: "Junman & Gloria \u00b7 RSVP",
     page_desc_rsvp:
-      "RSVP for Gloria and Junman's Bali wedding. Let us know if you can make it!",
+      "RSVP for Junman and Gloria's Bali wedding. Let us know if you can make it!",
     hero_script: "We're getting married",
-    hero_names: "Gloria &amp; Junman",
+    hero_names: "Junman &amp; Gloria",
     hero_names_cn: "",
     hero_dateplace: "Uluwatu \u00b7 Bali \u00b7 September 11\u201313, 2026",
     hero_copy:
@@ -94,7 +94,7 @@ window.I18N = {
     // add into en: { ... }
     venue_title: "Venue & Stay",
     venue_intro:
-      "Our wedding weekend will take place in Uluwatu, Bali.<br>We’ll be hosting your accommodation from September 11 to September 13 (two nights), so all that’s left is to arrive and enjoy the celebration.",
+      "Our wedding will take place in Uluwatu, Bali.<br>We’ll be hosting your accommodation from September 11 to September 13 (two nights), so all that’s left is to arrive and enjoy the celebration.",
 
     stone_name: "Stone Villas Uluwatu",
     stone_intro_long:
@@ -445,7 +445,7 @@ window.I18N = {
     rsvp_status_success: "Thank you! We've received your RSVP.",
     rsvp_status_error:
       "Sorry, something went wrong. Please try again later or contact us directly.",
-    footer_text: "Gloria & Junman \u00b7 Bali \u00b7 2026 \u00b7 Lunavoe",
+    footer_text: "Junman & Gloria \u00b7 Bali \u00b7 2026 \u00b7 Lunavoe",
     dresscode_title: "Dress Code",
     dresscode_eyebrow: "Guest Guide",
     dresscode_subtitle: "Semi-Formal &middot; Daytime Ceremony",
@@ -577,29 +577,29 @@ window.I18N = {
     nav_dresscode: "\u7740\u88c5\u8981\u6c42",
     nav_rsvp: "\u786e\u8ba4\u51fa\u5e2d",
     nav_close: "\u5173\u95ed",
-    brand_mark_main: "\u96e8\u8a00\u548c\u4fca\u6587",
+    brand_mark_main: "\u4fca\u6587\u548c\u96e8\u8a00",
     brand_mark_sub: "\u4e4c\u9c81\u74e6\u56fe \u00b7 \u5df4\u5398\u5c9b",
-    top_bar: "\u96e8\u8a00\u548c\u4fca\u6587 \u00b7 \u4e4c\u9c81\u74e6\u56fe\uff0c\u5df4\u5398\u5c9b \u00b7 2026\u5e749\u670811\u201313\u65e5",
-    page_title_home: "\u96e8\u8a00\u548c\u4fca\u6587 \u00b7 \u5df4\u5398\u5c9b\u5a5a\u793c\u5468\u672b",
+    top_bar: "\u4fca\u6587\u548c\u96e8\u8a00 \u00b7 \u4e4c\u9c81\u74e6\u56fe\uff0c\u5df4\u5398\u5c9b \u00b7 2026\u5e749\u670811\u201313\u65e5",
+    page_title_home: "\u4fca\u6587\u548c\u96e8\u8a00 \u00b7 \u5df4\u5398\u5c9b\u5a5a\u793c\u5468\u672b",
     page_desc_home:
       "\u9080\u8bf7\u4f60\u4e0e\u6211\u4eec\u5728\u4e4c\u9c81\u74e6\u56fe\u3001\u5df4\u5398\u5c9b\u5171\u5ea6\u5a5a\u793c\u5468\u672b\u30022026\u5e749\u670811\u201313\u65e5\uff0c\u6d77\u98ce\u3001\u843d\u65e5\u4e0e\u661f\u7a7a\u4e0b\u7684\u5e86\u795d\u3002",
-    page_title_schedule: "\u96e8\u8a00\u548c\u4fca\u6587 \u00b7 \u5468\u672b\u65e5\u7a0b",
+    page_title_schedule: "\u4fca\u6587\u548c\u96e8\u8a00 \u00b7 \u5468\u672b\u65e5\u7a0b",
     page_desc_schedule:
       "\u67e5\u770b\u5df4\u5398\u5c9b\u5a5a\u793c\u5468\u672b\u5b89\u6392\uff1a\u5468\u4e94\u5230\u8fbe\uff0c\u5468\u516d\u4eea\u5f0f\uff0c\u5468\u65e5\u81ea\u7531\u3002",
-    page_title_venue: "\u96e8\u8a00\u548c\u4fca\u6587 \u00b7 \u573a\u5730\u4e0e\u4f4f\u5bbf",
-    page_desc_venue: "\u5a5a\u793c\u573a\u5730\u4e0e\u4f4f\u5bbf\u4fe1\u606f\uff1aStone Villas Uluwatu\u3002",
-    page_title_travel: "\u96e8\u8a00\u548c\u4fca\u6587 \u00b7 \u51fa\u884c\u6307\u5357",
+    page_title_venue: "\u4fca\u6587\u548c\u96e8\u8a00 \u00b7 \u573a\u5730\u4e0e\u4f4f\u5bbf",
+    page_desc_venue: "\u4fca\u6587\u548c\u96e8\u8a00\u7684\u5a5a\u793c\u573a\u5730\u4e0e\u4f4f\u5bbf\u4fe1\u606f\uff1aStone Villas Uluwatu\u3002",
+    page_title_travel: "\u4fca\u6587\u548c\u96e8\u8a00 \u00b7 \u51fa\u884c\u6307\u5357",
     page_desc_travel:
       "\u4e4c\u9c81\u74e6\u56fe\u65c5\u884c\u5efa\u8bae\u4e0e\u5a5a\u793c\u5468\u672b\u51fa\u884c\u6307\u5357\u3002",
-    page_title_gallery: "\u96e8\u8a00\u548c\u4fca\u6587 \u00b7 \u76f8\u518c",
-    page_desc_gallery: "\u96e8\u8a00\u4e0e\u4fca\u6587\u7684\u5a5a\u524d\u62cd\u6444\u76f8\u518c\uff0c\u4ee5\u53ca\u5df4\u5398\u5c9b\u5a5a\u793c\u7167\u7247\u4e0a\u4f20\u4fe1\u606f\u3002",
-    page_title_dresscode: "\u96e8\u8a00\u548c\u4fca\u6587 \u00b7 \u7740\u88c5\u8981\u6c42",
-    page_desc_dresscode: "\u5a5a\u793c\u7740\u88c5\u5efa\u8bae\u4e0e\u8272\u7cfb\u53c2\u8003\u3002",
-    page_title_rsvp: "\u96e8\u8a00\u548c\u4fca\u6587 \u00b7 \u786e\u8ba4\u51fa\u5e2d",
-    page_desc_rsvp: "\u8bf7\u544a\u77e5\u662f\u5426\u51fa\u5e2d\u6211\u4eec\u7684\u5df4\u5398\u5c9b\u5a5a\u793c\u3002",
+    page_title_gallery: "\u4fca\u6587\u548c\u96e8\u8a00 \u00b7 \u76f8\u518c",
+    page_desc_gallery: "\u4fca\u6587\u4e0e\u96e8\u8a00\u7684\u5a5a\u524d\u62cd\u6444\u76f8\u518c\uff0c\u4ee5\u53ca\u5df4\u5398\u5c9b\u5a5a\u793c\u7167\u7247\u4e0a\u4f20\u4fe1\u606f\u3002",
+    page_title_dresscode: "\u4fca\u6587\u548c\u96e8\u8a00 \u00b7 \u7740\u88c5\u8981\u6c42",
+    page_desc_dresscode: "\u4fca\u6587\u548c\u96e8\u8a00\u5a5a\u793c\u7684\u7740\u88c5\u5efa\u8bae\u4e0e\u8272\u7cfb\u53c2\u8003\u3002",
+    page_title_rsvp: "\u4fca\u6587\u548c\u96e8\u8a00 \u00b7 \u786e\u8ba4\u51fa\u5e2d",
+    page_desc_rsvp: "\u8bf7\u544a\u77e5\u662f\u5426\u51fa\u5e2d\u4fca\u6587\u548c\u96e8\u8a00\u7684\u5df4\u5398\u5c9b\u5a5a\u793c\u3002",
     hero_script: "\u6211\u4eec\u8981\u7ed3\u5a5a\u5566",
-    hero_names: "Gloria &amp; Junman",
-    hero_names_cn: "\u96e8\u8a00 \u00b7 \u4fca\u6587",
+    hero_names: "Junman &amp; Gloria",
+    hero_names_cn: "\u4fca\u6587 \u00b7 \u96e8\u8a00",
     hero_dateplace: "\u4e4c\u9c81\u74e6\u56fe \u00b7 \u5df4\u5398\u5c9b \u00b7 2026\u5e749\u670811\u201313\u65e5",
     hero_copy:
       "\u8bda\u631a\u9080\u8bf7\u4f60\u6765\u5230\u4e4c\u9c81\u74e6\u56fe\u7684\u60ac\u5d16\u4e4b\u4e0a\uff0c\u5728\u6d77\u98ce\u8f7b\u62c2\u7684\u5468\u672b\u91cc\uff0c\u89c1\u8bc1\u6211\u4eec\u7684\u8a93\u8a00\uff0c\u4e8e\u65e5\u843d\u5fae\u5149\u4e2d\u4e3e\u676f\uff0c\u5728\u661f\u7a7a\u4e4b\u4e0b\u8d77\u821e\u3002",
@@ -658,7 +658,7 @@ window.I18N = {
     //   "\u6211\u4eec\u4f1a\u5728\u4e34\u8fd1\u65e5\u671f\u786e\u8ba4\u623f\u95f4\u4e0e\u63a5\u9001\u5b89\u6392\u3002\u5982\u9700\u4f4f\u5728\u5916\u90e8\uff0c\u6211\u4eec\u4f1a\u63d0\u4f9b\u8f66\u7a0b\u7ea6 10\u201315 \u5206\u949f\u7684\u9152\u5e97\u6216\u522b\u5885\u6e05\u5355\u3002",
     venue_title: "场地与住宿",
     venue_intro:
-      "我们的婚礼周末将在巴厘岛乌鲁瓦图举行。<br>9月11日至9月13日（共两晚）住宿将由我们安排，期待大家轻松前来，尽情享受这场相聚。",
+      "我们的婚礼将在巴厘岛乌鲁瓦图举行。<br>9月11日至9月13日（共两晚）住宿将由我们安排，期待大家轻松前来，尽情享受这场相聚。",
 
     stone_name: "乌鲁瓦图石头别墅",
     stone_intro_long:
