@@ -92,17 +92,21 @@ window.I18N = {
     // venue_note:
     //   "We'll confirm specific room assignments and transfer details closer to the date. If you prefer to stay off-site, we'll share a short list of hotels and villas within a 10\u201315 minute drive.",
     // add into en: { ... }
-    venue_title: "Venue & stay",
+    venue_title: "Venue & Stay",
     venue_intro:
-      "Our wedding weekend will unfold in Uluwatu, Bali — where the celebration and your stay have been thoughtfully arranged for a relaxed and beautiful few days together.",
-    venue_host_note:
-      "Your stay from September 11 to September 13 will be with our compliments.",
-    venue_highlight_label:
-      "For all guests",
-    venue_highlight_title:
-      "Two nights in Uluwatu, on us",
-    venue_highlight_body:
-      "We’ve arranged accommodation between Stone Villas Uluwatu and Renaissance Bali Uluwatu Resort & Spa, so everyone can simply arrive and enjoy the weekend.",
+      "Our wedding weekend will take place in Uluwatu, Bali.<br>We’ll be hosting your accommodation from September 11 to September 13 (two nights), so all that’s left is to arrive and enjoy the celebration.",
+
+    stone_name: "Stone Villas Uluwatu",
+    stone_intro_long:
+      "Our ceremony and reception will be held here, on a cliffside estate overlooking the ocean. As rooms on-site are limited, they have been reserved first for immediate family, bridal party members, and guests joining our early wedding preparations.",
+    stone_tag_3: "Family & wedding morning stay",
+
+    renaissance_name: "Renaissance Bali Uluwatu Resort & Spa",
+    renaissance_intro_long:
+      "For our other guests, we have also selected Renaissance Bali Uluwatu Resort & Spa — a beautiful nearby resort with sweeping views, warm hospitality, and a relaxed stay for the weekend.",
+
+    room_assignment_note:
+      "Final room assignments and stay details will be shared closer to the wedding date.",
 
     // highlight section
     stay_highlight_title_1: "A note on accommodation",
@@ -652,18 +656,21 @@ window.I18N = {
     //   "\u573a\u5730\u4f4d\u4e8e\u60ac\u5d16\u8fb9\uff0c\u8bf7\u51c6\u5907\u8212\u9002\u978b\u5c65\u4e0e\u8584\u5916\u5957\u4ee5\u5e94\u5bf9\u6d77\u98ce\u3002",
     // venue_note:
     //   "\u6211\u4eec\u4f1a\u5728\u4e34\u8fd1\u65e5\u671f\u786e\u8ba4\u623f\u95f4\u4e0e\u63a5\u9001\u5b89\u6392\u3002\u5982\u9700\u4f4f\u5728\u5916\u90e8\uff0c\u6211\u4eec\u4f1a\u63d0\u4f9b\u8f66\u7a0b\u7ea6 10\u201315 \u5206\u949f\u7684\u9152\u5e97\u6216\u522b\u5885\u6e05\u5355\u3002",
-    venue_title: "\u5a5a\u793c\u573a\u5730\u4e0e\u4f4f\u5bbf",
+    venue_title: "场地与住宿",
     venue_intro:
-      "我们的婚礼周末将在巴厘岛乌鲁瓦图展开。场地与住宿都已为大家安排好，希望这几天可以从容、轻松，也美好地度过。",
-    venue_host_note:
-      "9月11日至9月13日两晚住宿由我们安排。",
-    venue_highlight_label:
-      "给所有宾客",
-    venue_highlight_title:
-      "乌鲁瓦图两晚住宿，由我们招待",
-    venue_highlight_body:
-      "我们已将住宿安排在 Stone Villas Uluwatu 与 Renaissance Bali Uluwatu Resort & Spa，让大家只需抵达，轻松享受这个周末。",
+      "我们的婚礼周末将在巴厘岛乌鲁瓦图举行。<br>9月11日至9月13日（共两晚）住宿将由我们安排，期待大家轻松前来，尽情享受这场相聚。",
 
+    stone_name: "乌鲁瓦图石头别墅",
+    stone_intro_long:
+      "我们的仪式与晚宴将在这里举行，坐落于俯瞰海景的悬崖庄园之上。由于现场房间数量有限，将优先安排给直系家人、伴郎伴娘，以及需要清晨参与婚礼准备的朋友。",
+    stone_tag_3: "家人与婚礼晨间准备",
+
+    renaissance_name: "乌鲁瓦图万丽度假酒店",
+    renaissance_intro_long:
+      "其余宾客我们也特别安排入住乌鲁瓦图万丽度假酒店，一间邻近婚礼场地、景致开阔、舒适惬意的度假酒店。",
+
+    room_assignment_note:
+      "最终房间安排与入住细节，将在婚礼前与大家确认。",
     // highlight
     stay_highlight_title_1: "\u5173\u4e8e\u4f4f\u5bbf\u5b89\u6392",
     stay_highlight_text_1:

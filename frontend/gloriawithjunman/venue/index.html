@@ -67,93 +67,6 @@
       margin: 0 auto;
     }
 
-    .venue-host-line {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 1.15rem;
-      padding: 0.68rem 1.05rem;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.56);
-      border: 1px solid rgba(175, 140, 104, 0.16);
-      color: #6d5845;
-      font-size: 0.92rem;
-      line-height: 1.55;
-      letter-spacing: 0.02em;
-    }
-
-    .stay-highlight-inner {
-      grid-column: span 12;
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 1.25rem 1.3rem;
-      border-radius: 26px;
-      background: rgba(255, 255, 255, 0.52);
-      border: 1px solid rgba(168, 132, 97, 0.1);
-    }
-
-    .stay-highlight-label {
-      font-size: 0.72rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #8a6344;
-      margin-bottom: 0.5rem;
-    }
-
-    .stay-highlight-title {
-      margin: 0;
-      font-family: "Gilda Display", serif;
-      font-size: clamp(1.4rem, 2.6vw, 2rem);
-      color: #3f2d1f;
-      line-height: 1.15;
-    }
-
-    .stay-highlight-body {
-      margin: 0.7rem auto 0;
-      max-width: 640px;
-      color: #6a5442;
-      line-height: 1.75;
-    }
-
-    @media (max-width: 768px) {
-      .venue-host-line {
-        display: block;
-        font-size: 0.88rem;
-        padding: 0.7rem 0.9rem;
-      }
-
-      .stay-highlight-inner {
-        padding: 1rem 0.95rem;
-        border-radius: 22px;
-      }
-    }
-
-    .stay-highlight {
-      margin-top: 2rem;
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
-    }
-
-    .stay-highlight-card {
-      grid-column: span 12;
-      padding: 1.15rem 1.25rem;
-      border-radius: 22px;
-      background: rgba(255, 255, 255, 0.72);
-      border: 1px solid rgba(175, 140, 104, 0.16);
-      backdrop-filter: blur(10px);
-      box-shadow: 0 10px 30px rgba(72, 52, 32, 0.06);
-    }
-
-    .stay-highlight-card strong {
-      display: block;
-      margin-bottom: 0.35rem;
-      font-family: "Marcellus", serif;
-      font-size: 1rem;
-      letter-spacing: 0.03em;
-      color: #5c4633;
-    }
-
     .stay-collection {
       margin-top: 2.75rem;
       display: grid;
@@ -275,7 +188,7 @@
 
     .venue-gallery-track {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, minmax(150px, 1fr));
       gap: 1rem;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
@@ -802,7 +715,7 @@
       }
 
       .venue-gallery-track {
-        grid-auto-columns: 92%;
+        grid-template-columns: repeat(2, 1fr);
         gap: 0.85rem;
       }
 
@@ -927,41 +840,10 @@
       }
     }
 
-    .venue-gallery-track {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(150px, 1fr));
-      gap: 1rem;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      padding-bottom: 0.2rem;
-      scrollbar-width: none;
-    }
-
-    @media (max-width: 760px) {
-      .venue-gallery-track {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .map-links-row,
-      .experience-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
     @media (max-width: 520px) {
       .venue-lightbox-close {
         width: 2.5rem;
         height: 2.5rem;
-      }
-    }
-
-    @media (min-width: 780px) {
-      .stay-highlight-card--wide {
-        grid-column: span 7;
-      }
-
-      .stay-highlight-card--small {
-        grid-column: span 5;
       }
     }
   </style>
@@ -1021,34 +903,12 @@
       <section class="section">
         <div class="section-inner" style="max-width: 1180px;">
           <div class="venue-hero-shell venue-hero-shell--editorial">
-            <div class="section-heading venue-hero-copy" style="margin-bottom: 0;">
-              <div class="section-eyebrow" data-i18n="venue_title">Venue &amp; stay</div>
-
+            <div class="section-heading venue-hero-copy" style="margin-bottom:0;">
+              <div class="section-eyebrow" data-i18n="venue_title">Venue &amp; Stay</div>
               <p class="section-lead" data-i18n="venue_intro">
-                Our wedding weekend will unfold in Uluwatu, Bali — where the celebration and your stay have been thoughtfully arranged for a relaxed and beautiful few days together.
+                Our wedding weekend will take place in Uluwatu, Bali.<br>
+                We’ll be hosting your accommodation from September 11 to September 13 (two nights), so all that’s left is to arrive and enjoy the celebration.
               </p>
-
-              <div class="venue-host-line">
-                <span data-i18n="venue_host_note">
-                  Your stay from September 11 to September 13 will be with our compliments.
-                </span>
-              </div>
-            </div>
-
-            <div class="stay-highlight">
-              <div class="stay-highlight-inner">
-                <div class="stay-highlight-label" data-i18n="venue_highlight_label">
-                  For all guests
-                </div>
-
-                <h3 class="stay-highlight-title" data-i18n="venue_highlight_title">
-                  Two nights in Uluwatu, on us
-                </h3>
-
-                <p class="stay-highlight-body" data-i18n="venue_highlight_body">
-                  We’ve arranged accommodation between Stone Villas Uluwatu and Renaissance Bali Uluwatu Resort &amp; Spa, so everyone can simply arrive and enjoy the weekend.
-                </p>
-              </div>
             </div>
           </div>
 
@@ -1059,13 +919,13 @@
                   <div class="stay-kicker" data-i18n="stone_kicker">Ceremony &amp; on-site stay</div>
                   <h2 class="stay-name" data-i18n="stone_name">Stone Villas Uluwatu</h2>
                   <p class="stay-subcopy" data-i18n="stone_intro_long">
-                    Our ceremony and reception will take place here, on a dramatic cliffside estate overlooking the ocean. A limited number of rooms on-site will be reserved first for family members, bridesmaids, groomsmen, and those joining us for the early morning wedding preparations.
+                    Our ceremony and reception will be held here, on a cliffside estate overlooking the ocean. As rooms on-site are limited, they have been reserved first for immediate family, bridal party members, and guests joining our early wedding preparations.
                   </p>
                 </div>
                 <div class="stay-tags" aria-label="Stone Villas highlights">
                   <span class="stay-tag" data-i18n="stone_tag_1">Wedding venue</span>
                   <span class="stay-tag" data-i18n="stone_tag_2">Ocean-view cliffside</span>
-                  <span class="stay-tag" data-i18n="stone_tag_3">Priority stay for core guests</span>
+                  <span class="stay-tag" data-i18n="stone_tag_3">Family &amp; wedding morning stay</span>
                 </div>
               </div>
 
@@ -1148,7 +1008,7 @@
                   <div class="stay-kicker" data-i18n="renaissance_kicker">Recommended guest hotel</div>
                   <h2 class="stay-name" data-i18n="renaissance_name">Renaissance Bali Uluwatu Resort &amp; Spa</h2>
                   <p class="stay-subcopy" data-i18n="renaissance_intro_long">
-                    For guests staying off-site, we’ve chosen Renaissance Bali Uluwatu Resort &amp; Spa as our additional accommodation option. It’s a beautiful resort stay with elevated views, relaxing facilities, and plenty to enjoy throughout the weekend.
+                    For our other guests, we have also selected Renaissance Bali Uluwatu Resort &amp; Spa — a beautiful nearby resort with sweeping views, warm hospitality, and a relaxed stay for the weekend.
                   </p>
                 </div>
                 <div class="stay-tags" aria-label="Renaissance highlights">
@@ -1290,7 +1150,7 @@
 
           <div class="notice-block">
             <p data-i18n="room_assignment_note">
-              Specific room assignments and final stay details will be shared closer to the date in our wedding group chat. Thank you for being part of this weekend with us — we truly hope everyone has a beautiful and comfortable stay in Uluwatu.
+              Final room assignments and stay details will be shared closer to the wedding date.
             </p>
           </div>
         </div>
