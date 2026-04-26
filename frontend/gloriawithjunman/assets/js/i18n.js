@@ -117,10 +117,10 @@ window.I18N = {
       "For our other guests, we\u2019ve chosen Renaissance Bali Uluwatu Resort & Spa as a nearby stay \u2014 a beautiful and comfortable retreat where you can relax and enjoy your time in Bali over the weekend.",
 
     // Stone Villas
-    stone_kicker: "Ceremony & on-site stay",
+    stone_kicker: "Wedding Venue & on-site stay",
     stone_name: "Stone Villas Uluwatu",
     stone_intro_long:
-      "Our ceremony and dinner will take place here. Set along the southern cliffs of Uluwatu, this oceanfront villa is known for some of Bali\u2019s most beautiful sunsets. Here, we\u2019ll gather at dusk and continue our celebration beneath the night sky.",
+      "Our ceremony and dinner will take place here. Set along the southern cliffs of Uluwatu, this oceanfront villa is known for some of Bali\u2019s most beautiful sunsets. We\u2019ll gather at dusk and continue the celebration beneath the night sky. As rooms on-site are limited, they will be reserved first for immediate family, bridal party members, and guests joining our early wedding preparations.",
     stone_tag_1: "Wedding venue",
     stone_tag_2: "Cliffside ocean view",
     stone_tag_3: "Iconic sunset views",
@@ -141,10 +141,10 @@ window.I18N = {
     stone_link_1_text: "View the venue location on Google Maps",
 
     // Renaissance
-    renaissance_kicker: "Your stay, arranged",
+    renaissance_kicker: "Guest stay & resort retreat",
     renaissance_name: "Renaissance Bali Uluwatu Resort & Spa",
     renaissance_intro_long:
-      "For guests staying off-site, Renaissance Bali Uluwatu Resort & Spa will be your home for the weekend \u2014 just a short drive from the venue, offering a relaxed and elevated setting where you can unwind and enjoy your time in Bali.",
+      "For guests staying off-site, we have thoughtfully selected Renaissance Bali Uluwatu Resort & Spa as your home for the weekend \u2014 just a short drive from the venue, offering a relaxed and elevated setting where you can unwind and enjoy your time in Bali.",
     renaissance_tag_1: "Comfortable resort stay",
     renaissance_tag_2: "Pools, spa & dining",
     renaissance_tag_3: "Nearby Uluwatu experiences",
@@ -683,7 +683,7 @@ window.I18N = {
     stone_kicker: "\u5a5a\u793c\u573a\u5730 \u00b7 \u573a\u5185\u4f4f\u5bbf",
     stone_name: "\u4e4c\u9c81\u74e6\u56fe\u77f3\u5934\u522b\u5885",
     stone_intro_long:
-      "\u6211\u4eec\u7684\u5a5a\u793c\u4eea\u5f0f\u4e0e\u665a\u5bb4\u5c06\u5728\u8fd9\u91cc\u4e3e\u884c\u3002\u8fd9\u662f\u4e00\u5904\u5750\u843d\u4e8e\u4e4c\u9c81\u74e6\u56fe\u5357\u90e8\u60ac\u5d16\u6d77\u5cb8\u7684\u522b\u5885\uff0c\u9762\u671d\u5927\u6d77\uff0c\u4e5f\u88ab\u89c6\u4e3a\u5df4\u5398\u5c9b\u6700\u8ff7\u4eba\u7684\u65e5\u843d\u89c2\u666f\u4e4b\u5730\u4e4b\u4e00\uff0c\u6211\u4eec\u5c06\u5728\u6b64\u76f8\u805a\uff0c\u5728\u591c\u7a7a\u4e4b\u4e0b\u5ef6\u7eed\u8fd9\u4e00\u573a\u5e86\u795d\u3002",
+      "\u6211\u4eec\u7684\u4eea\u5f0f\u4e0e\u665a\u5bb4\u5c06\u5728\u8fd9\u91cc\u4e3e\u884c\u3002\u5750\u843d\u4e8e\u4e4c\u9c81\u74e6\u56fe\u5357\u7aef\u60ac\u5d16\u4e4b\u4e0a\uff0c\u8fd9\u5ea7\u6d77\u8fb9\u522b\u5885\u62e5\u6709\u5df4\u5398\u5c9b\u6700\u8ff7\u4eba\u7684\u65e5\u843d\u666f\u81f4\u4e4b\u4e00\u3002\u6211\u4eec\u5c06\u5728\u9ec4\u660f\u65f6\u5206\u76f8\u805a\uff0c\u5e76\u5728\u591c\u7a7a\u4e4b\u4e0b\u7ee7\u7eed\u5e86\u795d\u8fd9\u573a\u559c\u60a6\u3002\u7531\u4e8e\u73b0\u573a\u623f\u95f4\u6570\u91cf\u6709\u9650\uff0c\u5c06\u4f18\u5148\u5b89\u6392\u7ed9\u76f4\u7cfb\u5bb6\u4eba\u3001\u4f34\u90ce\u4f34\u5a18\uff0c\u4ee5\u53ca\u9700\u8981\u6e05\u6668\u53c2\u4e0e\u5a5a\u793c\u51c6\u5907\u7684\u670b\u53cb\u3002",
     stone_tag_1: "\u5a5a\u793c\u4e3e\u529e\u5730",
     stone_tag_2: "\u60ac\u5d16\u6d77\u666f",
     stone_tag_3: "\u6807\u5fd7\u6027\u65e5\u843d\u666f\u89c2",
@@ -704,10 +704,10 @@ window.I18N = {
     stone_link_1_text: "\u5728 Google \u5730\u56fe\u4e2d\u67e5\u770b\u573a\u5730\u4f4d\u7f6e",
 
     // Renaissance
-    renaissance_kicker: "\u4e3a\u60a8\u5b89\u6392\u7684\u5165\u4f4f",
+    renaissance_kicker: "\u5bbe\u5ba2\u4f4f\u5bbf\u4e0e\u5ea6\u5047\u4f11\u61a9",
     renaissance_name: "\u4e4c\u9c81\u74e6\u56fe\u4e07\u4e3d\u5ea6\u5047\u9152\u5e97",
     renaissance_intro_long:
-      "\u5bf9\u4e8e\u4e0d\u4f4f\u5728\u573a\u5730\u5185\u7684\u5bbe\u5ba2\uff0c\u4e4c\u9c81\u74e6\u56fe\u4e07\u4e3d\u5ea6\u5047\u9152\u5e97\u5c06\u6210\u4e3a\u5927\u5bb6\u5728\u8fd9\u4e2a\u5468\u672b\u7684\u4e0b\u69bb\u4e4b\u5904\uff0c\u8ddd\u79bb\u5a5a\u793c\u573a\u5730\u4ec5\u9700\u77ed\u9014\u8f66\u7a0b\uff0c\u5728\u8212\u9002\u800c\u96c5\u81f4\u7684\u73af\u5883\u4e2d\uff0c\u653e\u677e\u8eab\u5fc3\uff0c\u4eab\u53d7\u5df4\u5398\u5c9b\u7684\u65f6\u5149\u3002",
+      "\u5165\u4f4f\u573a\u5916\u9152\u5e97\u7684\u5bbe\u5ba2\uff0c\u6211\u4eec\u4e5f\u7279\u522b\u4e3a\u5927\u5bb6\u7cbe\u5fc3\u6311\u9009\u4e86\u4e4c\u9c81\u74e6\u56fe\u4e07\u4e3d\u5ea6\u5047\u9152\u5e97\uff0c\u4f5c\u4e3a\u8fd9\u4e2a\u5468\u672b\u5728\u5df4\u5398\u5c9b\u7684\u5c45\u6240\u3002\u8ddd\u79bb\u5a5a\u793c\u573a\u5730\u4ec5\u9700\u77ed\u7a0b\u8f66\u7a0b\uff0c\u73af\u5883\u8f7b\u677e\u8212\u9002\uff0c\u4e5f\u5e26\u7740\u6070\u5230\u597d\u5904\u7684\u5ea6\u5047\u6c1b\u56f4\uff0c\u8ba9\u5927\u5bb6\u53ef\u4ee5\u81ea\u5728\u653e\u677e\uff0c\u4eab\u53d7\u5728\u5df4\u5398\u5c9b\u7684\u7f8e\u597d\u65f6\u5149\u3002",
     renaissance_tag_1: "\u8212\u9002\u5ea6\u5047\u578b\u4f4f\u5bbf",
     renaissance_tag_2: "\u6cf3\u6c60\u3001\u6c34\u7597\u4e0e\u9910\u996e",
     renaissance_tag_3: "\u4e4c\u9c81\u74e6\u56fe\u5468\u8fb9\u4f53\u9a8c\u4e30\u5bcc",
