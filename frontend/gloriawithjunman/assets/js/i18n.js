@@ -930,7 +930,7 @@ window.I18N = {
     gallery_upload_note:
       "最终的上传二维码会在婚礼前放在这里。",
     gallery_upload_tencent_label: "中国大陆",
-    gallery_upload_tencent_title: "腾讯云上传",
+    gallery_upload_tencent_title: "腾讯微云",
     gallery_upload_tencent_body:
       "如果你从中国大陆访问，可以扫描这个二维码，将婚礼照片上传至我们的腾讯云相册。",
     gallery_upload_google_label: "中国大陆以外",
