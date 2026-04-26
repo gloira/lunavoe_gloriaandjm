@@ -94,7 +94,15 @@ window.I18N = {
     // add into en: { ... }
     venue_title: "Venue & stay",
     venue_intro:
-      "Our wedding weekend will unfold in Uluwatu, Bali \u2014 where the celebration and your stay have been thoughtfully arranged to create a relaxed and beautiful experience for everyone.",
+      "Our wedding weekend will unfold in Uluwatu, Bali — where the celebration and your stay have been thoughtfully arranged for a relaxed and beautiful few days together.",
+    venue_host_note:
+      "Your stay from September 11 to September 13 will be with our compliments.",
+    venue_highlight_label:
+      "For all guests",
+    venue_highlight_title:
+      "Two nights in Uluwatu, on us",
+    venue_highlight_body:
+      "We’ve arranged accommodation between Stone Villas Uluwatu and Renaissance Bali Uluwatu Resort & Spa, so everyone can simply arrive and enjoy the weekend.",
 
     // highlight section
     stay_highlight_title_1: "A note on accommodation",
@@ -646,7 +654,15 @@ window.I18N = {
     //   "\u6211\u4eec\u4f1a\u5728\u4e34\u8fd1\u65e5\u671f\u786e\u8ba4\u623f\u95f4\u4e0e\u63a5\u9001\u5b89\u6392\u3002\u5982\u9700\u4f4f\u5728\u5916\u90e8\uff0c\u6211\u4eec\u4f1a\u63d0\u4f9b\u8f66\u7a0b\u7ea6 10\u201315 \u5206\u949f\u7684\u9152\u5e97\u6216\u522b\u5885\u6e05\u5355\u3002",
     venue_title: "\u5a5a\u793c\u573a\u5730\u4e0e\u4f4f\u5bbf",
     venue_intro:
-      "\u6211\u4eec\u7684\u5a5a\u793c\u5468\u672b\u5c06\u5728\u5df4\u5398\u5c9b\u4e4c\u9c81\u74e6\u56fe\u5c55\u5f00\u3002\u6211\u4eec\u4e5f\u4e3a\u5927\u5bb6\u7ec6\u5fc3\u5b89\u6392\u4e86\u573a\u5730\u4e0e\u4f4f\u5bbf\uff0c\u5e0c\u671b\u5927\u5bb6\u80fd\u5728\u8fd9\u6bb5\u65f6\u5149\u91cc\uff0c\u4ece\u5bb9\u800c\u6109\u5feb\u5730\u4eab\u53d7\u8fd9\u573a\u76f8\u805a\u3002",
+      "我们的婚礼周末将在巴厘岛乌鲁瓦图展开。场地与住宿都已为大家安排好，希望这几天可以从容、轻松，也美好地度过。",
+    venue_host_note:
+      "9月11日至9月13日两晚住宿由我们安排。",
+    venue_highlight_label:
+      "给所有宾客",
+    venue_highlight_title:
+      "乌鲁瓦图两晚住宿，由我们招待",
+    venue_highlight_body:
+      "我们已将住宿安排在 Stone Villas Uluwatu 与 Renaissance Bali Uluwatu Resort & Spa，让大家只需抵达，轻松享受这个周末。",
 
     // highlight
     stay_highlight_title_1: "\u5173\u4e8e\u4f4f\u5bbf\u5b89\u6392",
