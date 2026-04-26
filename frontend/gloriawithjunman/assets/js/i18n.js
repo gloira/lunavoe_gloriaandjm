@@ -369,15 +369,15 @@ window.I18N = {
     gallery_upload_intro:
       "If you take pictures during the wedding weekend, we would love to keep them together in one place. We have reserved two upload routes so it stays easy for guests in Mainland China and for guests joining from outside Mainland China.",
     gallery_upload_note:
-      "The final upload QR codes will be placed here before the wedding.",
+      "For larger photo or video files, cloud uploads may depend on connection speed. If your phone supports it, you\u2019re also very welcome to share with us on the wedding day via AirDrop or an iCloud shared album. WeChat or WhatsApp works too.",
     gallery_upload_tencent_label: "Mainland China",
     gallery_upload_tencent_title: "Tencent Cloud Upload",
     gallery_upload_tencent_body:
       "Guests accessing from Mainland China can scan this QR code to upload wedding photos to our Tencent Cloud folder.",
     gallery_upload_google_label: "Outside Mainland China",
-    gallery_upload_google_title: "Google Cloud Upload",
+    gallery_upload_google_title: "Google Drive",
     gallery_upload_google_body:
-      "Guests accessing from outside Mainland China can scan this QR code to upload wedding photos to our Google Cloud folder.",
+      "Guests accessing from outside Mainland China can scan this QR code to upload wedding photos to our Google Drive folder.",
     gallery_upload_hint:
       "Replace this placeholder with the final QR code before the wedding.",
     rsvp_title: "RSVP",
@@ -928,15 +928,15 @@ window.I18N = {
     gallery_upload_intro:
       "如果你在婚礼周末拍了照片，也欢迎上传给我们。我们准备了两个上传入口，方便中国大陆与海外的宾客分别使用。",
     gallery_upload_note:
-      "最终的上传二维码会在婚礼前放在这里。",
+      "较大的照片或视频文件，云盘上传速度可能会受网络影响。如果你的手机方便使用，也欢迎在婚礼当天通过 AirDrop、iCloud 共享相簿与我们分享。微信或 WhatsApp 发送给我们也完全可以～",
     gallery_upload_tencent_label: "中国大陆",
     gallery_upload_tencent_title: "腾讯微云",
     gallery_upload_tencent_body:
       "如果你从中国大陆访问，可以扫描这个二维码，将婚礼照片上传至我们的腾讯云相册。",
     gallery_upload_google_label: "中国大陆以外",
-    gallery_upload_google_title: "Google Cloud 上传",
+    gallery_upload_google_title: "谷歌云盘",
     gallery_upload_google_body:
-      "如果你从中国大陆以外访问，可以扫描这个二维码，将婚礼照片上传至我们的 Google Cloud 相册。",
+      "如果你从中国大陆以外访问，可以扫描这个二维码，将婚礼照片上传至我们的谷歌云盘相册。",
     gallery_upload_hint:
       "请在婚礼前将这个占位图替换为最终二维码。",
     rsvp_title: "\u786e\u8ba4\u51fa\u5e2d",
