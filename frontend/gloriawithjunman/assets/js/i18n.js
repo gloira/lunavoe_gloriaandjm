@@ -37,7 +37,7 @@ window.I18N = {
     hero_names_cn: "",
     hero_dateplace: "Uluwatu \u00b7 Bali \u00b7 September 11\u201313, 2026",
     hero_copy:
-      "Join us on a cliffside in Uluwatu for a relaxed, sea-breeze weekend of vows, sunset cocktails, and dancing under the stars.",
+      "Join us in Uluwatu, where a cliffside estate awaits \u2014 for a relaxed, sea-breeze weekend of vows, sunset cocktails, and dancing under the stars.",
     hero_cta_primary: "RSVP",
     hero_cta_secondary: "More details",
     scroll_hint: "Scroll",
@@ -590,7 +590,7 @@ window.I18N = {
     hero_names_cn: "\u96e8\u8a00 \u00b7 \u4fca\u6587",
     hero_dateplace: "\u4e4c\u9c81\u74e6\u56fe \u00b7 \u5df4\u5398\u5c9b \u00b7 2026\u5e749\u670811\u201313\u65e5",
     hero_copy:
-      "\u8bda\u631a\u5730\u9080\u8bf7\u4f60\u4e00\u8d77\u76f8\u7ea6\u4e4c\u9c81\u74e6\u56fe\u7684\u60ac\u5d16\u8fb9\uff0c\u5728\u6d77\u98ce\u8f7b\u62c2\u7684\u5468\u672b\u91cc\uff0c\u89c1\u8bc1\u6211\u4eec\u7684\u8a93\u8a00\u4e0e\u65e5\u843d\u5fae\u91ba\uff0c\u5728\u661f\u7a7a\u4e0b\u5c3d\u60c5\u8d77\u821e",
+      "\u8bda\u631a\u9080\u8bf7\u4f60\u6765\u5230\u4e4c\u9c81\u74e6\u56fe\u7684\u60ac\u5d16\u4e4b\u4e0a\uff0c\u5728\u6d77\u98ce\u8f7b\u62c2\u7684\u5468\u672b\u91cc\uff0c\u89c1\u8bc1\u6211\u4eec\u7684\u8a93\u8a00\uff0c\u4e8e\u65e5\u843d\u5fae\u5149\u4e2d\u4e3e\u676f\uff0c\u5728\u661f\u7a7a\u4e4b\u4e0b\u8d77\u821e\u3002",
     hero_cta_primary: "\u786e\u8ba4\u51fa\u5e2d",
     hero_cta_secondary: "\u6d3b\u52a8\u5b89\u6392",
     scroll_hint: "\u5411\u4e0b\u6ed1\u52a8",
