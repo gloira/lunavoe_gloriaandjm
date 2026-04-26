@@ -32,9 +32,9 @@
     .gallery-hero-minimal-title {
       margin: 0.55rem 0 0.9rem;
       font-family: "Gilda Display", serif;
-      font-size: clamp(2.8rem, 5vw, 5rem);
-      line-height: 0.98;
-      letter-spacing: -0.02em;
+      font-size: clamp(2.35rem, 4.2vw, 4.1rem);
+      line-height: 1;
+      letter-spacing: -0.015em;
       color: #3d2b1f;
     }
 
@@ -86,8 +86,8 @@
     .gallery-chapter-title {
       margin: 0 0 0.38rem;
       font-family: "Gilda Display", serif;
-      font-size: clamp(1.9rem, 2.6vw, 2.75rem);
-      line-height: 1.08;
+      font-size: clamp(1.55rem, 2.15vw, 2.25rem);
+      line-height: 1.1;
       color: #3c2b1f;
     }
 
@@ -115,7 +115,9 @@
       box-shadow: 0 8px 20px rgba(49, 34, 22, 0.04);
     }
 
-    .gallery-chapter-hero img {
+    .gallery-chapter-hero img,
+    .gallery-chapter-card img,
+    .gallery-bts-card img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -140,14 +142,6 @@
     .gallery-chapter-card--wide {
       grid-column: span 2;
       aspect-ratio: 1.7;
-    }
-
-    .gallery-chapter-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 700ms ease;
     }
 
     .gallery-chapter:hover .gallery-chapter-hero img,
@@ -177,12 +171,37 @@
       aspect-ratio: 1.18;
     }
 
-    .gallery-bts-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 700ms ease;
+    .gallery-lightbox-trigger {
+      position: relative;
+      cursor: zoom-in;
+    }
+
+    .gallery-lightbox-trigger::after {
+      content: "+";
+      position: absolute;
+      right: 0.75rem;
+      bottom: 0.75rem;
+      width: 1.75rem;
+      height: 1.75rem;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      font-family: "Marcellus", serif;
+      font-size: 1rem;
+      color: rgba(82, 57, 38, 0.72);
+      background: rgba(255, 252, 248, 0.52);
+      border: 1px solid rgba(168, 132, 97, 0.12);
+      backdrop-filter: blur(8px);
+      opacity: 0;
+      transform: translateY(4px);
+      transition: opacity 220ms ease, transform 220ms ease;
+      pointer-events: none;
+    }
+
+    .gallery-lightbox-trigger:hover::after,
+    .gallery-lightbox-trigger:focus-within::after {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     .gallery-upload-shell {
@@ -199,7 +218,7 @@
     .gallery-upload-title {
       margin: 0 0 0.8rem;
       font-family: "Gilda Display", serif;
-      font-size: clamp(2rem, 3vw, 3rem);
+      font-size: clamp(1.75rem, 2.6vw, 2.55rem);
       color: #3d2c1e;
     }
 
@@ -269,6 +288,92 @@
       color: #85654b;
     }
 
+    .gallery-lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 1500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(0.8rem, 3vw, 2rem);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 240ms ease, visibility 240ms ease;
+    }
+
+    .gallery-lightbox.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .gallery-lightbox-backdrop {
+      position: absolute;
+      inset: 0;
+      border: 0;
+      background: rgba(25, 18, 12, 0.72);
+      backdrop-filter: blur(16px);
+      cursor: zoom-out;
+    }
+
+    .gallery-lightbox-panel {
+      position: relative;
+      z-index: 1;
+      width: min(92vw, 980px);
+      height: min(86vh, 820px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .gallery-lightbox-image {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 22px;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+      background: rgba(255, 252, 248, 0.9);
+    }
+
+    .gallery-lightbox-close,
+    .gallery-lightbox-nav {
+      position: absolute;
+      z-index: 2;
+      border: 1px solid rgba(214, 184, 151, 0.35);
+      background: rgba(255, 252, 248, 0.82);
+      color: #5f4937;
+      backdrop-filter: blur(10px);
+      cursor: pointer;
+    }
+
+    .gallery-lightbox-close {
+      top: 0;
+      right: 0;
+      width: 2.7rem;
+      height: 2.7rem;
+      border-radius: 999px;
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    .gallery-lightbox-nav {
+      top: 50%;
+      width: 2.8rem;
+      height: 2.8rem;
+      border-radius: 999px;
+      transform: translateY(-50%);
+      font-size: 1.2rem;
+    }
+
+    .gallery-lightbox-nav--prev {
+      left: 0;
+    }
+
+    .gallery-lightbox-nav--next {
+      right: 0;
+    }
+
     @media (max-width: 980px) {
       .gallery-chapter-layout,
       .gallery-upload-grid {
@@ -290,6 +395,10 @@
         margin-bottom: 2rem;
       }
 
+      .gallery-hero-minimal-title {
+        font-size: clamp(2.15rem, 12vw, 3rem);
+      }
+
       .gallery-chapter,
       .gallery-upload-vault {
         border-radius: 24px;
@@ -299,6 +408,10 @@
       .gallery-upload-vault::before {
         inset: 8px;
         border-radius: 18px;
+      }
+
+      .gallery-chapter-title {
+        font-size: clamp(1.45rem, 8vw, 1.9rem);
       }
 
       .gallery-chapter-side {
@@ -326,6 +439,44 @@
 
       .gallery-upload-card {
         border-radius: 14px;
+      }
+
+      .gallery-lightbox-trigger::after {
+        opacity: 0.72;
+        width: 1.55rem;
+        height: 1.55rem;
+        right: 0.55rem;
+        bottom: 0.55rem;
+        font-size: 0.9rem;
+      }
+
+      .gallery-lightbox-panel {
+        width: 94vw;
+        height: 82vh;
+      }
+
+      .gallery-lightbox-image {
+        border-radius: 16px;
+      }
+
+      .gallery-lightbox-close {
+        top: -0.2rem;
+        right: -0.2rem;
+        width: 2.45rem;
+        height: 2.45rem;
+      }
+
+      .gallery-lightbox-nav {
+        width: 2.45rem;
+        height: 2.45rem;
+      }
+
+      .gallery-lightbox-nav--prev {
+        left: -0.2rem;
+      }
+
+      .gallery-lightbox-nav--next {
+        right: -0.2rem;
       }
     }
   </style>
@@ -404,23 +555,23 @@
               </div>
 
               <div class="gallery-chapter-layout">
-                <div class="gallery-chapter-hero">
+                <div class="gallery-chapter-hero gallery-lightbox-trigger">
                   <img src="../assets/gallery/city-hero.jpg" alt="Yihe Road street-style pre-wedding portrait" loading="eager" decoding="async" fetchpriority="high" />
                 </div>
                 <div class="gallery-chapter-side">
-                  <div class="gallery-chapter-card">
+                  <div class="gallery-chapter-card gallery-lightbox-trigger">
                     <img src="../assets/gallery/city-1.jpg" alt="Candid city pre-wedding portrait" loading="lazy" decoding="async" />
                   </div>
-                  <div class="gallery-chapter-card">
+                  <div class="gallery-chapter-card gallery-lightbox-trigger">
                     <img src="../assets/gallery/city-2.jpg" alt="Relaxed street pre-wedding portrait" loading="lazy" decoding="async" />
                   </div>
-                  <div class="gallery-chapter-card gallery-chapter-card--wide">
+                  <div class="gallery-chapter-card gallery-chapter-card--wide gallery-lightbox-trigger">
                     <img src="../assets/gallery/korean-1.jpg" alt="Korean-style interior pre-wedding portrait" loading="lazy" decoding="async" />
                   </div>
-                  <div class="gallery-chapter-card">
+                  <div class="gallery-chapter-card gallery-lightbox-trigger">
                     <img src="../assets/gallery/city-3.jpg" alt="Editorial street portrait" loading="lazy" decoding="async" />
                   </div>
-                  <div class="gallery-chapter-card">
+                  <div class="gallery-chapter-card gallery-lightbox-trigger">
                     <img src="../assets/gallery/korean-2.jpg" alt="Minimal Korean-style indoor portrait" loading="lazy" decoding="async" />
                   </div>
                 </div>
@@ -436,17 +587,17 @@
               </div>
 
               <div class="gallery-chapter-layout">
-                <div class="gallery-chapter-hero">
+                <div class="gallery-chapter-hero gallery-lightbox-trigger">
                   <img src="../assets/gallery/garden-hero.jpg" alt="Chinese garden pre-wedding portrait" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-chapter-side">
-                  <div class="gallery-chapter-card">
+                  <div class="gallery-chapter-card gallery-lightbox-trigger">
                     <img src="../assets/gallery/garden-1.jpg" alt="Chinese garden portrait detail" loading="lazy" decoding="async" />
                   </div>
-                  <div class="gallery-chapter-card">
+                  <div class="gallery-chapter-card gallery-lightbox-trigger">
                     <img src="../assets/gallery/garden-2.jpg" alt="Still portrait in Chinese garden" loading="lazy" decoding="async" />
                   </div>
-                  <div class="gallery-chapter-card gallery-chapter-card--wide">
+                  <div class="gallery-chapter-card gallery-chapter-card--wide gallery-lightbox-trigger">
                     <img src="../assets/gallery/garden-3.jpg" alt="Elegant Chinese garden scene" loading="lazy" decoding="async" />
                   </div>
                 </div>
@@ -462,17 +613,17 @@
               </div>
 
               <div class="gallery-chapter-layout">
-                <div class="gallery-chapter-hero">
+                <div class="gallery-chapter-hero gallery-lightbox-trigger">
                   <img src="../assets/gallery/floral-hero.jpg" alt="Playful floral window pre-wedding portrait" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-chapter-side">
-                  <div class="gallery-chapter-card">
+                  <div class="gallery-chapter-card gallery-lightbox-trigger">
                     <img src="../assets/gallery/floral-1.jpg" alt="Playful floral portrait" loading="lazy" decoding="async" />
                   </div>
-                  <div class="gallery-chapter-card">
+                  <div class="gallery-chapter-card gallery-lightbox-trigger">
                     <img src="../assets/gallery/floral-2.jpg" alt="Cute floral portrait" loading="lazy" decoding="async" />
                   </div>
-                  <div class="gallery-chapter-card gallery-chapter-card--wide">
+                  <div class="gallery-chapter-card gallery-chapter-card--wide gallery-lightbox-trigger">
                     <img src="../assets/gallery/floral-3.jpg" alt="Bright floral studio portrait" loading="lazy" decoding="async" />
                   </div>
                 </div>
@@ -488,17 +639,17 @@
               </div>
 
               <div class="gallery-chapter-layout">
-                <div class="gallery-chapter-hero">
+                <div class="gallery-chapter-hero gallery-lightbox-trigger">
                   <img src="../assets/gallery/french-hero.jpg" alt="Formal French vintage pre-wedding portrait" loading="lazy" decoding="async" />
                 </div>
                 <div class="gallery-chapter-side">
-                  <div class="gallery-chapter-card">
+                  <div class="gallery-chapter-card gallery-lightbox-trigger">
                     <img src="../assets/gallery/french-1.jpg" alt="French vintage portrait" loading="lazy" decoding="async" />
                   </div>
-                  <div class="gallery-chapter-card">
+                  <div class="gallery-chapter-card gallery-lightbox-trigger">
                     <img src="../assets/gallery/french-2.jpg" alt="Painterly studio portrait" loading="lazy" decoding="async" />
                   </div>
-                  <div class="gallery-chapter-card gallery-chapter-card--wide">
+                  <div class="gallery-chapter-card gallery-chapter-card--wide gallery-lightbox-trigger">
                     <img src="../assets/gallery/french-3.jpg" alt="Elegant formal portrait detail" loading="lazy" decoding="async" />
                   </div>
                 </div>
@@ -514,22 +665,22 @@
               </div>
 
               <div class="gallery-bts-grid">
-                <div class="gallery-bts-card gallery-bts-card--wide">
+                <div class="gallery-bts-card gallery-bts-card--wide gallery-lightbox-trigger">
                   <img src="../assets/gallery/bts-1.jpg" alt="Behind the scenes wedding shoot moment" loading="lazy" decoding="async" />
                 </div>
-                <div class="gallery-bts-card">
+                <div class="gallery-bts-card gallery-lightbox-trigger">
                   <img src="../assets/gallery/bts-2.jpg" alt="Behind the scenes candid moment" loading="lazy" decoding="async" />
                 </div>
-                <div class="gallery-bts-card">
+                <div class="gallery-bts-card gallery-lightbox-trigger">
                   <img src="../assets/gallery/bts-3.jpg" alt="Playful behind the scenes frame" loading="lazy" decoding="async" />
                 </div>
-                <div class="gallery-bts-card">
+                <div class="gallery-bts-card gallery-lightbox-trigger">
                   <img src="../assets/gallery/bts-4.jpg" alt="Wedding shoot preparation moment" loading="lazy" decoding="async" />
                 </div>
-                <div class="gallery-bts-card">
+                <div class="gallery-bts-card gallery-lightbox-trigger">
                   <img src="../assets/gallery/bts-5.jpg" alt="Laughing behind the scenes frame" loading="lazy" decoding="async" />
                 </div>
-                <div class="gallery-bts-card gallery-bts-card--wide">
+                <div class="gallery-bts-card gallery-bts-card--wide gallery-lightbox-trigger">
                   <img src="../assets/gallery/bts-6.jpg" alt="Behind the scenes portrait setup" loading="lazy" decoding="async" />
                 </div>
               </div>
@@ -594,8 +745,93 @@
     </footer>
   </div>
 
+  <div class="gallery-lightbox" id="gallery-lightbox" aria-hidden="true">
+    <button class="gallery-lightbox-backdrop" type="button" data-gallery-lightbox-close aria-label="Close"></button>
+
+    <div class="gallery-lightbox-panel">
+      <button class="gallery-lightbox-close" type="button" data-gallery-lightbox-close aria-label="Close">
+        &times;
+      </button>
+
+      <button class="gallery-lightbox-nav gallery-lightbox-nav--prev" type="button" data-gallery-lightbox-prev aria-label="Previous image">
+        &#10094;
+      </button>
+
+      <img class="gallery-lightbox-image" id="gallery-lightbox-image" src="" alt="" />
+
+      <button class="gallery-lightbox-nav gallery-lightbox-nav--next" type="button" data-gallery-lightbox-next aria-label="Next image">
+        &#10095;
+      </button>
+    </div>
+  </div>
+
   <script src="../assets/js/i18n.js?v=20260422-edit-rsvp-stable"></script>
   <script src="../assets/js/common.js?v=20260422-edit-rsvp-stable"></script>
+
+  <script>
+    (function () {
+      const triggers = Array.from(document.querySelectorAll(".gallery-lightbox-trigger img"));
+      const lightbox = document.getElementById("gallery-lightbox");
+      const image = document.getElementById("gallery-lightbox-image");
+      const closeBtns = document.querySelectorAll("[data-gallery-lightbox-close]");
+      const prevBtn = document.querySelector("[data-gallery-lightbox-prev]");
+      const nextBtn = document.querySelector("[data-gallery-lightbox-next]");
+
+      if (!triggers.length || !lightbox || !image) return;
+
+      let currentIndex = 0;
+
+      function setImage(index) {
+        currentIndex = (index + triggers.length) % triggers.length;
+        const img = triggers[currentIndex];
+
+        image.src = img.currentSrc || img.src;
+        image.alt = img.alt || "";
+      }
+
+      function openLightbox(index) {
+        setImage(index);
+        lightbox.classList.add("is-open");
+        lightbox.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove("is-open");
+        lightbox.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+      }
+
+      triggers.forEach((img, index) => {
+        const trigger = img.closest(".gallery-lightbox-trigger");
+        if (!trigger) return;
+
+        trigger.setAttribute("role", "button");
+        trigger.setAttribute("tabindex", "0");
+
+        trigger.addEventListener("click", () => openLightbox(index));
+
+        trigger.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openLightbox(index);
+          }
+        });
+      });
+
+      closeBtns.forEach((btn) => btn.addEventListener("click", closeLightbox));
+      if (prevBtn) prevBtn.addEventListener("click", () => setImage(currentIndex - 1));
+      if (nextBtn) nextBtn.addEventListener("click", () => setImage(currentIndex + 1));
+
+      document.addEventListener("keydown", (event) => {
+        if (!lightbox.classList.contains("is-open")) return;
+
+        if (event.key === "Escape") closeLightbox();
+        if (event.key === "ArrowLeft") setImage(currentIndex - 1);
+        if (event.key === "ArrowRight") setImage(currentIndex + 1);
+      });
+    })();
+  </script>
 </body>
 
 </html>
